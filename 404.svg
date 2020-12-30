@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 46.566669 21.166826"
+   height="80.00161"
+   width="176.00223">
+  <title
+     id="title1078">Error 404</title>
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Error 404</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-6.4000031e-7,-55.032484)"
+     id="layer1">
+    <path
+       id="path1102"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 6.4000031e-7,55.032484 v 8.466667 c 0,2.338001 1.89533475999969,4.233333 4.23333325999969,4.233333 l 4.2333333,0 0,8.466561 H 12.700001 L 12.7,55.032484 H 8.4666672 l 0,8.46752 -3.175,-8.53e-4 c -0.5844989,0 -1.0583333,-0.473835 -1.0583333,-1.058334 v -7.408333 z" />
+    <path
+       d="m 33.866669,55.032484 v 8.466667 c 0,2.338001 1.895335,4.233333 4.233333,4.233333 h 4.233334 v 8.466561 h 4.233334 l -1e-6,-21.166561 h -4.233333 v 8.46752 l -3.175,-8.47e-4 c -0.584499,0 -1.058334,-0.473835 -1.058334,-1.058334 v -7.408339 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path1102-2" />
+    <path
+       d="m 23.283852,55.03339 a 6.3500004,6.3495737 0 0 0 -6.294627,6.349404 6.3500004,6.3495737 0 0 1 0,5.16e-4 v 8.46656 a 6.3500004,6.3495737 0 0 0 6.350437,6.349404 6.3500004,6.3495737 0 0 0 6.349919,-6.349404 6.3500004,6.3495737 0 0 0 -5.16e-4,-0.05581 v -8.357008 a 6.3500004,6.3495737 0 0 0 5.16e-4,-0.05426 6.3500004,6.3495737 0 0 0 -6.349919,-6.349404 6.3500004,6.3495737 0 0 0 -0.05581,0 z m -5.17e-4,4.23328 a 2.1168005,2.1166668 0 0 1 2.117157,2.11664 v 8.46656 a 2.1168005,2.1166668 0 0 1 -2.117157,2.11664 2.1168005,2.1166668 0 0 1 -2.11664,-2.11664 v -8.46656 a 2.1168005,2.1166668 0 0 1 2.11664,-2.11664 z"
+       style="fill:#ffffff;stroke-width:0.026458;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:5"
+       id="path881" />
+  </g>
+</svg>
