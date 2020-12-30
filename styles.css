@@ -1,0 +1,138 @@
+@keyframes anim1 {
+  0% {
+    background-color: #0000;
+    top: 10px;
+    position: relative;
+  }
+  100% {
+    background-color: #0006;
+    top: 0px;
+    position: relative;
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    background-color: #0000;
+    top: 50px;
+    position: relative;
+  }
+  100% {
+    background-color: #0000;
+    top: 0px;
+    position: relative;
+  }
+}
+
+@keyframes anim3 {
+  0% {
+    background-color: #0000;
+    top: -125px;
+    position: relative;
+  }
+  100% {
+    background-color: #0000;
+    top: 0px;
+    position: relative;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: consolas, monospace, fixed;
+  background-color: #000;
+  color: #ccc;
+  font-size: 0px; /* to remove margins */
+  text-align: center;
+}
+
+div {
+  padding-top: 11px;
+  align-items: center;
+  min-height: 94vh; /* to fix footer */
+}
+
+p {
+  margin: 0px;
+}
+
+.titre1 {
+  font-family: consolas, monospace, fixed;
+  font-size: 20px;
+  animation-name: anim3;
+  animation-duration: 3s;
+}
+
+.titre2 {
+  font-family: consolas, monospace, fixed;
+  font-size: 20px;
+}
+
+.§1 {
+  font-size: 20px;
+  animation-name: anim2;
+  animation-duration: 1s;
+  margin: 4px;
+}
+
+.§2 {
+  font-size: 20px;
+  animation-name: anim2;
+  animation-duration: 1.5s;
+  margin: 4px;
+}
+
+.§3 {
+  font-size: 20px;
+  animation-name: anim2;
+  animation-duration: 2.5s;
+  margin: 4px;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  padding: 0;
+  min-height: 0; /* to fix footer */
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.button:link,
+.button:visited {
+  background-color: #0004;
+  padding: 5px 7px;
+  text-align: center;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #fff4;
+}
+
+.button:active {
+  background-color: #fffa;
+}
+
+img {
+  animation-name: anim2;
+  animation-duration: 1s;
+  margin: 2px;
+  font-size: 20px;
+}
+
+video {
+  animation-name: anim2;
+  animation-duration: 2s;
+  margin: 2px;
+}
+
+audio {
+  font-size: 20px;
+  animation-name: anim2;
+  animation-duration: 1s;
+  margin: 2px;
+}
