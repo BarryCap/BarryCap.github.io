@@ -1,42 +1,3 @@
-@keyframes anim1 {
-  0% {
-    background-color: #0000;
-    top: 10px;
-    position: relative;
-  }
-  100% {
-    background-color: #0006;
-    top: 0px;
-    position: relative;
-  }
-}
-
-@keyframes anim2 {
-  0% {
-    background-color: #0000;
-    top: 50px;
-    position: relative;
-  }
-  100% {
-    background-color: #0000;
-    top: 0px;
-    position: relative;
-  }
-}
-
-@keyframes anim3 {
-  0% {
-    background-color: #0000;
-    top: -125px;
-    position: relative;
-  }
-  100% {
-    background-color: #0000;
-    top: 0px;
-    position: relative;
-  }
-}
-
 body {
   margin: 0;
   font-family: consolas, monospace, fixed;
@@ -54,18 +15,6 @@ div {
 
 p {
   margin: 0px;
-}
-
-.titre1 {
-  font-family: consolas, monospace, fixed;
-  font-size: 20px;
-  animation-name: anim3;
-  animation-duration: 3s;
-}
-
-.titre2 {
-  font-family: consolas, monospace, fixed;
-  font-size: 20px;
 }
 
 .§1 {
