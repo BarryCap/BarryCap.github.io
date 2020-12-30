@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 93.133339 22.225003"
+   height="84.001068"
+   width="352.00446">
+  <title
+     id="title1078">Barry Cap Smile</title>
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Barry Cap Smile</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="fill:none;stroke:#ffffff;stroke-opacity:1"
+     transform="translate(-21.166669,-15.874999)"
+     id="layer1">
+    <path
+       id="path849"
+       d="m 23.283334,23.283333 c 0,0 17.356657,12.700003 44.450003,12.700003 27.093081,0 44.450003,-12.700003 44.450003,-12.700003"
+       style="fill:none;stroke:#ffffff;stroke-width:4.23333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path861"
+       d="m 52.916668,19.049999 10e-7,1e-6"
+       style="fill:none;stroke:#ffffff;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 82.550004,19.05 10e-7,1e-6"
+       id="path861-3" />
+  </g>
+</svg>

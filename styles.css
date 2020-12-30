@@ -5,6 +5,9 @@ body {
   color: #ccc;
   font-size: 0px; /* to remove margins */
   text-align: center;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
 }
 
 div {
@@ -50,16 +53,19 @@ a {
   text-decoration: none;
 }
 
-.button:link,
-.button:visited {
+.button:link {
   background-color: #4444;
   padding: 5px 7px;
   text-align: center;
   display: inline-block;
 }
 
+.button:visited {
+  background-color: #5554;
+}
+
 .button:hover {
-  background-color: #fff4;
+  background-color: #8888;
 }
 
 .button:active {
