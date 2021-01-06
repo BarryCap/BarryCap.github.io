@@ -22,22 +22,6 @@ p {
 
 .§1 {
   font-size: 20px;
-  animation-name: anim2;
-  animation-duration: 1s;
-  margin: 4px;
-}
-
-.§2 {
-  font-size: 20px;
-  animation-name: anim2;
-  animation-duration: 1.5s;
-  margin: 4px;
-}
-
-.§3 {
-  font-size: 20px;
-  animation-name: anim2;
-  animation-duration: 2.5s;
   margin: 4px;
 }
 
@@ -75,21 +59,15 @@ a {
 }
 
 img {
-  animation-name: anim2;
-  animation-duration: 1s;
   margin: 2px;
   font-size: 20px;
 }
 
 video {
-  animation-name: anim2;
-  animation-duration: 2s;
   margin: 2px;
 }
 
 audio {
   font-size: 20px;
-  animation-name: anim2;
-  animation-duration: 1s;
   margin: 2px;
 }
