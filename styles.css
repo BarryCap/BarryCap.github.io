@@ -25,7 +25,7 @@ p {
   margin: 4px;
 }
 
-.imgbig {
+.img-big {
   height: 100vh;
 }
 
@@ -59,6 +59,26 @@ a {
 }
 
 .button:active {
+  background-color: #fffa;
+}
+
+.button-return:link {
+  background-color: #4444;
+  padding: 5px 7px;
+  text-align: center;
+  offset: 0px 0px 0px 390px;
+  display: inline-block;
+}
+
+.button-return:visited {
+  background-color: #5554;
+}
+
+.button-return:hover {
+  background-color: #8888;
+}
+
+.button-return:active {
   background-color: #fffa;
 }
 
