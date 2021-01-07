@@ -87,8 +87,7 @@ audio {
 .button-return:link {
   background-color: #4444;
   padding: 5px 7px;
-  text-align: center;
-  offset: 0px 0px 0px 390px;
+  text-align: left;
   display: inline-block;
 }
 
