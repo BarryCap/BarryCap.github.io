@@ -25,6 +25,10 @@ p {
   margin: 4px;
 }
 
+.imgbig {
+  height: 100vh;
+}
+
 .footer {
   text-align: center;
   position: relative;
