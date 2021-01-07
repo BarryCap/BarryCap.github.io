@@ -17,6 +17,25 @@ p {
   margin: 0px;
 }
 
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+img {
+  margin: 2px;
+  font-size: 20px;
+}
+
+video {
+  margin: 2px;
+}
+
+audio {
+  font-size: 20px;
+  margin: 2px;
+}
+
 .§1 {
   font-size: 20px;
   margin: 4px;
@@ -28,6 +47,7 @@ p {
 
 .img-big {
   height: 100vh;
+  margin: 0;
 }
 
 .pxart {
@@ -43,11 +63,6 @@ p {
   padding-top: 40px;
   padding-bottom: 40px;
   min-height: 0; /* to fix footer */
-}
-
-a {
-  color: #eee;
-  text-decoration: none;
 }
 
 .button:link {
@@ -87,18 +102,4 @@ a {
 
 .button-return:active {
   background-color: #fffa;
-}
-
-img {
-  margin: 2px;
-  font-size: 20px;
-}
-
-video {
-  margin: 2px;
-}
-
-audio {
-  font-size: 20px;
-  margin: 2px;
 }
