@@ -25,6 +25,10 @@ p {
   margin: 4px;
 }
 
+.page-img-big {
+  padding: 0;
+}
+
 .img-big {
   height: 100vh;
 }
