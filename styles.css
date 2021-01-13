@@ -101,17 +101,17 @@ body::-webkit-scrollbar-thumb:active {
   padding: 5px 7px;
   text-align: center;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .button:hover {
   background-color: #8888;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .button:active {
   background-color: #fffa;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .button-return:link {
