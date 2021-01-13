@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Future Menu Brown';
+  src: url('/assets/font.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: consolas, monospace, fixed;
+  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   background-color: #000;
   color: #ccc;
   font-size: 0px; /* to remove margins */
