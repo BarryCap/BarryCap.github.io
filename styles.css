@@ -104,9 +104,7 @@ body::-webkit-scrollbar-thumb:active {
   padding-bottom: 40px;
   min-height: 0; /* to fix footer */
 }
-.button {
-  transition-duration: 0.2s;
-}
+
 .button:link {
   background-color: #4448;
   margin: 2px;
@@ -114,6 +112,7 @@ body::-webkit-scrollbar-thumb:active {
   text-align: center;
   display: inline-block;
   border-radius: 5px;
+  transition-duration: 0.2s;
 }
 
 .button:hover {
