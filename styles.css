@@ -103,10 +103,6 @@ body::-webkit-scrollbar-thumb:active {
   display: inline-block;
 }
 
-.button:visited {
-  background-color: #5554;
-}
-
 .button:hover {
   background-color: #8888;
 }
