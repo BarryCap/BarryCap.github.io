@@ -67,6 +67,15 @@ body::-webkit-scrollbar-thumb:active {
   border-radius: 2px; /* roundness of the scroll thumb */
 }
 
+::selection {
+  color: #000;
+  background: #fff8;
+}
+::-moz-selection {
+  color: #000;
+  background: #fff8;
+}
+
 .§1 {
   font-size: 20px;
   margin: 4px;
