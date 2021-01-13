@@ -46,6 +46,7 @@ audio {
 body::-webkit-scrollbar {
   height: 16px; /* height of the hrizontal scrollbar */
   width: 16px; /* width of the vertical scrollbar */
+  transition-duration: 0.2s;
 }
 
 body::-webkit-scrollbar-track {
