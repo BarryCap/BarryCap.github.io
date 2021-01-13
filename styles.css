@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .button:active {
   background-color: #fffa;
-  border-radius: 0px;
+  border-radius: 4px;
 }
 
 .button-return:link {
