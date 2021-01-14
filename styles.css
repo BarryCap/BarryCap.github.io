@@ -109,6 +109,8 @@ body::-webkit-scrollbar-thumb:active {
   font-size: 0; /* to remove spaces between buttons */
   margin: 0;
   padding: 0;
+  min-height: 0;
+  min-width: 0;
 }
 
 .button:link {
