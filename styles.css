@@ -10,7 +10,7 @@ body {
   color: #ccc;
   font-size: 0px; /* to remove margins */
   text-align: center;
-  scrollbar-color: #0000 #fff; /* for Firefox */
+  scrollbar-color: #0000 #8888; /* for Firefox */
 }
 
 div {
