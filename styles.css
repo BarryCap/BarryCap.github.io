@@ -11,7 +11,6 @@ body {
   font-size: 0px; /* to remove margins */
   text-align: center;
   scrollbar-color: #0000 #fff; /* for Firefox */
-  scrollbar-width: thin; /* for Firefox */
 }
 
 div {
