@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb:active {
   text-align: center;
   position: relative;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 40px;
   min-height: 0; /* to fix footer */
 }
