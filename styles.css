@@ -110,6 +110,7 @@ body::-webkit-scrollbar-thumb:active {
   background-color: #4448;
   margin: 2px;
   padding: 5px 7px;
+  min-width: 192px;
   text-align: center;
   display: inline-block;
   border-radius: 5px;
