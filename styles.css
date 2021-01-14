@@ -8,7 +8,7 @@ body {
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   background-color: #000;
   color: #ccc;
-  font-size: 0px; /* to remove margins */
+  font-size: 0; /* to remove margins */
   text-align: center;
   scrollbar-color: #0000 #8888; /* for Firefox */
 }
@@ -20,7 +20,7 @@ div {
 }
 
 p {
-  margin: 0px;
+  margin: 0;
 }
 
 a {
@@ -106,7 +106,8 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button-container {
-  font-size: 0px; /* to remove spaces between buttons */
+  font-size: 0; /* to remove spaces between buttons */
+  margin: 0;
 }
 
 .button:link {
