@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb:active {
 .button:link {
   background-color: #4448;
   margin: 2px;
-  padding: 5px 7px;
+  padding: 5px;
   width: 192px;
   text-align: center;
   display: inline-block;
