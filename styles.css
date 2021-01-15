@@ -108,7 +108,8 @@ body::-webkit-scrollbar-thumb:active {
 .button-container {
   font-size: 0; /* to remove spaces between buttons */
   margin: 0;
-  padding: 0;
+  padding-top: 4;
+  padding-bottom: 4;
   min-height: 0;
   min-width: 0;
 }
