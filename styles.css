@@ -71,6 +71,7 @@ body::-webkit-scrollbar-thumb:active {
   color: #000;
   background: #fff8;
 }
+
 ::-moz-selection {
   color: #000;
   background: #fff8;
