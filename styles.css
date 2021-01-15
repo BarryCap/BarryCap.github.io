@@ -96,6 +96,10 @@ body::-webkit-scrollbar-thumb:active {
   image-rendering: -moz-crisp-edges;
 }
 
+.header {
+  margin: 0;
+}
+
 .footer {
   text-align: center;
   position: relative;
