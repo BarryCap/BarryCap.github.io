@@ -108,8 +108,8 @@ body::-webkit-scrollbar-thumb:active {
 .button-container {
   font-size: 0; /* to remove spaces between buttons */
   margin: 0;
-  padding-top: 4;
-  padding-bottom: 4;
+  padding-top: 16;
+  padding-bottom: 16;
   min-height: 0;
   min-width: 0;
 }
@@ -118,6 +118,8 @@ body::-webkit-scrollbar-thumb:active {
   background-color: #4448;
   font-size: 20px; /* to remove margins */
   margin: 2px;
+  padding-top: 4;
+  padding-bottom: 4;
   width: 192px;
   text-align: center;
   display: inline-block;
