@@ -84,6 +84,7 @@ body::-webkit-scrollbar-thumb:active {
 .sub§ {
   font-size: 20px;
   margin: 4px;
+  padding-bottom: 16px;
 }
 
 .page-img-big {
@@ -117,8 +118,8 @@ body::-webkit-scrollbar-thumb:active {
 .button-container {
   font-size: 0; /* to remove spaces between buttons */
   margin: 0;
-  padding-top: 16;
-  padding-bottom: 16;
+  padding-top: 16px;
+  padding-bottom: 16px;
   min-height: 0;
   min-width: 0;
 }
