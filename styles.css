@@ -79,7 +79,8 @@ body::-webkit-scrollbar-thumb:active {
 
 .txt {
   font-size: 20px;
-  margin: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 .sub-txt {
