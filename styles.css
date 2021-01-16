@@ -77,12 +77,12 @@ body::-webkit-scrollbar-thumb:active {
   background: #fff8;
 }
 
-.§ {
+.txt {
   font-size: 20px;
   margin: 4px;
 }
 
-.sub§ {
+.sub-txt {
   font-size: 20px;
   margin: 0;
   padding-bottom: 16px;
