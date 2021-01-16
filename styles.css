@@ -80,14 +80,13 @@ body::-webkit-scrollbar-thumb:active {
 .§ {
   font-size: 20px;
   margin: 4px;
+  width: 780px;
 }
 
 .sub§ {
   font-size: 20px;
   margin: 0;
   padding-bottom: 16px;
-  padding-left: 562px;
-  padding-right: 562px;
 }
 
 .page-img-big {
