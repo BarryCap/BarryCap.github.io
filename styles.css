@@ -42,7 +42,7 @@ audio {
 }
 
 body::-webkit-scrollbar {
-  height: 16px; /* height of the hrizontal scrollbar */
+  height: 16px; /* height of the horizontal scrollbar */
   width: 16px; /* width of the vertical scrollbar */
   transition-duration: 0.2s;
 }
