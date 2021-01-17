@@ -15,7 +15,6 @@ body {
 
 div {
   padding-top: 11px;
-  align-items: center;
   min-height: 94vh; /* to fix footer */
 }
 
@@ -86,7 +85,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .sub-txt {
   font-size: 20px;
-  margin: 0;
+  margin: auto;
   padding-bottom: 16px;
   width: 780px;
 }
