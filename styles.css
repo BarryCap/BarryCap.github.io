@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button:link {
-  background-color: #4448;
+  background-color: #6668;
   font-size: 20px; /* to remove margins */
   margin: 2px;
   padding-top: 4;
