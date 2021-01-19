@@ -39,7 +39,7 @@ img:hover {
   border-color: #8888;
 }
 
-img:hover {
+img:active {
   border-color: #fffa;
 }
 
