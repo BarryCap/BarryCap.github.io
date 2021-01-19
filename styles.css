@@ -123,6 +123,10 @@ body::-webkit-scrollbar-thumb:active {
   margin: 0;
 }
 
+.header:hover {
+  border-color: #0000;
+}
+
 .footer {
   text-align: center;
   position: relative;
