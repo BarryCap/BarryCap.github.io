@@ -28,8 +28,19 @@ a {
 }
 
 img {
-  margin: 2px;
+  border: solid 2px;
+  border-radius: 2px;
+  border-color: #0000;
   font-size: 20px;
+  transition-duration: 0.2s;
+}
+
+img:hover {
+  border-color: #8888;
+}
+
+img:hover {
+  border-color: #fffa;
 }
 
 video {
