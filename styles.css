@@ -127,6 +127,7 @@ body::-webkit-scrollbar-thumb:active {
 .img-big {
   height: 100vh;
   margin: 0;
+  border: 0;
 }
 
 .pxart {
