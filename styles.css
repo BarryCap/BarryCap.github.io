@@ -121,10 +121,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .header {
   margin: 0;
-}
-
-.header:hover {
-  border-color: #0000;
+  border: none;
 }
 
 .footer {
