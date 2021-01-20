@@ -183,16 +183,24 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button-return:link {
-  background-color: #4444;
-  padding: 5px 7px;
-  text-align: left;
+  background-color: #6668;
+  font-size: 20px; /* to remove margins */
+  margin: 2px;
+  padding-top: 4;
+  padding-bottom: 4;
+  width: 192px;
+  text-align: center;
   display: inline-block;
+  border-radius: 5px;
+  transition-duration: 0.2s;
 }
 
 .button-return:hover {
   background-color: #8888;
+  border-radius: 4px;
 }
 
 .button-return:active {
   background-color: #fffa;
+  border-radius: 2px;
 }
