@@ -185,6 +185,7 @@ body::-webkit-scrollbar-thumb:active {
 .button:focus {
   background-color: #8888;
   border-radius: 4px;
+  outline: none;
 }
 
 .button-return:link {
@@ -213,4 +214,5 @@ body::-webkit-scrollbar-thumb:active {
 .button-return:focus {
   background-color: #8888;
   border-radius: 4px;
+  outline: none;
 }
