@@ -57,7 +57,7 @@ audio {
   color: #ccc;
   font-size: 20px;
   margin: 2px;
-  width: 780;
+  width: 780px;
 }
 
 iframe {
@@ -177,8 +177,8 @@ body::-webkit-scrollbar-thumb:active {
   background-color: #6668;
   font-size: 20px; /* to remove margins */
   margin: 2px;
-  padding-top: 4;
-  padding-bottom: 4;
+  padding-top: 4px;
+  padding-bottom: 4px;
   width: 192px;
   text-align: center;
   display: inline-block;
