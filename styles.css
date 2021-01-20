@@ -203,7 +203,9 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button-return-container {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 63.5px;
 }
 
 .button-return:link {
