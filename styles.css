@@ -198,10 +198,6 @@ body::-webkit-scrollbar-thumb:active {
   border-radius: 2px;
 }
 
-.button-return-container {
-  position: absolute;
-}
-
 .button-return:link {
   background-color: #6668;
   font-size: 20px; /* to remove margins */
