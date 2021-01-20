@@ -24,7 +24,22 @@ p {
 
 a {
   color: #eee;
-  text-decoration: none;
+}
+
+a:hover {
+  color: #8ee;
+}
+
+a:active {
+  color: #0ff;
+}
+
+a:focus {
+  color: #8ee;
+}
+
+a:visited {
+  color: #b5f;
 }
 
 img {
@@ -181,6 +196,7 @@ body::-webkit-scrollbar-thumb:active {
   padding-bottom: 4px;
   width: 192px;
   text-align: center;
+  text-decoration: none;
   display: inline-block;
   border-radius: 5px;
   transition-duration: 0.2s;
@@ -215,6 +231,7 @@ body::-webkit-scrollbar-thumb:active {
   padding: 4px;
   min-width: 40px;
   text-align: center;
+  text-decoration: none;
   display: block;
   border-radius: 5px;
   transition-duration: 0.2s;
