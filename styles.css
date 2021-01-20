@@ -182,6 +182,11 @@ body::-webkit-scrollbar-thumb:active {
   border-radius: 2px;
 }
 
+.button:focus {
+  background-color: #8888;
+  border-radius: 4px;
+}
+
 .button-return:link {
   background-color: #6668;
   font-size: 20px; /* to remove margins */
@@ -203,4 +208,9 @@ body::-webkit-scrollbar-thumb:active {
 .button-return:active {
   background-color: #fffa;
   border-radius: 2px;
+}
+
+.button-return:focus {
+  background-color: #8888;
+  border-radius: 4px;
 }
