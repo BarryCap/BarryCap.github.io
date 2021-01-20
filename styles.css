@@ -140,6 +140,10 @@ body::-webkit-scrollbar-thumb:active {
   border: 0;
 }
 
+.img-sub-txt {
+  text-align: justify;
+}
+
 .pxart {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
