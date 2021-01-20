@@ -199,7 +199,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button-return-container {
-  align-content: flex-end;
   position: absolute;
 }
 
