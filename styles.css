@@ -205,10 +205,11 @@ body::-webkit-scrollbar-thumb:active {
   padding: 4px;
   min-width: 40px;
   text-align: center;
-  display: inline-block;
+  display: block;
   border-radius: 5px;
   transition-duration: 0.2s;
   outline: none;
+  position: absolute;
 }
 
 .button-return:hover {
