@@ -202,8 +202,7 @@ body::-webkit-scrollbar-thumb:active {
   background-color: #6668;
   font-size: 20px; /* to remove margins */
   margin: 2px;
-  padding-top: 4;
-  padding-bottom: 4;
+  padding: 4px;
   min-width: 20px;
   text-align: center;
   display: inline-block;
