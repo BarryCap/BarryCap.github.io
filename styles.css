@@ -45,7 +45,7 @@ img:active {
 }
 
 img:focus {
-  border-color: #8888;
+  border-color: #fffa;
 }
 
 video {
@@ -78,7 +78,7 @@ iframe:active {
 }
 
 iframe:focus {
-  border-color: #8888;
+  border-color: #fffa;
 }
 
 body::-webkit-scrollbar {
@@ -194,8 +194,8 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button:focus {
-  background-color: #8888;
-  border-radius: 4px;
+  background-color: #fffa;
+  border-radius: 2px;
 }
 
 .button-return:link {
@@ -223,6 +223,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button-return:focus {
-  background-color: #8888;
-  border-radius: 4px;
+  background-color: #fffa;
+  border-radius: 2px;
 }
