@@ -203,7 +203,7 @@ body::-webkit-scrollbar-thumb:active {
   font-size: 20px; /* to remove margins */
   margin: 2px;
   padding: 4px;
-  min-width: 20px;
+  min-width: 40px;
   text-align: center;
   display: inline-block;
   border-radius: 5px;
