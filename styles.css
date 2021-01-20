@@ -204,7 +204,7 @@ body::-webkit-scrollbar-thumb:active {
   margin: 2px;
   padding-top: 4;
   padding-bottom: 4;
-  width: 192px;
+  min-width: 20px;
   text-align: center;
   display: inline-block;
   border-radius: 5px;
