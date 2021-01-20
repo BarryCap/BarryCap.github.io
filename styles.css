@@ -11,6 +11,7 @@ body {
   font-size: 0; /* to remove margins */
   text-align: center;
   scrollbar-color: #0000 #8888; /* for Firefox */
+  outline: none;
 }
 
 div {
@@ -185,7 +186,6 @@ body::-webkit-scrollbar-thumb:active {
 .button:focus {
   background-color: #8888;
   border-radius: 4px;
-  outline: none;
 }
 
 .button-return:link {
@@ -214,5 +214,4 @@ body::-webkit-scrollbar-thumb:active {
 .button-return:focus {
   background-color: #8888;
   border-radius: 4px;
-  outline: none;
 }
