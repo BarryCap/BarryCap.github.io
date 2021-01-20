@@ -11,7 +11,6 @@ body {
   font-size: 0; /* to remove margins */
   text-align: center;
   scrollbar-color: #0000 #8888; /* for Firefox */
-  outline: none;
 }
 
 div {
@@ -34,6 +33,7 @@ img {
   border-color: #0000;
   font-size: 20px;
   transition-duration: 0.2s;
+  outline: none;
 }
 
 img:hover {
@@ -171,6 +171,7 @@ body::-webkit-scrollbar-thumb:active {
   display: inline-block;
   border-radius: 5px;
   transition-duration: 0.2s;
+  outline: none;
 }
 
 .button:hover {
@@ -199,6 +200,7 @@ body::-webkit-scrollbar-thumb:active {
   display: inline-block;
   border-radius: 5px;
   transition-duration: 0.2s;
+  outline: none;
 }
 
 .button-return:hover {
