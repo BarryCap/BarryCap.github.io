@@ -149,6 +149,7 @@ body::-webkit-scrollbar-thumb:active {
   height: 100vh;
   margin: 0;
   border: 0;
+  border-radius: 0;
 }
 
 .img-sub-txt {
