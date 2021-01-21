@@ -186,6 +186,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button:link {
+  color: #eee;
   background-color: #6668;
   font-size: 20px; /* to remove margins */
   margin: 2px;
@@ -201,16 +202,19 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button:hover {
+  color: #eee;
   background-color: #8888;
   border-radius: 4px;
 }
 
 .button:active {
+  color: #fff;
   background-color: #fffa;
   border-radius: 2px;
 }
 
 .button:focus {
+  color: #fff;
   background-color: #fffa;
   border-radius: 2px;
 }
@@ -222,6 +226,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button-return:link {
+  color: #eee;
   background-color: #6668;
   font-size: 20px; /* to remove margins */
   margin: 2px;
@@ -237,16 +242,19 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .button-return:hover {
+  color: #eee;
   background-color: #8888;
   border-radius: 4px;
 }
 
 .button-return:active {
+  color: #fff;
   background-color: #fffa;
   border-radius: 2px;
 }
 
 .button-return:focus {
+  color: #eee;
   background-color: #fffa;
   border-radius: 2px;
 }
