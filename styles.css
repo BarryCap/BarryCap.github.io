@@ -176,6 +176,9 @@ body::-webkit-scrollbar-thumb:active {
   padding-top: 50px;
   padding-bottom: 40px;
   min-height: 0; /* to fix footer */
+}
+
+.img-footer {
   border: none;
 }
 
