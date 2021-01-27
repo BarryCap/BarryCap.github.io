@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   background-color: #000;
+  background-repeat: repeat;
   color: #ccc;
   font-size: 0; /* to remove margins */
   text-align: center;
@@ -131,7 +132,38 @@ body::-webkit-scrollbar-thumb:active {
 
 .home {
   background-image: url('/assets/bg/home.svg');
-  background-repeat: repeat;
+}
+
+.realization {
+  background-image: url('/assets/bg/realization.svg');
+}
+
+.about {
+  background-image: url('/assets/bg/about.svg');
+}
+
+.random {
+  background-image: url('/assets/bg/random.svg');
+}
+
+.four-o-four {
+  background-image: url('/assets/bg/404.svg');
+}
+
+.image {
+  background-image: url('/assets/bg/image.svg');
+}
+
+.video {
+  background-image: url('/assets/bg/video.svg');
+}
+
+.sound {
+  background-image: url('/assets/bg/sound.svg');
+}
+
+.game {
+  background-image: url('/assets/bg/game.svg');
 }
 
 .txt {
@@ -151,6 +183,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .page-img-big {
   padding: 0;
+  background-image: url('/assets/bg/img-big.svg');
 }
 
 .img-big {
