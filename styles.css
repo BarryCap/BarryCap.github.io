@@ -235,7 +235,6 @@ body::-webkit-scrollbar-thumb:active {
 
 .video {
   animation: video 4s linear infinite;
-  animation-timing-function: ease-in-out;
   background-image: url('/assets/bg/video.svg');
 }
 
