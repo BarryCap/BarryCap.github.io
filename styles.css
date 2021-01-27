@@ -59,7 +59,7 @@
 
 @keyframes sound {
   100% {
-    background-position: 32px 0px;
+    background-position: -32px 0px;
   }
 }
 
