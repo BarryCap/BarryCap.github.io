@@ -53,7 +53,7 @@
 
 @keyframes video {
   100% {
-    background-position: 64px 0px;
+    background-position: 64px -64px;
   }
 }
 
