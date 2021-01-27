@@ -129,6 +129,11 @@ body::-webkit-scrollbar-thumb:active {
   background: #fff8;
 }
 
+.home {
+  background-image: url('/assets/bg/home.svg');
+  background-repeat: repeat;
+}
+
 .txt {
   font-size: 20px;
   margin: 0;
