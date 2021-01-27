@@ -3,6 +3,78 @@
   src: url('/assets/font.ttf') format('truetype');
 }
 
+@keyframes home {
+  100% {
+    background-position: -32px 32px;
+  }
+}
+
+@keyframes realization {
+  100% {
+    background-position: 32px 0px;
+  }
+}
+
+@keyframes about {
+  100% {
+    background-position: 0px -32px;
+  }
+}
+
+@keyframes random {
+  100% {
+    background-position: -32px 0px;
+  }
+}
+
+@keyframes four-o-four {
+  100% {
+    background-position: 0px -256px;
+  }
+}
+
+@keyframes image {
+  0% {
+    background-position: 0px 0px;
+  }
+  25% {
+    background-position: 32px 0px;
+  }
+  50% {
+    background-position: 32px 32px;
+  }
+  75% {
+    background-position: 0px 32px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes video {
+  100% {
+    background-position: 64px 0px;
+  }
+}
+
+@keyframes sound {
+  100% {
+    background-position: 32px 0px;
+  }
+}
+
+@keyframes game {
+  0% {
+    background-position: 0px 32px;
+  }
+  50% {
+    background-position: -32px 0px;
+  }
+  100% {
+    background-position: 0px -32px;
+  }
+}
+
 body {
   margin: 0;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
@@ -131,38 +203,50 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .home {
+  animation: home 4s linear infinite;
   background-image: url('/assets/bg/home.svg');
 }
 
 .realization {
+  animation: realization 4s linear infinite;
   background-image: url('/assets/bg/realization.svg');
 }
 
 .about {
+  animation: about 4s linear infinite;
   background-image: url('/assets/bg/about.svg');
 }
 
 .random {
+  animation: random 4s linear infinite;
   background-image: url('/assets/bg/random.svg');
 }
 
 .four-o-four {
+  animation: four-o-four 4s linear infinite;
   background-image: url('/assets/bg/404.svg');
 }
 
 .image {
+  animation: image 8s linear infinite;
+  animation-timing-function: ease-in-out;
   background-image: url('/assets/bg/image.svg');
 }
 
 .video {
+  animation: video 4s linear infinite;
+  animation-timing-function: ease-in-out;
   background-image: url('/assets/bg/video.svg');
 }
 
 .sound {
+  animation: sound 4s linear infinite;
   background-image: url('/assets/bg/sound.svg');
 }
 
 .game {
+  animation: game 8s linear infinite;
+  animation-timing-function: ease-in-out;
   background-image: url('/assets/bg/game.svg');
 }
 
