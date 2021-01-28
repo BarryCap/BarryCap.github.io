@@ -78,10 +78,13 @@
 @keyframes page-img-big {
   0% {
     background-position: 8px 8px;
+  }
   49% {
     background-position: 8px 8px;
+  }
   50% {
     background-position: 0px 0px;
+  }
   99% {
     background-position: 0px 0px;
   }
