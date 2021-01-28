@@ -75,6 +75,18 @@
   }
 }
 
+@keyframes page-img-big {
+  0% {
+    background-position: 8px 8px;
+  49% {
+    background-position: 8px 8px;
+  50% {
+    background-position: 0px 0px;
+  99% {
+    background-position: 0px 0px;
+  }
+}
+
 body {
   margin: 0;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
@@ -249,6 +261,12 @@ body::-webkit-scrollbar-thumb:active {
   background-image: url('/assets/bg/game.svg');
 }
 
+.page-img-big {
+  animation: page-img-big 4s linear infinite;
+  padding: 0;
+  background-image: url('/assets/bg/img-big.svg');
+}
+
 .txt {
   font-size: 20px;
   margin: 0;
@@ -262,11 +280,6 @@ body::-webkit-scrollbar-thumb:active {
   padding-top: 16px;
   padding-bottom: 16px;
   width: 780px;
-}
-
-.page-img-big {
-  padding: 0;
-  background-image: url('/assets/bg/img-big.svg');
 }
 
 .img-big {
