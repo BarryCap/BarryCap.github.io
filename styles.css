@@ -286,6 +286,7 @@ body::-webkit-scrollbar-thumb:active {
   margin: 0;
   border: 0;
   border-radius: 0;
+  background-color: #0000;
 }
 
 .img-sub-txt {
