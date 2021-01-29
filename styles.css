@@ -77,16 +77,19 @@
 
 @keyframes page-img-big {
   0% {
-    background-position: 8px 8px;
+    background-position: 0px 0px;
   }
-  49% {
+  25% {
     background-position: 8px 8px;
   }
   50% {
-    background-position: 0px 0px;
+    background-position: 0px 16px;
   }
-  99% {
-    background-position: 0px 0px;
+  75% {
+    background-position: 8px 24px;
+  }
+  100% {
+    background-position: 0px 32px;
   }
 }
 
@@ -266,6 +269,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .page-img-big {
   animation: page-img-big 4s linear infinite;
+  animation-timing-function: ease-in-out;
   padding: 0;
   background-image: url('/assets/bg/img-big.svg');
 }
