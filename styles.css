@@ -286,7 +286,14 @@ body::-webkit-scrollbar-thumb:active {
   margin: 0;
   border: 0;
   border-radius: 0;
-  background-color: #0000;
+}
+
+.img-big:hover {
+  background-color: none;
+}
+
+.img-big:active {
+  background-color: none;
 }
 
 .img-sub-txt {
