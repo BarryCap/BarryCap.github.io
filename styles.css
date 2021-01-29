@@ -290,7 +290,14 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .img-sub-txt {
+  padding-bottom: 128px;
   text-align: justify;
+}
+
+.img-title {
+  color: #fff;
+  font-size: 32px;
+  padding-bottom: 0;
 }
 
 .pxart {
