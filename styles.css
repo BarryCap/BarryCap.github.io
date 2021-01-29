@@ -21,12 +21,6 @@
   }
 }
 
-@keyframes random {
-  100% {
-    background-position: -32px 0px;
-  }
-}
-
 @keyframes four-o-four {
   100% {
     background-position: 0px -256px;
@@ -236,7 +230,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .random {
-  animation: random 4s linear infinite;
   background-image: url('/assets/bg/random.svg');
 }
 

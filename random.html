@@ -1,20 +1,40 @@
 <html>
   <head>
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="https://barrycap.github.io/assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles.css" />
     <title>Barry Cap | Random</title>
   </head>
   <body class="random">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script>
+      $(function() {
+        var p = [0, 0], speed = 10, runMe = function () {
+          var angle = Math.random() * 2 * Math.PI;
+          var d = [
+            speed * Math.cos(angle), 
+            speed * Math.sin(angle)
+          ];
+          for (var i = 0; i < 2; i++)
+          p[i] = (p[i] + d[i] > 100 || p[i] + d[i] < 0) ? p[i] - d[i] : p[i] + d[i];
+          $('body').animate({
+            backgroundPositionX: p[0] + '%',
+            backgroundPositionY: p[1] + '%'
+          }, 5000, 'linear', runMe);
+        };
+        runMe();
+      });
+    </script>
     <div>
-      <a href="/">
-        <img src="/assets/header.svg" alt="Barry Cap" width="780" height="123" class="header" />
+      <a href="https://barrycap.github.io/">
+        <img src="https://barrycap.github.io/assets/header.svg" alt="Barry Cap" width="780" height="123" class="header" />
       </a>
       <div class="txt"></p>
         <p class="button-container">
-          <a class="button" href="./">Home</a>
-          <a class="button" href="realizations">Realizations</a>
-          <a class="button" href="about">About</a>
-          <a class="button" href="random">Random</a>
+          <a class="button" href="https://barrycap.github.io/">Home</a>
+          <a class="button" href="https://barrycap.github.io/realizations">Realizations</a>
+          <a class="button" href="https://barrycap.github.io/about">About</a>
+          <a class="button" href="https://barrycap.github.io/random">Random</a>
         </p>
         <p class="sub-txt">
           Random things I wanted to talk about.
@@ -22,7 +42,7 @@
       </div>
     </div>
     <div class="footer">
-      <img class="img-footer" src="/assets/smile.svg" alt=":)" width="780" />
+      <img class="img-footer" src="https://barrycap.github.io/assets/smile.svg" alt=":)" width="780" />
     </div>
   </body>
 </html>
