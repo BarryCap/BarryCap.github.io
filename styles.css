@@ -135,15 +135,15 @@ img {
 }
 
 img:hover {
-  border-color: #8888;
+  background-color: #8888;
 }
 
 img:active {
-  border-color: #fffa;
+  background-color: #fffa;
 }
 
 img:focus {
-  border-color: #fffa;
+  background-color: #fffa;
 }
 
 video {
