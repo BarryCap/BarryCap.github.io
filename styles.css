@@ -314,8 +314,9 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .header {
-  margin: 0;
   border: none;
+  border-radius: 0;
+  margin: 0;
 }
 
 .footer {
