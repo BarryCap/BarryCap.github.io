@@ -283,17 +283,18 @@ body::-webkit-scrollbar-thumb:active {
 
 .img-big {
   height: 100vh;
+  width: 100%;
   margin: 0;
   border: 0;
   border-radius: 0;
 }
 
 .img-big:hover {
-  background-color: none;
+  background-color: #0000;
 }
 
 .img-big:active {
-  background-color: none;
+  background-color: #0000;
 }
 
 .img-sub-txt {
