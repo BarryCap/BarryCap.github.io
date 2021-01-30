@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 135.46496 135.46496"
+   height="512"
+   width="512">
+  <title
+     id="title1078">BCAP Smile</title>
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>BCAP Smile</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       ry="21.166668"
+       y="0"
+       x="0"
+       height="135.46667"
+       width="135.46667"
+       id="rect847"
+       style="opacity:1;mix-blend-mode:normal;fill:#ffffff;fill-opacity:0.997154;stroke:none;stroke-width:0.026458;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1" />
+    <path
+       id="path849"
+       d="m 10.583776,30.691282 c 0,0 22.315307,16.328285 57.148988,16.328285 34.833346,0 57.148996,-16.328285 57.148996,-16.328285"
+       style="fill:none;stroke:#000000;stroke-width:5.44277;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path861"
+       d="m 48.6831,25.248521 v 0"
+       style="fill:none;stroke:#000000;stroke-width:8.16414;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:8.16414;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 86.782425,25.248521 10e-7,1e-6"
+       id="path861-3" />
+    <path
+       id="path1108"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.529162px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 55.032601,59.265924 c -9.351961,0 -16.933206,7.581264 -16.933206,16.933206 v 8.4666 c 0,9.351933 7.581271,16.9332 16.933206,16.9332 h 8.466603 v -8.466587 h -8.466603 c -4.675962,0 -8.466604,-3.79064 -8.466604,-8.466613 v -8.4666 c 0,-4.67597 3.790642,-8.466602 8.466604,-8.466602 h 8.466603 v -8.466604 z" />
+    <path
+       id="path1130-9"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0529163;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1;paint-order:normal"
+       d="m 4.2332799,59.265924 v 42.333056 h 8.4666151 4.233307 c 7.013969,0 12.699919,-5.685947 12.699919,-12.699907 0,-3.253303 -1.224289,-6.219613 -3.235958,-8.466613 2.011669,-2.24701 3.235958,-5.21332 3.235958,-8.46662 0,-7.013966 -5.68595,-12.699916 -12.699919,-12.699916 h -4.233307 z m 8.4666151,8.466614 h 4.233307 c 2.337991,0 4.233307,1.89531 4.233307,4.233302 0,2.338 -1.895316,4.23331 -4.233307,4.23331 h -4.233307 z m 0,16.933222 h 4.233307 c 2.337991,0 4.233307,1.89532 4.233307,4.233313 0,2.33799 -1.895316,4.23331 -4.233307,4.23331 h -4.233307 z" />
+    <path
+       d="m 131.22856,71.96653 c 0,-7.012629 -5.68486,-12.697497 -12.6975,-12.697497 l -12.69752,-2e-6 v 42.325019 h 8.46503 V 84.66404 h 4.23249 c 7.01264,1e-5 12.6975,-5.68487 12.6975,-12.69751 z m -8.46499,0 c 0,2.33755 -1.89495,4.23251 -4.23251,4.23251 h -4.23249 v -8.465005 h 4.23249 c 2.33756,0 4.23251,1.89496 4.23251,4.232495 z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0529062;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1;paint-order:normal"
+       id="path1130-9-4" />
+    <path
+       id="path1130-6"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.052916;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1;paint-order:normal"
+       d="m 84.66562,59.265882 c -7.013946,0 -12.699866,5.685926 -12.699866,12.699868 v 29.63302 h 8.466571 V 84.66562 h 8.46659 v 16.93315 h 8.466569 V 71.96575 c 0,-7.013942 -5.685915,-12.699868 -12.699864,-12.699868 z m 0,8.466583 c 2.337975,0 4.233295,1.89531 4.233295,4.233285 v 4.23329 h -8.46659 v -4.23329 c 0,-2.337975 1.89532,-4.233285 4.233295,-4.233285 z" />
+  </g>
+</svg>
