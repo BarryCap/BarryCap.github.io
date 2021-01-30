@@ -125,27 +125,6 @@ a:focus {
   color: #8ee;
 }
 
-img {
-  border: solid 2px;
-  border-radius: 2px;
-  border-color: #0000;
-  font-size: 20px;
-  transition-duration: 0.2s;
-  outline: none;
-}
-
-img:hover {
-  background-color: #8888;
-}
-
-img:active {
-  background-color: #fffa;
-}
-
-img:focus {
-  background-color: #fffa;
-}
-
 video {
   margin: 2px;
 }
@@ -331,6 +310,27 @@ body::-webkit-scrollbar-thumb:active {
 
 .img-footer {
   border: none;
+}
+
+img {
+  border: solid 2px;
+  border-radius: 2px;
+  border-color: #0000;
+  font-size: 20px;
+  transition-duration: 0.2s;
+  outline: none;
+}
+
+img:hover {
+  background-color: #8888;
+}
+
+img:active {
+  background-color: #fffa;
+}
+
+img:focus {
+  background-color: #fffa;
 }
 
 .button-container {
