@@ -9,6 +9,20 @@
   viewBox="0 0 135.46667 21.166673"
   version="1.1"
   id="svg8">
+  <style>
+    .header-svg {
+      fill: #fff;
+      transition-duration: 0.2s;
+    }
+
+    .header-svg:hover {
+      fill: #fffa;
+    }
+
+    .header-svg:active {
+      fill: #fff8;
+    }
+  </style>
   <title
     id="title1078">Barry Cap Round</title>
     <defs
