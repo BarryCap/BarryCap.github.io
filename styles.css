@@ -299,6 +299,10 @@ body::-webkit-scrollbar-thumb:active {
   margin: 0;
 }
 
+.header-svg {
+  fill: #fff;
+}
+
 .header-svg:hover {
   fill: #fffa;
 }
