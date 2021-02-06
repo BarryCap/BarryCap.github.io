@@ -301,6 +301,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .header-svg {
   fill: #fff;
+  transition-duration: 0.2s;
 }
 
 .header-svg:hover {
