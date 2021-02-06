@@ -299,6 +299,14 @@ body::-webkit-scrollbar-thumb:active {
   margin: 0;
 }
 
+.header-svg:hover {
+  fill: #fffa;
+}
+
+.header-svg:active {
+  fill: #fff8;
+}
+
 .footer {
   text-align: center;
   position: relative;
