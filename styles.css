@@ -125,6 +125,10 @@ a:focus {
   color: #8ee;
 }
 
+li {
+  display: inline-block;
+}
+
 video {
   margin: 2px;
 }
