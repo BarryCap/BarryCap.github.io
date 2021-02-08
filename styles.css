@@ -125,10 +125,6 @@ a:focus {
   color: #8ee;
 }
 
-li {
-  display: inline-block;
-}
-
 img {
   border: solid 2px;
   border-radius: 2px;
