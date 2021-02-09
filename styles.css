@@ -99,6 +99,7 @@ body {
 }
 
 div {
+  padding-top: 12px;
   min-height: 100vh; /* to fix footer */
 }
 
