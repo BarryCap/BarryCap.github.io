@@ -1,86 +1,92 @@
-<head>
-  <link rel="icon" href="/assets/favicon.ico" />
-  <title>Barry Cap › Box</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<script>
-  var pane = $("#pane"),
-    box = $("#box"),
-    maxValue = pane.width() - box.width(),
-    keysPressed = {},
-    distancePerIteration = 10
-  function calculateNewValue(oldValue, keyCode1, keyCode2) {
-    var newValue =
-      parseInt(oldValue, 10) -
-      (keysPressed[keyCode1] ? distancePerIteration : 0) +
-      (keysPressed[keyCode2] ? distancePerIteration : 0)
-    return newValue < 0 ? 0 : newValue > maxValue ? maxValue : newValue
-  }
-  $(window).keydown(function (event) {
-    keysPressed[event.which] = true
-  })
-  $(window).keyup(function (event) {
-    keysPressed[event.which] = false
-  })
-  setInterval(function () {
-    box.css({
-      left: function (index, oldValue) {
-        return calculateNewValue(oldValue, 37, 39)
-      },
-      top: function (index, oldValue) {
-        return calculateNewValue(oldValue, 38, 40)
+<html>
+  <head>
+    <link rel="icon" href="/assets/favicon.ico" />
+    <title>Barry Cap › Box</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function work() {
+        var pane = $("#pane"),
+          box = $("#box"),
+          maxValue = pane.width() - box.width(),
+          keysPressed = {},
+          distancePerIteration = 10
+        function calculateNewValue(oldValue, keyCode1, keyCode2) {
+          var newValue =
+            parseInt(oldValue, 10) -
+            (keysPressed[keyCode1] ? distancePerIteration : 0) +
+            (keysPressed[keyCode2] ? distancePerIteration : 0)
+          return newValue < 0 ? 0 : newValue > maxValue ? maxValue : newValue
+        }
+        $(window).keydown(function (event) {
+          keysPressed[event.which] = true
+        })
+        $(window).keyup(function (event) {
+          keysPressed[event.which] = false
+        })
+        setInterval(function () {
+          box.css({
+            left: function (index, oldValue) {
+              return calculateNewValue(oldValue, 37, 39)
+            },
+            top: function (index, oldValue) {
+              return calculateNewValue(oldValue, 38, 40)
+            }
+          })
+        }, 20)
       }
-    })
-  }, 20)
-</script>
-<style>
-  body {
-  background-color: #000;
-  margin: 0;
-  }
-  #pane {
-    width: 800px;
-    height: 800px;
-    border: 4px solid #000;
-    border-radius: 24px;
-    border-color: #fff8;
-    background-color: #222;
-    margin: auto;
-    margin-top: calc(50vh - 400px);
-    position: relative;
-  }
-  #pane:hover {
-    background-color: #220;
-    border-color: #ff08;
-    border-radius: 12px;
-    transition-duration: 0.1s;
-  }
-  #pane:active {
-    background-color: #200;
-    border-color: #f008;
-    border-radius: 0;
-    transition-duration: 1.8s;
-  }
-  #box {
-    background-color: #fff;
-    border-radius: 24px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: Calc(50% - 20px);
-    left: Calc(50% - 20px);
-  }
-  #box:hover {
-    background-color: #ff0;
-    border-radius: 8px;
-    transition-duration: 50ms;
-  }
-  #box:active {
-    background-color: #f00;
-    border-radius: 0px;
-    transition-duration: 1s;
-  }
-</style>
-<div id="pane">
-  <div id="box"></div>
-</div>
+    </script>
+    <style>
+      body {
+      background-color: #000;
+      margin: 0;
+      }
+      #pane {
+        width: 800px;
+        height: 800px;
+        border: 4px solid #000;
+        border-radius: 24px;
+        border-color: #fff8;
+        background-color: #222;
+        margin: auto;
+        margin-top: calc(50vh - 400px);
+        position: relative;
+      }
+      #pane:hover {
+        background-color: #220;
+        border-color: #ff08;
+        border-radius: 12px;
+        transition-duration: 0.1s;
+      }
+      #pane:active {
+        background-color: #200;
+        border-color: #f008;
+        border-radius: 0;
+        transition-duration: 1.8s;
+      }
+      #box {
+        background-color: #fff;
+        border-radius: 24px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: Calc(50% - 20px);
+        left: Calc(50% - 20px);
+      }
+      #box:hover {
+        background-color: #ff0;
+        border-radius: 8px;
+        transition-duration: 50ms;
+      }
+      #box:active {
+        background-color: #f00;
+        border-radius: 0px;
+        transition-duration: 1s;
+      }
+    </style>
+  </head>
+  <body onload="work()">
+    <div id="pane">
+      <div id="box"></div>
+    </div>
+  </body>
+</html>
