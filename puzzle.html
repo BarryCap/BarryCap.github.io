@@ -1,0 +1,438 @@
+<html>
+  <head>
+    <link rel="icon" href="https://barryCap.github.io/assets/favicon.ico" />
+    <title>Barry Cap › Puzzle</title>
+    <script type="module">
+      import interact from 'https://cdn.interactjs.io/v1.10.5/interactjs/index.js'
+
+      // target elements with the "draggable" class
+      interact('.draggable').draggable({
+        // enable inertial throwing
+        inertia: true,
+        // keep the element within the area of its parent
+        modifiers: [
+          interact.modifiers.restrictRect({
+            restriction: '.container',
+            endOnly: true,
+          }),
+        ],
+
+        listeners: {
+          // call this function on every dragmove event
+          move: dragMoveListener,
+
+          // call this function on every dragend event
+          end(event) {
+            var textEl = event.target.querySelector('p')
+          },
+        },
+      })
+
+      function dragMoveListener(event) {
+        var target = event.target
+        // keep the dragged position in the data-x/data-y attributes
+        var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
+        var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+
+        // translate the element
+        target.style.webkitTransform = target.style.transform = 'translate(' + x + '%, ' + y + '%)'
+
+        // update the position attributes
+        target.setAttribute('data-x', x)
+        target.setAttribute('data-y', y)
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000;
+        margin: 0;
+        transition-duration: 0.5s;
+      }
+
+      body:hover {
+        background-color: #ccc;
+      }
+
+      .draggable {
+        cursor: move;
+        touch-action: none;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="container" viewBox="0 0 285.75001 285.75001" height="100%" width="100%">
+      <path
+        class="draggable"
+        id="0"
+        d="m 266.70001,9.5250006 h 9.525 v 9.5250004 h -9.525 z"
+        style="
+          fill: #cff;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="1"
+        d="M 0,0 V 28.575 H 9.5250001 V 19.05 H 19.05 v 9.525 h 9.525 V 19.05 H 38.1 V 9.5250001 H 28.575 V 0 Z"
+        style="
+          fill: #fdf;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="2"
+        d="M 28.575,0 V 9.5250001 H 38.1 V 19.05 h -9.525 v 9.525 H 38.1 V 38.1 h 9.525002 v -9.525 h 9.525 V 19.05 h -9.525 V 9.5250001 h 9.525 V 0 Z"
+        style="
+          fill: #cff;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="3"
+        d="M 47.625002,9.5250001 V 19.05 h 9.525 v 9.525 h 9.525 V 19.05 h 9.525 v 9.525 h 9.525 V 19.05 h 9.524999 V 9.5250001 H 85.725002 V 0 h -28.575 v 9.5250001 z"
+        style="
+          fill: #bfb;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="4"
+        d="m 85.725002,0 v 9.5250001 h 9.524999 V 19.05 h -9.524999 v 9.525 h 9.524999 V 47.625002 H 104.775 V 28.575 H 114.3 V 19.05 h -9.525 V 9.5250001 H 114.3 V 0 Z"
+        style="
+          fill: #faa;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="5"
+        d="m 114.3,0 h 28.575 v 9.5250001 h -19.05 V 19.05 h 19.05 v 9.525 H 133.35 V 38.1 h -9.525 V 28.575 H 114.3 V 19.05 h -9.525 V 9.5250001 h 9.525 z"
+        style="
+          fill: #ff9;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="6"
+        d="m 142.875,0 v 9.5250001 h -19.05 V 19.05 h 19.05 v 9.525 H 152.4 V 9.5250001 h 9.525 V 28.575 h 9.525 V 19.05 H 190.5 V 9.5250001 H 171.45 V 0 Z"
+        style="
+          fill: #8ff;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="7"
+        d="m 171.45,0 h 28.575 v 9.5250001 h 9.525 V 19.05 h -9.525 v 9.525 H 171.45 V 19.05 H 190.5 V 9.5250001 h -19.05 z"
+        style="
+          fill: #78f;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="8"
+        d="m 200.025,0 h 28.57501 v 9.5250001 h -9.525 V 19.05 h 9.525 v 9.525 h -9.525 V 38.1 H 209.55 v -9.525 h -9.525 V 19.05 h 9.525 V 9.5250001 h -9.525 z"
+        style="
+          fill: #6f8;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="9"
+        d="m 228.60001,0 v 9.5250001 h -9.525 V 19.05 h 9.525 V 38.1 h 9.52499 v -9.525 h 9.525 V 38.1 h 9.525 V 19.05 h -19.05 V 9.5250001 h 19.05 V 0 Z"
+        style="
+          fill: #f85;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="10"
+        d="M 257.17501,8.4e-7 V 9.5250007 h -19.05 v 9.5250003 h 19.05 V 28.575 h 9.525 V 38.1 h 9.525 v -9.525 h 9.525 V 8.4e-7 Z m 9.525,9.52499986 h 9.525 v 9.5250003 h -9.525 z"
+        style="
+          fill: #8f4;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="42"
+        d="M 0,28.575 H 9.5250001 V 19.05 H 19.05 v 9.525 H 38.1 V 38.1 H 19.05 v 9.525002 h 9.525 v 9.525 H 19.05 v 9.525 H 9.5250001 v -9.525 H 0 Z"
+        style="
+          fill: #82c;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="44"
+        d="m 47.625002,28.575 h 9.525 v 19.050002 h -9.525 v 9.525 H 28.575 v -9.525 H 19.05 V 38.1 h 28.575002 z"
+        style="
+          fill: #8c1;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="46"
+        d="m 66.675002,19.05 h 9.525 v 9.525 H 95.250001 V 38.1 h -9.524999 l 10e-7,9.525002 H 76.200002 V 38.1 h -9.525 v 19.050002 h -19.05 v -9.525 h 9.525 V 28.575 h 9.525 z"
+        style="
+          fill: #0c8;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="48"
+        d="m 76.200002,47.625002 h 9.525 V 38.1 h 9.524999 v 9.525002 H 104.775 V 28.575 h 9.525 v 19.050002 h 9.525 v 9.525 H 95.250001 v 9.525 h -9.524999 v -9.525 h -9.525 z"
+        style="
+          fill: #08f;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="50"
+        d="m 114.3,28.575 h 9.525 V 38.1 h 9.525 V 28.575 H 152.4 V 38.1 h -9.525 v 9.525002 h -9.525 v 19.05 H 114.3 v -9.525 h 9.525 v -9.525 H 114.3 Z"
+        style="
+          fill: #8f0;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="52"
+        d="m 152.4,9.5250001 h 9.525 V 28.575 h 9.525 V 38.1 h -9.525 v 9.525002 h 9.525 v 9.525 h -38.1 v -9.525 h 9.525 V 38.1 h 9.525 z"
+        style="
+          fill: #f08;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="54"
+        d="m 133.35,57.150002 h 38.1 v 9.525 h -28.575 v 9.525 h 28.575 v 9.525 h -38.1 z"
+        style="
+          fill: #80f;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="56"
+        d="m 104.775,66.675002 v 9.525 h 9.525 v 19.049999 h 9.525 v -9.524999 h 9.525 v -19.05 z"
+        style="
+          fill: #0f8;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="58"
+        d="m 171.45,28.575 h 38.1 V 38.1 h -28.575 v 9.525002 h 9.525 v 9.525 h -9.525 v 9.525 h -9.525 v -19.05 h -9.525 V 38.1 h 9.525 z"
+        style="
+          fill: #f80;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="60"
+        d="m 219.07501,28.575 h 9.525 V 38.1 h 9.52499 v 9.525002 h -9.52499 v 9.525 h -9.525 v -9.525 H 209.55 v 9.525 h -9.525 v -9.525 h -19.05 V 38.1 h 38.10001 z"
+        style="
+          fill: #f8f;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="62"
+        d="m 142.875,66.675002 h 38.1 v -9.525 h 9.525 v -9.525 h 9.525 v 19.05 H 190.5 v 9.525 h -9.525 v 9.525 h -9.525 v -9.525 h -28.575 z"
+        style="
+          fill: #88f;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="64"
+        d="m 76.200002,66.675002 h 19.049999 v -9.525 H 114.3 v 9.525 h -9.525 v 9.525 h 9.525 v 9.525 h -9.525 v 9.524999 h -9.524999 v -9.524999 h -9.524999 v -9.525 h -9.525 z"
+        style="
+          fill: #8ff;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="66"
+        d="m 57.150002,57.150002 h 9.525 V 38.1 h 9.525 v 19.050002 h 9.525 v 9.525 h -9.525 v 9.525 h 9.525 v 9.525 h -9.525 v 9.524999 h -9.525 v -9.524999 h -9.525 v -9.525 h 9.525 v -9.525 h -9.525 z"
+        style="
+          fill: #8f8;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="68"
+        d="m 19.05,57.150002 v 9.525 h 9.525 v 9.525 H 38.1 v 9.525 h 9.525002 v 9.524999 h 9.525 V 76.200002 h 9.525 v -9.525 h -9.525 v -9.525 z"
+        style="
+          fill: #ff8;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="70"
+        d="m 238.125,28.575 h 9.525 V 38.1 h 9.525 v 9.525002 h 9.525 v 9.525 h -19.05 v 9.525 h -9.525 v -9.525 h -9.52499 v -9.525 h 9.52499 z"
+        style="
+          fill: #f88;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="20"
+        d="M 257.175,28.575 H 266.7 V 38.1 h 9.525 v -9.525 h 9.525 v 38.100002 h -9.525 v -9.525 H 266.7 v -9.525 h -9.525 z"
+        style="
+          fill: #f0f;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="21"
+        d="m 0,57.150002 h 9.5250001 v 9.525 H 28.575 v 19.05 H 9.5250001 v 9.524999 H 0 Z"
+        style="
+          fill: #00f;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="28"
+        d="m 180.975,95.250001 h 9.525 v -9.524999 h 19.05 v -9.525 h 9.52501 v -9.525 h 9.525 v -9.525 h -9.525 v -9.525 H 209.55 v 9.525 h -9.525 v 9.525 H 190.5 v 9.525 h -9.525 z"
+        style="
+          fill: #0f0;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="29"
+        d="m 228.60001,57.150002 h 9.52499 v 9.525 h 9.525 v -9.525 h 9.525 v 9.525 h 9.525 v 9.525 h -9.525 v 9.525 h -9.525 v -9.525 h -9.525 v 9.525 h -9.52499 v -9.525 h -9.525 v -9.525 h 9.525 z"
+        style="
+          fill: #ff0;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+      <path
+        class="draggable"
+        id="30"
+        d="m 257.175,57.150002 h 19.05 v 9.525 h 9.525 v 19.05 h -9.525 v 9.524999 H 266.7 v -9.524999 h -9.525 v -9.525 h 9.525 v -9.525 h -9.525 z"
+        style="
+          fill: #f00;
+          stroke: #000;
+          stroke-width: 1px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        "
+      />
+    </svg>
+  </body>
+</html>
