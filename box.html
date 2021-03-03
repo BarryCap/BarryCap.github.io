@@ -2,10 +2,11 @@
   <head>
     <link rel="icon" href="/assets/favicon.ico" />
     <title>Barry Cap › Box</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
       function work() {
-        var pane = document.querySelector("#pane"),
-          box = document.querySelector("#box"),
+        var pane = $("#pane"),
+          box = $("#box"),
           maxValue = pane.width() - box.width(),
           keysPressed = {},
           distancePerIteration = 10
@@ -16,10 +17,10 @@
             (keysPressed[keyCode2] ? distancePerIteration : 0)
           return newValue < 0 ? 0 : newValue > maxValue ? maxValue : newValue
         }
-        Document.querySelector(window).keydown(function (event) {
+        $(window).keydown(function (event) {
           keysPressed[event.which] = true
         })
-        Document.querySelector(window).keyup(function (event) {
+        $(window).keyup(function (event) {
           keysPressed[event.which] = false
         })
         setInterval(function () {
