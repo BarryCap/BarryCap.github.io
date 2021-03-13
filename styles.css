@@ -297,6 +297,11 @@ body::-webkit-scrollbar-thumb:active {
   background-image: url('/assets/bg/img-big.svg');
 }
 
+.imar {
+  animation: realization 4s linear infinite;
+  background-image: url('/assets/bg/imar.svg');
+}
+
 .txt {
   font-size: 20px;
   margin: 0;
