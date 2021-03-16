@@ -382,6 +382,7 @@ body::-webkit-scrollbar-thumb:active {
 .button:link {
   color: #eee;
   background-color: #6668;
+  mix-blend-mode: difference;
   font-size: 20px; /* to remove margins */
   margin: 2px;
   padding-top: 4px;
@@ -422,6 +423,7 @@ body::-webkit-scrollbar-thumb:active {
 .button-return:link {
   color: #eee;
   background-color: #6668;
+  mix-blend-mode: difference;
   font-size: 20px; /* to remove margins */
   margin: 2px;
   padding: 4px;
