@@ -465,6 +465,7 @@ mark {
 .container {
   position: relative;
   width: 192px;
+  min-height: auto;
 }
 
 .container:hover .overlay {
@@ -477,15 +478,14 @@ mark {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 192px;
+  width: 192px;
   opacity: 0;
   transition: 0.2s;
 }
 
 .hover-text {
   color: #eee;
-  font-size: 20px;
   position: absolute;
   bottom: 4px;
   left: 0;
