@@ -136,14 +136,17 @@ img {
 
 img:hover {
   background-color: #8888;
+  mix-blend-mode: difference;
 }
 
 img:active {
   background-color: #fffa;
+  mix-blend-mode: difference;
 }
 
 img:focus {
   background-color: #fffa;
+  mix-blend-mode: difference;
 }
 
 video {
