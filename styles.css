@@ -378,7 +378,6 @@ body::-webkit-scrollbar-thumb:active {
   padding-bottom: 16px;
   min-height: 0;
   min-width: 0;
-  backdrop-filter: blur(8px);
 }
 
 .button:link {
@@ -424,7 +423,6 @@ body::-webkit-scrollbar-thumb:active {
 .button-return:link {
   color: #eee;
   background-color: #6668;
-  backdrop-filter: blur(8px);
   font-size: 20px; /* to remove margins */
   margin: 2px;
   padding: 4px;
