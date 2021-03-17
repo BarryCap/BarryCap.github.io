@@ -378,12 +378,12 @@ body::-webkit-scrollbar-thumb:active {
   padding-bottom: 16px;
   min-height: 0;
   min-width: 0;
+  mix-blend-mode: difference;
 }
 
 .button:link {
   color: #eee;
   background-color: #6668;
-  mix-blend-mode: difference;
   font-size: 20px; /* to remove margins */
   margin: 2px;
   padding-top: 4px;
