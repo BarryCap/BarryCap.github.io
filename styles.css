@@ -368,7 +368,6 @@ body::-webkit-scrollbar-thumb:active {
 
 .img-footer {
   border: none;
-  backdrop-filter: blur(8px);
   mix-blend-mode: difference;
 }
 
