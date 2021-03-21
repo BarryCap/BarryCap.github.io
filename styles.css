@@ -297,6 +297,12 @@ body::-webkit-scrollbar-thumb:active {
   background-image: url('/assets/bg/img-big.svg');
 }
 
+.drawing {
+  animation: image 8s linear infinite;
+  animation-timing-function: ease-out;
+  background-image: url('/assets/bg/drawing.svg');
+}
+
 .imar {
   animation: realization 4s linear infinite;
   background-image: url('/assets/bg/imar.svg');
