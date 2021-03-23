@@ -326,7 +326,7 @@ body::-webkit-scrollbar-thumb:active {
 .img-big {
   max-height: 80vh;
   max-width: 80%;
-  margin: 0;
+  margin: 5vh 0 0 0;
   border: 0;
   border-radius: 0;
 }
