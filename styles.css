@@ -1,130 +1,113 @@
 @font-face {
   font-family: 'Future Menu Brown';
-  src: url('/assets/font.ttf') format('truetype');
+  src: url(/assets/font.ttf) format('truetype');
 }
-
 @keyframes home {
   100% {
     background-position: -32px 32px;
   }
 }
-
 @keyframes realization {
   100% {
-    background-position: 32px 0px;
+    background-position: 32px 0;
   }
 }
-
 @keyframes about {
   100% {
-    background-position: 0px -32px;
+    background-position: 0 -32px;
   }
 }
-
 @keyframes four-o-four {
   100% {
-    background-position: 0px -256px;
+    background-position: 0 -256px;
   }
 }
-
 @keyframes image {
   0% {
-    background-position: 0px 0px;
+    background-position: 0 0;
   }
   25% {
-    background-position: 32px 0px;
+    background-position: 32px 0;
   }
   50% {
     background-position: 32px 32px;
   }
   75% {
-    background-position: 0px 32px;
+    background-position: 0 32px;
   }
   100% {
-    background-position: 0px 0px;
+    background-position: 0 0;
   }
 }
-
 @keyframes video {
   100% {
     background-position: 64px -64px;
   }
 }
-
 @keyframes sound {
   100% {
-    background-position: -32px 0px;
+    background-position: -32px 0;
   }
 }
-
 @keyframes game {
   0% {
-    background-position: 0px 32px;
+    background-position: 0 32px;
   }
   50% {
-    background-position: -32px 0px;
+    background-position: -32px 0;
   }
   100% {
-    background-position: 0px -32px;
+    background-position: 0 -32px;
   }
 }
-
 @keyframes page-img-big {
   0% {
-    background-position: 0px 0px;
+    background-position: 0 0;
   }
   25% {
     background-position: 8px 8px;
   }
   50% {
-    background-position: 0px 16px;
+    background-position: 0 16px;
   }
   75% {
     background-position: 8px 24px;
   }
   100% {
-    background-position: 0px 32px;
+    background-position: 0 32px;
   }
 }
-
 body {
   margin: 0;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   background-color: #000;
   background-repeat: repeat;
   color: #ccc;
-  font-size: 0; /* to remove margins */
+  font-size: 0;
   text-align: center;
-  scrollbar-color: #0000 #8888; /* for Firefox */
+  scrollbar-color: #0000 #8888;
 }
-
 div {
   padding-top: 12px;
-  min-height: 100vh; /* to fix footer */
+  min-height: 100vh;
 }
-
 p {
   margin: 0;
 }
-
 a {
   color: #fff;
   text-decoration: none;
 }
-
 a:hover {
   color: #8ee;
   text-decoration: underline;
 }
-
 a:active {
   color: #0ff;
 }
-
 a:focus {
   color: #8ee;
 }
-
 img {
   border: solid 2px;
   border-radius: 2px;
@@ -133,19 +116,15 @@ img {
   transition-duration: 0.2s;
   outline: none;
 }
-
 img:hover {
   background-color: #8888;
 }
-
 img:active {
   background-color: #fffa;
 }
-
 img:focus {
   background-color: #fffa;
 }
-
 video {
   border: solid 2px;
   border-radius: 2px;
@@ -154,19 +133,15 @@ video {
   transition-duration: 0.2s;
   outline: none;
 }
-
 video:hover {
   background-color: #8888;
 }
-
 video:active {
   background-color: #fffa;
 }
-
 video:focus {
   background-color: #fffa;
 }
-
 audio {
   border: solid 2px;
   border-radius: 2px;
@@ -175,19 +150,15 @@ audio {
   transition-duration: 0.2s;
   outline: none;
 }
-
 audio:hover {
   background-color: #8888;
 }
-
 audio:active {
   background-color: #fffa;
 }
-
 audio:focus {
   background-color: #fffa;
 }
-
 iframe {
   border: solid 2px;
   border-radius: 2px;
@@ -196,125 +167,101 @@ iframe {
   transition-duration: 0.2s;
   outline: none;
 }
-
 iframe:hover {
   background-color: #8888;
 }
-
 iframe:active {
   background-color: #fffa;
 }
-
 iframe:focus {
   background-color: #fffa;
 }
-
 body::-webkit-scrollbar {
-  height: 16px; /* height of the horizontal scrollbar */
-  width: 16px; /* width of the vertical scrollbar */
+  height: 16px;
+  width: 16px;
   transition-duration: 0.2s;
 }
-
 body::-webkit-scrollbar-track {
-  background: #0000; /* color of the tracking area */
+  background: #0000;
 }
-
 body::-webkit-scrollbar-thumb {
-  background-color: #6668; /* color of the scroll thumb */
-  border-radius: 5px; /* roundness of the scroll thumb */
+  background-color: #6668;
+  border-radius: 5px;
 }
-
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #8888; /* color of the scroll thumb */
-  border-radius: 4px; /* roundness of the scroll thumb */
+  background-color: #8888;
+  border-radius: 4px;
 }
-
 body::-webkit-scrollbar-thumb:active {
-  background-color: #fffa; /* color of the scroll thumb */
-  border-radius: 2px; /* roundness of the scroll thumb */
+  background-color: #fffa;
+  border-radius: 2px;
 }
-
 ::selection {
   color: #000;
   background: #fff8;
 }
-
 ::-moz-selection {
   color: #000;
   background: #fff8;
 }
-
 .home {
   animation: home 4s linear infinite;
-  background-image: url('/assets/bg/home.svg');
+  background-image: url(/assets/bg/home.svg);
 }
-
 .realization {
   animation: realization 4s linear infinite;
-  background-image: url('/assets/bg/realization.svg');
+  background-image: url(/assets/bg/realization.svg);
 }
-
 .about {
   animation: about 4s linear infinite;
-  background-image: url('/assets/bg/about.svg');
+  background-image: url(/assets/bg/about.svg);
 }
-
 .random {
-  background-image: url('/assets/bg/random.svg');
+  background-image: url(/assets/bg/random.svg);
 }
-
 .four-o-four {
   animation: four-o-four 4s linear infinite;
-  background-image: url('/assets/bg/404.svg');
+  background-image: url(/assets/bg/404.svg);
 }
-
 .image {
   animation: image 8s linear infinite;
   animation-timing-function: ease-in-out;
-  background-image: url('/assets/bg/image.svg');
+  background-image: url(/assets/bg/image.svg);
 }
-
 .video {
   animation: video 4s linear infinite;
-  background-image: url('/assets/bg/video.svg');
+  background-image: url(/assets/bg/video.svg);
 }
-
 .sound {
   animation: sound 4s linear infinite;
-  background-image: url('/assets/bg/sound.svg');
+  background-image: url(/assets/bg/sound.svg);
 }
-
 .game {
   animation: game 8s linear infinite;
   animation-timing-function: ease-in-out;
-  background-image: url('/assets/bg/game.svg');
+  background-image: url(/assets/bg/game.svg);
 }
-
 .page-img-big {
   animation: page-img-big 4s linear infinite;
   animation-timing-function: ease-in-out;
   padding: 0;
-  background-image: url('/assets/bg/img-big.svg');
+  background-image: url(/assets/bg/img-big.svg);
 }
-
 .drawing {
   animation: image 8s linear infinite;
   animation-timing-function: ease-out;
-  background-image: url('/assets/bg/drawing.svg');
+  background-image: url(/assets/bg/drawing.svg);
 }
-
 .imar {
   animation: realization 4s linear infinite;
-  background-image: url('/assets/bg/imar.svg');
+  background-image: url(/assets/bg/imar.svg);
 }
-
 .txt {
   font-size: 20px;
   margin: 0;
   padding: 0;
   min-height: 0;
 }
-
 .sub-txt {
   font-size: 20px;
   margin: auto;
@@ -322,46 +269,38 @@ body::-webkit-scrollbar-thumb:active {
   padding-bottom: 16px;
   width: 780px;
 }
-
 .img-big {
   max-height: 80vh;
   max-width: 80%;
-  margin: 5vh 0 0 0;
+  margin: 5vh 0 0;
   border: 0;
   border-radius: 0;
 }
-
 .img-big:hover {
   background-color: #0000;
 }
-
 .img-big:active {
   background-color: #0000;
 }
-
 .img-sub-txt {
   padding-bottom: 128px;
   text-align: justify;
 }
-
 .img-title {
   color: #fff;
   font-size: 32px;
   padding-bottom: 0;
 }
-
 .pxart {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;
 }
-
 .header {
   border: none;
   border-radius: 0;
   margin: 0;
 }
-
 .footer {
   border-radius: 0;
   text-align: center;
@@ -369,27 +308,24 @@ body::-webkit-scrollbar-thumb:active {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 40px;
-  min-height: 0; /* to fix footer */
+  min-height: 0;
 }
-
 .img-footer {
   border: none;
   mix-blend-mode: difference;
 }
-
 .button-container {
-  font-size: 0; /* to remove spaces between buttons */
+  font-size: 0;
   margin: 0;
   padding-top: 16px;
   padding-bottom: 16px;
   min-height: 0;
   min-width: 0;
 }
-
 .button:link {
   color: #eee;
   background-color: #6668;
-  font-size: 20px; /* to remove margins */
+  font-size: 20px;
   margin: 2px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -401,35 +337,30 @@ body::-webkit-scrollbar-thumb:active {
   transition-duration: 0.2s;
   outline: none;
 }
-
 .button:hover {
   color: #eee;
   background-color: #8888;
   border-radius: 4px;
 }
-
 .button:active {
   color: #fff;
   background-color: #fffa;
   border-radius: 2px;
 }
-
 .button:focus {
   color: #fff;
   background-color: #fffa;
   border-radius: 2px;
 }
-
 .button-return-container {
   position: fixed;
   top: 0;
   right: 63.5px;
 }
-
 .button-return:link {
   color: #eee;
   background-color: #6668;
-  font-size: 20px; /* to remove margins */
+  font-size: 20px;
   margin: 2px;
   padding: 4px;
   min-width: 40px;
@@ -441,41 +372,33 @@ body::-webkit-scrollbar-thumb:active {
   outline: none;
   position: absolute;
 }
-
 .button-return:hover {
   color: #eee;
   background-color: #8888;
   border-radius: 4px;
 }
-
 .button-return:active {
   color: #fff;
   background-color: #fffa;
   border-radius: 2px;
 }
-
 .button-return:focus {
   color: #eee;
   background-color: #fffa;
   border-radius: 2px;
 }
-
-/* Styles bellow are made for the hover text on images */
 mark {
   background-color: #8888;
   border-radius: 4px;
 }
-
 .container {
   position: relative;
   width: 192px;
   min-height: auto;
 }
-
 .container:hover .overlay {
   opacity: 1;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -487,12 +410,11 @@ mark {
   opacity: 0;
   transition: 0.2s;
 }
-
 .hover-text {
   color: #eee;
   position: absolute;
   bottom: 4px;
   left: 0;
-  padding: 2px 4px 2px 4px;
+  padding: 2px 4px;
   margin: 4px;
 }
