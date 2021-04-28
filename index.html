@@ -3,6 +3,9 @@
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles.css" />
     <title>Barry Cap</title>
+    <script>
+      document.getElementById('video').play()
+    </script>
   </head>
   <body class="home">
     <div>
@@ -125,7 +128,13 @@
         />
       </a>
       <a href="/videos/Sub-ScrambledCube21">
-        <video width="388" height="218" autoplay loop poster="/thumbnails/Sub-ScrambledCube21.png">
+        <video
+          width="388"
+          height="218"
+          loop
+          id="video"
+          poster="/thumbnails/Sub-ScrambledCube21.png"
+        >
           <source src="/thumbnails/Sub-ScrambledCube21.mp4" type="video/mp4" />
         </video>
       </a>
@@ -145,7 +154,7 @@
       </a>
       <br />
       <a target="_blank" href="https://www.youtube.com/embed/7nE3NyeALgw">
-        <video width="388" height="218" autoplay loop poster="/thumbnails/Night of the Alien.gif">
+        <video width="388" height="218" loop id="video" poster="/thumbnails/Night of the Alien.gif">
           <source src="/thumbnails/Night of the Alien.mp4" type="video/mp4" />
         </video>
       </a>
