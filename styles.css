@@ -222,6 +222,7 @@ input:active {
   margin-left: calc(80% - 4px);
   width: 20%;
   text-align: center;
+  cursor: pointer;
 }
 textarea {
   color: #444;
