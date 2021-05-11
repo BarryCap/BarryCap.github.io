@@ -182,7 +182,7 @@ form {
   width: 780px;
   font-size: 20px;
   margin: 2px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
@@ -199,7 +199,7 @@ input {
   width: 50%;
   font-size: 20px;
   margin: 2px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   border: none;
@@ -217,13 +217,17 @@ input:active {
   background-color: #fffa;
   border-radius: 2px;
 }
+.input-button {
+  padding-left: 50%;
+}
 textarea {
   color: #eee;
   background-color: #6668;
-  width: 50%;
+  min-height: 24px;
+  width: 100%;
   font-size: 20px;
   margin: 2px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   border: none;
