@@ -218,6 +218,11 @@ input:active {
   background-color: #eee;
   border-radius: 2px;
 }
+input:focus {
+  color: #000;
+  background-color: #eee;
+  border-radius: 2px;
+}
 .input-button {
   margin-left: calc(80% - 4px);
   width: 20%;
