@@ -236,7 +236,7 @@ input::selection {
 textarea {
   color: #444;
   background-color: #fffc;
-  height: 128px;
+  height: 84px;
   width: calc(100% - 8px);
   font-size: 20px;
   margin: 4px;
