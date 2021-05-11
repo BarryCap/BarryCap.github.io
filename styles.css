@@ -229,6 +229,10 @@ input:focus {
   text-align: center;
   cursor: pointer;
 }
+input::selection {
+  background: #444c;
+  color: #fffc;
+}
 textarea {
   color: #444;
   background-color: #fffc;
@@ -259,6 +263,10 @@ textarea:focus {
   color: #000;
   background-color: #fff;
   border-radius: 2px;
+}
+textarea::selection {
+  background: #444c;
+  color: #fffc;
 }
 body::-webkit-scrollbar {
   height: 16px;
