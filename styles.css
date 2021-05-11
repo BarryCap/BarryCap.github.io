@@ -218,7 +218,8 @@ input:active {
   border-radius: 2px;
 }
 .input-button {
-  padding-left: 50%;
+  margin-left: 80%;
+  width: 20%;
 }
 textarea {
   color: #eee;
