@@ -249,7 +249,7 @@ textarea {
   outline: none;
   resize: none;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
-  scrollbar-color: #fff0 #8888;
+  scrollbar-color: #fff #888;
 }
 textarea:hover {
   color: #222;
