@@ -193,6 +193,29 @@ form:hover {
   background-color: #8888;
   border-radius: 4px;
 }
+input {
+  color: #eee;
+  background-color: #6668;
+  width: 50%;
+  font-size: 20px;
+  margin: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  outline: none;
+  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+}
+input:hover {
+  background-color: #8888;
+  border-radius: 4px;
+}
+input:active {
+  color: #fff;
+  background-color: #fffa;
+  border-radius: 2px;
+}
 body::-webkit-scrollbar {
   height: 16px;
   width: 16px;
