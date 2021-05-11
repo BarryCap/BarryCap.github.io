@@ -195,7 +195,7 @@ form:hover {
 }
 input {
   color: #444;
-  background-color: #eeec;
+  background-color: #fffc;
   width: 50%;
   font-size: 20px;
   margin: 4px;
@@ -210,17 +210,17 @@ input {
 }
 input:hover {
   color: #222;
-  background-color: #fffc;
+  background-color: #fffe;
   border-radius: 4px;
 }
 input:active {
   color: #000;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 2px;
 }
 input:focus {
   color: #000;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 2px;
 }
 .input-button {
@@ -231,7 +231,7 @@ input:focus {
 }
 textarea {
   color: #444;
-  background-color: #eee8;
+  background-color: #fffc;
   height: 64px;
   width: calc(100% - 8px);
   font-size: 20px;
@@ -247,17 +247,17 @@ textarea {
 }
 textarea:hover {
   color: #222;
-  background-color: #eeec;
+  background-color: #fffe;
   border-radius: 4px;
 }
 textarea:active {
   color: #000;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 2px;
 }
 textarea:focus {
   color: #000;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 2px;
 }
 body::-webkit-scrollbar {
