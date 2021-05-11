@@ -223,15 +223,15 @@ input:focus {
   background-color: #fff;
   border-radius: 2px;
 }
+input::selection {
+  background: #444c;
+  color: #fffc;
+}
 .input-button {
   margin-left: calc(80% - 4px);
   width: 20%;
   text-align: center;
   cursor: pointer;
-}
-input::selection {
-  background: #444c;
-  color: #fffc;
 }
 textarea {
   color: #444;
