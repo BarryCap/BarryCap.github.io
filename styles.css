@@ -218,14 +218,15 @@ input:active {
   border-radius: 2px;
 }
 .input-button {
-  margin-left: calc(80% - 2px);
+  margin-left: calc(80% - 4px);
   width: 20%;
+  text-align: center;
 }
 textarea {
   color: #eee;
   background-color: #6668;
   min-height: 24px;
-  width: calc(100% - 4px);
+  width: calc(100% - 8px);
   font-size: 20px;
   margin: 4px;
   text-align: left;
