@@ -247,6 +247,7 @@ textarea {
   border-radius: 5px;
   transition-duration: 0.2s;
   outline: none;
+  resize: none;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
 }
 textarea:hover {
