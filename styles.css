@@ -227,7 +227,7 @@ input:active {
 textarea {
   color: #444;
   background-color: #eee8;
-  min-height: 24px;
+  height: 64px;
   width: calc(100% - 8px);
   font-size: 20px;
   margin: 4px;
