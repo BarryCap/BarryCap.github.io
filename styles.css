@@ -198,7 +198,7 @@ input {
   background-color: #6668;
   width: 50%;
   font-size: 20px;
-  margin: 2px;
+  margin: 4px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
@@ -218,16 +218,16 @@ input:active {
   border-radius: 2px;
 }
 .input-button {
-  margin-left: 80%;
+  margin-left: calc(80% - 2px);
   width: 20%;
 }
 textarea {
   color: #eee;
   background-color: #6668;
   min-height: 24px;
-  width: 100%;
+  width: calc(100% - 4px);
   font-size: 20px;
-  margin: 2px;
+  margin: 4px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
