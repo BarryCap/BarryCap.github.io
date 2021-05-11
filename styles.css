@@ -255,6 +255,11 @@ textarea:active {
   background-color: #eee;
   border-radius: 2px;
 }
+textarea:focus {
+  color: #000;
+  background-color: #eee;
+  border-radius: 2px;
+}
 body::-webkit-scrollbar {
   height: 16px;
   width: 16px;
