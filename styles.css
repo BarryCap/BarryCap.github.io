@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Future Menu Brown';
-  src: url(/assets/font.ttf) format('truetype');
+  font-family: "Future Menu Brown";
+  src: url(/assets/font.ttf) format("truetype");
 }
 @keyframes home {
   100% {
@@ -194,8 +194,8 @@ form:hover {
   border-radius: 4px;
 }
 input {
-  color: #eee;
-  background-color: #6668;
+  color: #444;
+  background-color: #eee8;
   width: 50%;
   font-size: 20px;
   margin: 4px;
@@ -209,12 +209,13 @@ input {
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
 }
 input:hover {
-  background-color: #8888;
+  color: #222;
+  background-color: #eeec;
   border-radius: 4px;
 }
 input:active {
-  color: #fff;
-  background-color: #fffa;
+  color: #000;
+  background-color: #eee;
   border-radius: 2px;
 }
 .input-button {
@@ -223,8 +224,8 @@ input:active {
   text-align: center;
 }
 textarea {
-  color: #eee;
-  background-color: #6668;
+  color: #444;
+  background-color: #eee8;
   min-height: 24px;
   width: calc(100% - 8px);
   font-size: 20px;
@@ -239,12 +240,13 @@ textarea {
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
 }
 textarea:hover {
-  background-color: #8888;
+  color: #222;
+  background-color: #eeec;
   border-radius: 4px;
 }
 textarea:active {
-  color: #fff;
-  background-color: #fffa;
+  color: #000;
+  background-color: #eee;
   border-radius: 2px;
 }
 body::-webkit-scrollbar {
