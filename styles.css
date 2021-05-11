@@ -249,6 +249,7 @@ textarea {
   outline: none;
   resize: none;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  scrollbar-color: #fff0 #8888;
 }
 textarea:hover {
   color: #222;
@@ -269,23 +270,23 @@ textarea::selection {
   background: #444c;
   color: #fffc;
 }
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   height: 16px;
   width: 16px;
   transition-duration: 0.2s;
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #0000;
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #6668;
   border-radius: 5px;
 }
-body::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background-color: #8888;
   border-radius: 4px;
 }
-body::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb:active {
   background-color: #fffa;
   border-radius: 2px;
 }
