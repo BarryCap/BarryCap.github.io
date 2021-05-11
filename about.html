@@ -121,12 +121,14 @@
       </div>
       <form action="https://postmail.invotes.com/send"
         method="post" id="email_form">
-        <input type="text" name="subject" placeholder="Subject" />
+        <input type="text" name="subject" placeholder="Name or email" />
+        <br />
         <textarea name="text" placeholder="Message"></textarea>
         <input type="hidden" name="access_token" value="lxhekdbbnthg5zjinccvt7tj" />
         <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
         <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-        <input id="submit_form" type="submit" value="Send" />
+        <br />
+        <input class="input-button" id="submit_form" type="submit" value="Send" />
       </form>
       <script>
         var submitButton = document.getElementById("submit_form")
