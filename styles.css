@@ -115,6 +115,7 @@ img {
   font-size: 20px;
   transition-duration: 0.2s;
   outline: none;
+  position: relative;
 }
 img:hover {
   background-color: #8888;
@@ -124,6 +125,25 @@ img:active {
 }
 img:focus {
   background-color: #fffa;
+}
+img[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  background-color: #888c;
+  color: #fff;
+  border: solid 2px;
+  border-color: #8888;
+  border-radius: 4px;
+}
+img[title]:active::after {
+  position: absolute;
+  background-color: #fffa;
+  color: #888;
+  border-color: #fff8;
+  border-radius: 2px;
 }
 video {
   border: solid 2px;
