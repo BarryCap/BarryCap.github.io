@@ -521,6 +521,16 @@ textarea::-webkit-scrollbar-thumb:active {
   background-color: #fffa;
   border-radius: 2px;
 }
+.button-spot {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  left: calc(50% - 428.5px);
+  top: 546px;
+  max-width: 40px;
+  height: 90px;
+  z-index: -1;
+}
 mark {
   background-color: #8888;
   border-radius: 4px;
