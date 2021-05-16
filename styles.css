@@ -85,6 +85,7 @@ body {
   color: #ccc;
   font-size: 0;
   text-align: center;
+  cursor: url(/assets/cursors/default.png) 0 0, auto;
   scrollbar-color: #0000 #8888;
 }
 div {
@@ -93,10 +94,12 @@ div {
 }
 p {
   margin: 0;
+  cursor: url(/assets/cursors/text.png) 6 6, text;
 }
 a {
   color: #fff;
   text-decoration: none;
+  cursor: url(/assets/cursors/pointer.png) 5 0, pointer;
 }
 a:hover {
   color: #8ee;
@@ -227,6 +230,7 @@ input {
   transition-duration: 0.2s;
   outline: none;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  cursor: url(/assets/cursors/text.png) 6 6, text;
 }
 input:hover {
   color: #222;
@@ -269,6 +273,7 @@ textarea {
   outline: none;
   resize: none;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  cursor: url(/assets/cursors/text.png) 6 6, text;
   scrollbar-color: #8888 #fff0;
 }
 textarea:hover {
