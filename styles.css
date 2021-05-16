@@ -524,7 +524,6 @@ textarea::-webkit-scrollbar-thumb:active {
 .button-spot:link {
   max-width: 36.5px;
   height: 90px;
-  text-align: left;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   border-radius: 0 5px 5px 0;
