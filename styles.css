@@ -456,10 +456,11 @@ textarea::-webkit-scrollbar-thumb:active {
 .button-container {
   font-size: 0;
   margin: 0;
+  margin-left: calc(50% - 784px / 2);
   padding-top: 16px;
   padding-bottom: 16px;
   min-height: 35px;
-  width: 780;
+  width: 784;
 }
 .button:link {
   color: #eee;
