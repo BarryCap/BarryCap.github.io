@@ -115,7 +115,7 @@ img {
   border: solid 2px;
   border-radius: 2px;
   border-color: #0000;
-  font-size: 20px;
+  font-size: 21px;
   transition-duration: 0.2s;
   outline: none;
   position: relative;
@@ -152,7 +152,7 @@ video {
   border: solid 2px;
   border-radius: 2px;
   border-color: #0000;
-  font-size: 20px;
+  font-size: 21px;
   transition-duration: 0.2s;
   outline: none;
 }
@@ -169,7 +169,7 @@ audio {
   border: solid 2px;
   border-radius: 2px;
   border-color: #0000;
-  font-size: 20px;
+  font-size: 21px;
   transition-duration: 0.2s;
   outline: none;
 }
@@ -186,7 +186,7 @@ iframe {
   border: solid 2px;
   border-radius: 2px;
   border-color: #0000;
-  font-size: 20px;
+  font-size: 21px;
   transition-duration: 0.2s;
   outline: none;
 }
@@ -203,7 +203,7 @@ form {
   color: #eee;
   background-color: #6668;
   width: 780px;
-  font-size: 20px;
+  font-size: 21px;
   margin: 2px;
   text-align: left;
   text-decoration: none;
@@ -220,7 +220,7 @@ input {
   color: #444;
   background-color: #fffc;
   width: 50%;
-  font-size: 20px;
+  font-size: 21px;
   margin: 4px;
   text-align: left;
   text-decoration: none;
@@ -262,7 +262,7 @@ textarea {
   background-color: #fffc;
   height: 84px;
   width: calc(100% - 8px);
-  font-size: 20px;
+  font-size: 21px;
   margin: 4px;
   text-align: left;
   text-decoration: none;
@@ -396,13 +396,13 @@ textarea::-webkit-scrollbar-thumb:active {
   background-image: url(/assets/bg/imar.svg);
 }
 .txt {
-  font-size: 20px;
+  font-size: 21px;
   margin: 0;
   padding: 0;
   min-height: 0;
 }
 .sub-txt {
-  font-size: 20px;
+  font-size: 21px;
   margin: auto;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -466,7 +466,7 @@ textarea::-webkit-scrollbar-thumb:active {
 .button:link {
   color: #eee;
   background-color: #6668;
-  font-size: 20px;
+  font-size: 21px;
   margin: 2px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -501,7 +501,7 @@ textarea::-webkit-scrollbar-thumb:active {
 .button-return {
   color: #eee;
   background-color: #6668;
-  font-size: 20px;
+  font-size: 21px;
   margin: 2px;
   padding: 4px;
   min-width: 40px;
