@@ -458,8 +458,8 @@ textarea::-webkit-scrollbar-thumb:active {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 16px;
-  min-height: 0;
-  min-width: 0;
+  min-height: 35px;
+  width: 780;
 }
 .button:link {
   color: #eee;
