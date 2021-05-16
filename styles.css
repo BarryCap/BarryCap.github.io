@@ -491,7 +491,7 @@ textarea::-webkit-scrollbar-thumb:active {
   top: 0;
   right: 63.5px;
 }
-.button-return:link {
+.button-return {
   color: #eee;
   background-color: #6668;
   font-size: 20px;
