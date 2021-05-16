@@ -255,7 +255,7 @@ input::selection {
   margin-left: calc(80% - 4px);
   width: 20%;
   text-align: center;
-  cursor: pointer;
+  cursor: url(/assets/cursors/pointer.png) 5 0, pointer;
 }
 textarea {
   color: #444;
