@@ -94,7 +94,7 @@ div {
 }
 p {
   margin: 0;
-  cursor: url(/assets/cursors/text.png) 6 6, text;
+  cursor: url(/assets/cursors/text.png) 4 12, text;
 }
 a {
   color: #fff;
