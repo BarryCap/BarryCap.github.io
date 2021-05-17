@@ -99,7 +99,7 @@ p {
 a {
   color: #fff;
   text-decoration: none;
-  cursor: url(/assets/cursors/pointer.png) 5 0, pointer;
+  cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
 }
 a:hover {
   color: #8ee;
@@ -255,7 +255,7 @@ input::selection {
   margin-left: calc(80% - 4px);
   width: 20%;
   text-align: center;
-  cursor: url(/assets/cursors/pointer.png) 5 0, pointer;
+  cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
 }
 textarea {
   color: #444;
