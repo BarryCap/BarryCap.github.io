@@ -3,7 +3,6 @@ This is [Barry Cap](https://barrycap.com/about)'s website.<br/>
 I develop this site since 2020 using mostly HTML and CSS.<br/>
 <br/>
 ## Pages
----
 ### [Home](https://barrycap.com)
 &emsp;The presentation page where you can found some of the images I made, with the current [Spolight](#spotlight) image.
 
