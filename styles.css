@@ -199,6 +199,10 @@ iframe:active {
 iframe:focus {
   background-color: #fffa;
 }
+mark {
+  background-color: #8888;
+  border-radius: 4px;
+}
 form {
   color: #eee;
   background-color: #6668;
@@ -547,10 +551,6 @@ textarea::-webkit-scrollbar-thumb:active {
 }
 .button-spot:focus {
   border-radius: 0 2px 2px 0;
-}
-mark {
-  background-color: #8888;
-  border-radius: 4px;
 }
 .container {
   position: relative;
