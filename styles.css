@@ -77,6 +77,59 @@
     background-position: 0 32px;
   }
 }
+@keyframes cursor-progress {
+  6.25% {
+    cursor: url("/assets/cursors/progress1.png"), progress;
+  }
+  12.5% {
+    cursor: url("/assets/cursors/progress2.png"), progress;
+  }
+  18.75% {
+    cursor: url("/assets/cursors/progress3.png"), progress;
+  }
+  25% {
+    cursor: url("/assets/cursors/progress4.png"), progress;
+  }
+  31.25% {
+    cursor: url("/assets/cursors/progress5.png"), progress;
+  }
+  37.5% {
+    cursor: url("/assets/cursors/progress6.png"), progress;
+  }
+  43.75% {
+    cursor: url("/assets/cursors/progress7.png"), progress;
+  }
+  50% {
+    cursor: url("/assets/cursors/progress8.png"), progress;
+  }
+  56.25% {
+    cursor: url("/assets/cursors/progress9.png"), progress;
+  }
+  66.66% {
+    cursor: url("/assets/cursors/progress10.png"), progress;
+  }
+  62.5% {
+    cursor: url("/assets/cursors/progress11.png"), progress;
+  }
+  68.75% {
+    cursor: url("/assets/cursors/progress12.png"), progress;
+  }
+  75% {
+    cursor: url("/assets/cursors/progress13.png"), progress;
+  }
+  81.25% {
+    cursor: url("/assets/cursors/progress14.png"), progress;
+  }
+  87.5% {
+    cursor: url("/assets/cursors/progress15.png"), progress;
+  }
+  93.75% {
+    cursor: url("/assets/cursors/progress16.png"), progress;
+  }
+  100% {
+    cursor: url("/assets/cursors/progress1.png"), progress;
+  }
+}
 body {
   margin: 0;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
