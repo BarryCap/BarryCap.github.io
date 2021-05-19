@@ -522,7 +522,7 @@ textarea::-webkit-scrollbar-thumb:active {
   padding-top: 16px;
   padding-bottom: 16px;
   min-height: 35px;
-  width: 784;
+  width: 784px;
   cursor: url(/assets/cursors/default.png) 0 0, auto;
 }
 .button:link {
