@@ -150,7 +150,7 @@ p {
   cursor: url(/assets/cursors/text.png) 4 12, text;
 }
 a {
-  color: #eff;
+  color: #cff;
   text-decoration: none;
   cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
 }
@@ -160,7 +160,7 @@ a:hover {
 }
 a:active {
   color: #0ff;
-  background-color: #0448;
+  background-color: #eff2;
 }
 a:focus {
   color: #8ee;
