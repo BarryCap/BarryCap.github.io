@@ -561,7 +561,6 @@ textarea::-webkit-scrollbar-thumb:active {
   color: #eee;
   background-color: #6668;
   font-size: 21px;
-  margin: 2px;
   padding: 4px;
   min-width: 40px;
   height: 40px;
