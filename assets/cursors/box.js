@@ -14,7 +14,7 @@
       y: mouseY(event)
     }
     follower.style.left = mouse.x + 'px'
-    follower.style.top = mouse.y + 'px';
+    follower.style.top = mouse.y + 'px'
   }
   timer = false
   window.onmousemove = init = (event) => {
