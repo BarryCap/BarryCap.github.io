@@ -150,6 +150,7 @@ p {
   cursor: url(/assets/cursors/text.png) 4 12, text;
 }
 a {
+  color: #fff;
   text-decoration: none;
   cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
 }
