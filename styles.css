@@ -513,6 +513,7 @@ textarea::-webkit-scrollbar-thumb:active {
   mix-blend-mode: difference;
 }
 .button-container {
+  color: #eee;
   font-size: 0;
   margin: 0;
   margin-left: calc(50% - 784px / 2);
