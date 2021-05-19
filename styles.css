@@ -396,6 +396,9 @@ textarea::-webkit-scrollbar-thumb:active {
   background-color: #fffa;
   border-radius: 2px;
 }
+::-webkit-scrollbar-corner {
+  background-color: #0000;
+}
 ::selection {
   color: #000;
   background: #fff8;
