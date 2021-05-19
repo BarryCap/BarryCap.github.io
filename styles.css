@@ -523,7 +523,6 @@ textarea::-webkit-scrollbar-thumb:active {
   cursor: url(/assets/cursors/default.png) 0 0, auto;
 }
 .button:link {
-  color: #eee;
   background-color: #6668;
   font-size: 21px;
   margin: 2px;
@@ -538,7 +537,6 @@ textarea::-webkit-scrollbar-thumb:active {
   outline: none;
 }
 .button:hover {
-  color: #eee;
   background-color: #8888;
   border-radius: 4px;
 }
