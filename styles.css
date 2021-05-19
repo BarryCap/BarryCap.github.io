@@ -150,7 +150,6 @@ p {
   cursor: url(/assets/cursors/text.png) 4 12, text;
 }
 a {
-  color: #cff;
   text-decoration: none;
   cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
 }
@@ -513,7 +512,6 @@ textarea::-webkit-scrollbar-thumb:active {
   mix-blend-mode: difference;
 }
 .button-container {
-  color: #eee;
   font-size: 0;
   margin: 0;
   margin-left: calc(50% - 784px / 2);
