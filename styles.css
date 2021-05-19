@@ -162,6 +162,7 @@ a:hover {
 a:active {
   color: #0ff;
   background-color: #eff2;
+  border-radius: 4px;
 }
 a:focus {
   color: #8ee;
