@@ -139,6 +139,7 @@ body {
   font-size: 0;
   text-align: center;
   cursor: url(/assets/cursors/default.png) 0 0, auto;
+  overflow: overlay;
   scrollbar-color: #0000 #8888;
 }
 div {
