@@ -620,7 +620,7 @@ textarea::-webkit-scrollbar-thumb:active {
 .button-return-container {
   position: fixed;
   top: 0;
-  right: 63.5px;
+  right: 64px;
 }
 .button-return {
   color: #eee;
@@ -636,6 +636,7 @@ textarea::-webkit-scrollbar-thumb:active {
   transition-duration: 0.2s;
   outline: none;
   position: absolute;
+  top: 16px;
 }
 .button-return:hover {
   color: #eee;
