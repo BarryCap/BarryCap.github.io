@@ -417,13 +417,13 @@ textarea::-webkit-scrollbar-thumb:active {
 /* Up */
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
   border-width: 8px;
-  border-color: #6668 #6668 #0000 #6668;
+  border-color: #0000 #0000 #6668 #0000;
 }
 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  border-color: #8888 #8888 #0000 #8888;
+  border-color: #0000 #0000 #8888 #0000;
 }
 ::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-  border-color: #fffa #fffa #0000 #fffa;
+  border-color: #0000 #0000 #fffa #0000;
 }
 /* Down */
 ::-webkit-scrollbar-button:single-button:vertical:increment {
@@ -461,16 +461,6 @@ textarea::-webkit-scrollbar-thumb:active {
 ::-webkit-scrollbar-corner {
   background-color: #0000;
 }
-::-webkit-scrollbar-corner {
-  border-width: 8px;
-  border-color: #0000 #0000 #0000 #6668;
-}
-::-webkit-scrollbar-corner:hover {
-  border-color: #0000 #0000 #0000 #8888;
-}
-::-webkit-scrollbar-corner:active {
-  border-color: #0000 #0000 #0000 #fffa;
-}
 ::selection {
   color: #000;
   background: #fff8;
@@ -481,7 +471,7 @@ textarea::-webkit-scrollbar-thumb:active {
 }
 .home {
   animation: home 4s linear infinite;
-  background-image: url(https://barrycap.com/assets/bg/home.svg);
+  background-image: url(/assets/bg/home.svg);
 }
 .realization {
   animation: realization 4s linear infinite;
