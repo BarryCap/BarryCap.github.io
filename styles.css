@@ -357,8 +357,8 @@ textarea::selection {
   color: #fffc;
 }
 textarea::-webkit-scrollbar {
-  height: 16px;
   width: 16px;
+  height: 16px;
   transition-duration: 0.2s;
 }
 textarea::-webkit-scrollbar-track {
@@ -377,8 +377,8 @@ textarea::-webkit-scrollbar-thumb:active {
   border-radius: 2px;
 }
 ::-webkit-scrollbar {
-  height: 16px;
   width: 16px;
+  height: 16px;
   transition-duration: 0.2s;
 }
 ::-webkit-scrollbar-track {
