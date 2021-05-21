@@ -540,6 +540,7 @@ textarea::-webkit-scrollbar-thumb:active {
   margin: 5vh 0 0;
   border: 0;
   border-radius: 0;
+  cursor: url(/assets/cursors/zoom-in.png) 5 5, zoom-in;
 }
 .img-big:hover {
   background-color: #0000;
