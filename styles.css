@@ -168,12 +168,18 @@ p {
 }
 h1 {
   margin: 0 0 32px 0;
+  cursor: url(/assets/cursors/text-big.png) 4 17, text;
+  font-weight: normal;
 }
 h2 {
   margin: 8px 0 20px 0;
+  cursor: url(/assets/cursors/text-big.png) 4 17, text;
+  font-weight: normal;
 }
 h3 {
   margin: 8px 0 8px 0;
+  cursor: url(/assets/cursors/text.png) 4 12, text;
+  font-weight: normal;
 }
 a {
   color: #fff;
