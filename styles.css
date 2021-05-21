@@ -524,14 +524,14 @@ textarea::-webkit-scrollbar-thumb:active {
   background-image: url(/assets/bg/random.svg);
 }
 .help {
-  animation: help 4s linear infinite;
   font-size: 21px;
   text-align: left;
   margin: -128px 128px 64px 64px;
 }
-.help-body {
+#help-body {
   cursor: url(/assets/cursors/default.png) 0 0, auto;
   background-image: url(/assets/bg/help.svg);
+  animation: help 4s linear infinite;
 }
 .four-o-four {
   animation: four-o-four 4s linear infinite;
