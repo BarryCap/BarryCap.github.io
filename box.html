@@ -40,7 +40,8 @@
       body {
         background-color: #000;
         margin: 0;
-        overflow: hidden
+        overflow: hidden;
+        cursor: none;
       }
       #pane {
         width: 800px;
@@ -52,7 +53,6 @@
         margin: auto;
         margin-top: calc(50vh - 400px);
         position: relative;
-        cursor: none;
       }
       #pane:hover {
         background-color: #220;
@@ -87,6 +87,9 @@
       }
       #follower {
         position: absolute;
+        top: -100%;
+        left: -100%;
+        transition-timing-function: 10ms;
       }
       #cursor {
         position: absolute;
@@ -95,8 +98,8 @@
         width: 40px;
         height: 40px;
         position: absolute;
-        top: Calc(50% - 16px);
-        left: Calc(50% - 20px);
+        top: calc(50% - 16px);
+        left: calc(10% - 20px);
         pointer-events: none;
       }
       #cursor/*:hover*/ {
