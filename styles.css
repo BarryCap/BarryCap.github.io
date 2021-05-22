@@ -183,21 +183,21 @@ h3 {
 }
 a {
   color: #fff;
-  text-decoration: none;
+  text-decoration-color: #0000;
   cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
   transition-duration: 0.2s;
 }
 a:hover {
   color: #8ee;
-  text-decoration: underline;
-}
-a:active {
-  color: #0ff;
   background-color: #eff2;
-  border-radius: 4px;
+  text-decoration-color: #8ee8;
+  border-radius: 5px;
 }
 a:focus {
   color: #8ee;
+  background-color: #eff4;
+  text-decoration-color: #8ee;
+  border-radius: 2px;
 }
 hr {
   border-color: #6668;
