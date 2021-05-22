@@ -82,6 +82,33 @@
     background-position: 0 32px;
   }
 }
+@keyframes button-hover {
+  0% {
+    background-color: #6668;
+    box-shadow: inset 0 0 #0000;
+  }
+  90% {
+    background-color: #6668;
+  }
+  100% {
+    background-color: #0000;
+    box-shadow: inset 0 40px #8888;
+  }
+}
+@keyframes button-active {
+  0% {
+    background-color: #8888;
+    box-shadow: inset 0 0;
+  }
+  90% {
+    color: #0000;
+    background-color: #8888;
+  }
+  100% {
+    background-color: #0000;
+    box-shadow: inset 0 40px #fffa;
+  }
+}
 @keyframes cursor-progress {
   6.25% {
     cursor: url("/assets/cursors/progress1.png"), progress;
@@ -651,16 +678,14 @@ textarea::-webkit-scrollbar-thumb:active {
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
-  outline: none;
 }
 .button:hover {
-  background-color: #8888;
   border-radius: 4px;
+  animation: button-hover ease-in-out 0.2s;
 }
 .button:active {
-  color: #fff;
-  background-color: #fffa;
   border-radius: 2px;
+  animation: button-active ease-in-out 0.2s;
 }
 .button:focus {
   color: #fff;
