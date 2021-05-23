@@ -681,11 +681,11 @@ textarea::-webkit-scrollbar-thumb:active {
 }
 .button:hover {
   border-radius: 4px;
-  animation: button-hover ease-in-out 0.2s;
+  animation: button-hover ease-in 0.2s;
 }
 .button:active {
   border-radius: 2px;
-  animation: button-active ease-in-out 0.1s;
+  animation: button-active ease-in 0.1s;
 }
 .button:focus {
   color: #fff;
