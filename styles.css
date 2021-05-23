@@ -743,10 +743,12 @@ textarea::-webkit-scrollbar-thumb:active {
 .button-help:hover {
   background-color: #8888;
   border-radius: 4px;
+  animation: button-hover ease-in 0.2s;
 }
 .button-help:active {
   background-color: #fffa;
   border-radius: 2px;
+  animation: button-active ease-in 50ms;
 }
 .button-help:focus {
   background-color: #fffa;
