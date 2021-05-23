@@ -109,6 +109,33 @@
     box-shadow: inset 0 40px #fffa;
   }
 }
+@keyframes button-help-hover {
+  0% {
+    background-color: #6668;
+    box-shadow: inset 0 0 #0000;
+  }
+  90% {
+    background-color: #6668;
+  }
+  100% {
+    background-color: #0000;
+    box-shadow: inset 40px 0 #8888;
+  }
+}
+@keyframes button-help-active {
+  0% {
+    background-color: #8888;
+    box-shadow: inset 0 0;
+  }
+  90% {
+    color: #0000;
+    background-color: #8888;
+  }
+  100% {
+    background-color: #0000;
+    box-shadow: inset -40px 0 #fffa;
+  }
+}
 @keyframes button-spot-hover {
   0% {
     background-color: #6668;
@@ -770,12 +797,12 @@ textarea::-webkit-scrollbar-thumb:active {
 .button-help:hover {
   background-color: #8888;
   border-radius: 4px;
-  animation: button-hover ease-in 0.2s;
+  animation: button-help-hover ease-in 0.2s;
 }
 .button-help:active {
   background-color: #fffa;
   border-radius: 2px;
-  animation: button-active ease-in 50ms;
+  animation: button-help-active ease-in 50ms;
 }
 .button-help:focus {
   background-color: #fffa;
