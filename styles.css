@@ -238,7 +238,6 @@ a {
   text-decoration-color: #0000;
   cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
   transition-duration: 0.2s;
-  z-index: 2;
 }
 a:hover {
   color: #8ee;
@@ -678,6 +677,7 @@ textarea::-webkit-scrollbar-thumb:active {
   padding-top: 50px;
   padding-bottom: 40px;
   min-height: 0;
+  z-index: -1;
 }
 .img-footer {
   border: none;
