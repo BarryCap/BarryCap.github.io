@@ -267,6 +267,7 @@ a {
   text-decoration-color: #0000;
   cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
   transition-duration: 0.2s;
+  z-index: 2;
 }
 a:hover {
   color: #8ee;
