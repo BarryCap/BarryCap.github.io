@@ -4,13 +4,12 @@
     body {
       background-color: #000;
       margin: 0;
+      overflow: hidden;
       transition-duration: 0.5s;
     }
-
     body:hover {
       background-color: #ccc;
     }
-
     .draggable {
       cursor: grab;
     }
@@ -21,10 +20,10 @@
       position: absolute;
       background-color: #fff;
       text-align: center;
-      border: 4px solid #000;
-      border-radius: 4px;
-      width: Calc(10vh - 4px);
-      height: Calc(10vh - 4px);
+      border: .45vh solid #000;
+      border-radius: .45vh;
+      width: Calc(10vh - .45vh);
+      height: Calc(10vh - .45vh);
       cursor: grab;
       z-index: 8;
     }
@@ -34,6 +33,9 @@
     #box:active {
       cursor: grabbing;
       background-color: #8888;
+    }
+    #container {
+      height: 100vh;
     }
   </style>
   <body>
