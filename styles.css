@@ -92,7 +92,7 @@
   }
   100% {
     background-color: #0000;
-    box-shadow: inset 0 40px #8888;
+    box-shadow: inset 0 -40px #8888;
   }
 }
 @keyframes button-active {
