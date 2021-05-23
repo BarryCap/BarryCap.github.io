@@ -685,7 +685,7 @@ textarea::-webkit-scrollbar-thumb:active {
 }
 .button:active {
   border-radius: 2px;
-  animation: button-active ease-in-out 0.2s;
+  animation: button-active ease-in-out 0.1s;
 }
 .button:focus {
   color: #fff;
