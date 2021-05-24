@@ -692,7 +692,6 @@ textarea::-webkit-scrollbar-thumb:active {
   z-index: -1;
 }
 .img-footer {
-  border: none;
   mix-blend-mode: difference;
 }
 .button-container {
