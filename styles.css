@@ -413,6 +413,7 @@ input::selection {
   color: #fffc;
 }
 .input-button {
+  margin-top: 0;
   margin-left: calc(80% - 4px);
   width: 20%;
   text-align: center;
@@ -422,16 +423,13 @@ textarea {
   color: #444;
   background-color: #fffc;
   height: 84px;
-  width: calc(100% - 8px);
-  font-size: 21px;
+  width: calc(100% - 12px);
   margin: 4px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
   border: none;
   border-radius: 5px;
   transition-duration: 0.2s;
   resize: none;
+  font-size: 21px;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   cursor: url(/assets/cursors/text.png) 4 11, text;
   scrollbar-color: #8888 #fff0;
