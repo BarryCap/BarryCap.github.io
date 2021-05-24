@@ -657,6 +657,7 @@ textarea::-webkit-scrollbar-thumb:active {
 }
 .img-big:hover {
   background-color: #0000;
+  box-shadow: 0 0 0 0;
 }
 .img-big:active {
   background-color: #0000;
