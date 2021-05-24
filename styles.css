@@ -573,7 +573,7 @@ textarea::-webkit-scrollbar-thumb:active {
 }
 .home {
   animation: home 4s linear infinite;
-  background-image: url(/assets/bg/home.svg);
+  background-image: url(assets/bg/home.svg);
 }
 .realization {
   animation: realization 4s linear infinite;
@@ -682,6 +682,7 @@ textarea::-webkit-scrollbar-thumb:active {
   margin: 0;
 }
 .footer {
+  mix-blend-mode: difference;
   border-radius: 0;
   text-align: center;
   position: relative;
@@ -690,9 +691,6 @@ textarea::-webkit-scrollbar-thumb:active {
   padding-bottom: 40px;
   min-height: 0;
   z-index: -1;
-}
-.img-footer {
-  mix-blend-mode: difference;
 }
 .button-container {
   font-size: 0;
