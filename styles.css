@@ -260,7 +260,6 @@ img {
   border-color: #0000;
   font-size: 21px;
   transition-duration: 0.2s;
-  outline: none;
   position: relative;
 }
 img:hover {
@@ -297,7 +296,6 @@ video {
   border-color: #0000;
   font-size: 21px;
   transition-duration: 0.2s;
-  outline: none;
 }
 video:hover {
   background-color: #8888;
@@ -314,7 +312,6 @@ audio {
   border-color: #0000;
   font-size: 21px;
   transition-duration: 0.2s;
-  outline: none;
 }
 audio:hover {
   background-color: #8888;
@@ -331,7 +328,6 @@ iframe {
   border-color: #0000;
   font-size: 21px;
   transition-duration: 0.2s;
-  outline: none;
 }
 iframe:hover {
   background-color: #8888;
@@ -357,7 +353,6 @@ form {
   display: inline-block;
   border-radius: 5px;
   transition-duration: 0.2s;
-  outline: none;
 }
 form:hover {
   background-color: #8888;
@@ -375,7 +370,6 @@ input {
   border: none;
   border-radius: 5px;
   transition-duration: 0.2s;
-  outline: none;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   cursor: url(/assets/cursors/text.png) 6 6, text;
 }
@@ -417,7 +411,6 @@ textarea {
   border: none;
   border-radius: 5px;
   transition-duration: 0.2s;
-  outline: none;
   resize: none;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   cursor: url(/assets/cursors/text.png) 4 11, text;
@@ -733,7 +726,6 @@ textarea::-webkit-scrollbar-thumb:active {
   display: block;
   border-radius: 5px;
   transition-duration: 0.2s;
-  outline: none;
   position: absolute;
   top: 16px;
 }
@@ -763,7 +755,6 @@ textarea::-webkit-scrollbar-thumb:active {
   display: block;
   border-radius: 5px;
   transition-duration: 0.2s;
-  outline: none;
   position: absolute;
   bottom: 16px;
 }
