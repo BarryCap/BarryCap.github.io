@@ -255,21 +255,25 @@ hr {
   border-color: #6668;
 }
 img {
-  border: solid 2px;
-  border-radius: 2px;
+  margin: 2px;
+  border-radius: 0.01px;
   border-color: #0000;
+  box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
   position: relative;
 }
 img:hover {
   background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
 }
 img:active {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 img:focus {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 img[title]:hover::after {
   content: attr(title);
@@ -291,52 +295,67 @@ img[title]:active::after {
   border-radius: 2px;
 }
 video {
-  border: solid 2px;
-  border-radius: 2px;
+  margin: 2px;
+  border-radius: 0.01px;
   border-color: #0000;
+  box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
+  position: relative;
 }
 video:hover {
   background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
 }
 video:active {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 video:focus {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 audio {
-  border: solid 2px;
-  border-radius: 2px;
+  margin: 2px;
+  border-radius: 0.01px;
   border-color: #0000;
+  box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
+  position: relative;
 }
 audio:hover {
   background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
 }
 audio:active {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 audio:focus {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 iframe {
-  border: solid 2px;
-  border-radius: 2px;
+  margin: 2px;
+  border-radius: 0.01px;
   border-color: #0000;
+  box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
+  position: relative;
 }
 iframe:hover {
   background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
 }
 iframe:active {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 iframe:focus {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 mark {
   background-color: #8888;
