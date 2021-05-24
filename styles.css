@@ -257,7 +257,7 @@ hr {
 img {
   margin: 2px;
   border-radius: 0.01px;
-  border-color: #0000;
+  border: none;
   box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
@@ -297,7 +297,7 @@ img[title]:active::after {
 video {
   margin: 2px;
   border-radius: 0.01px;
-  border-color: #0000;
+  border: none;
   box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
@@ -318,7 +318,7 @@ video:focus {
 audio {
   margin: 2px;
   border-radius: 0.01px;
-  border-color: #0000;
+  border: none;
   box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
@@ -339,7 +339,7 @@ audio:focus {
 iframe {
   margin: 2px;
   border-radius: 0.01px;
-  border-color: #0000;
+  border: none;
   box-shadow: 0 0 0 0 #0000;
   font-size: 21px;
   transition-duration: 0.2s;
