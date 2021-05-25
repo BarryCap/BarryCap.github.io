@@ -1,14 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.133339 22.225003" height="84.001068" width="352.00446">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.133339 22.225003" width="100%">
   <title>Barry Cap Smile</title>
-  <g transform="translate(-21.166669,-15.874999)">
-    <path id="smile"
-      style="fill:none;stroke:#fff;stroke-width:4.23333;stroke-linecap:round"
-      d="m 23.283334,23.283333 c 0,0 17.356657,12.700003 44.450003,12.700003 27.093081,0 44.450003,-12.700003 44.450003,-12.700003" />
-    <path id="eye1"
-      style="fill:none;stroke:#fff;stroke-width:6.35;stroke-linecap:round"
-      d="m 52.916668,19.049999 10e-7,1e-6" />
-    <path id="eye2"
-      style="fill:none;stroke:#fff;stroke-width:6.35;stroke-linecap:round"
-      d="m 82.550004,19.05 10e-7,1e-6" />
+  <g transform="translate(-21.166669,-15.874999)" style="fill:none;stroke:#fff;stroke-linecap:round">
+    <path id="smile" style="stroke-width:4.23333" d="m 23.283334,23.283333 c 0,0 17.356657,12.700003 44.450003,12.700003 27.093081,0 44.450003,-12.700003 44.450003,-12.700003"/>
+    <path id="eye1"  style="stroke-width:6.35"    d="m 52.916668,19.049999 10e-7,1e-6"/>
+    <path id="eye2"  style="stroke-width:6.35"    d="m 82.550004,19.05 10e-7,1e-6"/>
   </g>
 </svg>
