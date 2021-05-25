@@ -139,6 +139,12 @@ a:focus {
   text-decoration-color: #8ee;
   border-radius: 2px;
 }
+code {
+  background-color: #6668;
+  border-radius: 4px;
+  padding: 2px;
+  font-family: Consolas;
+}
 hr {
   border-color: #6668;
 }
