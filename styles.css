@@ -3,200 +3,88 @@
   src: url(/assets/font.ttf) format("truetype");
 }
 @keyframes home {
-  100% {
-    background-position: -32px 32px;
-  }
+  100% { background-position: -32px 32px; }
 }
 @keyframes realization {
-  100% {
-    background-position: 32px 0;
-  }
+  100% { background-position: 32px 0; }
 }
 @keyframes about {
-  100% {
-    background-position: 0 -32px;
-  }
+  100% { background-position: 0 -32px; }
 }
 @keyframes help {
-  100% {
-    background-position: 0px 32px;
-  }
+  100% { background-position: 0px 32px; }
 }
 @keyframes four-o-four {
-  100% {
-    background-position: 0 -256px;
-  }
+  100% { background-position: 0 -256px; }
 }
 @keyframes image {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 32px 0;
-  }
-  50% {
-    background-position: 32px 32px;
-  }
-  75% {
-    background-position: 0 32px;
-  }
-  100% {
-    background-position: 0 0;
-  }
+  0%   { background-position: 0 0; }
+  25%  { background-position: 32px 0; }
+  50%  { background-position: 32px 32px; }
+  75%  { background-position: 0 32px; }
+  100% { background-position: 0 0; }
 }
 @keyframes video {
-  100% {
-    background-position: 64px -64px;
-  }
+  100% { background-position: 64px -64px; }
 }
 @keyframes sound {
-  100% {
-    background-position: -32px 0;
-  }
+  100% { background-position: -32px 0; }
 }
 @keyframes game {
-  0% {
-    background-position: 0 32px;
-  }
-  50% {
-    background-position: -32px 0;
-  }
-  100% {
-    background-position: 0 -32px;
-  }
+  0%   { background-position: 0 32px; }
+  50%  { background-position: -32px 0; }
+  100% { background-position: 0 -32px; }
 }
 @keyframes page-img-big {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 8px 8px;
-  }
-  50% {
-    background-position: 0 16px;
-  }
-  75% {
-    background-position: 8px 24px;
-  }
-  100% {
-    background-position: 0 32px;
-  }
+  0%   { background-position: 0 0; }
+  25%  { background-position: 8px 8px; }
+  50%  { background-position: 0 16px; }
+  75%  { background-position: 8px 24px; }
+  100% { background-position: 0 32px; }
 }
 @keyframes button-hover {
-  0% {
-    background-color: #6668;
-    box-shadow: inset 0 0 #0000;
-  }
-  50% {
-    background-color: #6668;
-  }
-  100% {
-    background-color: #0000;
-    box-shadow: inset 0 36px #8888;
-  }
+  0%   { background-color: #6668; box-shadow: inset 0 0 #0000; }
+  50%  { background-color: #6668; }
+  100% { background-color: #0000; box-shadow: inset 0 36px #8888; }
 }
 @keyframes button-return-hover {
-  0% {
-    background-color: #6668;
-    box-shadow: inset 0 0 #0000;
-  }
-  50% {
-    background-color: #6668;
-  }
-  100% {
-    background-color: #0000;
-    box-shadow: inset 0 48px #8888;
-  }
+  0%   { background-color: #6668; box-shadow: inset 0 0 #0000; }
+  50%  { background-color: #6668; }
+  100% { background-color: #0000; box-shadow: inset 0 48px #8888; }
 }
 @keyframes button-help-hover {
-  0% {
-    background-color: #6668;
-    box-shadow: inset 0 0 #0000;
-  }
-  50% {
-    background-color: #6668;
-  }
-  100% {
-    background-color: #0000;
-    box-shadow: inset 0 -48px #8888;
-  }
+  0%   { background-color: #6668; box-shadow: inset 0 0 #0000; }
+  50%  { background-color: #6668; }
+  100% { background-color: #0000; box-shadow: inset 0 -48px #8888; }
 }
 @keyframes button-spot-hover {
-  0% {
-    background-color: #6668;
-    box-shadow: inset 0 0 #0000;
-  }
-  50% {
-    background-color: #6668;
-  }
-  100% {
-    background-color: #0000;
-    box-shadow: inset 36px 0 #8888;
-  }
+  0%   { background-color: #6668; box-shadow: inset 0 0 #0000; }
+  50%  { background-color: #6668; }
+  100% { background-color: #0000; box-shadow: inset 36px 0 #8888; }
 }
 @keyframes cursor-progress {
-  6.25% {
-    cursor: url("/assets/cursors/progress1.png"), progress;
-  }
-  12.5% {
-    cursor: url("/assets/cursors/progress2.png"), progress;
-  }
-  18.75% {
-    cursor: url("/assets/cursors/progress3.png"), progress;
-  }
-  25% {
-    cursor: url("/assets/cursors/progress4.png"), progress;
-  }
-  31.25% {
-    cursor: url("/assets/cursors/progress5.png"), progress;
-  }
-  37.5% {
-    cursor: url("/assets/cursors/progress6.png"), progress;
-  }
-  43.75% {
-    cursor: url("/assets/cursors/progress7.png"), progress;
-  }
-  50% {
-    cursor: url("/assets/cursors/progress8.png"), progress;
-  }
-  56.25% {
-    cursor: url("/assets/cursors/progress9.png"), progress;
-  }
-  66.66% {
-    cursor: url("/assets/cursors/progress10.png"), progress;
-  }
-  62.5% {
-    cursor: url("/assets/cursors/progress11.png"), progress;
-  }
-  68.75% {
-    cursor: url("/assets/cursors/progress12.png"), progress;
-  }
-  75% {
-    cursor: url("/assets/cursors/progress13.png"), progress;
-  }
-  81.25% {
-    cursor: url("/assets/cursors/progress14.png"), progress;
-  }
-  87.5% {
-    cursor: url("/assets/cursors/progress15.png"), progress;
-  }
-  93.75% {
-    cursor: url("/assets/cursors/progress16.png"), progress;
-  }
-  100% {
-    cursor: url("/assets/cursors/progress1.png"), progress;
-  }
+  6.25%  { cursor: url("/assets/cursors/progress1.png"), progress; }
+  12.5%  { cursor: url("/assets/cursors/progress2.png"), progress; }
+  18.75% { cursor: url("/assets/cursors/progress3.png"), progress; }
+  25%    { cursor: url("/assets/cursors/progress4.png"), progress; }
+  31.25% { cursor: url("/assets/cursors/progress5.png"), progress; }
+  37.5%  { cursor: url("/assets/cursors/progress6.png"), progress; }
+  43.75% { cursor: url("/assets/cursors/progress7.png"), progress; }
+  50%    { cursor: url("/assets/cursors/progress8.png"), progress; }
+  56.25% { cursor: url("/assets/cursors/progress9.png"), progress; }
+  66.66% { cursor: url("/assets/cursors/progress10.png"), progress; }
+  62.5%  { cursor: url("/assets/cursors/progress11.png"), progress; }
+  68.75% { cursor: url("/assets/cursors/progress12.png"), progress; }
+  75%    { cursor: url("/assets/cursors/progress13.png"), progress; }
+  81.25% { cursor: url("/assets/cursors/progress14.png"), progress; }
+  87.5%  { cursor: url("/assets/cursors/progress15.png"), progress; }
+  93.75% { cursor: url("/assets/cursors/progress16.png"), progress; }
+  100%   { cursor: url("/assets/cursors/progress1.png"), progress; }
 }
 @keyframes target {
-  0% {
-    background-color: #8ff4;
-  }
-  80% {
-    background-color: #cff4;
-  }
-  100% {
-    background-color: #0000;
-  }
+  0%   { background-color: #8ff4; }
+  80%  { background-color: #cff4; }
+  100% { background-color: #0000; }
 }
 body {
   margin: 0;
