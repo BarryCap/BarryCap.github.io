@@ -1,7 +1,7 @@
 # [BarryCap.com](https://barrycap.com)
 This is [Barry Cap](https://barrycap.com/about)'s website.<br/>
 I develop this site since 2020 using mostly HTML and CSS.<br/>
-Current version: `1.02.0685`.<br/>
+Current version: `1.02.0686`.<br/>
 <br/>
 ## Pages
 ### [Home](https://barrycap.com)
@@ -18,7 +18,7 @@ Current version: `1.02.0685`.<br/>
 &emsp;&emsp;My animated picture attempts.
 
 ### &emsp;[Sound](https://barrycap.com/realizations/sounds)
-&emsp;&emsp;Some sounds I experimented and music I composed
+&emsp;&emsp;Some sounds I experimented and music I composed.
 
 ### &emsp;[Game](https://barrycap.com/realizations/games)
 &emsp;&emsp;I always wanted to make games—here are some of it.
