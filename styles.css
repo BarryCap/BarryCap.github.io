@@ -146,6 +146,7 @@ code {
   font-family: Consolas;
 }
 hr {
+  border-top: none;
   border-color: #6668;
 }
 img {
