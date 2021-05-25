@@ -343,123 +343,6 @@ textarea:focus {
   background-color: #fff;
   border-radius: 2px;
 }
-textarea::selection {
-  background: #444c;
-  color: #fffc;
-}
-textarea::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-  transition-duration: 0.2s;
-}
-textarea::-webkit-scrollbar-track {
-  background: #fff0;
-}
-textarea::-webkit-scrollbar-thumb {
-  background-color: #6664;
-  border-radius: 5px;
-}
-textarea::-webkit-scrollbar-thumb:hover {
-  background-color: #4448;
-  border-radius: 4px;
-}
-textarea::-webkit-scrollbar-thumb:active {
-  background-color: #0008;
-  border-radius: 2px;
-}
-::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-  transition-duration: 0.2s;
-}
-::-webkit-scrollbar-track {
-  background: #0000;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #6668;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #8888;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:active {
-  background-color: #fffa;
-  border-radius: 2px;
-}
-::-webkit-scrollbar-button {
-  background-color: #6668;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-button:hover {
-  background-color: #8888;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-button:active {
-  background-color: #fffa;
-  border-radius: 2px;
-}
-::-webkit-scrollbar-button:single-button {
-  display: block;
-  border-style: solid;
-  height: 16px;
-  width: 16px;
-}
-/* Up */
-::-webkit-scrollbar-button:single-button:vertical:decrement {
-  border-width: 8px;
-  border-color: #0000 #0000 #6668 #0000;
-}
-::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  border-color: #0000 #0000 #8888 #0000;
-}
-::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-  border-color: #0000 #0000 #fffa #0000;
-}
-/* Down */
-::-webkit-scrollbar-button:single-button:vertical:increment {
-  border-width: 8px;
-  border-color: #6668 #0000 #0000 #0000;
-}
-::-webkit-scrollbar-button:single-button:vertical:increment:hover {
-  border-color: #8888 #0000 #0000 #0000;
-}
-::-webkit-scrollbar-button:single-button:vertical:increment:active {
-  border-color: #fffa #0000 #0000 #0000;
-}
-/* Left */
-::-webkit-scrollbar-button:single-button:horizontal:decrement {
-  border-width: 8px;
-  border-color: #0000 #6668 #0000 #0000;
-}
-::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
-  border-color: #0000 #8888 #0000 #0000;
-}
-::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
-  border-color: #0000 #fffa #0000 #0000;
-}
-/* Right */
-::-webkit-scrollbar-button:single-button:horizontal:increment {
-  border-width: 8px;
-  border-color: #0000 #0000 #0000 #6668;
-}
-::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
-  border-color: #0000 #0000 #0000 #8888;
-}
-::-webkit-scrollbar-button:single-button:horizontal:increment:active {
-  border-color: #0000 #0000 #0000 #fffa;
-}
-::-webkit-scrollbar-corner {
-  background-color: #0000;
-}
-::selection {
-  color: #000;
-  background: #fff8;
-}
-::-moz-selection {
-  color: #000;
-  background: #fff8;
-}
 :target {
   animation: target 5s ease-out normal;
   background-color: #0000;
@@ -728,3 +611,43 @@ textarea::-webkit-scrollbar-thumb:active {
   padding: 2px 4px;
   margin: 4px;
 }
+/* Pseudo-elements */
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: 0.2s; }
+  ::-webkit-scrollbar-track { background-color: #0000; }
+  ::-webkit-scrollbar-thumb        { background-color: #6668; border-radius: 5px; }
+  ::-webkit-scrollbar-thumb:hover  { background-color: #8888; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:active { background-color: #fffa; border-radius: 2px; }
+  /* Buttons */
+      ::-webkit-scrollbar-button        { background-color: #6668; border-radius: 5px; }
+      ::-webkit-scrollbar-button:hover  { background-color: #8888; border-radius: 4px; }
+      ::-webkit-scrollbar-button:active { background-color: #fffa; border-radius: 2px; }
+      ::-webkit-scrollbar-button:single-button { border-style: solid; display: block; height: 16px; width: 16px; }
+    /* ˄ up */
+      ::-webkit-scrollbar-button:single-button:vertical:decrement        { border-color: #0000 #0000 #6668 #0000; border-width: 8px; }
+      ::-webkit-scrollbar-button:single-button:vertical:decrement:hover  { border-color: #0000 #0000 #8888 #0000; }
+      ::-webkit-scrollbar-button:single-button:vertical:decrement:active { border-color: #0000 #0000 #fffa #0000; }
+    /* > right */
+      ::-webkit-scrollbar-button:single-button:horizontal:increment        { border-color: #0000 #0000 #0000 #6668; border-width: 8px; }
+      ::-webkit-scrollbar-button:single-button:horizontal:increment:hover  { border-color: #0000 #0000 #0000 #8888; }
+      ::-webkit-scrollbar-button:single-button:horizontal:increment:active { border-color: #0000 #0000 #0000 #fffa; }
+    /* ˅ down */
+      ::-webkit-scrollbar-button:single-button:vertical:increment        { border-color: #6668 #0000 #0000 #0000; border-width: 8px; }
+      ::-webkit-scrollbar-button:single-button:vertical:increment:hover  { border-color: #8888 #0000 #0000 #0000; }
+      ::-webkit-scrollbar-button:single-button:vertical:increment:active { border-color: #fffa #0000 #0000 #0000; }
+    /* < left */
+      ::-webkit-scrollbar-button:single-button:horizontal:decrement        { border-color: #0000 #6668 #0000 #0000; border-width: 8px; }
+      ::-webkit-scrollbar-button:single-button:horizontal:decrement:hover  { border-color: #0000 #8888 #0000 #0000; }
+      ::-webkit-scrollbar-button:single-button:horizontal:decrement:active { border-color: #0000 #fffa #0000 #0000; }
+  /* Corner */
+    ::-webkit-scrollbar-corner { background-color: #0000; }
+  /* Textarea */
+    textarea::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: 0.2s; }
+    textarea::-webkit-scrollbar-track { background-color: #fff0; }
+    textarea::-webkit-scrollbar-thumb        { background-color: #6664; border-radius: 5px; }
+    textarea::-webkit-scrollbar-thumb:hover  { background-color: #4448; border-radius: 4px; }
+    textarea::-webkit-scrollbar-thumb:active { background-color: #0008; border-radius: 2px; }
+  /* Text selection */
+    ::selection         { color: #000; background: #fff8; }
+    ::-moz-selection    { color: #000; background: #fff8; }
+    textarea::selection { color: #fffc; background: #444c; }
