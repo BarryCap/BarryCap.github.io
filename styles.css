@@ -424,6 +424,15 @@ textarea:focus {
   padding-bottom: 16px;
   width: 780px;
 }
+.sub-title {
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-bottom: 4px;
+  width: 780px;
+}
 .img-big {
   max-height: 80vh;
   max-width: 80%;
