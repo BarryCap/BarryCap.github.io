@@ -433,6 +433,7 @@ textarea:focus {
   width: 780px;
 }
 .sub-title {
+  font-size: 25px;
   border-radius: 5px;
   margin-top: 0;
   margin-right: auto;
