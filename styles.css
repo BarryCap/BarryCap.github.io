@@ -5,11 +5,14 @@
 @keyframes home {
   100% { background-position: -32px 32px; }
 }
-@keyframes realization {
+@keyframes real {
   100% { background-position: 32px 0; }
 }
 @keyframes about {
   100% { background-position: 0 -32px; }
+}
+@keyframes spot {
+  100% { background-position: 32px 32px; }
 }
 @keyframes help {
   100% { background-position: 0px 32px; }
@@ -362,7 +365,7 @@ textarea:focus {
   background-image: url(/assets/bg/home.svg);
 }
 .realization {
-  animation: realization 4s linear infinite;
+  animation: real 4s linear infinite;
   background-image: url(/assets/bg/realization.svg);
 }
 .about {
@@ -371,6 +374,10 @@ textarea:focus {
 }
 .random {
   background-image: url(/assets/bg/random.svg);
+}
+.spotlight {
+  animation: spot 4s linear infinite;
+  background-image: url(/assets/bg/spotlight.svg);
 }
 .help {
   font-size: 21px;
@@ -416,7 +423,7 @@ textarea:focus {
   background-image: url(/assets/bg/drawing.svg);
 }
 .imar {
-  animation: realization 4s linear infinite;
+  animation: real 4s linear infinite;
   background-image: url(/assets/bg/imar.svg);
 }
 .txt {
