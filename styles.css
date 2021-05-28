@@ -602,12 +602,12 @@ textarea:focus {
 }
 .button-spot:link {
   width: 110px;
-  height: 34px;
+  height: 64px;
   transform: rotate(270deg);
   border-radius: 5px 5px 0 0;
   position: absolute;
-  top: 569px;
-  left: calc(50% - 468px);
+  top: 555px;
+  left: calc(50% - 455px);
 }
 .button-spot:hover {
   border-radius: 4px 4px 0 0;
