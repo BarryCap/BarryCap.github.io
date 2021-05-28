@@ -449,6 +449,13 @@ textarea:focus {
   padding-bottom: 4px;
   width: 780px;
 }
+.spot-sub-txt {
+  font-size: 21px;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 32px;
+  width: 780px;
+}
 .img-big {
   max-height: 80vh;
   max-width: 80%;
