@@ -606,7 +606,7 @@ textarea:focus {
   transform: rotate(270deg);
   border-radius: 5px 5px 0 0;
   position: absolute;
-  top: 555px;
+  top: 554px;
   left: calc(50% - 455px);
 }
 .button-spot:hover {
