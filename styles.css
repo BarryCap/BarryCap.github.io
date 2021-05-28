@@ -466,6 +466,9 @@ textarea:focus {
   padding-bottom: 0;
   cursor: url(/assets/cursors/text-big.png) 4 17, text;
 }
+.img-spot {
+  z-index: 1;
+}
 .pxart {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
