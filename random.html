@@ -33,25 +33,18 @@
           </g>
         </svg>
       </a>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-      </script>
       <script>
-        $(function() {
-          var p = [0, 0], speed = 10, runMe = function () {
-            var angle = Math.random() * 2 * Math.PI;
-            var d = [
-              speed * Math.cos(angle), 
-              speed * Math.sin(angle)
-            ];
-            for (var i = 0; i < 2; i++)
-            p[i] = (p[i] + d[i] > 100 || p[i] + d[i] < 0) ? p[i] - d[i] : p[i] + d[i];
-            $('body').animate({
-              backgroundPositionX: p[0] + '%',
-              backgroundPositionY: p[1] + '%'
-            }, 5000, 'linear', runMe);
-          };
-          runMe();
-        });
+        const randomizer = function() {
+        let x, y
+        do {
+          x = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
+          y = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
+        } while (x === '0px' && y === '0px')
+        document.documentElement.style.setProperty('--random-position-x', x)
+        document.documentElement.style.setProperty('--random-position-y', y)
+        }
+        randomizer()
+        setInterval(randomizer, 1000)
       </script>
       <div class="txt"></p>
         <p class="button-container">

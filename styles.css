@@ -11,6 +11,9 @@
 @keyframes about {
   100% { background-position: 0 -32px; }
 }
+@keyframes random {
+  100% { background-position: var(--random-position-x) var(--random-position-y) ; }
+}
 @keyframes spot {
   100% { background-position: 32px 32px; }
 }
@@ -373,6 +376,7 @@ textarea:focus {
   background-image: url(/assets/bg/about.svg);
 }
 .random {
+  animation: random 1s ease-in-out infinite;
   background-image: url(/assets/bg/random.svg);
 }
 .spotlight {
