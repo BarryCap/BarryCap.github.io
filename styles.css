@@ -366,22 +366,27 @@ textarea:focus {
 .home {
   animation: home 4s linear infinite;
   background-image: url(/assets/bg/home.svg);
+  background-attachment: fixed;
 }
 .realization {
   animation: real 4s linear infinite;
   background-image: url(/assets/bg/realization.svg);
+  background-attachment: fixed;
 }
 .about {
   animation: about 4s linear infinite;
   background-image: url(/assets/bg/about.svg);
+  background-attachment: fixed;
 }
 .random {
   animation: random 1s ease-in-out infinite;
   background-image: url(/assets/bg/random.svg);
+  background-attachment: fixed;
 }
 .spotlight {
   animation: spot 4s linear infinite;
   background-image: url(/assets/bg/spotlight.svg);
+  background-attachment: fixed;
 }
 .help {
   font-size: 21px;
@@ -392,43 +397,52 @@ textarea:focus {
   cursor: url(/assets/cursors/default.png) 0 0, auto;
   background-image: url(/assets/bg/help.svg);
   animation: help 4s linear infinite;
+  background-attachment: fixed;
 }
 .four-o-four {
   animation: four-o-four 4s linear infinite;
   background-image: url(/assets/bg/404.svg);
+  background-attachment: fixed;
 }
 .image {
   animation: image 8s linear infinite;
   animation-timing-function: ease-in-out;
   background-image: url(/assets/bg/image.svg);
+  background-attachment: fixed;
 }
 .video {
   animation: video 4s linear infinite;
   background-image: url(/assets/bg/video.svg);
+  background-attachment: fixed;
 }
 .sound {
   animation: sound 4s linear infinite;
   background-image: url(/assets/bg/sound.svg);
+  background-attachment: fixed;
 }
 .game {
   animation: game 8s linear infinite;
   animation-timing-function: ease-in-out;
   background-image: url(/assets/bg/game.svg);
+  background-attachment: fixed;
 }
 .page-img-big {
   animation: page-img-big 4s linear infinite;
   animation-timing-function: ease-in-out;
   padding: 0;
   background-image: url(/assets/bg/img-big.svg);
+  background-attachment: fixed;
 }
 .drawing {
   animation: image 8s linear infinite;
   animation-timing-function: ease-out;
   background-image: url(/assets/bg/drawing.svg);
+  background-attachment: fixed;
 }
 .imar {
   animation: real 4s linear infinite;
   background-image: url(/assets/bg/imar.svg);
+  background-attachment: fixed;
 }
 .txt {
   font-size: 21px;
