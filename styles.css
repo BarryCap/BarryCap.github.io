@@ -616,7 +616,7 @@ textarea:focus {
 }
 .button-spot:hover {
   border-radius: 4px 4px 0 0;
-  animation: button-spot-hover ease-out 0.2s;
+  animation: button-spot-hover ease-in-out 0.2s;
 }
 .button-spot:active {
   border-radius: 2px 2px 0 0;
