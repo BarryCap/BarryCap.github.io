@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Future Menu Brown";
-  src: url(/assets/font.ttf) format("truetype");
+  src: url(/assets/fonts/fmb.ttf) format("truetype");
 }
 @keyframes home {
   100% { background-position: -32px 32px; }
@@ -12,7 +12,7 @@
   100% { background-position: 0 -32px; }
 }
 @keyframes random {
-  100% { background-position: var(--random-position-x) var(--random-position-y) ; }
+  100% { background-position: var(--random-position-x) var(--random-position-y); }
 }
 @keyframes spot {
   100% { background-position: 32px 32px; }
