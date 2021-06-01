@@ -388,7 +388,7 @@ textarea:focus {
   background-image: url(/assets/bg/spotlight.svg);
   background-attachment: fixed;
 }
-.help {
+.doc {
   font-size: 21px;
   text-align: left;
   margin: -128px 128px 64px 64px;
@@ -396,6 +396,12 @@ textarea:focus {
 #help-body {
   cursor: url(/assets/cursors/default.png) 0 0, auto;
   background-image: url(/assets/bg/help.svg);
+  animation: help 4s linear infinite;
+  background-attachment: fixed;
+}
+#vhist-body {
+  cursor: url(/assets/cursors/default.png) 0 0, auto;
+  background-image: url(/assets/bg/vhist.svg);
   animation: help 4s linear infinite;
   background-attachment: fixed;
 }
