@@ -15,7 +15,7 @@
    sodipodi:docname="bg_grn_wav.svg"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        empcolor="#c8c8c8"
        empopacity="0.16078431"
-       empspacing="8" />
+       empspacing="8"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -69,6 +69,6 @@
        style="fill:#00ff00;fill-opacity:0.25;stroke:none;stroke-width:0.999995"
        d="M 8,0 C 3.5817219,4.9705618e-7 5.5228445e-8,3.5817223 0,8 v 16 c 0,-4.418279 3.5817199,-8.000001 8,-8 4.371416,-5.01e-4 7.933858,3.507993 8,7.878906 h 0.002 c -0.001,0.04036 -0.0017,0.08073 -0.002,0.121094 0,4.418278 3.581722,8 8,8 4.418278,0 8,-3.581722 8,-8 V 8.1210938 C 31.933858,12.492007 28.371416,16.000501 24,16 19.58172,16.000001 16,12.418279 16,8 16,3.5817223 12.418278,4.9705618e-7 8,0 Z"
        transform="scale(0.26458333)"
-       sodipodi:nodetypes="sccccccscccss" />
+       sodipodi:nodetypes="sccccccscccss"/>
   </g>
 </svg>

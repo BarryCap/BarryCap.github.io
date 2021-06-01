@@ -15,7 +15,7 @@
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
    sodipodi:docname="bg_yel_dia_du.svg">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        empcolor="#c8c8c8"
        empopacity="0.16078431"
-       empspacing="8" />
+       empspacing="8"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -67,14 +67,14 @@
     <path
        style="fill:#ffff00;fill-opacity:0.25;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 9.9999999e-8,6.3499999 6.35,0 h 2.1166667 v 2.1166666 l -6.35,6.3500003 H 9.9999999e-8 Z"
-       id="path845" />
+       id="path845"/>
     <path
        style="fill:#ffff00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.25"
        d="M 0,2.1166666 V 0 h 2.1166666 z"
-       id="path847" />
+       id="path847"/>
     <path
        style="fill:#ffff00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.25"
        d="M 6.3499999,8.4666666 8.4666666,6.3499999 v 2.1166667 z"
-       id="path849" />
+       id="path849"/>
   </g>
 </svg>

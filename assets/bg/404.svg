@@ -15,7 +15,7 @@
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
    sodipodi:docname="bg_blu_sqr_chk.svg">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        empcolor="#c8c8c8"
        empopacity="0.16078431"
-       empspacing="8" />
+       empspacing="8"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -67,10 +67,10 @@
     <path
        id="rect987"
        style="fill:#0000ff;fill-opacity:0.25;stroke-width:0.264583"
-       d="M 0,0 H 4.2333331 V 4.2333331 H 0 Z" />
+       d="M 0,0 H 4.2333331 V 4.2333331 H 0 Z"/>
     <path
        id="rect987-3"
        style="fill:#0000ff;fill-opacity:0.25;stroke-width:0.264583"
-       d="M 4.2333333,4.2333333 H 8.4666664 V 8.4666664 H 4.2333333 Z" />
+       d="M 4.2333333,4.2333333 H 8.4666664 V 8.4666664 H 4.2333333 Z"/>
   </g>
 </svg>

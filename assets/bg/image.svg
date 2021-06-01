@@ -15,7 +15,7 @@
    sodipodi:docname="bg_cya_sqr_ron.svg"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        empcolor="#c8c8c8"
        empopacity="0.16078431"
-       empspacing="8" />
+       empspacing="8"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -71,6 +71,6 @@
        height="7.9375"
        x="0.26458332"
        y="0.26458332"
-       ry="1.8520833" />
+       ry="1.8520833"/>
   </g>
 </svg>

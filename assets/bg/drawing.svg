@@ -15,7 +15,7 @@
    sodipodi:docname="bg_red_brx_one.svg"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        empcolor="#c8c8c8"
        empopacity="0.16078431"
-       empspacing="8" />
+       empspacing="8"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -68,6 +68,6 @@
        id="rect898"
        style="fill:#ff0000;fill-opacity:0.25;stroke-width:0.874998"
        d="M 0 0 L 0 7 L 7 7 L 7 0 L 0 0 z M 8 0 L 8 7 L 15 7 L 15 0 L 8 0 z M 16 0 L 16 7 L 23 7 L 23 0 L 16 0 z M 24 0 L 24 7 L 31 7 L 31 0 L 24 0 z M 0 8 L 0 15 L 1 15 L 1 8 L 0 8 z M 2 8 L 2 15 L 9 15 L 9 8 L 2 8 z M 10 8 L 10 15 L 17 15 L 17 8 L 10 8 z M 18 8 L 18 15 L 25 15 L 25 8 L 18 8 z M 26 8 L 26 15 L 32 15 L 32 8 L 26 8 z M 0 16 L 0 23 L 3 23 L 3 16 L 0 16 z M 4 16 L 4 23 L 11 23 L 11 16 L 4 16 z M 12 16 L 12 23 L 19 23 L 19 16 L 12 16 z M 20 16 L 20 23 L 27 23 L 27 16 L 20 16 z M 28 16 L 28 23 L 32 23 L 32 16 L 28 16 z M 0 24 L 0 31 L 5 31 L 5 24 L 0 24 z M 6 24 L 6 31 L 13 31 L 13 24 L 6 24 z M 14 24 L 14 31 L 21 31 L 21 24 L 14 24 z M 22 24 L 22 31 L 29 31 L 29 24 L 22 24 z M 30 24 L 30 31 L 32 31 L 32 24 L 30 24 z "
-       transform="scale(0.26458333)" />
+       transform="scale(0.26458333)"/>
   </g>
 </svg>

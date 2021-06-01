@@ -15,7 +15,7 @@
    sodipodi:docname="help.svg"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        empcolor="#c8c8c8"
        empopacity="0.16078431"
-       empspacing="8" />
+       empspacing="8"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -68,17 +68,17 @@
        id="path832"
        style="fill:#00ffff;fill-opacity:0.25098;stroke-width:30.857"
        d="M 16 0 A 15.999999 15.999999 0 0 0 0 16 A 15.999999 15.999999 0 0 0 16 32 A 15.999999 15.999999 0 0 0 32 16 A 15.999999 15.999999 0 0 0 16 0 z M 16 2 A 14 14 0 0 1 30 16 A 14 14 0 0 1 16 30 A 14 14 0 0 1 2 16 A 14 14 0 0 1 16 2 z "
-       transform="scale(0.26458333)" />
+       transform="scale(0.26458333)"/>
     <path
        id="path839"
        style="fill:#00ffff;fill-opacity:0.25098;stroke-width:30.857"
        d="M 16 4 A 7.9999994 7.9999994 0 0 0 8 12 L 10 12 A 5.9999997 5.9999997 0 0 1 16 6 A 5.9999997 5.9999997 0 0 1 22 12 A 5.9999997 5.9999997 0 0 1 16 18 L 15 18 L 15 24 L 17 24 L 17 19.9375 A 7.9999994 7.9999994 0 0 0 24 12 A 7.9999994 7.9999994 0 0 0 16 4 z "
-       transform="scale(0.26458333)" />
+       transform="scale(0.26458333)"/>
     <circle
        style="fill:#00ffff;fill-opacity:0.25098;stroke-width:8.16425"
        id="path859"
        cx="4.2333331"
        cy="7.1437497"
-       r="0.52916664" />
+       r="0.52916664"/>
   </g>
 </svg>

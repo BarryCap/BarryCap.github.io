@@ -15,7 +15,7 @@
    height="32"
    width="32">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        color="#c8c8c8"
        id="grid18"
-       type="xygrid" />
+       type="xygrid"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -67,18 +67,18 @@
     <path
        id="path1169"
        d="M 2.1166666,0 4.2333333,2.1166666 2.1166666,4.2333333 0,2.1166666 Z"
-       style="fill:#8000ff;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.25" />
+       style="fill:#8000ff;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.25"/>
     <path
        id="path1169-5"
        d="M 6.3499999,3.3333332e-8 8.4666666,2.1166666 6.3499999,4.2333333 4.2333333,2.1166666 Z"
-       style="fill:#8000ff;fill-opacity:0.25;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#8000ff;fill-opacity:0.25;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
     <path
        id="path1169-3"
        d="M 2.1166666,4.2333334 4.2333333,6.35 2.1166666,8.4666667 0,6.35 Z"
-       style="fill:#8000ff;fill-opacity:0.25;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#8000ff;fill-opacity:0.25;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
     <path
        id="path1169-56"
        d="M 6.3499999,4.2333334 8.4666666,6.35 6.3499999,8.4666667 4.2333333,6.35 Z"
-       style="fill:#8000ff;fill-opacity:0.25;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#8000ff;fill-opacity:0.25;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
   </g>
 </svg>

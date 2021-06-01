@@ -15,7 +15,7 @@
    sodipodi:docname="spotlight.svg"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        empcolor="#c8c8c8"
        empopacity="0.16078431"
-       empspacing="8" />
+       empspacing="8"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -68,6 +68,6 @@
        id="rect832"
        style="fill:#8000ff;fill-opacity:0.25098;stroke-width:30.857"
        d="M 15 0 L 15 5 L 14 5 C 12.892 5 12 5.892 12 7 L 12 12 L 0 24 L 12 24 C 12 26.209139 13.790861 28 16 28 C 18.209139 28 20 26.209139 20 24 L 32 24 L 20 12 L 20 7 C 20 5.892 19.108 5 18 5 L 17 5 L 17 0 L 15 0 z M 10 27 L 8 29 L 9 30 L 11 28 L 10 27 z M 22 27 L 21 28 L 23 30 L 24 29 L 22 27 z M 15 29 L 15 32 L 17 32 L 17 29 L 15 29 z "
-       transform="scale(0.26458333)" />
+       transform="scale(0.26458333)"/>
   </g>
 </svg>

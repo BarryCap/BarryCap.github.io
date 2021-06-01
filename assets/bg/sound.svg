@@ -15,7 +15,7 @@
    height="32"
    width="32">
   <defs
-     id="defs10" />
+     id="defs10"/>
   <sodipodi:namedview
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
@@ -46,7 +46,7 @@
        opacity="0.07843137"
        color="#c8c8c8"
        id="grid18"
-       type="xygrid" />
+       type="xygrid"/>
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -55,7 +55,7 @@
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
@@ -68,6 +68,6 @@
        transform="scale(0.26458333)"
        d="M 0 1 L 0 15 L 12 15 C 13.662 15 15 13.662 15 12 L 15 4 C 15 2.3380002 13.662 1 12 1 L 0 1 z M 20 1 C 18.338 1 17 2.3380002 17 4 L 17 12 C 17 13.662 18.338 15 20 15 L 32 15 L 32 1 L 20 1 z M 4 17 C 2.338 17 1 18.338 1 20 L 1 28 C 1 29.662 2.338 31 4 31 L 28 31 C 29.662 31 31 29.662 31 28 L 31 20 C 31 18.338 29.662 17 28 17 L 4 17 z "
        style="fill:#ff8000;fill-opacity:0.25;stroke:none;stroke-width:0.999999"
-       id="rect1800" />
+       id="rect1800"/>
   </g>
 </svg>
