@@ -155,6 +155,7 @@ a:focus {
 }
 span {
   cursor: url(../assets/cursors/help.png) 0 10, help;
+  mix-blend-mode: difference;
 }
 code {
   background-color: #6668;
