@@ -3,7 +3,7 @@
   src: url(../assets/fonts/fmb.ttf) format("truetype");
 }
 @keyframes home-intro {
-  0% { opacity: 0; transform: rotate3d(1, 1, 0, 30deg); overflow-x: hidden; }
+  0%  { opacity: 0; transform: rotate3d(1, 1, 0, 30deg); overflow-x: hidden; }
   99% { overflow-x: hidden; }
 }
 @keyframes home {
