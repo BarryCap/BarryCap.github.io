@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Future Menu Brown";
-  src: url(/assets/fonts/fmb.ttf) format("truetype");
+  src: url(../assets/fonts/fmb.ttf) format("truetype");
 }
 @keyframes home-intro {
   0% { opacity: 0; transform: rotate3d(1, 1, 0, 30deg); overflow-x: hidden; }
@@ -108,7 +108,7 @@ body {
   color: #ccc;
   font-size: 0;
   text-align: center;
-  cursor: url(/assets/cursors/default.png) 0 0, auto;
+  cursor: url(../assets/cursors/default.png) 0 0, auto;
   overflow: overlay;
   scrollbar-color: #0000 #8888;
 }
@@ -118,27 +118,27 @@ div {
 }
 p {
   margin: 0;
-  cursor: url(/assets/cursors/text.png) 4 12, text;
+  cursor: url(../assets/cursors/text.png) 4 12, text;
 }
 h1 {
   margin: 0 0 32px 0;
-  cursor: url(/assets/cursors/text-big.png) 4 17, text;
+  cursor: url(../assets/cursors/text-big.png) 4 17, text;
   font-weight: normal;
 }
 h2 {
   margin: 8px 0 20px 0;
-  cursor: url(/assets/cursors/text-big.png) 4 17, text;
+  cursor: url(../assets/cursors/text-big.png) 4 17, text;
   font-weight: normal;
 }
 h3 {
   margin: 8px 0 8px 0;
-  cursor: url(/assets/cursors/text.png) 4 12, text;
+  cursor: url(../assets/cursors/text.png) 4 12, text;
   font-weight: normal;
 }
 a {
   color: #fff;
   text-decoration-color: #0000;
-  cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
+  cursor: url(../assets/cursors/pointer.png) 0 0, pointer;
   transition-duration: 0.2s;
 }
 a:hover {
@@ -154,7 +154,7 @@ a:focus {
   border-radius: 2px;
 }
 span {
-  cursor: url(/assets/cursors/help.png) 0 10, help;
+  cursor: url(../assets/cursors/help.png) 0 10, help;
 }
 code {
   background-color: #6668;
@@ -303,7 +303,7 @@ input {
   border-radius: 5px;
   transition-duration: 0.2s;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
-  cursor: url(/assets/cursors/text.png) 6 6, text;
+  cursor: url(../assets/cursors/text.png) 6 6, text;
 }
 input:hover {
   color: #222;
@@ -329,7 +329,7 @@ input::selection {
   margin-left: calc(80% - 4px);
   width: 20%;
   text-align: center;
-  cursor: url(/assets/cursors/pointer.png) 0 0, pointer;
+  cursor: url(../assets/cursors/pointer.png) 0 0, pointer;
 }
 textarea {
   color: #444;
@@ -343,7 +343,7 @@ textarea {
   resize: none;
   font-size: 21px;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
-  cursor: url(/assets/cursors/text.png) 4 11, text;
+  cursor: url(../assets/cursors/text.png) 4 11, text;
   scrollbar-color: #8888 #fff0;
 }
 textarea:hover {
@@ -385,22 +385,22 @@ textarea:focus {
 }
 .realization {
   animation: real 4s linear infinite;
-  background-image: url(/assets/bg/realization.svg);
+  background-image: url(../assets/bg/realization.svg);
   background-attachment: fixed;
 }
 .about {
   animation: about 4s linear infinite;
-  background-image: url(/assets/bg/about.svg);
+  background-image: url(../assets/bg/about.svg);
   background-attachment: fixed;
 }
 .random {
   animation: random 1s ease-in-out infinite;
-  background-image: url(/assets/bg/random.svg);
+  background-image: url(../assets/bg/random.svg);
   background-attachment: fixed;
 }
 .spotlight {
   animation: spot 4s linear infinite;
-  background-image: url(/assets/bg/spotlight.svg);
+  background-image: url(../assets/bg/spotlight.svg);
   background-attachment: fixed;
 }
 .doc {
@@ -409,60 +409,60 @@ textarea:focus {
   margin: -128px 128px 64px 64px;
 }
 #help-body {
-  cursor: url(/assets/cursors/default.png) 0 0, auto;
-  background-image: url(/assets/bg/help.svg);
+  cursor: url(../assets/cursors/default.png) 0 0, auto;
+  background-image: url(../assets/bg/help.svg);
   animation: help 4s linear infinite;
   background-attachment: fixed;
 }
 #vhist-body {
-  cursor: url(/assets/cursors/default.png) 0 0, auto;
-  background-image: url(/assets/bg/vhist.svg);
+  cursor: url(../assets/cursors/default.png) 0 0, auto;
+  background-image: url(../assets/bg/vhist.svg);
   animation: help 4s linear infinite;
   background-attachment: fixed;
 }
 .four-o-four {
   animation: four-o-four 4s linear infinite;
-  background-image: url(/assets/bg/404.svg);
+  background-image: url(../assets/bg/404.svg);
   background-attachment: fixed;
 }
 .image {
   animation: image 8s linear infinite;
   animation-timing-function: ease-in-out;
-  background-image: url(/assets/bg/image.svg);
+  background-image: url(../assets/bg/image.svg);
   background-attachment: fixed;
 }
 .video {
   animation: video 4s linear infinite;
-  background-image: url(/assets/bg/video.svg);
+  background-image: url(../assets/bg/video.svg);
   background-attachment: fixed;
 }
 .sound {
   animation: sound 4s linear infinite;
-  background-image: url(/assets/bg/sound.svg);
+  background-image: url(../assets/bg/sound.svg);
   background-attachment: fixed;
 }
 .game {
   animation: game 8s linear infinite;
   animation-timing-function: ease-in-out;
-  background-image: url(/assets/bg/game.svg);
+  background-image: url(../assets/bg/game.svg);
   background-attachment: fixed;
 }
 .page-img-big {
   animation: page-img-big 4s linear infinite;
   animation-timing-function: ease-in-out;
   padding: 0;
-  background-image: url(/assets/bg/img-big.svg);
+  background-image: url(../assets/bg/img-big.svg);
   background-attachment: fixed;
 }
 .drawing {
   animation: image 8s linear infinite;
   animation-timing-function: ease-out;
-  background-image: url(/assets/bg/drawing.svg);
+  background-image: url(../assets/bg/drawing.svg);
   background-attachment: fixed;
 }
 .imar {
   animation: real 4s linear infinite;
-  background-image: url(/assets/bg/imar.svg);
+  background-image: url(../assets/bg/imar.svg);
   background-attachment: fixed;
 }
 .txt {
@@ -501,7 +501,7 @@ textarea:focus {
   margin: 5vh 0 0;
   border: 0;
   border-radius: 0;
-  cursor: url(/assets/cursors/zoom-in.png) 5 5, zoom-in;
+  cursor: url(../assets/cursors/zoom-in.png) 5 5, zoom-in;
 }
 .img-big:hover {
   background-color: #0000;
@@ -518,7 +518,7 @@ textarea:focus {
   color: #fff;
   font-size: 32px;
   padding-bottom: 0;
-  cursor: url(/assets/cursors/text-big.png) 4 17, text;
+  cursor: url(../assets/cursors/text-big.png) 4 17, text;
 }
 .img-spot {
   z-index: 1;
@@ -553,7 +553,7 @@ textarea:focus {
   padding-bottom: 16px;
   min-height: 35px;
   width: 784px;
-  cursor: url(/assets/cursors/default.png) 0 0, auto;
+  cursor: url(../assets/cursors/default.png) 0 0, auto;
 }
 .button:link {
   background-color: #6668;

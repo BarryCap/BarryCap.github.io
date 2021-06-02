@@ -1,7 +1,7 @@
 # [BarryCap.com](https://barrycap.com)
 This is [Barry Cap](https://barrycap.com/about)'s website.<br>
 I develop this site since 2020 using mostly HTML and CSS.<br>
-Current version: `1.4+743`.<br>
+Current version: `1.4+744`.<br>
 <br>
 
 ## Pages
@@ -39,4 +39,4 @@ Current version: `1.4+743`.<br>
 ---
 <br>
 
-_Enjoy pages all hand made!_ ㋡
+_Enjoy pages all hand made!_ &#13025;
