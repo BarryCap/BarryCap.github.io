@@ -1,8 +1,8 @@
 # [BarryCap.com](https://barrycap.com)
-This is [Barry Cap](https://barrycap.com/about)'s website.<br/>
-I develop this site since 2020 using mostly HTML and CSS.<br/>
-Current version: `1.4+740`.<br/>
-<br/>
+This is [Barry Cap](https://barrycap.com/about)'s website.<br>
+I develop this site since 2020 using mostly HTML and CSS.<br>
+Current version: `1.4+742`.<br>
+<br>
 
 ## Pages
 ### [Home](https://barrycap.com)
@@ -37,6 +37,6 @@ Current version: `1.4+740`.<br/>
 &emsp;This part gathers all the spolighted pictures. The aim of the Spolight is to bring one picture on top of the site, to make it more alive.
 
 ---
-<br/>
+<br>
 
 _Enjoy pages all hand made!_ ㋡
