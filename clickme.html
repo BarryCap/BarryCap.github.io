@@ -6,76 +6,24 @@
     <style>
       @font-face {
         font-family: 'Future Menu Brown';
-        src: url('https://barrycap.com/assets/font.ttf') format('truetype');
+        src: url('https://barrycap.com/assets/fonts/fmb.ttf') format('truetype');
       }
       @keyframes brain {
-        25% {
-          background-color: #0f0;
-          left: calc(75vw - 10% / 2);
-          top: calc(75vh - 5% / 2);
-        }
-        50% {
-          background-color: #00f;
-          left: calc(75vw - 10% / 2);
-          top: calc(25vh - 5% / 2);
-        }
-        75% {
-          background-color: #0f0;
-          left: calc(25vw - 10% / 2);
-          top: calc(25vh - 5% / 2);
-        }
-        100% {
-          background-color: #f00;
-          left: calc(25vw - 10% / 2);
-          top: calc(75vh - 5% / 2);
-        }
+        25%  { background-color: #0f0; left: calc(75vw - 10% / 2); top: calc(75vh - 5% / 2); }
+        50%  { background-color: #00f; left: calc(75vw - 10% / 2); top: calc(25vh - 5% / 2); }
+        75%  { background-color: #0f0; left: calc(25vw - 10% / 2); top: calc(25vh - 5% / 2); }
+        100% { background-color: #f00; left: calc(25vw - 10% / 2); top: calc(75vh - 5% / 2); }
       }
       @keyframes win {
-        0% {
-          background-color: #fff;
-          left: calc(50vw - 18% / 2);
-          top: calc(50vh - 10% / 2);
-        }
-        12.5% {
-          background-color: #ff0;
-          left: calc(49.9vw - 18% / 2);
-          top: calc(50.1vh - 10% / 2);
-        }
-        25% {
-          background-color: #f00;
-          left: calc(50.3vw - 18% / 2);
-          top: calc(49.8vh - 10% / 2);
-        }
-        27.5% {
-          background-color: #f0f;
-          left: calc(50.5vw - 18% / 2);
-          top: calc(50.2vh - 10% / 2);
-        }
-        50% {
-          background-color: #00f;
-          left: calc(49.4vw - 18% / 2);
-          top: calc(50.05vh - 10% / 2);
-        }
-        62.5% {
-          background-color: #0ff;
-          left: calc(49.7vw - 18% / 2);
-          top: calc(49.6vh - 10% / 2);
-        }
-        75% {
-          background-color: #0f0;
-          left: calc(50.7vw - 18% / 2);
-          top: calc(49.2vh - 10% / 2);
-        }
-        87.5% {
-          background-color: #ff0;
-          left: calc(49.6vw - 18% / 2);
-          top: calc(49.5vh - 10% / 2);
-        }
-        100% {
-          background-color: #fff;
-          left: calc(50vw - 18% / 2);
-          top: calc(50vh - 10% / 2);
-        }
+        0%    { background-color: #fff; left: calc(50vw   - 18% / 2); top: calc(50vh    - 10% / 2); }
+        12.5% { background-color: #ff0; left: calc(49.9vw - 18% / 2); top: calc(50.1vh  - 10% / 2); }
+        25%   { background-color: #f00; left: calc(50.3vw - 18% / 2); top: calc(49.8vh  - 10% / 2); }
+        27.5% { background-color: #f0f; left: calc(50.5vw - 18% / 2); top: calc(50.2vh  - 10% / 2); }
+        50%   { background-color: #00f; left: calc(49.4vw - 18% / 2); top: calc(50.05vh - 10% / 2); }
+        62.5% { background-color: #0ff; left: calc(49.7vw - 18% / 2); top: calc(49.6vh  - 10% / 2); }
+        75%   { background-color: #0f0; left: calc(50.7vw - 18% / 2); top: calc(49.2vh  - 10% / 2); }
+        87.5% { background-color: #ff0; left: calc(49.6vw - 18% / 2); top: calc(49.5vh  - 10% / 2); }
+        100%  { background-color: #fff; left: calc(50vw   - 18% / 2); top: calc(50vh    - 10% / 2); }
       }
       html {
         cursor: none;
@@ -85,7 +33,7 @@
         color: #fff;
         background-color: #000;
         text-align: center;
-        overflow: overlay;
+        overflow: hidden;
         margin: 0;
       }
       a {
@@ -195,29 +143,6 @@
         animation-delay: 1s;
       }
       .win::selection {
-        background-color: #0000;
-      }
-      ::-webkit-scrollbar {
-        width: 2vh;
-        height: 2vh;
-        transition-duration: 0.2s;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0000;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: #6668;
-        border-radius: 1vh;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background-color: #8888;
-        border-radius: 0.5vh;
-      }
-      ::-webkit-scrollbar-thumb:active {
-        background-color: #fffa;
-        border-radius: 0.25vh;
-      }
-      ::-webkit-scrollbar-corner {
         background-color: #0000;
       }
     </style>
