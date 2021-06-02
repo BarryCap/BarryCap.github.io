@@ -2,8 +2,9 @@
   font-family: "Future Menu Brown";
   src: url(/assets/fonts/fmb.ttf) format("truetype");
 }
-@keyframes body-intro {
-  0% { opacity: 0; transform: rotate3d(1, 1, 0, 30deg); }
+@keyframes home-intro {
+  0% { opacity: 0; transform: rotate3d(1, 1, 0, 30deg); overflow-x: hidden; }
+  99% { overflow-x: hidden; }
 }
 @keyframes home {
   100% { background-position: -32px 32px; }
@@ -374,9 +375,9 @@ textarea:focus {
 .m-b-16 { margin-bottom: 16px; }
 .m-l-16 { margin-left:   16px; }
 .home {
-  animation: home 4s linear infinite;
-  animation: body-intro 1s ease-out normal;
-  background-image: url(/assets/bg/home.svg);
+  animation: home 4s linear infinite, home-intro 1s ease-out normal;
+  transition-duration: 0.2s;
+  background-image: url(assets/bg/home.svg);
   background-attachment: fixed;
 }
 .realization {
@@ -523,6 +524,7 @@ textarea:focus {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 .header {
   border: none;
