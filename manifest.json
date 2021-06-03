@@ -1,0 +1,78 @@
+{
+  "short_name": "BarryCap",
+  "name": "Barry Cap",
+  "icons": [
+    {
+      "src": "/assets/favicon16p.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/assets/favicon24p.png",
+      "type": "image/png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "/assets/favicon32p.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/assets/favicon48p.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/assets/favicon64p.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/assets/favicon96p.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/assets/favicon128p.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/favicon192p.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/favicon256p.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/assets/favicon512p.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000",
+  "shortcuts": [
+    {
+      "name": "Barry Cap",
+      "short_name": "BCAP",
+      "description": "Barry Cap's website",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/assets/favicon192p.png", "sizes": "192x192"
+        },
+        {
+          "src": "/assets/favicon512p.png", "sizes": "512x512"
+        }
+      ]
+    }
+  ],
+  "description": "The website of Barry Cap."
+}
