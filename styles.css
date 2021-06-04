@@ -3,7 +3,7 @@
   src: url(assets/fonts/fmb.ttf) format("truetype");
 }
 @keyframes home-intro {
-  0%  { opacity: 0; transform: rotate3d(1, 1, 0, 30deg); overflow-x: hidden; }
+  0%  { opacity: 0; transform: rotate3d(5, 90, 10, 30deg); overflow-x: hidden; }
   99% { overflow-x: hidden; }
 }
 @keyframes home {
@@ -387,7 +387,7 @@ textarea:focus {
 .m-b-16 { margin-bottom: 16px; }
 .m-l-16 { margin-left:   16px; }
 .home {
-  animation: home 4s linear infinite, home-intro 1s ease-out normal;
+  animation: home 4s linear infinite, home-intro 2s ease-out normal;
   transition-duration: 0.2s;
   background-image: url(assets/bg/home.svg);
   background-attachment: fixed;
