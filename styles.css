@@ -100,6 +100,10 @@
   80%  { background-color: #cff4; }
   100% { background-color: #0000; }
 }
+@keyframes draw {
+  0% { stroke-dasharray: 1000; stroke-dashoffset: -200; stroke-linejoin: round; }
+  100% { stroke-dasharray: 2000; stroke-dashoffset: 0; }
+}
 body {
   margin: 0;
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
@@ -274,6 +278,10 @@ iframe:focus {
 mark {
   background-color: #8888;
   border-radius: 4px;
+}
+path {
+  stroke-dasharray: none;
+  animation: draw 2s ease-out;
 }
 form {
   color: #eee;
