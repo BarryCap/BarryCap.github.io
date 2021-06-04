@@ -636,6 +636,7 @@ textarea:focus {
   position: absolute;
   bottom: 16px;
   animation: button-help-intro ease-out normal 2s;
+  animation-delay: 2s;
 }
 .button-help:hover {
   background-color: #8888;
