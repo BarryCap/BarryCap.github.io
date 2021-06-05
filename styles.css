@@ -476,6 +476,52 @@ textarea:focus {
   padding: 0;
   min-height: 0;
 }
+.left-txt {
+  color: #eee;
+  background-color: #333;
+  opacity: 0.5;
+  border-radius: 5px;
+  padding: 16px;
+  text-align: justify;
+  width: calc(65% - 780px);
+  overflow: hidden;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  transition-duration: 0.2s;
+}
+.left-txt:hover {
+  color: #fff;
+  background-color: #6668;
+  opacity: 1;
+}
+@media only screen and (max-width: 1500px){
+  .left-txt{ display: none; }
+}
+@media only screen and (max-width: 1600px){
+  .left-txt{ width: calc(70% - 780px); }
+}
+@media only screen and (max-width: 1800px){
+  .left-txt{ width: calc(66% - 780px); font-size: 16px; }
+}
+@media only screen and (min-width: 2000px){
+  .left-txt{ width: calc(63% - 780px); }
+}
+@media only screen and (min-width: 2200px){
+  .left-txt{ width: calc(62% - 780px); font-size: 24px; }
+}
+@media only screen and (min-width: 2400px){
+  .left-txt{ width: calc(61% - 780px); font-size: 28px; }
+}
+@media only screen and (min-width: 2600px){
+  .left-txt{ width: calc(60% - 780px);font-size: 32px; }
+}
+@media only screen and (min-width: 3000px){
+  .left-txt{ width: calc(57% - 780px); }
+}
+@media only screen and (min-width: 4000px){
+  .left-txt{ display: none; }
+}
 .sub-txt {
   font-size: 21px;
   margin: auto;
