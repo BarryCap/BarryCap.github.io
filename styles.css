@@ -157,10 +157,6 @@ a:focus {
   text-decoration-color: #8ee;
   border-radius: 2px;
 }
-span {
-  cursor: url(assets/cursors/help.png) 0 10, help;
-  mix-blend-mode: difference;
-}
 code {
   background-color: #6668;
   border-radius: 4px;
@@ -503,6 +499,11 @@ textarea:focus {
   padding-top: 0;
   padding-bottom: 32px;
   width: 780px;
+}
+.span-help {
+  cursor: url(assets/cursors/help.png) 0 10, help;
+  mix-blend-mode: difference;
+  text-decoration-style: dashed;
 }
 .img-big {
   max-height: 80vh;
