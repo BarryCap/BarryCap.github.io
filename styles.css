@@ -213,7 +213,6 @@ video {
   border-radius: 0.01px;
   border: none;
   box-shadow: 0 0 0 0 #0000;
-  font-size: 21px;
   transition-duration: 0.2s;
   position: relative;
 }
@@ -234,7 +233,6 @@ audio {
   border-radius: 0.01px;
   border: none;
   box-shadow: 0 0 0 0 #0000;
-  font-size: 21px;
   transition-duration: 0.2s;
   position: relative;
 }
@@ -255,7 +253,6 @@ iframe {
   border-radius: 0.01px;
   border: none;
   box-shadow: 0 0 0 0 #0000;
-  font-size: 21px;
   transition-duration: 0.2s;
   position: relative;
 }
