@@ -636,7 +636,6 @@ textarea:focus {
   position: absolute;
   bottom: 16px;
   animation: button-help-intro ease-out normal 2s;
-  animation-delay: 2s;
 }
 .button-help:hover {
   background-color: #8888;
@@ -650,6 +649,9 @@ textarea:focus {
 .button-help:focus {
   background-color: #fffa;
   border-radius: 2px;
+}
+#button-help-home {
+  animation-delay: 2s;
 }
 .button-spot:link {
   width: 110px;
