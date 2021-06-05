@@ -106,14 +106,15 @@
 }
 body {
   margin: 0;
-  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   background-color: #000;
   background-repeat: repeat;
   color: #ccc;
-  font-size: 0;
   text-align: center;
   cursor: url(assets/cursors/default.png) 0 0, auto;
   overflow: overlay;
+  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  font-size: 0;
+  hyphens: auto;
   scrollbar-color: #0000 #8888;
 }
 div {
@@ -480,7 +481,7 @@ textarea:focus {
   border-radius: 5px;
   padding: 16px;
   text-align: justify;
-  width: calc(65% - 780px);
+  width: calc(66.8% - 780px);
   overflow: hidden;
   position: absolute;
   top: 16px;
@@ -491,33 +492,6 @@ textarea:focus {
   color: #fff;
   background-color: #6668;
   opacity: 1;
-}
-@media only screen and (max-width: 1500px){
-  .left-txt{ display: none; }
-}
-@media only screen and (max-width: 1600px){
-  .left-txt{ width: calc(70% - 780px); }
-}
-@media only screen and (max-width: 1800px){
-  .left-txt{ width: calc(66% - 780px); font-size: 16px; }
-}
-@media only screen and (min-width: 2000px){
-  .left-txt{ width: calc(63% - 780px); }
-}
-@media only screen and (min-width: 2200px){
-  .left-txt{ width: calc(62% - 780px); font-size: 24px; }
-}
-@media only screen and (min-width: 2400px){
-  .left-txt{ width: calc(61% - 780px); font-size: 28px; }
-}
-@media only screen and (min-width: 2600px){
-  .left-txt{ width: calc(60% - 780px);font-size: 32px; }
-}
-@media only screen and (min-width: 3000px){
-  .left-txt{ width: calc(57% - 780px); }
-}
-@media only screen and (min-width: 4000px){
-  .left-txt{ display: none; }
 }
 .sub-txt {
   font-size: 21px;
@@ -638,18 +612,18 @@ textarea:focus {
 .button-return-container {
   position: fixed;
   top: 0;
-  right: 64px;
+  right: 0;
 }
 .button-return {
   background-color: #6668;
   padding: 4px;
   width: 40px;
   height: 40px;
-  display: block;
   border-radius: 5px;
   transition-duration: 0.2s;
   position: absolute;
   top: 16px;
+  right: 16px;
 }
 .button-return:hover {
   background-color: #8888;
@@ -779,3 +753,78 @@ textarea:focus {
       textarea::-webkit-scrollbar-button        { background-color: #6664; border-radius: 5px; }
       textarea::-webkit-scrollbar-button:hover  { background-color: #4448; border-radius: 4px; }
       textarea::-webkit-scrollbar-button:active { background-color: #0008; border-radius: 2px; }
+@media screen and (max-width: 1200px){
+  .sub-txt { font-size: 32px; }
+  .sub-title { font-size: 40px; }
+  .img-title { font-size: 40px; }
+  .button:link { font-size: 32px; }
+  input { font-size: 32px; }
+  textarea { font-size: 32px; }
+  .doc { font-size: 32px; }
+  .button-return {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  .button-help {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1299px){
+  .left-txt{ display: none; }
+}
+@media screen and (min-width: 1300px){
+  .left-txt{ width: calc(75vw - 780px); font-size: 16px; }
+}
+@media screen and (min-width: 1350px){
+  .left-txt{ width: calc(74vw - 780px); font-size: 16px; }
+}
+@media screen and (min-width: 1400px){
+  .left-txt{ width: calc(73vw - 780px); font-size: 16.25px; }
+}
+@media screen and (min-width: 1450px){
+  .left-txt{ width: calc(72vw - 780px); font-size: 16.5px; }
+}
+@media screen and (min-width: 1500px){
+  .left-txt{ width: calc(71vw - 780px); font-size: 16.75px; }
+}
+@media screen and (min-width: 1550px){
+  .left-txt{ width: calc(71vw - 780px); font-size: 17px; }
+}
+@media screen and (min-width: 1600px){
+  .left-txt{ width: calc(70vw - 780px); font-size: 17.5px; }
+}
+@media screen and (min-width: 1700px){
+  .left-txt{ width: calc(71vw - 780px); font-size: 18px; }
+}
+@media screen and (min-width: 1750px){
+  .left-txt{ width: calc(72vw - 780px); font-size: 19px; }
+}
+@media screen and (min-width: 1900px){
+  .left-txt{ width: calc(65vw - 780px); font-size: 20px; }
+}
+@media screen and (width: 1920px){
+  .left-txt{ width: calc(66.8vw - 780px); font-size: 21px; }
+}
+@media screen and (min-width: 2400px){
+  .left-txt{ width: calc(63.4vw - 780px); font-size: 24px; }
+}
+@media screen and (min-width: 2500px){
+  .left-txt{ width: calc(62.5vw - 780px); font-size: 24px; }
+}
+@media screen and (min-width: 2600px){
+  .left-txt{ width: calc(61vw - 780px); font-size: 28px; }
+}
+@media screen and (min-width: 3000px){
+  .left-txt{ width: calc(45vw - 780px); left: 13.8vw; }
+}
+@media screen and (min-width: 4000px){
+  .left-txt{ width: calc(24vw - 780px); left: 32vw; font-size: 21px; }
+}
+@media screen and (min-width: 6000px){
+  .left-txt{ width: calc(16.4vw - 780px); left: 38vw; font-size: 21px; }
+}
