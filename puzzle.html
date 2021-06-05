@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <style>
-    body {
-      background-color: #000;
-      margin: 0;
-      overflow: hidden;
-      transition-duration: 0.5s;
-    }
-    body:hover {
-      background-color: #ccc;
-    }
-    .draggable {
-      cursor: grab;
-    }
-    .draggable:active {
-      cursor: grabbing;
-    }
-    #box {
-      position: absolute;
-      background-color: #fff;
-      text-align: center;
-      border: .45vh solid #000;
-      border-radius: .45vh;
-      width: Calc(10vh - .45vh);
-      height: Calc(10vh - .45vh);
-      cursor: grab;
-      z-index: 8;
-    }
-    #box:hover {
-      background-color: #cccc;
-    }
-    #box:active {
-      cursor: grabbing;
-      background-color: #8888;
-    }
-    #container {
-      height: 100vh;
-    }
-  </style>
+  <head>
+    <link rel="icon" type="image/png" href="https://barrycap.com/assets/favicon16p.png" sizes="16x16">
+    <script type="text/javascript" src="https://barrycap.com/googleanalytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
+    <meta name="author" content="Barry Cap">
+    <meta name="description" content="A work in progress puzzle game.">
+    <meta charset="UTF-8">
+    <title>Barry Cap › Puzzle</title>
+    <style>
+      body {
+        background-color: #000;
+        margin: 0;
+        overflow: hidden;
+        transition-duration: 0.5s;
+      }
+      body:hover {
+        background-color: #ccc;
+      }
+      .draggable {
+        cursor: grab;
+      }
+      .draggable:active {
+        cursor: grabbing;
+      }
+      #box {
+        position: absolute;
+        background-color: #fff;
+        text-align: center;
+        border: .45vh solid #000;
+        border-radius: .45vh;
+        width: Calc(10vh - .45vh);
+        height: Calc(10vh - .45vh);
+        cursor: grab;
+        z-index: 8;
+      }
+      #box:hover {
+        background-color: #cccc;
+      }
+      #box:active {
+        cursor: grabbing;
+        background-color: #8888;
+      }
+      #container {
+        height: 100vh;
+      }
+    </style>
+  </head>
   <body>
     <div id="box"></div>
     <svg id="container" viewBox="0 0 285.75001 285.75001" height="100%" width="100%">
