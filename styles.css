@@ -641,8 +641,7 @@ textarea:focus {
 .button-help:hover {
   background-color: #8888;
   border-radius: 4px;
-  animation: button-help-hover ease-in-out 0.2s;
-  animation: button-help-intro none;
+  animation: button-help-hover ease-out 0.2s, button-help-intro none;
 }
 .button-help:active {
   background-color: #fffa;
