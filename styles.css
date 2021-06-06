@@ -809,7 +809,7 @@ textarea:focus {
   .left-txt{ width: calc(70vw - 780px); font-size: 17.5px; }
 }
 @media screen and (min-width: 1700px){
-  .left-txt{ width: calc(71vw - 780px); font-size: 18px; }
+  .left-txt{ width: calc(68.5vw - 780px); font-size: 18px; }
 }
 @media screen and (min-width: 1750px){
   .left-txt{ width: calc(72vw - 780px); font-size: 19px; }
@@ -827,7 +827,7 @@ textarea:focus {
   .left-txt{ width: calc(62.5vw - 780px); font-size: 24px; }
 }
 @media screen and (min-width: 2600px){
-  .left-txt{ width: calc(61vw - 780px); font-size: 28px; }
+  .left-txt{ width: calc(61.2vw - 780px); font-size: 28px; }
 }
 @media screen and (min-width: 3000px){
   .left-txt{ width: calc(45vw - 780px); left: 13.8vw; }
