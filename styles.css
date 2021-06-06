@@ -777,11 +777,9 @@ textarea:focus {
   .button-spot:link {
     width: 170px;
     height: 42px;
-    transform: rotate(270deg);
     border-radius: 10px 10px 0 0;
     padding-top: 16px;
-    position: absolute;
-    top: 545px;
+    top: 539px;
     left: calc(50vw - 508px);
     line-height: 21px;
   }
