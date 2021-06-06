@@ -105,10 +105,11 @@
   100% { stroke-dasharray: 2000; stroke-dashoffset: 0; }
 }
 body {
-  margin: 0;
   background-color: #000;
   background-repeat: repeat;
   color: #ccc;
+  margin: 0;
+  padding-top: 4px;
   text-align: center;
   cursor: url(assets/cursors/default.png) 0 0, auto;
   overflow: overlay;
@@ -813,6 +814,9 @@ textarea:focus {
 }
 @media screen and (min-width: 1750px){
   .left-txt{ width: calc(72vw - 780px); font-size: 19px; }
+}
+@media screen and (min-width: 1800px){
+  .left-txt{ width: calc(67.5vw - 780px); font-size: 20px; }
 }
 @media screen and (min-width: 1900px){
   .left-txt{ width: calc(65vw - 780px); font-size: 20px; }
