@@ -692,6 +692,28 @@ textarea:focus {
 .button-spot:focus {
   border-radius: 2px 2px 0 0;
 }
+.button-icon {
+  width: 176px;
+  height: 176px;
+  padding: 8px 0 8px 0 !important;
+  animation: none !important;
+}
+.button-icon:hover {
+  background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
+}
+.button-icon:active {
+  background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
+}
+.button-icon:focus {
+  background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
+}
+.icon-176 {
+  width: 176px;
+  height: 176px;
+}
 .container {
   position: relative;
   width: 192px;

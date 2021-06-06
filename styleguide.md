@@ -1,5 +1,5 @@
 # Style Guide
-The properties bellow indicate the main styling for the site. The developpement of this style guide is currently in early stages.
+The properties below indicate the main styling for the site. The developpement of this style guide is currently in early stages.
 
 ---
 ## Dark buttons
