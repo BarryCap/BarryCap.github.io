@@ -167,7 +167,14 @@ code {
   background-color: #6668;
   border-radius: 4px;
   padding: 2px;
-  font-family: Consolas;
+  font-family: Consolas, monospace;
+}
+kbd {
+  background: #6668;
+  border: solid 1px #888;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: Consolas, monospace;
 }
 hr {
   border-top: none;
@@ -381,14 +388,43 @@ textarea:focus {
   background-color: #0000;
   border-radius: 5px;
 }
-.m-t-8  { margin-top:     8px; }
-.m-r-8  { margin-right:   8px; }
-.m-b-8  { margin-bottom:  8px; }
-.m-l-8  { margin-left:    8px; }
-.m-t-16 { margin-top:    16px; }
-.m-r-16 { margin-right:  16px; }
-.m-b-16 { margin-bottom: 16px; }
-.m-l-16 { margin-left:   16px; }
+/* Tables */
+  .table {
+    background-color: #6668;
+    border-radius: 5px;
+    margin: 16px 0;
+    padding: 2px;
+    transition-duration: 0.2s;
+  }
+  .table:hover {
+    background-color: #7778;
+  }
+  th {
+    background-color: #6668;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition-duration: 0.2s;
+  }
+  th:hover {
+    background-color: #8888;
+  }
+  .table-left {
+    text-align: left;
+  }
+  .table-center {
+    text-align: center;
+  }
+  tr:hover {
+    background-color: #8888;
+    transition-duration: 0.2s;
+  }
+  td {
+    border-radius: 5px;
+    padding: 8px 16px;
+  }
+  td:hover {
+    background-color: #8888;
+  }
 .home {
   animation: home 4s linear infinite, home-intro 2s ease-out normal;
   transition-duration: 0.2s;
