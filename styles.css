@@ -101,7 +101,11 @@
   100% { background-color: #0000; }
 }
 @keyframes draw {
-  0% { stroke-dasharray: 1000; stroke-dashoffset: -200; stroke-linejoin: round; }
+  0% { stroke-dasharray: 1000; stroke-dashoffset: -200; }
+  100% { stroke-dasharray: 2000; stroke-dashoffset: 0; }
+}
+@keyframes long-draw {
+  0% { stroke-dasharray: 1000; stroke-dashoffset: 1200; }
   100% { stroke-dasharray: 2000; stroke-dashoffset: 0; }
 }
 body {
@@ -277,6 +281,10 @@ mark {
 path {
   stroke-dasharray: none;
   animation: draw 2s ease-out;
+}
+.long-path {
+  stroke-dasharray: none;
+  animation: long-draw 6s ease-out;
 }
 form {
   color: #eee;
