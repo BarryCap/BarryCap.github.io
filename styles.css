@@ -678,7 +678,7 @@ textarea:focus {
   transform: rotate(270deg);
   border-radius: 5px 5px 0 0;
   position: absolute;
-  top: 573px;
+  top: 577px;
   left: calc(50vw - 464px);
   line-height: 21px;
 }
@@ -710,6 +710,9 @@ textarea:focus {
   background-color: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
+.header-svg{stroke:#fff;stroke-width:10;transition-duration:.2s;mix-blend-mode:difference}
+.header-svg:hover{stroke:#ff8;stroke-width:7.5}
+.header-svg:active{stroke:#ff0;stroke-width:5}
 .icon-176 {
   width: 176px;
   height: 176px;
@@ -802,8 +805,8 @@ textarea:focus {
     height: 42px;
     border-radius: 10px 10px 0 0;
     padding-top: 16px;
-    top: 539px;
-    left: calc(50vw - 508px);
+    top: 543px;
+    left: calc(50vw - 507px);
     line-height: 21px;
   }
 }
