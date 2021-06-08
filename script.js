@@ -1,3 +1,4 @@
+// Shortcuts
 window.addEventListener('keyup', function(event) {
   if (event.code == 'KeyB') {
     window.location = "/"
@@ -39,3 +40,15 @@ window.addEventListener('keyup', function(event) {
     window.location = "/versions"
   }
 }, true)
+// Randomly moving background
+const randomizer = function() {
+  let x, y
+  do {
+    x = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
+    y = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
+  } while (x === '0px' && y === '0px')
+  document.documentElement.style.setProperty('--random-position-x', x)
+  document.documentElement.style.setProperty('--random-position-y', y)
+}
+randomizer()
+setInterval(randomizer, 1000)
