@@ -39,7 +39,7 @@ window.addEventListener('keyup', function(event) {
   if (event.code == 'KeyE') {
     window.location = "/versions"
   }
-}, true)
+})
 // Randomly moving background
 const randomizer = function() {
   let x, y
