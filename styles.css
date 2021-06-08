@@ -121,7 +121,7 @@ body {
   font-size: 0;
   hyphens: auto;
   scrollbar-color: #0000 #8888;
-  -webkit-tap-highlight-color: none;
+  -webkit-tap-highlight-color: transparent;
 }
 div {
   padding-top: 12px;
