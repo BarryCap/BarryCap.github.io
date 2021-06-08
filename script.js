@@ -25,6 +25,9 @@ window.addEventListener('keyup', function(event) {
     if (event.code == 'KeyG') {
       window.location = "/realizations/games"
     }
+    if (event.code == 'KeyD') {
+      window.location = "/realizations/drawings"
+    }
     if (event.code == 'Digit7') {
       window.location = "/realizations/Imaractères"
     }
