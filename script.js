@@ -46,14 +46,16 @@ window.addEventListener('keyup', function(event) {
   }
 })
 // Randomly moving background
-const randomizer = function() {
-  let x, y
-  do {
-    x = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
-    y = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
-  } while (x === '0px' && y === '0px')
-  document.documentElement.style.setProperty('--random-position-x', x)
-  document.documentElement.style.setProperty('--random-position-y', y)
+if (window.location.href.indexOf('random') > -1) {
+  const randomizer = function() {
+    let x, y
+    do {
+      x = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
+      y = (Math.floor(Math.random() * 3) - 1) * 32 + 'px'
+    } while (x === '0px' && y === '0px')
+    document.documentElement.style.setProperty('--random-position-x', x)
+    document.documentElement.style.setProperty('--random-position-y', y)
+  }
+  randomizer()
+  setInterval(randomizer, 1000)
 }
-randomizer()
-setInterval(randomizer, 1000)
