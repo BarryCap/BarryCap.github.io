@@ -12,75 +12,30 @@
     <meta charset="UTF-8">
     <title>Barry Cap</title>
   </head>
-  <body class="home">
-    <div>
-      <a href="./">
-        <svg viewBox="0 0 320 50" width="780" height="122" class="header-svg">
-          <style>
-            .header-svg{stroke:#fff;stroke-width:10;transition-duration:.2s;mix-blend-mode:difference}
-            .header-svg:hover{stroke:#ccc;stroke-width:7.5}
-            .header-svg:active{stroke:#888;stroke-width:5}
-          </style>
-          <title>Barry Cap</title>
-          <g fill="none">
-            <path id="b" d="M5 5h10a5 5 0 110 20h-10h10a5 5 0 110 20h-10v-40z"/>
-            <path id="a" d="M45 25v25v-35a5 5 0 1120 0v35v-25z"/>
-            <path id="r" d="M85 50v-45h10a5 5 0 110 20h-10h10a10 10 0 0110 10v15"/>
-            <path id="r2" d="M125 50v-45h10a5 5 0 110 20h-10h10a10 10 0 0110 10v15"/>
-            <path id="y" d="M165 0v20a5 5 0 005 5h5v25v-25h5a5 5 0 005-5v-20"/>
-            <path id="c" d="M240 5h-10a15 15 0 00-15 15v10a15 15 0 0015 15h10"/>
-            <path id="a2" d="M255 25v25v-35a5 5 0 1120 0v35v-25z"/>
-            <path id="p" d="M295 50v-45h10a5 5 0 110 20h-10"/>
-          </g>
-        </svg>
-      </a>
-      <div class="txt">
-        <p class="button-container">
-          <a class="button" href="./">Home</a>
-          <a class="button" href="realizations">Realizations</a>
-          <a class="button" href="about">About</a>
-          <a class="button" href="random">Random</a>
-        </p>
-      </div>
-      <a href="images/LI3D19_2880pGreener">
-        <img class="img-spot" src="thumbnails/LI3D19_2880pGreener.jpg" alt="LI3D19_2880pGreener" title="Light Ice Fraktur" width="780" height="439"/>
-      </a>
-      <a class="button button-spot" href="spotlight">Spotlight</a>
-      <br>
-      <a href="images/04BDE03_2880p">
-        <img src="thumbnails/04BDE03_2880p.png" alt="04BDE03_2880p" title="Bulle D'Eau" width="388" height="218"/>
-      </a>
-      <a href="images/08LC25_2880p">
-        <img src="thumbnails/08LC25_2880p.png" alt="08LC25_2880p" title="Le Clocher" width="388" height="218"/>
-      </a>
-      <br>
-      <a href="images/FW8000">
-        <img src="thumbnails/FW8000.png" alt="FW8000" title="FW8000" width="496" height="280"/>
-      </a>
-      <a href="images/logobcap_v1.1">
-        <img src="assets/favicon.svg" alt="logobcap_v1.1" title="BCAP logo" width="280" height="280" style="border-radius:44px"/>
-      </a>
-      <br>
-      <a href="videos/NightOfTheAlien">
-        <video width="388" height="218" muted autoplay loop poster="/thumbnails/NightOfTheAlien.gif">
-          <source src="thumbnails/NightOfTheAlien.mp4" type="video/mp4"/>
-        </video>
-      </a>
-      <a href="images/ArbreMort">
-        <img src="thumbnails/ArbreMort.jpg" alt="Arbre Mort" title="Arbre Mort" width="388" height="218"/>
-      </a>
-      <p class="sub-txt">Click on any image to display additional information.</p>
+  <body class="intro">
+    <svg viewBox="0 0 320 50" class="intro-header-svg">
+      <title>Barry Cap</title>
+      <g fill="none" stroke="#fff" stroke-width="10">
+        <path id="b" d="M5 5h10a5 5 0 110 20h-10h10a5 5 0 110 20h-10v-40z"/>
+        <path id="a" d="M45 25v25v-35a5 5 0 1120 0v35v-25z"/>
+        <path id="r" d="M85 50v-45h10a5 5 0 110 20h-10h10a10 10 0 0110 10v15"/>
+        <path id="r2" d="M125 50v-45h10a5 5 0 110 20h-10h10a10 10 0 0110 10v15"/>
+        <path id="y" d="M165 0v20a5 5 0 005 5h5v25v-25h5a5 5 0 005-5v-20"/>
+        <path id="c" d="M240 5h-10a15 15 0 00-15 15v10a15 15 0 0015 15h10"/>
+        <path id="a2" d="M255 25v25v-35a5 5 0 1120 0v35v-25z"/>
+        <path id="p" d="M295 50v-45h10a5 5 0 110 20h-10"/>
+      </g>
+    </svg>
+    <div class="txt">
+      <p class="intro-button-container">
+        <a class="button" href="home">Home</a>
+        <a class="button" href="realizations">Realizations</a>
+        <a class="button" href="about">About</a>
+        <a class="button" href="random">Random</a>
+      </p>
     </div>
-    <div class="button-help-container" title="Help">
-      <a class="button-help" id="button-help-home" href="/help">
-        <svg viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="3">
-          <path d="M20,2 a1 1 0 010,36 a1 1 0 010,-36z m-8,13 a8 8 0 118,8 v6"/>
-          <circle cx="20" cy="33" r=".5"/>
-        </svg>
-      </a>
-    </div>
-    <div class="footer">
-      <img src="assets/smile.svg" alt=":)" width="780" height="186"/>
-    </div>
+    <video class="intro-video" muted autoplay loop poster="assets/bg/intro.png">
+      <source src="assets/bg/intro.webm" type="video/webm"/>
+    </video>
   </body>
 </html>

@@ -108,6 +108,13 @@
   0% { stroke-dasharray: 1000; stroke-dashoffset: 1200; }
   100% { stroke-dasharray: 2000; stroke-dashoffset: 0; }
 }
+@keyframes header-intro {
+  0%  { transform: scale(1); opacity: 0; clip-path: inset(0 0 100% 0); }
+  5% { clip-path: inset(0 0 0 0); }
+  20%  { opacity: 1; }
+  95% { transform: scale(1.05); opacity: 1; clip-path: inset(0 0 0 0); }
+  100% { transform: scale(1.05); opacity: 0; clip-path: inset(100% 0 0 0); }
+}
 body {
   background-color: #000;
   background-repeat: repeat;
@@ -286,7 +293,7 @@ mark {
   background-color: #8888;
   border-radius: 4px;
 }
-path {
+svg {
   stroke-dasharray: none;
   animation: draw 2s ease-out;
 }
@@ -514,6 +521,31 @@ textarea:focus {
   background-image: url(assets/bg/imar.svg);
   background-attachment: fixed;
 }
+/* Properties for the Intro page */
+  .intro {
+    padding: 0;
+    overflow: hidden;
+  }
+  .intro-header-svg {
+    width: 1280px;
+    height: 200px;
+    position: absolute;
+    top: calc(45vh - 100px);
+    left: calc(50vw - 640px);
+    animation: 10s linear infinite header-intro;
+    z-index: -1;
+  }
+  .intro-button-container {
+    position: absolute;
+    bottom: 10vh;
+    left: calc(50vw - 780px / 2);
+    font-size: 0;
+  }
+  .intro-video {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
 .txt {
   font-size: 21px;
   margin: 0;
@@ -756,9 +788,6 @@ textarea:focus {
   background-color: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
-.header-svg{stroke:#fff;stroke-width:10;transition-duration:.2s;mix-blend-mode:difference}
-.header-svg:hover{stroke:#ff8;stroke-width:7.5}
-.header-svg:active{stroke:#ff0;stroke-width:5}
 .icon-176 {
   width: 176px;
   height: 176px;
