@@ -700,6 +700,7 @@ textarea:focus {
   position: absolute;
   bottom: 16px;
   animation: button-help-intro ease-out normal 2s;
+  z-index: 2;
 }
 .button-help:hover {
   background-color: #8888;
@@ -825,16 +826,16 @@ textarea:focus {
       textarea::-webkit-scrollbar-button:hover  { background-color: #4448; border-radius: 4px; }
       textarea::-webkit-scrollbar-button:active { background-color: #0008; border-radius: 2px; }
 @media screen and (max-width: 1200px){
-  .txt { font-size: 28px; }
-  .sub-txt { font-size: 28px; }
-  .sub-title { font-size: 32px; }
-  .img-title { font-size: 32px; }
-  .button:link { font-size: 28px; line-height: 46px; min-height: 52px; }
   @keyframes button-hover {
     0%   { background-color: #6668; box-shadow: inset 0 0 #0000; }
     60%  { background-color: #6668; }
     100% { background-color: #0000; box-shadow: inset 0 50px #8888; }
   }
+  .txt { font-size: 28px; }
+  .sub-txt { font-size: 28px; }
+  .sub-title { font-size: 32px; }
+  .img-title { font-size: 32px; }
+  .button:link { font-size: 28px; line-height: 46px; min-height: 52px; }
   input { font-size: 28px; }
   textarea { font-size: 28px; }
   .doc { font-size: 28px; }
