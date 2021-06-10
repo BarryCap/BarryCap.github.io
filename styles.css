@@ -605,6 +605,22 @@ textarea:focus {
     font-size: 0;
     animation: button-container-intro 4s ease-out;
   }
+  .intro-button {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    min-height: 32px;
+    box-shadow: 0 0 0 0 #8888;
+  }
+  .intro-button:hover {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 0 0 4px #8888;
+  }
+  .intro-button:active {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: 0 0 0 4px #fffa;
+  }
   .intro-video {
     margin: 0;
     min-width: 100%;
@@ -732,6 +748,7 @@ textarea:focus {
   padding-top: 4px;
   padding-bottom: 4px;
   width: 192px;
+  box-shadow: 0 0 0 0 #8888;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -740,12 +757,14 @@ textarea:focus {
 .button:hover {
   border-radius: 4px;
   background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
   animation: button-hover ease-in 0.2s;
   transition-duration: 0.2;
 }
 .button:active {
   border-radius: 2px;
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
 }
 .button:focus {
   color: #fff;
@@ -839,6 +858,7 @@ textarea:focus {
   width: 176px;
   height: 176px;
   padding: 8px 0 8px 0 !important;
+  box-shadow: 0 0 0 0 #8888;
   animation: none !important;
 }
 .button-icon:hover {
