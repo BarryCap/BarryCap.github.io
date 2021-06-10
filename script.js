@@ -1,8 +1,11 @@
 // Shortcuts
 window.addEventListener('keyup', function(event) {
   if(! event.path.filter((node) => {return node.nodeName == 'FORM'}).length) {
-    if (event.code == 'KeyB') {
+    if (event.code == 'KeyO') {
       window.location = "/"
+    }
+    if (event.code == 'KeyB') {
+      window.location = "/home"
     }
     if (event.code == 'KeyR') {
       window.location = "/realizations"
