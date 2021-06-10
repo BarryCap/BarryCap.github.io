@@ -622,8 +622,10 @@ textarea:focus {
     box-shadow: 0 0 0 4px #fffa;
   }
   .intro-video {
-    margin: 0;
-    min-width: 100%;
+    position: fixed;
+    left: calc(50vw - 1920px / 2);
+    top: calc(50vh - 1080px / 2);
+    min-width: 100%; 
     min-height: 100%;
     z-index: -4;
   }
