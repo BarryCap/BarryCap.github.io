@@ -162,7 +162,8 @@
   100% { clip-path: inset(94% 0  5% 0); }
 }
 @keyframes button-container-intro {
-  0% { bottom: -10vh; }
+  0%  { opacity: 0; bottom: -10vh; }
+  50% { opacity: 0; bottom: -10vh; }
 }
 body {
   background-color: #000;
@@ -602,7 +603,7 @@ textarea:focus {
     bottom: 10vh;
     left: calc(50vw - 780px / 2);
     font-size: 0;
-    animation: button-container-intro 2s ease-out;
+    animation: button-container-intro 4s ease-out;
   }
   .intro-video {
     margin: 0;
