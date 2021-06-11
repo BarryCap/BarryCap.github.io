@@ -66,3 +66,12 @@ if (window.location.href.indexOf('random') > -1) {
 function cookieButton() {
   document.getElementsByClassName('cookie-container')[0].style.bottom = '-25vh'
 }
+// Script for the email form
+let submitButton = document.getElementById("submit_form")
+let form = document.getElementById("email_form")
+form.addEventListener("submit", function() {
+  setTimeout(function() {
+    submitButton.value = "Sending…"
+    submitButton.disabled = true
+  }, 1)
+})

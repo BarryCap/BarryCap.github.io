@@ -60,7 +60,7 @@
   ],
   "start_url": "/",
   "background_color": "#000",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/",
   "theme_color": "#fff",
   "shortcuts": [
