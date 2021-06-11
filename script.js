@@ -2,49 +2,49 @@
 window.addEventListener('keyup', function(event) {
   if(! event.path.filter((node) => {return node.nodeName == 'FORM'}).length) {
     if (event.code == 'KeyO') {
-      window.location = "/"
+      window.location = '/'
     }
     if (event.code == 'KeyB') {
-      window.location = "/home"
+      window.location = '/home'
     }
     if (event.code == 'KeyR') {
-      window.location = "/realizations"
+      window.location = '/realizations'
     }
     if (event.code == 'KeyA') {
-      window.location = "/about"
+      window.location = '/about'
     }
     if (event.code == 'KeyN') {
-      window.location = "/random"
+      window.location = '/random'
     }
     if (event.code == 'KeyI') {
-      window.location = "/realizations/images"
+      window.location = '/realizations/images'
     }
     if (event.code == 'KeyV') {
-      window.location = "/realizations/videos"
+      window.location = '/realizations/videos'
     }
     if (event.code == 'KeyS') {
-      window.location = "/realizations/sounds"
+      window.location = '/realizations/sounds'
     }
     if (event.code == 'KeyG') {
-      window.location = "/realizations/games"
+      window.location = '/realizations/games'
     }
     if (event.code == 'KeyD') {
-      window.location = "/realizations/drawings"
+      window.location = '/realizations/drawings'
     }
     if (event.code == 'Digit7') {
-      window.location = "/realizations/Imaractères"
+      window.location = '/realizations/Imaractères'
     }
     if (event.code == 'KeyL') {
-      window.location = "/spotlight"
+      window.location = '/spotlight'
     }
     if (event.code == 'F22') {
-      window.location = "/404"
+      window.location = '/404'
     }
     if (event.code == 'KeyH') {
-      window.location = "/help"
+      window.location = '/help'
     }
     if (event.code == 'KeyE') {
-      window.location = "/versions"
+      window.location = '/versions'
     }
   }
 })
@@ -61,4 +61,8 @@ if (window.location.href.indexOf('random') > -1) {
   }
   randomizer()
   setInterval(randomizer, 1000)
+}
+// Make cookie pop up disappear on cross click
+function cookieButton() {
+  document.getElementsByClassName('cookie-container')[0].style.bottom = '-25vh'
 }
