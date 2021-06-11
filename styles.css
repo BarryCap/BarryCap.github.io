@@ -239,10 +239,10 @@ hr {
   border-color: #6668;
 }
 img {
+  box-shadow: 0 0 0 0 #6668;
   margin: 2px;
   border-radius: 0.01px;
   border: none;
-  box-shadow: 0 0 0 0 #8888;
   font-size: 21px;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
@@ -394,7 +394,7 @@ input:active {
 }
 input:focus {
   color: #000;
-  background-color: #fff;
+  box-shadow: 0 0 0 4px #fff;
   border-radius: 2px;
 }
 input::selection {
@@ -407,6 +407,12 @@ input::selection {
   width: 20%;
   text-align: center;
   cursor: url(assets/cursors/pointer.png) 0 0, pointer;
+}
+.input-button:hover {
+  box-shadow: 0 0 0 0 #fffa;
+}
+.input-button:active {
+  box-shadow: 0 0 0 0 #fff;
 }
 textarea {
   color: #444;
@@ -606,20 +612,25 @@ textarea:focus {
     animation: button-container-intro 4s ease-out;
   }
   .intro-button {
+    box-shadow: 0 0 0 0 #8888;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     min-height: 32px;
-    box-shadow: 0 0 0 0 #8888;
   }
   .intro-button:hover {
+    box-shadow: 0 0 0 4px #8888;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    box-shadow: 0 0 0 4px #8888;
   }
   .intro-button:active {
+    box-shadow: 0 0 0 4px #fffa;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+  }
+  .intro-button:focus {
     box-shadow: 0 0 0 4px #fffa;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
   .intro-video {
     position: fixed;
@@ -745,32 +756,32 @@ textarea:focus {
 }
 .button:link {
   background-color: #6668;
+  box-shadow: 0 0 0 0 #8888;
   font-size: 21px;
   margin: 2px;
   padding-top: 4px;
   padding-bottom: 4px;
   width: 192px;
-  box-shadow: 0 0 0 0 #8888;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
 }
 .button:hover {
-  border-radius: 4px;
   background-color: #8888;
   box-shadow: 0 0 0 4px #8888;
+  border-radius: 4px;
   animation: button-hover ease-in 0.2s;
   transition-duration: 0.2;
 }
 .button:active {
-  border-radius: 2px;
   background-color: #fffa;
   box-shadow: 0 0 0 4px #fffa;
+  border-radius: 2px;
 }
 .button:focus {
   color: #fff;
-  background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
 .button-return-container {
@@ -780,6 +791,7 @@ textarea:focus {
 }
 .button-return {
   background-color: #6668;
+  box-shadow: 0 0 0 0 #6668;
   padding: 4px;
   width: 40px;
   height: 40px;
@@ -791,15 +803,17 @@ textarea:focus {
 }
 .button-return:hover {
   background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
   animation: button-return-hover ease-in-out 0.2s;
 }
 .button-return:active {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
 .button-return:focus {
-  background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
 .button-help-container {
@@ -809,6 +823,7 @@ textarea:focus {
 }
 .button-help {
   background-color: #6668;
+  box-shadow: 0 0 0 0 #6668;
   padding: 4px;
   width: 40px;
   height: 40px;
@@ -822,15 +837,17 @@ textarea:focus {
 }
 .button-help:hover {
   background-color: #8888;
+  box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
   animation: button-help-hover ease-out 0.2s, button-help-intro none;
 }
 .button-help:active {
   background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
 .button-help:focus {
-  background-color: #fffa;
+  box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
 #button-help-home {
@@ -857,10 +874,10 @@ textarea:focus {
   border-radius: 2px 2px 0 0;
 }
 .button-icon {
+  box-shadow: 0 0 0 0 #6668;
   width: 176px;
   height: 176px;
   padding: 8px 0 8px 0 !important;
-  box-shadow: 0 0 0 0 #8888;
   animation: none !important;
 }
 .button-icon:hover {
@@ -872,7 +889,6 @@ textarea:focus {
   box-shadow: 0 0 0 4px #fffa;
 }
 .button-icon:focus {
-  background-color: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 .icon-176 {
