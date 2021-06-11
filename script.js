@@ -69,9 +69,11 @@ function cookieButton() {
 // Script for the email form
 let submitButton = document.getElementById("submit_form")
 let form = document.getElementById("email_form")
-form.addEventListener("submit", function() {
-  setTimeout(function() {
-    submitButton.value = "Sending…"
-    submitButton.disabled = true
-  }, 1)
-})
+if (form) {
+    form.addEventListener("submit", function() {
+    setTimeout(function() {
+      submitButton.value = "Sending…"
+      submitButton.disabled = true
+    }, 1)
+  })
+}
