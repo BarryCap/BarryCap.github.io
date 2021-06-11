@@ -1058,6 +1058,10 @@ textarea:focus {
     left: calc(50vw - 507px);
     line-height: 28px;
   }
+  .cookie-container {
+    transform: scale(1.5);
+    transform-origin: bottom right;
+  }
 }
 @media screen and (max-width: 1299px){
   .left-txt{ display: none; }
