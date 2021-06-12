@@ -1,51 +1,24 @@
 // Shortcuts
 window.addEventListener('keyup', function(event) {
   if(event.path && !event.path.filter((node) => {return node.nodeName == 'FORM'}).length) {
-    if (event.code == 'KeyO') {
-      window.location = '/'
+    const shortcuts = {
+      KeyO: '/',
+      KeyB: '/home',
+      KeyR: '/realizations',
+      KeyA: '/about',
+      KeyN: '/random',
+      KeyI: '/realizations/images',
+      KeyV: '/realizations/videos',
+      KeyS: '/realizations/sounds',
+      KeyG: '/realizations/games',
+      KeyD: '/realizations/drawings',
+      Digit7: '/realizations/Imaractères',
+      KeyL: '/spotlight',
+      F22: '/404',
+      KeyH: '/help',
+      KeyE: '/versions',
     }
-    if (event.code == 'KeyB') {
-      window.location = '/home'
-    }
-    if (event.code == 'KeyR') {
-      window.location = '/realizations'
-    }
-    if (event.code == 'KeyA') {
-      window.location = '/about'
-    }
-    if (event.code == 'KeyN') {
-      window.location = '/random'
-    }
-    if (event.code == 'KeyI') {
-      window.location = '/realizations/images'
-    }
-    if (event.code == 'KeyV') {
-      window.location = '/realizations/videos'
-    }
-    if (event.code == 'KeyS') {
-      window.location = '/realizations/sounds'
-    }
-    if (event.code == 'KeyG') {
-      window.location = '/realizations/games'
-    }
-    if (event.code == 'KeyD') {
-      window.location = '/realizations/drawings'
-    }
-    if (event.code == 'Digit7') {
-      window.location = '/realizations/Imaractères'
-    }
-    if (event.code == 'KeyL') {
-      window.location = '/spotlight'
-    }
-    if (event.code == 'F22') {
-      window.location = '/404'
-    }
-    if (event.code == 'KeyH') {
-      window.location = '/help'
-    }
-    if (event.code == 'KeyE') {
-      window.location = '/versions'
-    }
+    shortcuts[event.code] ? window.location = shortcuts[event.code] : ''
   }
 })
 // Randomly moving background
