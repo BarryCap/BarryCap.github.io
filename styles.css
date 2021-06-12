@@ -588,23 +588,23 @@ textarea:focus {
   }
   .intro-header-svg {
     filter: drop-shadow(0 0 8px #fffa);
-    width: 1280px;
-    height: 200px;
+    width: 1440px;
+    height: 360px;
     position: absolute;
-    top: calc(45vh - 100px);
-    left: calc(50vw - 640px);
+    top: calc(45vh - 180px);
+    left: calc(50vw - 720px);
     animation: header-intro 40s linear infinite;
     z-index: -1;
   }
   .intro-header-svg-red {
     filter: drop-shadow(0 0 16px #f00a);
-    left: calc(50vw - 642px);
+    left: calc(50vw - 722px);
     animation: header-intro 40s linear infinite, red 1s infinite ease-in-out;
     z-index: -2;
   }
   .intro-header-svg-blue {
     filter: drop-shadow(0 0 16px #00fa);
-    left: calc(50vw - 638px);
+    left: calc(50vw - 718px);
     animation: header-intro 40s linear infinite, blue 1.1s infinite linear;
     z-index: -3;
   }
