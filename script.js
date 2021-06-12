@@ -1,6 +1,6 @@
 // Shortcuts
 window.addEventListener('keyup', function(event) {
-  if(! event.path.filter((node) => {return node.nodeName == 'FORM'}).length) {
+  if(event.path && !event.path.filter((node) => {return node.nodeName == 'FORM'}).length) {
     if (event.code == 'KeyO') {
       window.location = '/'
     }
