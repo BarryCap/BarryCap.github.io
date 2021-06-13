@@ -55,7 +55,7 @@
     {
       "src": "/assets/favicon.svg",
       "type": "image/svg",
-      "sizes": "512x512"
+      "sizes": "32x32 64x64 96x96 128x128 192x192 256x256 512x512"
     }
   ],
   "start_url": "/",
@@ -71,7 +71,7 @@
       "url": "/",
       "icons": [
         {
-          "src": "/assets/favicon16p.png", "sizes": "16x16"
+          "src": "/assets/favicon.ico", "sizes": "16x16 24x24 32x32 48x48 64x64 96x96 128x128 196x196 256x256"
         }
       ]
     }
