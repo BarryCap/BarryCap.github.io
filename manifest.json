@@ -62,7 +62,7 @@
   "background_color": "#000",
   "display": "fullscreen",
   "scope": "/",
-  "theme_color": "#fff",
+  "theme_color": "#000",
   "shortcuts": [
     {
       "name": "Barry Cap",
