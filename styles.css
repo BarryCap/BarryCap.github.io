@@ -283,6 +283,11 @@ img[title]:active::after {
   border-color: #fff8;
   border-radius: 2px;
 }
+.img-right {
+  position: absolute;
+  top: 16px;
+  right: 64px;
+}
 video {
   margin: 2px;
   border-radius: 0.01px;
