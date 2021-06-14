@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="https://barrycap.com/assets/favicon.ico"/>
+    <script src="https://barrycap.com/googleanalytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
+    <script async src="/script.js"></script>
+    <title>Barry Cap › 3D › Le Clocher</title>
+    <style>
+      html,body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+      }
+      #app {
+        width: 100%;
+        height: 100%;
+        cursor: grab;
+      }
+      #app:active {
+        cursor: grabbing;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <model-obj :src="src"></model-obj>
+    </div>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-3d-model@1.2.2/dist/vue-3d-model.umd.js"></script>
+    <script>new Vue({el:'#app',data:{src:'https://barrycap.com/3D/LeClocher.obj'}})</script>
+  </body>
+</html>
