@@ -285,8 +285,9 @@ img[title]:active::after {
 }
 .img-right {
   position: absolute;
-  top: 16px;
+  top: 48px;
   right: 64px;
+  z-index: 0;
 }
 video {
   margin: 2px;
@@ -1041,6 +1042,7 @@ textarea:focus {
   .sub-txt     { font-size: 28px; }
   .sub-title   { font-size: 32px; }
   .img-title   { font-size: 32px; }
+  .img-right { display: none; }
   .button:link { font-size: 28px; line-height: 46px; min-height: 52px; }
   input        { font-size: 28px; }
   textarea     { font-size: 28px; }
@@ -1062,6 +1064,7 @@ textarea:focus {
 @media screen and (min-width: 1300px){ .left-txt{ width: calc(75vw   - 780px); font-size: 16px; } }
 @media screen and (min-width: 1350px){ .left-txt{ width: calc(74vw   - 780px); font-size: 16px; } }
 @media screen and (min-width: 1400px){ .left-txt{ width: calc(73vw   - 780px); font-size: 16.25px; } }
+@media screen and (max-width: 1400px){ .img-right { top: 16px; right: 16px; } }
 @media screen and (min-width: 1450px){ .left-txt{ width: calc(72vw   - 780px); font-size: 16.5px; } }
 @media screen and (min-width: 1500px){ .left-txt{ width: calc(71vw   - 780px); font-size: 16.75px; } }
 @media screen and (min-width: 1550px){ .left-txt{ width: calc(71vw   - 780px); font-size: 17px; } }
