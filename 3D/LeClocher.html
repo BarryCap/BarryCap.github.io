@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <noscript><div>This page needs JavaScript to run. :)</div><a href="https://barrycap.com/">BarryCap.com</a></noscript>
     <link rel="icon" href="https://barrycap.com/assets/favicon.ico"/>
     <script src="https://barrycap.com/googleanalytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
@@ -14,6 +15,8 @@
         box-sizing: border-box;
         width: 100%;
         height: 100%;
+        text-align: center;
+        overflow: hidden;
       }
       #app {
         width: 100%;
@@ -22,6 +25,18 @@
       }
       #app:active {
         cursor: grabbing;
+      }
+      div {
+        color: #444;
+        background-color: #aaa;
+        padding-top: 10vw;
+        font-size: 10vw;
+      }
+      a {
+        position: absolute;
+        bottom: 1vw;
+        left: 1vw;
+        font-size: 2vw;
       }
     </style>
   </head>
