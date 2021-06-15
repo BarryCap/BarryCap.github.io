@@ -10,9 +10,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYUlEQVQ4y6WTUQ7AIAhD28aDc3P3tcToYCD90xTwlUgUNQ1zPfO4MDAq2MWMKZLQ1KiYV7z31QfCnsFfoGptwEDdFrsZVDeiKndrjV+DRsYYYel2chnBa+L+hWywjPgyTR5eqCYdJxsfDgAAAABJRU5ErkJggg==" />
     <title>The Adventure Foretold</title>
     <style>
-      @font-face { font-family: brown-regular; src: url('../src/assets/brown-regular.ttf'); }
-      body { background: #000; font-size: 0; margin: 0; min-width: 100vh; overflow-wrap: normal; text-align: center; }
-      p { color: #fff; font-family: brown-regular, Brown, sans-serif; font-size: 2vh; }
+      @font-face { font-family: Brown; src: url('assets/fonts/brown.ttf'); }
+      body { background: #000; font-size: 0; margin: 0; min-width: 100vh; overflow-wrap: normal; text-align: center; user-select: none; -ms-overflow-style: none; }
+      p { color: #fff; font-family: Brown, sans-serif; font-size: 2vh; line-height: 100vh; margin: 0; }
       .fore, .told { cursor: crosshair; display: inline-block; margin: 0; padding: 0; transition-duration: 0.2s; height: 6.25vh; width: 6.25vh; }
       .fore { background: transparent; }
       .told { background: #f80; }
@@ -20,6 +20,7 @@
       .told:hover { background: #fbb55a; }
       .told:active { background: #f6db7d; }
       .fore:active { background: #444; }
+      ::-webkit-scrollbar { display: none; }
     </style>
   </head>
   <body>
