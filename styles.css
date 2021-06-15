@@ -1059,6 +1059,15 @@ textarea:focus {
     line-height: 28px;
   }
   .cookie-container { transform: scale(1.5); transform-origin: bottom right; }
+  .intro-header-svg { width: 80vw; top: 30vh; left: 10vw; }
+  .intro-button { min-height: 10vh; line-height: 10vh;}
+  .intro-video {
+    min-width: 100vh;
+    min-height: 100vw;
+    top: 50vh;
+    left: -50vw;
+    transform: translateY(-28vh) rotate(90deg);
+  }
 }
 @media screen and (max-width: 1299px) { .left-txt { display: none; } }
 @media screen and (min-width: 1300px) { .left-txt { width: calc(75vw   - 780px); font-size: 16px; } }
