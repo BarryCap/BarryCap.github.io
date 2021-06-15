@@ -50,3 +50,11 @@ if (form) {
     }, 1)
   })
 }
+// White theme
+function changeTheme() {
+  document.body.style.setProperty('--c0', '#fff')
+  document.body.style.setProperty('--cc', '#666')
+  document.body.style.setProperty('--cf', '#000')
+  document.body.style.setProperty('--clink', '#08e')
+  document.body.style.setProperty('--clink0', '#08e8')
+}

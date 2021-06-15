@@ -1,3 +1,10 @@
+:root {
+  --c0: #000;
+  --cc: #ccc;
+  --cf: #fff;
+  --clink: #8ee;
+  --clinko: #8ee8;
+}
 @font-face {
   font-family: "Future Menu Brown";
   src: url(assets/fonts/fmb.ttf) format("truetype");
@@ -170,9 +177,9 @@
   50% { opacity: 0; bottom: -10vh; }
 }
 body {
-  background-color: #000;
+  background-color: var(--c0);
   background-repeat: repeat;
-  color: #ccc;
+  color: var(--cc);
   margin: 0;
   padding-top: 4px;
   text-align: center;
@@ -208,21 +215,21 @@ h3 {
   font-weight: normal;
 }
 a {
-  color: #fff;
+  color: var(--cf);
   text-decoration-color: #0000;
   cursor: url(assets/cursors/pointer.png) 0 0, pointer;
   transition-duration: 0.2s;
 }
 a:hover {
-  color: #8ee;
+  color: var(--clink);
   background-color: #eff2;
-  text-decoration-color: #8ee8;
+  text-decoration-color: var(--clinko);
   border-radius: 5px;
 }
 a:focus {
-  color: #8ee;
+  color: var(--clink);
   background-color: #eff4;
-  text-decoration-color: #8ee;
+  text-decoration-color: var(--clink);
   border-radius: 2px;
 }
 code {
@@ -362,7 +369,6 @@ svg {
   animation: long-draw 6s ease-out;
 }
 form {
-  color: #eee;
   background-color: #6668;
   width: 780px;
   font-size: 21px;
@@ -666,9 +672,9 @@ textarea:focus {
   min-height: 0;
 }
 .left-txt {
-  color: #eee;
+  color: var(--cf);
   background-color: #333;
-  opacity: 0.5;
+  opacity: 0.2;
   border-radius: 5px;
   padding: 16px;
   text-align: justify;
@@ -680,7 +686,7 @@ textarea:focus {
   transition-duration: 0.2s;
 }
 .left-txt:hover {
-  color: #fff;
+  color: var(--cf);
   background-color: #6668;
   opacity: 1;
 }
@@ -789,7 +795,7 @@ textarea:focus {
   text-align: justify;
 }
 .img-title {
-  color: #fff;
+  color: var(--cf);
   font-size: 32px;
   padding-bottom: 0;
   cursor: url(assets/cursors/text-big.png) 4 17, text;
@@ -855,7 +861,7 @@ textarea:focus {
   border-radius: 2px;
 }
 .button:focus {
-  color: #fff;
+  color: var(--cf);
   box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
