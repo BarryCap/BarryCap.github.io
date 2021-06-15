@@ -21,7 +21,7 @@ I develop this site since 2020 using mostly HTML and CSS.<br>
 &emsp;&emsp;Some sounds I experimented and music I composed.
 
 ### &emsp;[Game](https://barrycap.com/realizations/games)
-&emsp;&emsp;I always wanted to make games—here are some of it.
+&emsp;&emsp;I always wanted to make games&mdash;here are some of it.
 
 ---
 ### [About](https://barrycap.com/about)
@@ -29,7 +29,7 @@ I develop this site since 2020 using mostly HTML and CSS.<br>
 
 ---
 ### [Random](https://barrycap.com/random)
-&emsp;Random. The name isn't explicit enough? It's all random. Even the background animation. It's researches I made, things I wanted to talk about…
+&emsp;Random. The name isn't explicit enough? It's all random. Even the background animation. It's researches I made, things I wanted to talk about&mldr;
 
 ---
 ### [Spotlight](https://barrycap.com/spotlight)
