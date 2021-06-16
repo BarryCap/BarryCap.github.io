@@ -51,17 +51,18 @@ if (form) {
   })
 }
 // White theme
-function themeLight() {
-  document.body.style.setProperty('--c0', '#fff')
-  document.body.style.setProperty('--cc', '#666')
-  document.body.style.setProperty('--cf', '#000')
-  document.body.style.setProperty('--clink', '#08e')
-  document.body.style.setProperty('--clink0', '#08e8')
-}
-function themeDark() {
-  document.body.style.setProperty('--c0', '#000')
-  document.body.style.setProperty('--cc', '#ccc')
-  document.body.style.setProperty('--cf', '#fff')
-  document.body.style.setProperty('--clink', '#8ee')
-  document.body.style.setProperty('--clink0', '#8ee8')
+function changeTheme() {
+  if (document.body.style.getPropertyValue('--c0') == '#fff') {
+    document.body.style.setProperty('--c0', '#000')
+    document.body.style.setProperty('--cc', '#ccc')
+    document.body.style.setProperty('--cf', '#fff')
+    document.body.style.setProperty('--clink', '#8ee')
+    document.body.style.setProperty('--clink0', '#8ee8')
+  } else {
+    document.body.style.setProperty('--c0', '#fff')
+    document.body.style.setProperty('--cc', '#666')
+    document.body.style.setProperty('--cf', '#000')
+    document.body.style.setProperty('--clink', '#08e')
+    document.body.style.setProperty('--clink0', '#08e8')
+  }
 }
