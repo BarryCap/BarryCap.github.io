@@ -237,6 +237,16 @@ a:focus {
   text-decoration-color: var(--clink);
   border-radius: 2px;
 }
+button {
+  color: var(--cf);
+  width: auto !important;
+  height: 32px;
+  border: none;
+  padding: 0 4px 0 4px !important;
+  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  line-height: 32px;
+  cursor: url(assets/cursors/pointer.png) 0 0, pointer;
+}
 code {
   background-color: #6668;
   border-radius: 4px;
@@ -840,7 +850,7 @@ textarea:focus {
   width: 784px;
   cursor: url(assets/cursors/default.png) 0 0, auto;
 }
-.button:link {
+.button {
   background-color: #6668;
   box-shadow: 0 0 0 0 #8888;
   font-size: 21px;
