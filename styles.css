@@ -920,6 +920,7 @@ textarea:focus {
 }
 .button-icon {
   box-shadow: 0 0 0 0 #6668;
+  height: 176px;
   padding: 8px 0 8px 0 !important;
   animation: none !important;
 }
