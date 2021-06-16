@@ -2,49 +2,16 @@
 <html>
   <head>
     <link rel="icon" href="https://barrycap.com/assets/favicon.ico"/>
+    <link rel="stylesheet" href="3D.css">
     <script src="https://barrycap.com/googleanalytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
     <script async src="/script.js"></script>
     <title>Barry Cap › 3D › Le Clocher</title>
-    <style>
-      html,body {
-        filter: sepia(1) hue-rotate(2deg) saturate(10);
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        overflow: hidden;
-      }
-      #app {
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        cursor: grab;
-      }
-      #app:active {
-        cursor: grabbing;
-      }
-      div {
-        color: #444;
-        background-color: #aaa;
-        padding-top: 10vw;
-        font-size: 10vw;
-      }
-      a {
-        position: absolute;
-        bottom: 1vw;
-        left: 1vw;
-        font-size: 2vw;
-      }
-    </style>
+    <style>html{filter:sepia(1)hue-rotate(2deg)saturate(10)}</style>
   </head>
   <body>
     <noscript><div>This page needs JavaScript to run. :)</div><a href="https://barrycap.com/">BarryCap.com</a></noscript>
-    <div id="app">
-      <model-obj :src="src"></model-obj>
-    </div>
+    <div id="app"><model-obj :src="src"></model-obj></div>
     <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-3d-model@1.2.2/dist/vue-3d-model.umd.js"></script>
     <script>new Vue({el:'#app',data:{src:'https://barrycap.com/3D/LeClocher.obj'}})</script>
