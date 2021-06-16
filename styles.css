@@ -4,6 +4,11 @@
   --cf: #fff;
   --clink: #8ee;
   --clinko: #8ee8;
+  --ffmb: Future Menu Brown, Brown, Helvetica, sans-serif;
+  --mdef: url(assets/cursors/default.png) 0 0, auto;
+  --mpointer: url(assets/cursors/pointer.png) 0 0, pointer;
+  --mtxt: url(assets/cursors/text.png) 4 12, text;
+  --mtxtbig: url(assets/cursors/text-big.png) 4 17, text;
 }
 @font-face {
   font-family: "Future Menu Brown";
@@ -183,9 +188,9 @@ body {
   margin: 0;
   padding-top: 4px;
   text-align: center;
-  cursor: url(assets/cursors/default.png) 0 0, auto;
+  cursor: var(--mdef);
   overflow: overlay;
-  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  font-family: var(--ffmb);
   font-size: 0;
   hyphens: auto;
   transition: ease-in 0.2s;
@@ -198,31 +203,31 @@ div {
 }
 p {
   margin: 0;
-  cursor: url(assets/cursors/text.png) 4 12, text;
+  cursor: var(--mtxt);
   transition: ease-in 0.2s;
 }
 h1 {
   margin: 0 0 32px 0;
-  cursor: url(assets/cursors/text-big.png) 4 17, text;
+  cursor: var(--mtxtbig);
   font-weight: normal;
   transition: ease-in 0.2s;
 }
 h2 {
   margin: 8px 0 20px 0;
-  cursor: url(assets/cursors/text-big.png) 4 17, text;
+  cursor: var(--mtxtbig);
   font-weight: normal;
   transition: ease-in 0.2s;
 }
 h3 {
   margin: 8px 0 8px 0;
-  cursor: url(assets/cursors/text.png) 4 12, text;
+  cursor: var(--mtxt);
   font-weight: normal;
   transition: ease-in 0.2s;
 }
 a {
   color: var(--cf);
   text-decoration-color: #0000;
-  cursor: url(assets/cursors/pointer.png) 0 0, pointer;
+  cursor: var(--mpointer);
   transition: ease-in 0.2s;
 }
 a:hover {
@@ -243,9 +248,9 @@ button {
   height: 32px;
   border: none;
   padding: 0 4px 0 4px !important;
-  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  font-family: var(--ffmb);
   line-height: 32px;
-  cursor: url(assets/cursors/pointer.png) 0 0, pointer;
+  cursor: var(--mpointer);
 }
 code {
   background-color: #6668;
@@ -410,7 +415,7 @@ input {
   border: none;
   border-radius: 5px;
   transition-duration: 0.2s;
-  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  font-family: var(--ffmb);
   cursor: url(assets/cursors/text.png) 6 6, text;
 }
 input:hover {
@@ -438,7 +443,7 @@ input::selection {
   margin-left: calc(80% - 4px);
   width: 20%;
   text-align: center;
-  cursor: url(assets/cursors/pointer.png) 0 0, pointer;
+  cursor: var(--mpointer);
 }
 .input-button:hover {
   box-shadow: 0 0 0 0 #fffa;
@@ -459,7 +464,7 @@ textarea {
   transition-duration: 0.2s;
   resize: none;
   font-size: 21px;
-  font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
+  font-family: var(--ffmb);
   cursor: url(assets/cursors/text.png) 4 11, text;
   scrollbar-color: #8888 #fff0;
 }
@@ -556,13 +561,13 @@ textarea:focus {
   margin: -128px 128px 64px 64px;
 }
 #help-body {
-  cursor: url(assets/cursors/default.png) 0 0, auto;
+  cursor: var(--mdef);
   background-image: url(assets/bg/help.svg);
   animation: help 4s linear infinite;
   background-attachment: fixed;
 }
 #vhist-body {
-  cursor: url(assets/cursors/default.png) 0 0, auto;
+  cursor: var(--mdef);
   background-image: url(assets/bg/vhist.svg);
   animation: help 4s linear infinite;
   background-attachment: fixed;
@@ -776,7 +781,7 @@ textarea:focus {
     right: 2px;
     border-radius: 5px;
     transition-duration: 0.2s;
-    cursor: url(assets/cursors/pointer.png) 0 0, pointer;
+    cursor: var(--mpointer);
   }
   .cookie-button:hover {
     background-color: #8888;
@@ -813,7 +818,7 @@ textarea:focus {
   color: var(--cf);
   font-size: 32px;
   padding-bottom: 0;
-  cursor: url(assets/cursors/text-big.png) 4 17, text;
+  cursor: var(--mtxtbig);
 }
 .img-spot {
   z-index: 1;
@@ -848,7 +853,7 @@ textarea:focus {
   padding-bottom: 16px;
   min-height: 35px;
   width: 784px;
-  cursor: url(assets/cursors/default.png) 0 0, auto;
+  cursor: var(--mdef);
 }
 .button {
   background-color: #6668;
