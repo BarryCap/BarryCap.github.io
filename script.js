@@ -51,10 +51,17 @@ if (form) {
   })
 }
 // White theme
-function changeTheme() {
+function themeLight() {
   document.body.style.setProperty('--c0', '#fff')
   document.body.style.setProperty('--cc', '#666')
   document.body.style.setProperty('--cf', '#000')
   document.body.style.setProperty('--clink', '#08e')
   document.body.style.setProperty('--clink0', '#08e8')
+}
+function themeDark() {
+  document.body.style.setProperty('--c0', '#000')
+  document.body.style.setProperty('--cc', '#ccc')
+  document.body.style.setProperty('--cf', '#fff')
+  document.body.style.setProperty('--clink', '#8ee')
+  document.body.style.setProperty('--clink0', '#8ee8')
 }

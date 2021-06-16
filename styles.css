@@ -188,6 +188,7 @@ body {
   font-family: Future Menu Brown, Brown, Helvetica, sans-serif;
   font-size: 0;
   hyphens: auto;
+  transition: ease-in 0.2s;
   scrollbar-color: #0000 #8888;
   -webkit-tap-highlight-color: transparent;
 }
@@ -198,27 +199,31 @@ div {
 p {
   margin: 0;
   cursor: url(assets/cursors/text.png) 4 12, text;
+  transition: ease-in 0.2s;
 }
 h1 {
   margin: 0 0 32px 0;
   cursor: url(assets/cursors/text-big.png) 4 17, text;
   font-weight: normal;
+  transition: ease-in 0.2s;
 }
 h2 {
   margin: 8px 0 20px 0;
   cursor: url(assets/cursors/text-big.png) 4 17, text;
   font-weight: normal;
+  transition: ease-in 0.2s;
 }
 h3 {
   margin: 8px 0 8px 0;
   cursor: url(assets/cursors/text.png) 4 12, text;
   font-weight: normal;
+  transition: ease-in 0.2s;
 }
 a {
   color: var(--cf);
   text-decoration-color: #0000;
   cursor: url(assets/cursors/pointer.png) 0 0, pointer;
-  transition-duration: 0.2s;
+  transition: ease-in 0.2s;
 }
 a:hover {
   color: var(--clink);
