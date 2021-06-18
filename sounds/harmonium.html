@@ -2,78 +2,12 @@
 <html lang='en'>
   <head>
     <link rel="icon" href="https://barrycap.com/assets/favicon.ico"/>
+    <link rel="stylesheet" href="keyboard.css">
     <script src="https://barrycap.com/googleanalytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
     <script async src="/script.js"></script>
+    <script src="keyboard.js"></script>
     <title>Barry Cap › Sound › Harmonium</title>
-    <script>
-      function key(url) {
-        new Audio(url).play()
-      }
-    </script>
-    <style>
-      body {
-        background: #630;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      div {
-        transition: .1s ease-out;
-      }
-      .harmonium {
-        position: absolute;
-        top: calc(50vh - 15vw/2);
-        display: flex;
-      }
-        .white-keys {
-          display: flex;
-          z-index: 1;
-        }
-          .white {
-            background-color: #eee;
-            border-radius: .3vw;
-            box-shadow: 0 .5vw .5vw -.1vw #0004, inset 0 0 0 .1vw #ccc, inset 0 -.7vw 0 0 #ccc;
-            width: 2.5vw;
-            height: 15vw;
-          }
-            .white:active {
-              background-color: #ddd;
-              box-shadow: 0 .4vw 1vw -.2vw #0004, inset 0 0 0 .1vw #bbb, inset 0 -.2vw 0 0 #bbb;
-            }
-        .black-keys {
-          width: 86vw;
-          position: absolute;
-          left: 1.3vw;
-          display: flex;
-          gap: 2.5vw;
-        }
-          .keys-2 {
-            display: flex;
-            justify-content: space-between;
-            gap: 1.7vw;
-          }
-          .keys-3 {
-            box-shadow: 0 0 1vw 0.5vw #0002;
-            display: flex;
-            justify-content: space-between;
-            gap: 1.4vw;
-          }
-          .black {
-            background-color: #222;
-            border-radius: .3vw;
-            box-shadow: .2vw 0 .5vw 0 #0004, inset 0 0 0 .2vw #666, inset 0 -.7vw 0 0 #666;
-            width: 1.6vw;
-            height: 10vw;
-            z-index: 2;
-          }
-            .black:active {
-              background-color: #000;
-              box-shadow: .2vw 0 .2vw 0 #0004, inset 0 0 0 .2vw #444, inset 0 -.4vw 0 0 #555;
-            }
-    </style>
   </head>
   </body>
     <div class="harmonium">
