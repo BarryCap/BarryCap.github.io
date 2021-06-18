@@ -1,3 +1,10 @@
+let audioPlaying = {}
+
 function key(url) {
-  new Audio(url).play()
+  audioPlaying[url] = new Audio(`harmonium/${url}.wav`)
+  audioPlaying[url].play()
+}
+
+function keyUp(url){
+  audioPlaying[url].pause()
 }
