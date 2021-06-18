@@ -1,10 +1,12 @@
 let audioPlaying = {}
 
-function key(url) {
+const key = async (url) => {
   audioPlaying[url] = new Audio(`harmonium/${url}.wav`)
-  audioPlaying[url].play()
+  await audioPlaying[url].play()
 }
 
-function keyUp(url){
-  audioPlaying[url].pause()
+const keyUp = async (url) => {
+  if (audioPlaying[url]) {
+    await audioPlaying[url].pause()
+  }
 }
