@@ -797,7 +797,6 @@ textarea:focus {
   z-index: -1;
 }
 .button-container {
-  font-size: 0;
   margin: 0;
   margin-left: calc(50% - 784px / 2);
   padding-top: 16px;
@@ -805,11 +804,11 @@ textarea:focus {
   min-height: 35px;
   width: 784px;
   cursor: var(--mdef);
+  font-size: 0;
 }
 .button {
   background-color: #6668;
   box-shadow: 0 0 0 0 #8888;
-  font-size: 21px;
   margin: 2px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -818,6 +817,8 @@ textarea:focus {
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
+  font-size: 21px;
+  user-select: none;
 }
 .button:hover {
   background-color: #8888;
