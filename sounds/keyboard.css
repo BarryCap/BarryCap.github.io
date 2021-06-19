@@ -13,8 +13,7 @@ body {
   align-items: center;
 } svg {
   position: absolute;
-  top: -10vw;
-}
+  top: -10vw; }
 .white-keys {
     display: flex;
     z-index: 1;
