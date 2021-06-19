@@ -601,7 +601,7 @@ textarea:focus {
     box-shadow: 0 0 0 0 #8888;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    width: 20vw !important;
+    width: 16vw !important;
     min-height: 3vw !important;
     font-size: 2vw !important;
     line-height: 3vw;
