@@ -593,6 +593,7 @@ textarea:focus {
   .intro-button-container {
     height: 95vh;
     animation: button-container-intro 2s ease-out;
+    cursor: var(--mdef);
     display: flex;
     align-items: flex-end;
     justify-content: center;
