@@ -5,11 +5,17 @@ body {
   display: flex;
   justify-content: center;
 } div { transition: .1s ease-out; }
-.harmonium {
+.keyboard {
   position: absolute;
   top: calc(50vh - 15vw/2);
   display: flex;
-} .white-keys {
+  justify-content: center;
+  align-items: center;
+} svg {
+  position: absolute;
+  top: -10vw;
+}
+.white-keys {
     display: flex;
     z-index: 1;
   } .white {
@@ -26,6 +32,7 @@ body {
     position: absolute;
     left: 1.3vw;
     display: flex;
+    align-self: flex-start;
     gap: 2.5vw;
   } .keys-2 {
       display: flex;
