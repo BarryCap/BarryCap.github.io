@@ -605,7 +605,7 @@ textarea:focus {
     width: 16vw !important;
     min-height: 3vw !important;
     font-size: 2vw !important;
-    line-height: 3vw;
+    line-height: 3vw !important;
   }
   .intro-button:hover {
     box-shadow: 0 0 0 4px #8888;
