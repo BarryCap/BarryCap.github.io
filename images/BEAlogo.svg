@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 100">
+  <title>BestEverAlbums logo</title>
+  <g stroke="#000" stroke-linecap="round" stroke-width="2">
+    <rect x="105" y="5" width="90" height="90" ry="45" fill="#0ff" style="mix-blend-mode:normal"/>
+    <rect x="155" y="45" width="10" height="30" ry="0" fill="none" stroke-linejoin="round"/>
+    <g>
+      <g stroke-linejoin="round">
+        <circle cx="150" cy="60" r="15" fill="#0cf"/>
+        <circle cx="150" cy="60" r="5" fill="#0ff"/>
+        <circle cx="140" cy="35" r="5" fill="#0cf"/>
+      </g>
+      <rect x="55" y="5" width="90" height="90" ry="23.1" fill="#0cf"/>
+      <g>
+        <circle cx="100" cy="60" r="15" fill="#0ff"/>
+        <path d="m95 57a5 5 0 0 1 5-5 5 5 0 0 1 5 5h-5z" fill="#0cf" stroke-linejoin="round"/>
+        <path d="m105 63a5 5 0 0 1-2.5 4.33 5 5 0 0 1-5 0 5 5 0 0 1-2.5-4.33z" fill="#0cf" stroke-linejoin="round"/>
+        <path d="m100 63 14 3.16e-4" fill="#0ff"/>
+        <rect x="5" y="5" width="90" height="90" rx="0" ry="0" fill="#08f"/>
+      </g>
+    </g>
+    <rect x="35" y="25" width="10" height="35" fill="none" stroke-linejoin="round"/>
+    <g>
+      <circle cx="50" cy="60" r="15" fill="#0cf"/>
+      <circle cx="40" cy="25" r="5" fill="#0cf"/>
+      <circle cx="50" cy="60" r="5" fill="#08f"/>
+    </g>
+  </g>
+</svg>
