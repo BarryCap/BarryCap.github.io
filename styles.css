@@ -38,7 +38,7 @@
       /* ˅ */ ::-webkit-scrollbar-button:single-button:vertical:increment   { background-image: url(assets/arrows/bottom.svg); }
       /* < */ ::-webkit-scrollbar-button:single-button:horizontal:decrement { background-image: url(assets/arrows/left.svg); }
     /* Corner */
-      ::-webkit-scrollbar-corner { background: none; }
+      ::-webkit-scrollbar-corner { background: transparent; }
     /* Textarea */
       textarea::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: 0.2s; }
       textarea::-webkit-scrollbar-track { background: #fff0; }
