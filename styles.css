@@ -13,7 +13,7 @@
   }
   :target {
     animation: target 5s ease-out normal;
-    background-color: #0000;
+    background: #0000;
     border-radius: 5px;
   }
   /* Tabulation outline */
@@ -24,30 +24,30 @@
     textarea::selection { color: #fffc; background: #444c; }
   /* Scrollbar */
     ::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: 0.2s; }
-    ::-webkit-scrollbar-track { background-color: #0000; }
-    ::-webkit-scrollbar-thumb        { background-color: #6668; border-radius: 5px; }
-    ::-webkit-scrollbar-thumb:hover  { background-color: #8888; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:active { background-color: #fffa; border-radius: 2px; }
+    ::-webkit-scrollbar-track { background: #0000; }
+    ::-webkit-scrollbar-thumb        { background: #6668; border-radius: 5px; }
+    ::-webkit-scrollbar-thumb:hover  { background: #8888; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:active { background: #fffa; border-radius: 2px; }
     /* Buttons */
-      ::-webkit-scrollbar-button        { background-color: #6668; border-radius: 5px; }
-      ::-webkit-scrollbar-button:hover  { background-color: #8888; border-radius: 4px; }
-      ::-webkit-scrollbar-button:active { background-color: #fffa; border-radius: 2px; }
+      ::-webkit-scrollbar-button        { background: #6668; border-radius: 5px; }
+      ::-webkit-scrollbar-button:hover  { background: #8888; border-radius: 4px; }
+      ::-webkit-scrollbar-button:active { background: #fffa; border-radius: 2px; }
       ::-webkit-scrollbar-button:single-button { display: block; height: 16px; width: 16px; }
       /* ˄ */ ::-webkit-scrollbar-button:single-button:vertical:decrement   { background-image: url(assets/arrows/top.svg); }
       /* > */ ::-webkit-scrollbar-button:single-button:horizontal:increment { background-image: url(assets/arrows/right.svg); }
       /* ˅ */ ::-webkit-scrollbar-button:single-button:vertical:increment   { background-image: url(assets/arrows/bottom.svg); }
       /* < */ ::-webkit-scrollbar-button:single-button:horizontal:decrement { background-image: url(assets/arrows/left.svg); }
     /* Corner */
-      ::-webkit-scrollbar-corner { background-color: none; }
+      ::-webkit-scrollbar-corner { background: none; }
     /* Textarea */
       textarea::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: 0.2s; }
-      textarea::-webkit-scrollbar-track { background-color: #fff0; }
-      textarea::-webkit-scrollbar-thumb { background-color: #6664; border-radius: 5px; }
-      textarea::-webkit-scrollbar-thumb:hover  { background-color: #4448; border-radius: 4px; }
-      textarea::-webkit-scrollbar-thumb:active { background-color: #0008; border-radius: 2px; }
-      textarea::-webkit-scrollbar-button        { background-color: #6664; border-radius: 5px; }
-      textarea::-webkit-scrollbar-button:hover  { background-color: #4448; border-radius: 4px; }
-      textarea::-webkit-scrollbar-button:active { background-color: #0008; border-radius: 2px; }
+      textarea::-webkit-scrollbar-track { background: #fff0; }
+      textarea::-webkit-scrollbar-thumb { background: #6664; border-radius: 5px; }
+      textarea::-webkit-scrollbar-thumb:hover  { background: #4448; border-radius: 4px; }
+      textarea::-webkit-scrollbar-thumb:active { background: #0008; border-radius: 2px; }
+      textarea::-webkit-scrollbar-button        { background: #6664; border-radius: 5px; }
+      textarea::-webkit-scrollbar-button:hover  { background: #4448; border-radius: 4px; }
+      textarea::-webkit-scrollbar-button:active { background: #0008; border-radius: 2px; }
 @font-face { font-family: "Future Menu Brown"; src: url(assets/fonts/fmb.ttf) format("truetype"); }
 @keyframes home-intro { 0% { opacity: 0; transform: rotate3d(5, 90, 10, 30deg); overflow: hidden; } 99% { overflow: hidden; } }
 @keyframes home { 100% { background-position: -32px 32px; } }
@@ -62,14 +62,14 @@
 @keyframes sound { 100% { background-position: -32px 0; } }
 @keyframes game { 0% { background-position: 0 32px; } 50% { background-position: -32px 0; } 100% { background-position: 0 -32px; } }
 @keyframes page-img-big { 0% { background-position: 0 0; } 25% { background-position: 8px 8px; } 50% { background-position: 0 16px; } 75% { background-position: 8px 24px; } 100% { background-position: 0 32px; } }
-@keyframes button-hover { 0% { background-color: #6668; box-shadow: inset 0 0 #0000; } 50% { background-color: #6668; } 100% { background-color: #0000; box-shadow: inset 0 36px #8888; } }
-@keyframes button-return-hover { 0% { background-color: #6668; box-shadow: inset 0 0 #0000; } 50% { background-color: #6668; } 100% { background-color: #0000; box-shadow: inset 0 48px #8888; } }
-@keyframes button-help-hover { 0% { background-color: #6668; box-shadow: inset 0 0 #0000; } 50% { background-color: #6668; } 100% { background-color: #0000; box-shadow: inset 0 -48px #8888; } }
+@keyframes button-hover { 0% { background: #6668; box-shadow: inset 0 0 #0000; } 50% { background: #6668; } 100% { background: #0000; box-shadow: inset 0 36px #8888; } }
+@keyframes button-return-hover { 0% { background: #6668; box-shadow: inset 0 0 #0000; } 50% { background: #6668; } 100% { background: #0000; box-shadow: inset 0 48px #8888; } }
+@keyframes button-help-hover { 0% { background: #6668; box-shadow: inset 0 0 #0000; } 50% { background: #6668; } 100% { background: #0000; box-shadow: inset 0 -48px #8888; } }
 @keyframes button-help-intro { 0% { bottom: -10vh; } 100% { bottom: 16px; } }
-@keyframes button-spot-hover { 0% { background-color: #6668; box-shadow: inset 0 0 #0000; } 50% { background-color: #6668; } 100% { background-color: #0000; box-shadow: inset 0 -64px #8888; } }
+@keyframes button-spot-hover { 0% { background: #6668; box-shadow: inset 0 0 #0000; } 50% { background: #6668; } 100% { background: #0000; box-shadow: inset 0 -64px #8888; } }
 @keyframes cookie-container { 0% { opacity: 0; right: -25vw; } 100% { opacity: 1; } }
 @keyframes cursor-progress { 6.25% { cursor: url("assets/cursors/progress1.png") 0 10, progress; } 12.5% { cursor: url("assets/cursors/progress2.png") 0 10, progress; } 18.75% { cursor: url("assets/cursors/progress3.png") 0 10, progress; } 25% { cursor: url("assets/cursors/progress4.png") 0 10, progress; } 31.25% { cursor: url("assets/cursors/progress5.png") 0 10, progress; } 37.5% { cursor: url("assets/cursors/progress6.png") 0 10, progress; } 43.75% { cursor: url("assets/cursors/progress7.png") 0 10, progress; } 50% { cursor: url("assets/cursors/progress8.png") 0 10, progress; } 56.25% { cursor: url("assets/cursors/progress9.png") 0 10, progress; } 66.66% { cursor: url("assets/cursors/progress10.png") 0 10, progress; } 62.5% { cursor: url("assets/cursors/progress11.png") 0 10, progress; } 68.75% { cursor: url("assets/cursors/progress12.png") 0 10, progress; } 75% { cursor: url("assets/cursors/progress13.png") 0 10, progress; } 81.25% { cursor: url("assets/cursors/progress14.png") 0 10, progress; } 87.5% { cursor: url("assets/cursors/progress15.png") 0 10, progress; } 93.75% { cursor: url("assets/cursors/progress16.png") 0 10, progress; } 100% { cursor: url("assets/cursors/progress1.png") 0 10, progress; } }
-@keyframes target { 0% { background-color: #8ff4; } 80% { background-color: #cff4; } 100% { background-color: #0000; } }
+@keyframes target { 0% { background: #8ff4; } 80% { background: #cff4; } 100% { background: #0000; } }
 @keyframes draw { 0% { stroke-dasharray: 1000; stroke-dashoffset: -200; } 100% { stroke-dasharray: 2000; stroke-dashoffset: 0; } }
 @keyframes long-draw { 0% { stroke-dasharray: 1000; stroke-dashoffset: 1200; } 100% { stroke-dasharray: 2000; stroke-dashoffset: 0; } }
 @keyframes header-intro { 0% { transform: scale(1); opacity: 0; clip-path: inset(0 0 100% 0); } 1.25% { clip-path: inset(0 0 0 0); } 5% { opacity: 1; } 98.625% { transform: scale(1.2); opacity: 1; clip-path: inset(0 0 0 0); } 100% { transform: scale(1.2); opacity: 0; clip-path: inset(100% 0 0 0); } }
@@ -78,9 +78,9 @@
 @keyframes button-container-intro { 0% { opacity: 0; height: 125vh; } 100% { opacity: 1; height: 95vh; } }
 @media screen and (max-width: 1200px){
   @keyframes button-hover {
-    0%   { background-color: #6668; box-shadow: inset 0 0 #0000; }
-    60%  { background-color: #6668; }
-    100% { background-color: #0000; box-shadow: inset 0 50px #8888; }
+    0%   { background: #6668; box-shadow: inset 0 0 #0000; }
+    60%  { background: #6668; }
+    100% { background: #0000; box-shadow: inset 0 50px #8888; }
   }
   .txt         { font-size: 28px; }
   .sub-txt     { font-size: 28px; }
@@ -133,7 +133,7 @@
 @media screen and (min-width: 4000px) { .left-txt { width: calc(24vw - 780px); font-size: 21px; left: 32vw; } }
 @media screen and (min-width: 6000px) { .left-txt { width: calc(16.4vw - 780px); font-size: 21px; left: 38vw; } }
 body {
-  background-color: var(--c0);
+  background: var(--c0);
   background-repeat: repeat;
   color: var(--cc);
   margin: 0;
@@ -183,13 +183,13 @@ a {
 }
 a:hover {
   color: var(--clink);
-  background-color: #eff2;
+  background: #eff2;
   text-decoration-color: var(--clinko);
   border-radius: 5px;
 }
 a:focus {
   color: var(--clink);
-  background-color: #eff4;
+  background: #eff4;
   text-decoration-color: var(--clink);
   border-radius: 2px;
 }
@@ -204,7 +204,7 @@ button {
   cursor: var(--mpointer);
 }
 code {
-  background-color: #6668;
+  background: #6668;
   border-radius: 4px;
   padding: 2px;
   font-family: Consolas, monospace;
@@ -231,15 +231,15 @@ img {
   position: relative;
 }
 img:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
 }
 img:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 img:focus {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 img[title]:hover::after {
@@ -248,7 +248,7 @@ img[title]:hover::after {
   bottom: 2px;
   left: 2px;
   right: 2px;
-  background-color: #888c;
+  background: #888c;
   color: #fff;
   border: solid 2px;
   border-color: #8888;
@@ -256,7 +256,7 @@ img[title]:hover::after {
 }
 img[title]:active::after {
   position: absolute;
-  background-color: #fffa;
+  background: #fffa;
   color: #888;
   border-color: #fff8;
   border-radius: 2px;
@@ -276,15 +276,15 @@ video {
   position: relative;
 }
 video:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
 }
 video:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 video:focus {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 audio {
@@ -296,15 +296,15 @@ audio {
   position: relative;
 }
 audio:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
 }
 audio:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 audio:focus {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 iframe {
@@ -316,19 +316,19 @@ iframe {
   position: relative;
 }
 iframe:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
 }
 iframe:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 iframe:focus {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 mark {
-  background-color: #8888;
+  background: #8888;
   border-radius: 4px;
 }
 svg {
@@ -340,7 +340,7 @@ svg {
   animation: long-draw 6s ease-out;
 }
 form {
-  background-color: #6668;
+  background: #6668;
   width: 780px;
   font-size: 21px;
   margin: 2px;
@@ -351,12 +351,12 @@ form {
   transition-duration: 0.2s;
 }
 form:hover {
-  background-color: #8888;
+  background: #8888;
   border-radius: 4px;
 }
 input {
   color: #444;
-  background-color: #fffc;
+  background: #fffc;
   width: 50%;
   font-size: 21px;
   margin: 4px;
@@ -371,17 +371,17 @@ input {
 }
 input:hover {
   color: #222;
-  background-color: #fffe;
+  background: #fffe;
   border-radius: 4px;
 }
 input:active {
   color: #000;
-  background-color: #fff;
+  background: #fff;
   border-radius: 2px;
 }
 input:focus {
   color: #000;
-  background-color: #fff;
+  background: #fff;
   box-shadow: 0 0 0 4px #fff;
   border-radius: 2px;
 }
@@ -400,12 +400,12 @@ input::selection {
   box-shadow: 0 0 0 0 #fffa;
 }
 .input-button:focus {
-  background-color: #fff;
+  background: #fff;
   box-shadow: 0 0 0 4px #fff;
 }
 textarea {
   color: #444;
-  background-color: #fffc;
+  background: #fffc;
   box-shadow: 0 0 0 0 #fffc;
   height: 84px;
   width: calc(100% - 12px);
@@ -421,39 +421,39 @@ textarea {
 }
 textarea:hover {
   color: #222;
-  background-color: #fffe;
+  background: #fffe;
   border-radius: 4px;
 }
 textarea:active {
   color: #000;
-  background-color: #fff;
+  background: #fff;
   border-radius: 2px;
 }
 textarea:focus {
   color: #000;
-  background-color: #fff;
+  background: #fff;
   box-shadow: 0 0 0 4px #fff;
   border-radius: 2px;
 }
 /* Tables */
   .table {
-    background-color: #6668;
+    background: #6668;
     border-radius: 5px;
     margin: 16px 0;
     padding: 2px;
     transition-duration: 0.2s;
   }
   .table:hover {
-    background-color: #7778;
+    background: #7778;
   }
   th {
-    background-color: #6668;
+    background: #6668;
     border-radius: 5px;
     padding: 8px 16px;
     transition-duration: 0.2s;
   }
   th:hover {
-    background-color: #8888;
+    background: #8888;
   }
   .table-left {
     text-align: left;
@@ -462,7 +462,7 @@ textarea:focus {
     text-align: center;
   }
   tr:hover {
-    background-color: #8888;
+    background: #8888;
     transition-duration: 0.2s;
   }
   td {
@@ -470,7 +470,7 @@ textarea:focus {
     padding: 8px 16px;
   }
   td:hover {
-    background-color: #8888;
+    background: #8888;
   }
 .home {
   animation: home 4s linear infinite, home-intro 2s ease-out normal;
@@ -644,7 +644,7 @@ textarea:focus {
 }
 .left-txt {
   color: var(--cf);
-  background-color: #333;
+  background: #333;
   opacity: 0.2;
   border-radius: 5px;
   padding: 16px;
@@ -658,7 +658,7 @@ textarea:focus {
 }
 .left-txt:hover {
   color: var(--cf);
-  background-color: #6668;
+  background: #6668;
   opacity: 1;
 }
 .sub-txt {
@@ -692,7 +692,7 @@ textarea:focus {
 }
 /* Cookies pop-up */
   .cookie-container {
-    background-color: #6668;
+    background: #6668;
     min-height: 0;
     padding: 8px;
     position: fixed;
@@ -705,7 +705,7 @@ textarea:focus {
     z-index: 2;
   }
   .cookie-container:hover {
-    background-color: #8888;
+    background: #8888;
     border-radius: 4px;
   }
   .cookie-svg-cross {
@@ -723,7 +723,7 @@ textarea:focus {
     font-size: 21px;
   }
   .cookie-button {
-    background-color: #6668;
+    background: #6668;
     min-width: 18px;
     min-height: 18px;
     padding: 2px;
@@ -735,15 +735,15 @@ textarea:focus {
     cursor: var(--mpointer);
   }
   .cookie-button:hover {
-    background-color: #8888;
+    background: #8888;
     border-radius: 4px;
   }
   .cookie-button:active {
-    background-color: #fffa;
+    background: #fffa;
     border-radius: 2px;
   }
   .cookie-button:focus {
-    background-color: #fffa;
+    background: #fffa;
     border-radius: 2px;
   }
 .img-big {
@@ -755,11 +755,11 @@ textarea:focus {
   cursor: url(assets/cursors/zoom-in.png) 5 5, zoom-in;
 }
 .img-big:hover {
-  background-color: #0000;
+  background: #0000;
   box-shadow: 0 0 0 0;
 }
 .img-big:active {
-  background-color: #0000;
+  background: #0000;
 }
 .img-sub-txt {
   padding-bottom: 128px;
@@ -807,7 +807,7 @@ textarea:focus {
   font-size: 0;
 }
 .button {
-  background-color: #6668;
+  background: #6668;
   box-shadow: 0 0 0 0 #8888;
   margin: 2px;
   padding-top: 4px;
@@ -821,14 +821,14 @@ textarea:focus {
   user-select: none;
 }
 .button:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
   animation: button-hover ease-in 0.2s;
   transition-duration: 0.2;
 }
 .button:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
@@ -843,7 +843,7 @@ textarea:focus {
   right: 0;
 }
 .button-return {
-  background-color: #6668;
+  background: #6668;
   box-shadow: 0 0 0 0 #6668;
   padding: 4px;
   width: 40px;
@@ -855,13 +855,13 @@ textarea:focus {
   right: 16px;
 }
 .button-return:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
   animation: button-return-hover ease-in-out 0.2s;
 }
 .button-return:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
@@ -876,7 +876,7 @@ textarea:focus {
   z-index: 2;
 }
 .button-help {
-  background-color: #6668;
+  background: #6668;
   box-shadow: 0 0 0 0 #6668;
   padding: 4px;
   width: 40px;
@@ -889,13 +889,13 @@ textarea:focus {
   animation: button-help-intro ease-out normal 2s;
 }
 .button-help:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
   animation: button-help-hover ease-out 0.2s, button-help-intro none;
 }
 .button-help:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
   border-radius: 2px;
 }
@@ -933,11 +933,11 @@ textarea:focus {
   animation: none !important;
 }
 .button-icon:hover {
-  background-color: #8888;
+  background: #8888;
   box-shadow: 0 0 0 4px #8888;
 }
 .button-icon:active {
-  background-color: #fffa;
+  background: #fffa;
   box-shadow: 0 0 0 4px #fffa;
 }
 .button-icon:focus {
