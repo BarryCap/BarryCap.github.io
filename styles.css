@@ -23,7 +23,7 @@
     ::-moz-selection { color: var(--c0); background: #fff8; }
     textarea::selection { color: #fffc; background: #444c; }
   /* Scrollbar */
-    ::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: 0.2s; }
+    ::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: .2s; }
     ::-webkit-scrollbar-track { background: #0000; }
     ::-webkit-scrollbar-thumb        { background: #6668; border-radius: 5px; }
     ::-webkit-scrollbar-thumb:hover  { background: #8888; border-radius: 4px; }
@@ -40,7 +40,7 @@
     /* Corner */
       ::-webkit-scrollbar-corner { background: #0000; }
     /* Textarea */
-      textarea::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: 0.2s; }
+      textarea::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: .2s; }
       textarea::-webkit-scrollbar-track { background: #fff0; }
       textarea::-webkit-scrollbar-thumb { background: #6664; border-radius: 5px; }
       textarea::-webkit-scrollbar-thumb:hover  { background: #4448; border-radius: 4px; }
@@ -143,7 +143,7 @@ body {
   font-family: var(--ffmb);
   font-size: 0;
   hyphens: auto;
-  transition: ease-in 0.2s;
+  transition: ease-in .2s;
   scrollbar-color: #0000 #8888;
   -webkit-tap-highlight-color: transparent;
 }
@@ -154,31 +154,31 @@ div {
 p {
   margin: 0;
   cursor: var(--mtxt);
-  transition: ease-in 0.2s;
+  transition: ease-in .2s;
 }
 h1 {
   margin: 0 0 32px 0;
   cursor: var(--mtxtbig);
   font-weight: normal;
-  transition: ease-in 0.2s;
+  transition: ease-in .2s;
 }
 h2 {
   margin: 8px 0 20px 0;
   cursor: var(--mtxtbig);
   font-weight: normal;
-  transition: ease-in 0.2s;
+  transition: ease-in .2s;
 }
 h3 {
   margin: 8px 0 8px 0;
   cursor: var(--mtxt);
   font-weight: normal;
-  transition: ease-in 0.2s;
+  transition: ease-in .2s;
 }
 a {
   color: var(--cf);
   text-decoration-color: #0000;
   cursor: var(--mpointer);
-  transition: ease-in 0.2s;
+  transition: ease-in .2s;
 }
 a:hover {
   color: var(--clink);
@@ -222,10 +222,10 @@ hr {
 img {
   box-shadow: 0 0 0 0 #6668;
   margin: 2px;
-  border-radius: 0.01px;
+  border-radius: .01px;
   border: none;
   font-size: 21px;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   transition-timing-function: ease-in;
   position: relative;
 }
@@ -274,10 +274,10 @@ img[title]:active::after {
 }
 video {
   margin: 2px;
-  border-radius: 0.01px;
+  border-radius: .01px;
   border: none;
   box-shadow: 0 0 0 0 #0000;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   position: relative;
 }
 video:hover {
@@ -294,10 +294,10 @@ video:focus {
 }
 audio {
   margin: 2px;
-  border-radius: 0.01px;
+  border-radius: .01px;
   border: none;
   box-shadow: 0 0 0 0 #0000;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   position: relative;
 }
 audio:hover {
@@ -314,10 +314,10 @@ audio:focus {
 }
 iframe {
   margin: 2px;
-  border-radius: 0.01px;
+  border-radius: .01px;
   border: none;
   box-shadow: 0 0 0 0 #0000;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   position: relative;
 }
 iframe:hover {
@@ -353,7 +353,7 @@ form {
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
 }
 form:hover {
   background: #8888;
@@ -370,7 +370,7 @@ input {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   font-family: var(--ffmb);
   cursor: url(assets/cursors/text.png) 6 6, text;
 }
@@ -417,7 +417,7 @@ textarea {
   margin: 4px;
   border: none;
   border-radius: 5px;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   resize: none;
   font-size: 21px;
   font-family: var(--ffmb);
@@ -446,7 +446,7 @@ textarea:focus {
     border-radius: 5px;
     margin: 16px 0;
     padding: 2px;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
   }
   .table:hover {
     background: #7778;
@@ -455,7 +455,7 @@ textarea:focus {
     background: #6668;
     border-radius: 5px;
     padding: 8px 16px;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
   }
   th:hover {
     background: #8888;
@@ -468,7 +468,7 @@ textarea:focus {
   }
   tr:hover {
     background: #8888;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
   }
   td {
     border-radius: 5px;
@@ -479,7 +479,7 @@ textarea:focus {
   }
 .home {
   animation: home 4s linear infinite, home-intro 2s ease-out normal;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   background-image: url(assets/bg/home.svg);
   background-attachment: fixed;
 }
@@ -650,7 +650,7 @@ textarea:focus {
 .left-txt {
   color: var(--cf);
   background: #333;
-  opacity: 0.2;
+  opacity: .2;
   border-radius: 5px;
   padding: 16px;
   text-align: justify;
@@ -659,7 +659,7 @@ textarea:focus {
   position: absolute;
   top: 16px;
   left: 16px;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
 }
 .left-txt:hover {
   color: var(--cf);
@@ -705,7 +705,7 @@ textarea:focus {
     bottom: 16px;
     border-radius: 5px;
     overflow: hidden;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
     animation: cookie-container 1s ease-out 2s;
     z-index: 2;
   }
@@ -736,7 +736,7 @@ textarea:focus {
     top: 2px;
     right: 2px;
     border-radius: 5px;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
     cursor: var(--mpointer);
   }
   .cookie-button:hover {
@@ -829,8 +829,8 @@ textarea:focus {
   background: #8888;
   box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
-  animation: button-hover ease-in 0.2s;
-  transition-duration: 0.2;
+  animation: button-hover ease-in .2s;
+  transition-duration: .2;
 }
 .button:active {
   background: #fffa;
@@ -854,7 +854,7 @@ textarea:focus {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   position: absolute;
   top: 16px;
   right: 16px;
@@ -863,7 +863,7 @@ textarea:focus {
   background: #8888;
   box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
-  animation: button-return-hover ease-in-out 0.2s;
+  animation: button-return-hover ease-in-out .2s;
 }
 .button-return:active {
   background: #fffa;
@@ -888,7 +888,7 @@ textarea:focus {
   height: 40px;
   display: block;
   border-radius: 5px;
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   position: absolute;
   bottom: 16px;
   animation: button-help-intro ease-out normal 2s;
@@ -897,7 +897,7 @@ textarea:focus {
   background: #8888;
   box-shadow: 0 0 0 4px #8888;
   border-radius: 4px;
-  animation: button-help-hover ease-out 0.2s, button-help-intro none;
+  animation: button-help-hover ease-out .2s, button-help-intro none;
 }
 .button-help:active {
   background: #fffa;
@@ -923,7 +923,7 @@ textarea:focus {
 }
 .button-spot:hover {
   border-radius: 4px 4px 0 0;
-  animation: button-spot-hover ease-in 0.4s;
+  animation: button-spot-hover ease-in .4s;
 }
 .button-spot:active {
   border-radius: 2px 2px 0 0;
@@ -969,7 +969,7 @@ textarea:focus {
   height: 192px;
   width: 192px;
   opacity: 0;
-  transition: 0.2s;
+  transition: .2s;
 }
 .hover-text {
   color: #eee;
