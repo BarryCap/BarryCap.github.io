@@ -260,18 +260,16 @@ img[title]:active::after {
   border-color: #fff8;
   border-radius: 2px;
 }
-.img-right {
+.img-right { right: 64px; }
+.img-left { left: 64px; }
+.img-right, .img-left {
   background: none !important;
+  padding: 0;
   position: absolute;
   top: 48px;
-  right: 64px;
-  z-index: 0;
-}
-.img-left {
-  background: none !important;
-  position: absolute;
-  top: 48px;
-  left: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   z-index: 0;
 }
 video {
