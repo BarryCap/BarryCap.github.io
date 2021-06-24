@@ -372,7 +372,7 @@ input {
   border-radius: 5px;
   transition-duration: .2s;
   font-family: var(--ffmb);
-  cursor: url(assets/cursors/text.png) 6 6, text;
+  cursor: var(--mtxt);
 }
 input:hover {
   color: #222;
@@ -421,7 +421,7 @@ textarea {
   resize: none;
   font-size: 21px;
   font-family: var(--ffmb);
-  cursor: url(assets/cursors/text.png) 4 11, text;
+  cursor: var(--mtxt);
   scrollbar-color: #8888 #fff0;
 }
 textarea:hover {
