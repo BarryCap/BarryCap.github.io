@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://barrycap.com/assets/favicon.ico"/>
+    <script src="https://barrycap.com/googleanalytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
+    <script async src="script.js"></script>
+    <title>Barry Cap › Click Me 3</title>
+    <style>
+      @font-face {
+        font-family: "FMB";
+        src: url(assets/fonts/fmb.ttf);
+      }
+      @keyframes activeme {
+        25% { padding-top: 8px; }
+        50% { padding-right: 8px;}
+        75% { padding-bottom: 8px;}
+        100% { padding-left: 8px;}
+      }
+      ::-webkit-scrollbar { width: 0; height: 0; }
+      body {
+        background: #000;
+        height: 100vh;
+        margin: 0;
+        user-select: none;
+        display: flex;
+        align-content: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      button {
+        color: #fff;
+        background: #444;
+        border-width: 4px;
+        border-style: dashed;
+        border-color: #666 #222 #222 #666;
+        outline: none;
+        padding: 0;
+        width: 63px;
+        transition: 1s;
+        overflow: hidden;
+        cursor: pointer;
+        font-size: 75%;
+        font-family: FMB;
+        animation: random 1s linear infinite;
+        flex-grow: 1;
+      }
+      button:active {
+        border-color: #222 #666 #666 #222;
+        transition-duration: 0;
+      }
+      #win:focus {
+        opacity: 0;
+        transition-delay: 4s;
+      }
+      .focusme::before {
+        content: "Focus Me";
+      }
+      .focusme:focus {
+        color: #000;
+        background: #fff;
+      }
+      .focusme:focus::before {
+        content: "Thanks! ";
+      }
+      .hoverme::before {
+        content: "Hover Me";
+      }
+      .hoverme:hover {
+        border-radius: 32px;
+        margin: 4px;
+      }
+      .hoverme:hover::before {
+        content: "Thanks! ";
+      }
+      .activeme::before {
+        content: "Active Me";
+      }
+      .activeme:active {
+        font-size: large;
+        animation: activeme .1s linear infinite;
+      }
+      .activeme:active::before {
+        content: "Thanks! ";
+      }
+      .activeme:focus::before {
+        content: "Thanks! ";
+      }
+    </style>
+    <script>
+      window.addEventListener('click', function(e) {
+        if(e.target.name == 'nope') {
+          e.target.innerHTML = 'Nope'
+          e.target.name = 'brain'
+          e.target.onclick = 'javascript:brain()'
+          e.target.style.opacity = '0'
+        }
+      })
+      function brain() {
+        document.getElementById('brain').style.opacity = '0'
+      }
+      function b1() {
+        const buttonClicked = document.getElementById('b1')
+        const buttonsNope = document.querySelectorAll('button[name="nope"]')
+        const buttonSelected = buttonsNope[Math.floor(Math.random()*buttonsNope.length)]
+        buttonClicked.style.opacity = '0'
+        buttonSelected.name = ''
+        buttonSelected.innerHTML = 'Click Me!'
+        buttonSelected.setAttribute('onclick', 'javascript:b2()')
+        buttonSelected.id = 'b2'
+      }
+      function b2() {
+        const buttonClicked = document.getElementById('b2')
+        const buttonsNope = document.querySelectorAll('button[name="nope"]')
+        const buttonSelected = buttonsNope[Math.floor(Math.random()*buttonsNope.length)]
+        buttonClicked.style.opacity = '0'
+        buttonSelected.name = ''
+        buttonSelected.innerHTML = 'Click Me Again'
+        buttonSelected.setAttribute('onclick', 'javascript:b3()')
+        buttonSelected.id = 'b3'
+      }
+      function b3() {
+        const buttonClicked = document.getElementById('b3')
+        const buttonsNope = document.querySelectorAll('button[name="nope"]')
+        const buttonSelected = buttonsNope[Math.floor(Math.random()*buttonsNope.length)]
+        buttonClicked.style.opacity = '0'
+        buttonSelected.name = ''
+        buttonSelected.innerHTML = 'Click Me Another Time'
+        buttonSelected.setAttribute('onclick', 'javascript:b4()')
+        buttonSelected.id = 'b4'
+      }
+      function b4() {
+        const buttonClicked = document.getElementById('b4')
+        const buttonsNope = document.querySelectorAll('button[name="nope"]')
+        const buttonSelected = buttonsNope[Math.floor(Math.random()*buttonsNope.length)]
+        buttonClicked.style.opacity = '0'
+        buttonSelected.name = ''
+        buttonSelected.innerHTML = 'Click Me For The Last Time'
+        buttonSelected.setAttribute('onclick', 'javascript:win()')
+        buttonSelected.id = 'win'
+      }
+      function win() {
+        const buttonClicked = document.getElementById('win')
+        buttonClicked.innerHTML = 'You Win'
+        const buttonsNope = document.querySelectorAll('button[name="nope"]')
+        for (let i = 0; i<buttonsNope.length; i++) {
+          buttonsNope[i].style.opacity = '0'
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" class="focusme"></button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1" class="hoverme"></button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button id="b1" tabIndex="-1" onclick="javascript:b1()">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1" draggable="true">Drag Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1" class="activeme"></button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1">Click Me</button>
+  </body>
+</html>
