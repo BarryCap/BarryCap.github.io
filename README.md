@@ -32,7 +32,7 @@ ___
 
 ---
 ### [Random](https://barrycap.com/random)
-&emsp;Random. The name isn't explicit enough? It's all random. Even the background animation. It's researches I made, things I wanted to talk about&mldr;
+&emsp;Random. The name isn't explicit enough? It's all random. Even the background animation. It's researches I made, things I wanted to talk about&mldr; And unclassified art.
 
 ---
 ### [Spotlight](https://barrycap.com/spotlight)
