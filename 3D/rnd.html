@@ -8,13 +8,13 @@
     <script async src="/script.js"></script>
     <script async src="rnd.js"></script>
     <title>Barry Cap › 3D › Random Object</title>
-    <style>/*:root{--rnd-hue:786deg}*/html{filter:sepia(1)invert(1)/*hue-rotate(var(--rnd-hue))*/}</style>
+    <style>:root{--rnd-hue:0deg}html{filter:sepia(1)invert(1)saturate(50)hue-rotate(var(--rnd-hue))}</style>
   </head>
   <body>
     <noscript><div>This page needs JavaScript to run. :)</div><a href="https://barrycap.com/">BarryCap.com</a></noscript>
     <div id="app"><model-obj :src="src"></model-obj></div>
     <script src="https://unpkg.com/vue@2.6.10/dist/vue.min.js"></script>
     <script src="https://unpkg.com/vue-3d-model@1.2.2/dist/vue-3d-model.umd.min.js"></script>
-    <script>new Vue({el:'#app',data:{src:'rndOBJ.html'}})</script>
+    <script>new Vue({el:'#app',data:{src:randomObj()}})</script>
   </body>
 </html>
