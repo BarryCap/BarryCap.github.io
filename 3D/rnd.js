@@ -1,5 +1,11 @@
+// Random color using CSS filters
+const sepia = (Math.floor(Math.random() * 2))
+document.documentElement.style.setProperty('--rnd-sepia', sepia)
+const invert = (Math.floor(Math.random() * 2))
+document.documentElement.style.setProperty('--rnd-invert', invert)
 const hue = (Math.floor(Math.random() * 360)) + 'deg'
 document.documentElement.style.setProperty('--rnd-hue', hue)
+// Random OBJ generator
 function randomObj() {
   const vNum = 64
   const fNum = 256
