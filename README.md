@@ -49,5 +49,5 @@ If you ever have any question or request to ask, you can send an email at [conta
 
 ||||
 |:-:|:-:|:-:|
-|[Website](https://barrycap.com)|[Contribution guidelines](CONTRIBUTING.md)|[Licence](LICENCE)|
+|[Website](https://barrycap.com)|[Contribution guidelines](CONTRIBUTING.md)|[License](LICENSE)|
 ||||

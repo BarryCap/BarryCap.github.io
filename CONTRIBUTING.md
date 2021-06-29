@@ -190,5 +190,5 @@ add link to Stack Overflow profile
 
 ||||
 |:-:|:-:|:-:|
-|[Website](https://barrycap.com)|[Readme](README.md)|[Licence](LICENCE)|
+|[Website](https://barrycap.com)|[Readme](README.md)|[License](LICENSE)|
 ||||
