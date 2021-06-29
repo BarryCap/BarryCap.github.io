@@ -11,9 +11,9 @@
 ### Format
 &emsp;The default format for commit names on this repository is:
 ```markdown
-[verb] [edited] (of [nest] to [value] in [page])
+[verb] [edited] (of [nest] to [value] in [file])
 ```
-&emsp;With `[verb]` indicating _the verb_; `[edited]` standing for _the name of the file or part of a file edited or added_; `[nest]` standing for _the element inside which the change is being applied to_; `[value]` being _the new value of the property that is changed_; and `[page]` standing for _the page or file in which the change is being applied to_. Everything that is inside parenthesis is not mandatory.
+&emsp;With `[verb]` indicating _the verb_; `[edited]` standing for _the name of the file or part of a file edited or added_; `[nest]` standing for _the element inside which the change is being applied to_; `[value]` being _the new value of the property that is changed_; and `[file]` standing for _the page or file in which the change is being applied to_. Everything that is inside parenthesis is not mandatory.
 #### Example
 &emsp;If the `body` text color is set to `#eee` in `styles.css`, the commit name should be:
 ```markdown
