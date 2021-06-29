@@ -9,7 +9,7 @@
 
 ---
 ### Format
-&emsp;The default commit format for commit names on this repository is:
+&emsp;The default format for commit names on this repository is:
 ```markdown
 [verb] [edited] (of [nest] to [value] in [page])
 ```
