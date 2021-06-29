@@ -10,13 +10,22 @@
 ---
 ### Format
 &emsp;The default format for commit names on this repository is:
-```markdown
-[verb] [edited] (of [nest] to [value] in [file])
+```md
+[verb] [edited](/[old]) (of [nest] to [value] in [file]/by [edited])
 ```
-&emsp;With `[verb]` indicating _the verb_; `[edited]` standing for _the name of the file or part of a file edited or added_; `[nest]` standing for _the element inside which the change is being applied to_; `[value]` being _the new value of the property that is changed_; and `[file]` standing for _the page or file in which the change is being applied to_. Everything that is inside parenthesis is not mandatory.
+&emsp;With
+- `[verb]` indicating _the verb_;
+- `[edited]` standing for _the name of the file or part of a file edited or added_;
+- `[nest]` standing for _the element inside which the change is being applied to_;
+- `[value]` being _the new value of the property that is changed_;
+- `[file]` standing for _the page or file in which the change is being applied to_;
+- `[old]` meaning _the old file or part of file before it was edited_;
+- `/` indicating another possibility than the word before (if the words after are used, the word before is not used).
+
+Everything that is inside parenthesis is not mandatory.
 #### Example
 &emsp;If the `body` text color is set to `#eee` in `styles.css`, the commit name should be:
-```markdown
+```md
 Set `color` of `body` to `#eee` in `styles.css`
 ```
 ---
@@ -32,14 +41,15 @@ Set `color` of `body` to `#eee` in `styles.css`
 - If a file is being renamed, the commit name could begin with `Rename`;
 - If something is being changed for another, the commit name should begin with `Replace`;
 - If a file or a part of a file is shortened or minified, the commit name should begin with `Minify`.
+
 #### Examples
 ---
 &emsp;If the file `CONTRIBUTING.md` is being added, the commit name could begin with or could to be:
-```markdown
+```md
 Add `CONTRIBUTING.md`
 ```
 &emsp;If a property that is linked with the white theme is edited, the commit name would look like:
-```markdown
+```md
 Change white theme
 ```
 ---
@@ -48,7 +58,7 @@ Change white theme
 #### Example
 ---
 &emsp;If a script was added in `script.js` to change the random background animation in Random page, the commit name would look like:
-```markdown
+```md
 Add script to change background animation in Random page
 ```
 ---
@@ -57,7 +67,7 @@ Add script to change background animation in Random page
 #### Example
 ---
 &emsp;The commit name example above is too long (6 characters above the 50 limit), so it has to be splitted in two lines:
-```markdown
+```md
 Add script to change background animation
 in Random page
 ```
@@ -69,7 +79,7 @@ in Random page
 #### Example
 ---
 &emsp;If the favicon is changed in all 56 HTML pages, the commit name would be:
-```markdown
+```md
 Change favicon in all 56 pages
 ```
 ---
@@ -78,7 +88,7 @@ Change favicon in all 56 pages
 #### Example
 ---
 &emsp;If a white theme button is added in Random page, the commit name would be:
-```markdown
+```md
 Add white theme button in Random page
 ```
 ---
@@ -87,7 +97,7 @@ Add white theme button in Random page
 #### Example
 ---
 &emsp;If the header CSS animation in Intro page is fixed, and if it closed the issue number 78, the commit name could look like:
-```markdown
+```md
 Fix header animation in Intro page Fix #78
 ```
 ---
@@ -96,7 +106,7 @@ Fix header animation in Intro page Fix #78
 #### Example
 ---
 &emsp;If `CONTRIBUTING.md` is added and a typo was fixed in `README.md`, the commit name would be:
-```markdown
+```md
 Add `CONTRIBUTING.md`
 Fix typo in `README.md`
 ```
@@ -106,7 +116,7 @@ Fix typo in `README.md`
 #### Example
 ---
 &emsp;If `README.md` is updated by adding link to Stack Overflow profile, the commit name could be:
-```markdown
+```md
 Update `README.md`
 add link to Stack Overflow profile
 ```
@@ -121,7 +131,7 @@ add link to Stack Overflow profile
 ---
 ## Versioning
 &emsp;The version of the site is represented in the below format:
-```markdown
+```md
 [major].[minor]+[commitNumber]
 ```
 &emsp;The true commit number can be found in the [contributors table](https://github.com/BarryCap/BarryCap.github.io/graphs/contributors) of the repository, where all the commits count from every contributor have to be additionned. The commit number can also be found by calculating the number of commits found on the [repository home page](https://github.com/BarryCap/BarryCap.github.io) (e.g. 880 at the time this is written) plus 93.
