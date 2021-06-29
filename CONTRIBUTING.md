@@ -22,7 +22,7 @@ Set `color` of `body` to `#eee` in `styles.css`
 ---
 ### Starting with a verb
 &emsp;Every commit should begin with a verb at the present time, explaining the kind of action that is being executed in the commit.
-- If a new file is created, the commit name should begin with `Add`;
+- If a new file, class, script etc. is created, the commit name should begin with `Add` or `Create`;
 - If a file is modified, the commit name should begin with `Edit` or `Change`;
 - If information in a file is updated, the commit name should begin with `Update`;
 - If an issue, a typo etc. was fixed, the commit name should begin with `Fix`;
@@ -30,11 +30,11 @@ Set `color` of `body` to `#eee` in `styles.css`
 - If something is being deleted, the commit name should begin with `Remove` or `Delete`;
 - If something is being improved, the commit name could begin with `Improve`;
 - If a file is being renamed, the commit name could begin with `Rename`;
-- If something is being changed for another, the commit name could begin with `Replace`;
+- If something is being changed for another, the commit name should begin with `Replace`;
 - If a file or a part of a file is shortened or minified, the commit name should begin with `Minify`.
 #### Examples
 ---
-&emsp;If the file `CONTRIBUTING.md` is being added, the commit name has to begin with or has to be:
+&emsp;If the file `CONTRIBUTING.md` is being added, the commit name could begin with or could to be:
 ```markdown
 Add `CONTRIBUTING.md`
 ```
@@ -56,7 +56,7 @@ Add script to change background animation in Random page
 &emsp;To show in a good manner on all displays and viewing modes, the standard limit for the first line of commit names is at 50 (while it is at 72 for the any other line).
 #### Example
 ---
-&emsp;The commit name above is too long (6 characters above the 50 limit), so it has to be splitted in two lines:
+&emsp;The commit name example above is too long (6 characters above the 50 limit), so it has to be splitted in two lines:
 ```markdown
 Add script to change background animation
 in Random page
@@ -116,7 +116,7 @@ add link to Stack Overflow profile
 
 ---
 ### Updating version
-&emsp;Every commit changes something to the site, and this can be seen with the version, that has to be updated in every commit (if not, I will have to update it myself, in a commit where I have done something else, or in a ‘`Update version`’ commit). The version indicator can be found in the `code` block in the [About](https://barrycap.com/about) page (`/about.html`).
+&emsp;Every commit changes something to the site, and this can be seen with the version, that has to be updated with every commit (do not do it in changes that will be applied within a pull request, I will update it myself, in a commit where I have done something else, or in a ‘`Update version`’ commit). The version indicator can be found in the `code` block in the [About](https://barrycap.com/about) page (`/about.html`).
 
 ---
 ## Versioning
@@ -134,3 +134,54 @@ add link to Stack Overflow profile
 &emsp;A new major version is introduced when the website completely changes its appearance. A new minor version is introduced when a big change was made to the website. Contributors will have to demand permission from [me](https://barrycap.com/about) to update the website to a major or minor version, or their modifications might be refused.
 
 &emsp;Information about the different versions of the website can be found at [BarryCap.com/versions](https://barrycap.com/versions).
+
+---
+## Language
+&emsp;Most of the website is written in American English. I don't want to see things like ‘colour’, ‘behaviour’ or ‘realisations’ on the American English version of the website.
+
+---
+### English punctuation rules
+&emsp;I have the habit to be a bit hard with myself on the punctuation marks. There are four points that I would like to explain.
+#### The dash (**—**)
+---
+&emsp;The usage of dashes is often confused in many languages, where some people uses only the [en dash](https://unicode-table.com/en/2013/) (–), with or without spaces at its sides, while some are using both for different usage (e.g. en dash for lists, em dash as sentence separator), and there are even other kind of usage… So I will be clear. There is only **one type of dash used in English texts**, and that is the [em dash](https://unicode-table.com/en/2014/) (—). It has to be used **without spaces** after nor before.
+#### Example
+---
+&emsp;_The train was about to leave—travelers were jostling for a seat._
+#### Horizontal ellipsis (**…**)
+---
+&emsp;The usage of [horizontal ellipsis](https://unicode-table.com/en/2026/) is also quite different depending on websites, people etc., some time used as ‘…’ (one character), ‘...’ (three periods) or ‘. . .’ (three periods spaced) The rule on [BarryCap.com](https://barrycap.com) is simple: each time horizontal ellipsis have to be used, the Unicode character has to be preferred.
+#### Quotation marks (**‘**, **’**, **“** and **”**)
+---
+&emsp;Some are using those: ' ([apostrophe](https://unicode-table.com/en/0027/), both the same at each end), while others: " ([quotation mark](https://unicode-table.com/en/0022/), both the same at each end), some more experimented: “ and ” ([left double quotation mark](https://unicode-table.com/en/201C/) and [right double quotation mark](https://unicode-table.com/en/201D/)) or ‘ and ’ ([left single quotation mark](https://unicode-table.com/en/2018/) and [right single quotation mark](https://unicode-table.com/en/2019/)). The rule on [BarryCap.com](https://barrycap.com) is to use **single quotation marks**, different for each end (‘ and ’), and if there is a need for putting quotation marks inside of quotation marks, the characters used will be **double quotation marks** (“ and ”), also different at each end.
+#### Spaces before punctuation marks (**:**, **;**, **?**, **!** and **…**)
+---
+&emsp;This is generally respected: **no space before [colons](https://unicode-table.com/en/003A/), [semicolons](https://unicode-table.com/en/003B/), [exclamation marks](https://unicode-table.com/en/0021/), [question marks](https://unicode-table.com/en/003F/) and [horizontal ellipsis](https://unicode-table.com/en/2026/)** in English, and most other languages.
+
+---
+### French punctuation rules
+&emsp;French is a language in which punction marks usage often differs from other languages. The thing that is important to French punctuation is the [no-break space](https://unicode-table.com/en/00A0/), that needs to be placed before or after punctuation marks.
+#### The dash (**–** and **—**)
+---
+&emsp;The dash used inside sentences will always be the [en dash](https://unicode-table.com/en/2013/) (–), surrounded by regular spaces, unless it is used like parenthesis, framing a part of text in which case a [no-break space](https://unicode-table.com/en/00A0/) (`&nbsp;` in HTML) has to be inserted inside the part of the sentence surrounded by [en dashs](https://unicode-table.com/en/2013/).
+
+&emsp;As for dialogues, the dash used will be an [em dash](https://unicode-table.com/en/2014/), followed by a [no-break space](https://unicode-table.com/en/00A0/)
+#### Example
+---
+&emsp;Paragraph:
+
+&emsp;_Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->–&nbsp;c'était le début de l'automne&nbsp;– <!--regular space-->et les feuilles virevoltaient en tous sens._
+
+&emsp;HTML code (with comments):
+```html
+&emsp;Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->–&nbsp;c'était le début de l'automne&nbsp;– <!--regular space-->et les feuilles virevoltaient en tous sens.
+```
+#### Horizontal ellipsis (**…**)
+---
+&emsp;The usage for [horizontal ellipsis](https://unicode-table.com/en/2026/) is the same for French as it is [in English](#horizontal-ellipsis-): the Unicode character (…) has to be used instead of three periods, and a space must not be inserted before the punctuation mark.
+#### Quotation marks (**«** and **»**)
+---
+&emsp;For french texts, a [left guillemet](https://unicode-table.com/en/00AB/) («, at the beginning) and a [right guillemet](https://unicode-table.com/en/00BB/) (», at the end) need to be used with a [no-break space](https://unicode-table.com/en/00A0/) (`&nbsp;` in HTML) in the inside, instead of common [quotation mark](https://unicode-table.com/en/0022/) (") or any other punctuation mark.
+#### Spaces before punctuation marks (**:**, **;**, **?** and **!**)
+---
+&emsp;The rule is not always respected in French: **always add a [no-break space](https://unicode-table.com/en/00A0/) before [colons](https://unicode-table.com/en/003A/), [semicolons](https://unicode-table.com/en/003B/), [exclamation marks](https://unicode-table.com/en/0021/) and [question marks](https://unicode-table.com/en/003F/)**.
