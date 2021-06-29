@@ -42,3 +42,12 @@ ___
 <br>
 
 _Enjoy pages all hand made!_ &#13025;
+
+If you ever have any question or request to ask, you can send an email at [contact@barrycap.com](mailto:contact@barrycap.com).
+
+<br>
+
+||||
+|:-:|:-:|:-:|
+|[Website](https://barrycap.com)|[Contribution guidelines](CONTRIBUTING.md)|[Licence](LICENCE)|
+||||

@@ -185,3 +185,10 @@ add link to Stack Overflow profile
 #### Spaces before punctuation marks (**:**, **;**, **?** and **!**)
 ---
 &emsp;The rule is not always respected in French: **always add a [no-break space](https://unicode-table.com/en/00A0/) before [colons](https://unicode-table.com/en/003A/), [semicolons](https://unicode-table.com/en/003B/), [exclamation marks](https://unicode-table.com/en/0021/) and [question marks](https://unicode-table.com/en/003F/)**.
+
+<br>
+
+||||
+|:-:|:-:|:-:|
+|[Website](https://barrycap.com)|[Readme](README.md)|[Licence](LICENCE)|
+||||
