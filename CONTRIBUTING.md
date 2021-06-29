@@ -136,8 +136,8 @@ add link to Stack Overflow profile
 &emsp;Information about the different versions of the website can be found at [BarryCap.com/versions](https://barrycap.com/versions).
 
 ---
-## Language
-&emsp;Most of the website is written in American English. I don't want to see things like ‘colour’, ‘behaviour’ or ‘realisations’ on the American English version of the website.
+## Languages
+&emsp;Most of the website is written in American English. I do not want to see things like ‘colour’, ‘licence’ or ‘realisations’ in the American English version of the website.
 
 ---
 ### English punctuation rules
@@ -185,6 +185,10 @@ add link to Stack Overflow profile
 #### Spaces before punctuation marks (**:**, **;**, **?** and **!**)
 ---
 &emsp;The rule is not always respected in French: **always add a [no-break space](https://unicode-table.com/en/00A0/) before [colons](https://unicode-table.com/en/003A/), [semicolons](https://unicode-table.com/en/003B/), [exclamation marks](https://unicode-table.com/en/0021/) and [question marks](https://unicode-table.com/en/003F/)**.
+
+---
+### No ugly library
+&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages, the site must be cleanest as possible, **not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one**. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.
 
 <br>
 
