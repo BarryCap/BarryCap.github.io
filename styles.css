@@ -56,16 +56,7 @@
 @keyframes random { 100% { background-position: var(--random-position-x) var(--random-position-y); } }
 @keyframes spot { 100% { background-position: 32px 32px; } }
 @keyframes help { 100% { background-position: 0px 32px; } }
-@keyframes contr {
-  12.5% { background-position: -11px 5px; }
-  25% { background-position: -16px 16px; }
-  37.5% { background-position: -11px 27px; }
-  50% { background-position: 0 32px; }
-  62.5% { background-position: 11px 27px; }
-  75% { background-position: 16px 16px; }
-  87.5% { background-position: 11px 5px; }
-  100% { background-position: 0 0; }
-}
+@keyframes contr { 12.5% { background-position: -11px 5px; } 25% { background-position: -16px 16px; } 37.5% { background-position: -11px 27px; } 50% { background-position: 0 32px; } 62.5% { background-position: 11px 27px; } 75% { background-position: 16px 16px; } 87.5% { background-position: 11px 5px; } 100% { background-position: 0 0; } }
 @keyframes four-o-four { 100% { background-position: 0 -256px; } }
 @keyframes image { 0% { background-position: 0 0; } 25% { background-position: 32px 0; } 50% { background-position: 32px 32px; } 75% { background-position: 0 32px; } 100% { background-position: 0 0; } }
 @keyframes video { 100% { background-position: 64px -64px; } }
