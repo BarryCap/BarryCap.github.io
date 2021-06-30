@@ -11,7 +11,7 @@
 ### Format
 &emsp;The default format for commit names on this repository is:
 ```md
-[verb] [edited](/[old]) (of [nest] to [value] in [file]/by [edited])
+[verb] [edited]/[old] (of [nest] to [value] in [file])/by [edited]
 ```
 &emsp;With
 - `[verb]` indicating _the verb_;
@@ -20,7 +20,7 @@
 - `[value]` being _the new value of the property that is changed_;
 - `[file]` standing for _the page or file in which the change is being applied to_;
 - `[old]` meaning _the old file or part of file before it was edited_;
-- `/` indicating another possibility than the word before (if the words after are used, the word before is not used).
+- `/` indicating another possibility than the group before (if the words after are used, the preceding group is not used).
 
 Everything that is inside parenthesis is not mandatory.
 #### Example
@@ -175,7 +175,7 @@ add link to Stack Overflow profile
 ---
 &emsp;The dash used inside sentences will always be the [en dash](https://unicode-table.com/en/2013/) (–), surrounded by regular spaces, unless it is used like parenthesis, framing a part of text in which case a [no-break space](https://unicode-table.com/en/00A0/) (`&nbsp;` in HTML) has to be inserted inside the part of the sentence surrounded by [en dashs](https://unicode-table.com/en/2013/).
 
-&emsp;As for dialogues, the dash used will be an [em dash](https://unicode-table.com/en/2014/), followed by a [no-break space](https://unicode-table.com/en/00A0/)
+&emsp;As for dialogues, the dash used will be an [em dash](https://unicode-table.com/en/2014/), followed by a [no-break space](https://unicode-table.com/en/00A0/).
 #### Example
 ---
 &emsp;Paragraph:
