@@ -63,7 +63,7 @@ Add script to change background animation in Random page
 ```
 ---
 ### Splitted if too long
-&emsp;To show in a good manner on all displays and viewing modes, the standard limit for the first line of commit names is at 50 (while it is at 72 for the any other line).
+&emsp;To show in a good manner on all displays and viewing modes, the standard limit for the first line of commit names is at 50 (while it is at 72 for any other line).
 #### Example
 ---
 &emsp;The commit name example above is too long (6 characters above the 50 limit), so it has to be splitted in two lines:
