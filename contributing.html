@@ -33,22 +33,22 @@
         <hr>
         <h3 id="format">Format</h3>
         <p>&emsp;The default format for commit names on this repository is:</p>
-        <pre>[verb] [edited]/[old] (of [nest] to [value] in [file])/by [edited]</pre>
+        <pre><cyan>[verb] [edited]</cyan><purple>/<pink>[old]</pink></purple> <orange>(of <yellow>[nest]</yellow> to <yellow>[value]</yellow> in <yellow>[file]</yellow>)</orange><purple>/by <pink>[edited]</pink></purple></pre>
         <p>&emsp;With</p>
         <ul>
-        <li><code>[verb]</code> indicating <em>the verb</em>;</li>
-        <li><code>[edited]</code> standing for <em>the name of the file or part of a file edited or added</em>;</li>
-        <li><code>[nest]</code> standing for <em>the element inside which the change is being applied to</em>;</li>
-        <li><code>[value]</code> being <em>the new value of the property that is changed</em>;</li>
-        <li><code>[file]</code> standing for <em>the page or file in which the change is being applied to</em>;</li>
-        <li><code>[old]</code> meaning <em>the old file or part of file before it was edited</em>;</li>
+        <li><code>[verb]</code> indicating <i>the verb</i>;</li>
+        <li><code>[edited]</code> standing for <i>the name of the file or part of a file edited or added</i>;</li>
+        <li><code>[nest]</code> standing for <i>the element inside which the change is being applied to</i>;</li>
+        <li><code>[value]</code> being <i>the new value of the property that is changed</i>;</li>
+        <li><code>[file]</code> standing for <i>the page or file in which the change is being applied to</i>;</li>
+        <li><code>[old]</code> meaning <i>the old file or part of file before it was edited</i>;</li>
         <li><code>/</code> indicating another possibility than the group before (if the words after are used, the preceding group is not used).</li>
         </ul>
         <p>&emsp;Everything that is inside parenthesis is not mandatory.</p>
         <h4 id="example-1">Example</h4>
 				<hr>
         <p>&emsp;If the <code>body</code> text color is set to <code>#eee</code> in <code>styles.css</code>, the commit name should be:</p>
-        <pre>Set `color` of `body` to `#eee` in `styles.css`</pre>
+        <pre>Set <orange>`color`</orange> of <orange>`body`</orange> to <orange>`#eee`</orange> in <orange>`styles.css`</orange></pre>
         <hr>
         <h3 id="starting-with-a-verb">Starting with a verb</h3>
         <p>&emsp;Every commit should begin with a verb at the present time, explaining the kind of action that is being executed in the commit.</p>
@@ -67,7 +67,7 @@
         <h4 id="example-2">Examples</h4>
         <hr>
         <p>&emsp;If the file <code>CONTRIBUTING.md</code> is being added, the commit name could begin with or could to be:</p>
-        <pre>Add `CONTRIBUTING.md`</pre>
+        <pre>Add <orange>`CONTRIBUTING.md`</orange></pre>
         <p>&emsp;If a property that is linked with the white theme is edited, the commit name would look like:</p>
         <pre>Change white theme</pre>
         <hr>
@@ -83,7 +83,7 @@
         <h4 id="example-4">Example</h4>
         <hr>
         <p>&emsp;The commit name example above is too long (6 characters above the 50 limit), so it has to be splitted in two lines:</p>
-        <pre>Add script to change background animationin Random page</pre>
+        <pre>Add script to change background animation in Random page</pre>
         <p>&emsp;The commit name can be splitted before the anouncement of were the modifications are applying to, so generally before the word ‘in’.</p>
         <hr>
         <h3 id="including-the-number-of-files-modified">Including the number of files modified</h3>
@@ -105,21 +105,23 @@
         <h4 id="example-7">Example</h4>
         <hr>
         <p>&emsp;If the header CSS animation in Intro page is fixed, and if it closed the issue number 78, the commit name could look like:</p>
-        <pre>Fix header animation in Intro page Fix #78</pre>
+        <pre>Fix header animation in Intro page <u>Fix #78</u></pre>
         <hr>
         <h3 id="multiple-changes">Multiple changes</h3>
         <p>&emsp;If multiple changes are done in the commit, they have to be separated in different lines.</p>
         <h4 id="example-8">Example</h4>
         <hr>
         <p>&emsp;If <code>CONTRIBUTING.md</code> is added and a typo was fixed in <code>README.md</code>, the commit name would be:</p>
-        <pre>Add `CONTRIBUTING.md`Fix typo in `README.md`</pre>
+        <pre>Add <orange>`CONTRIBUTING.md`</orange>
+Fix typo in <orange>`README.md`</orange></pre>
         <hr>
         <h3 id="adding-description">Adding description</h3>
         <p>&emsp;Additional information about what is being done in the commit can be added after a line break, not beginning with a capital letter.</p>
         <h4 id="example-9">Example</h4>
         <hr>
         <p>&emsp;If <code>README.md</code> is updated by adding link to Stack Overflow profile, the commit name could be:</p>
-        <pre>Update `README.md`add link to Stack Overflow profile</pre>
+        <pre>Update <orange>`README.md`</orange>
+add link to Stack Overflow profile</pre>
         <hr>
         <h3 id="not-ending-with-a-period">Not ending with a period</h3>
         <p>&emsp;No full stop or any other punctuation character has to be inserted at the end of the commit name.</p>
@@ -129,7 +131,7 @@
         <hr>
         <h2 id="versioning">Versioning</h2>
         <p>&emsp;The version of the site is represented in the below format:</p>
-        <pre>[major].[minor]+[commitNumber]</pre>
+        <pre><cyan>[major]</cyan>.<cyan>[minor]</cyan>+<cyan>[commitNumber]</cyan></pre>
         <p>&emsp;The true commit number can be found in the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io/graphs/contributors">contributors table</a> of the repository, where all the commits count from every contributor have to be additionned. The commit number can also be found by calculating the number of commits found on the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io">repository home page</a> (e.g. 880 at the time this is written) plus 93.</p>
         <h4 id="example-10">Example</h4>
         <hr>
@@ -148,7 +150,7 @@
         <p>&emsp;The usage of dashes is often confused in many languages, where some people uses only the <a target="_blank" href="https://unicode-table.com/en/2013/">en dash</a> (–), with or without spaces at its sides, while some are using both for different usage (e.g. en dash for lists, em dash as sentence separator), and there are even other kind of usage… So I will be clear. There is only <b>one type of dash used in English texts</b>, and that is the <a target="_blank" href="https://unicode-table.com/en/2014/">em dash</a> (—). It has to be used <b>without spaces</b> after nor before.</p>
         <h4 id="example-11">Example</h4>
         <hr>
-        <p>&emsp;<em>The train was about to leave—travelers were jostling for a seat.</em></p>
+        <p>&emsp;<i>The train was about to leave—travelers were jostling for a seat.</i></p>
         <h4 id="horizontal-ellipsis">Horizontal ellipsis (<b>…</b>)</h4>
         <hr>
         <p>&emsp;The usage of <a target="_blank" href="https://unicode-table.com/en/2026/">horizontal ellipsis</a> is also quite different depending on websites, people etc., some time used as ‘…’ (one character), ‘...’ (three periods) or ‘. . .’ (three periods spaced) The rule on <a target="_blank" href="https://barrycap.com">BarryCap.com</a> is simple: each time horizontal ellipsis have to be used, the Unicode character has to be preferred.</p>
@@ -168,9 +170,11 @@
         <h4 id="example-12">Example</h4>
         <hr>
         <p>&emsp;Paragraph:</p>
-        <p>&emsp;<em>Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->– c'était le début de l'automne – <!--regular space-->et les feuilles virevoltaient en tous sens.</em></p>
+        <br>
+        <p>&emsp;<i>Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->– c'était le début de l'automne – <!--regular space-->et les feuilles virevoltaient en tous sens.</i></p>
+        <br>
         <p>&emsp;HTML code (with comments):</p>
-        <pre>&amp;emsp;Le train s'apprêtait à partir &lt;!--regular space--&gt;– &lt;!--regular space--&gt;les voyageurs se bousculaient pour une place. Il faisait beau &lt;!--regular space--&gt;–&amp;nbsp;c'était le début de l'automne&amp;nbsp;– &lt;!--regular space--&gt;et les feuilles virevoltaient en tous sens.</pre>
+        <pre><purple>&amp;emsp;</purple>Le train s'apprêtait à partir <grey>&lt;!--regular space--&gt;</grey>– <grey>&lt;!--regular space--&gt;</grey>les voyageurs se bousculaient pour une place. Il faisait beau <grey>&lt;!--regular space--&gt;</grey>–<purple>&amp;emsp;</purple>c'était le début de l'automne<purple>&amp;emsp;</purple>– <grey>&lt;!--regular space--&gt;</grey>et les feuilles virevoltaient en tous sens.</pre>
         <h4 id="horizontal-ellipsis">Horizontal ellipsis (<b>…</b>)</h4>
         <hr>
         <p>&emsp;The usage for <a target="_blank" href="https://unicode-table.com/en/2026/">horizontal ellipsis</a> is the same for French as it is <a target="_blank" href="#horizontal-ellipsis-">in English</a>: the Unicode character (…) has to be used instead of three periods, and a space must not be inserted before the punctuation mark.</p>
