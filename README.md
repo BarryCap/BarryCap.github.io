@@ -8,7 +8,7 @@ I develop this site since 2020 using mostly HTML and CSS.<br>
 &emsp;An introductive page to the Barry Cap's universe.
 ___
 ### [Home](https://barrycap.com/home)
-&emsp;The presentation page where you can found some of the images I made, with the current [Spolight](#spotlight) image.
+&emsp;The presentation page where you can found some of the images I made, with the current [spotlight](#spotlight) image.
 
 ---
 ### [Realizations](https://barrycap.com/realizations)
@@ -36,7 +36,7 @@ ___
 
 ---
 ### [Spotlight](https://barrycap.com/spotlight)
-&emsp;This part gathers all the spolighted pictures. The aim of the Spolight is to bring one picture on top of the site, to make it more alive.
+&emsp;This part gathers all the spotlighted pictures. The aim of the spotlight is to bring one picture on top of the site, to make it more alive.
 
 ---
 <br>
