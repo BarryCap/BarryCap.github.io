@@ -26,6 +26,7 @@ window.addEventListener('keyup', function(event) {
       KeyH: '/help',
       KeyE: '/versions',
       KeyC: '/contributing',
+      KeyM: '/license',
     }
     shortcuts[event.code] ? window.location = shortcuts[event.code] : ''
   }

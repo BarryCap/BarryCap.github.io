@@ -6,6 +6,8 @@
     --clink: #8ee;
     --clinko: #8ee8;
     --ffmb: Future Menu Brown, Brown, Helvetica, sans-serif;
+    --fserif: Garamond Premier Pro, Georgia, serif;
+    --fserif-i: Garamond Premier Pro Italic, Georgia Italic, serif;
     --mdef: url(assets/cursors/default.png) 0 0, auto;
     --mpointer: url(assets/cursors/pointer.png) 0 0, pointer;
     --mtxt: url(assets/cursors/text.png) 4 12, text;
@@ -49,6 +51,8 @@
       textarea::-webkit-scrollbar-button:hover  { background: #4448; border-radius: 4px; }
       textarea::-webkit-scrollbar-button:active { background: #0008; border-radius: 2px; }
 @font-face { font-family: "Future Menu Brown"; src: url(assets/fonts/fmb.ttf) format("truetype"); }
+@font-face { font-family: "Garamond Premier Pro"; src: url(assets/fonts/garamond.ttf) format("truetype"); font-weight: normal; }
+@font-face { font-family: "Garamond Premier Pro Italic"; src: url(assets/fonts/garamond-i.ttf) format("truetype"); font-weight: italic; }
 @keyframes home-intro { 0% { opacity: 0; transform: rotate3d(5, 90, 10, 30deg); overflow: hidden; } 99% { overflow: hidden; } }
 @keyframes home { 100% { background-position: -32px 32px; } }
 @keyframes real { 100% { background-position: 32px 0; } }
@@ -57,6 +61,7 @@
 @keyframes spot { 100% { background-position: 32px 32px; } }
 @keyframes help { 100% { background-position: 0px 32px; } }
 @keyframes contr { 12.5% { background-position: -11px 5px; } 25% { background-position: -16px 16px; } 37.5% { background-position: -11px 27px; } 50% { background-position: 0 32px; } 62.5% { background-position: 11px 27px; } 75% { background-position: 16px 16px; } 87.5% { background-position: 11px 5px; } 100% { background-position: 0 0; } }
+@keyframes license { 100% { background-position: 64px 32px; } }
 @keyframes four-o-four { 100% { background-position: 0 -256px; } }
 @keyframes image { 0% { background-position: 0 0; } 25% { background-position: 32px 0; } 50% { background-position: 32px 32px; } 75% { background-position: 0 32px; } 100% { background-position: 0 0; } }
 @keyframes video { 100% { background-position: 64px -64px; } }
@@ -212,6 +217,16 @@ button {
   cursor: var(--mpointer);
 }
 li { cursor: var(--mtxt); }
+blockquote {
+  background: #6666;
+  box-shadow: -8px 0 #6668;
+  border-radius: 0 5px 5px 0;
+  margin: 16px 0 16px 8px;
+  padding: 8px;
+  cursor: var(--mtxt);
+  font-family: var(--fserif);
+}
+blockquote i { font-family: var(--fserif-i); }
 code {
   background: #6668;
   border-radius: 4px;
@@ -530,29 +545,36 @@ textarea:focus {
   background-image: url(assets/bg/spotlight.svg);
   background-attachment: fixed;
 }
-.doc {
-  font-size: 21px;
-  text-align: left;
-  margin: -128px 128px 64px 64px;
-}
-#help-body {
-  cursor: var(--mdef);
-  background-image: url(assets/bg/help.svg);
-  animation: help 4s linear infinite;
-  background-attachment: fixed;
-}
-#vhist-body {
-  cursor: var(--mdef);
-  background-image: url(assets/bg/vhist.svg);
-  animation: help 4s linear infinite;
-  background-attachment: fixed;
-}
-#contr-body {
-  cursor: var(--mdef);
-  background-image: url(assets/bg/contr.svg);
-  animation: contr 8s linear infinite;
-  background-attachment: fixed;
-}
+/* Documentation pages */
+  .doc {
+    font-size: 21px;
+    text-align: left;
+    margin: -128px 128px 64px 64px;
+  }
+  #help-body {
+    cursor: var(--mdef);
+    background-image: url(assets/bg/help.svg);
+    animation: help 4s linear infinite;
+    background-attachment: fixed;
+  }
+  #vhist-body {
+    cursor: var(--mdef);
+    background-image: url(assets/bg/vhist.svg);
+    animation: help 4s linear infinite;
+    background-attachment: fixed;
+  }
+  #contr-body {
+    cursor: var(--mdef);
+    background-image: url(assets/bg/contr.svg);
+    animation: contr 8s linear infinite;
+    background-attachment: fixed;
+  }
+  #license-body {
+    cursor: var(--mdef);
+    background-image: url(assets/bg/license.svg);
+    animation: license 16s linear infinite;
+    background-attachment: fixed;
+  }
 .four-o-four {
   animation: four-o-four 4s linear infinite;
   background-image: url(assets/bg/404.svg);
