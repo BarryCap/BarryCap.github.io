@@ -219,7 +219,7 @@ button {
 li { cursor: var(--mtxt); }
 blockquote {
   background: #6666;
-  box-shadow: -8px 0 #6668;
+  box-shadow: -8px 0 #8888;
   border-radius: 0 5px 5px 0;
   margin: 16px 0 16px 8px;
   padding: 8px;
@@ -258,8 +258,9 @@ kbd {
   font-family: Consolas, monospace;
 }
 hr {
-  border-top: none;
-  border-color: #6668;
+  background: #6668;
+  border: none;
+  height: 2px;
 }
 img {
   box-shadow: 0 0 0 0 #6668;
