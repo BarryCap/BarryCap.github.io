@@ -217,19 +217,9 @@ button {
   cursor: var(--mpointer);
 }
 li { cursor: var(--mtxt); }
-blockquote {
-  background: #6666;
-  box-shadow: -8px 0 #8888;
-  border-radius: 0 5px 5px 0;
-  margin: 16px 0 16px 8px;
-  padding: 8px;
-  cursor: var(--mtxt);
-  font-family: var(--fserif);
-}
-blockquote i { font-family: var(--fserif-i); }
 code {
   background: #6668;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 2px;
   font-family: Consolas, monospace;
 }
@@ -250,6 +240,16 @@ pre {
   pink { color: #f8f; }
   purple { color: #c8f; }
   grey { color: #888; }
+blockquote {
+  background: #6666;
+  box-shadow: -8px 0 #8888;
+  border-radius: 0 5px 5px 0;
+  margin: 16px 0 16px 8px;
+  padding: 8px;
+  cursor: var(--mtxt);
+  font-family: var(--fserif);
+}
+blockquote i { font-family: var(--fserif-i); }
 kbd {
   background: #6668;
   border: solid 1px #888;
