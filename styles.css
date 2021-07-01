@@ -552,6 +552,7 @@ textarea:focus {
     text-align: left;
     margin: -128px 128px 64px 64px;
   }
+  .footer-wide-doc { margin-top: 2px !important; }
   #help-body {
     cursor: var(--mdef);
     background-image: url(assets/bg/help.svg);
