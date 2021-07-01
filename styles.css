@@ -211,6 +211,7 @@ button {
   line-height: 32px;
   cursor: var(--mpointer);
 }
+li { cursor: var(--mtxt); }
 code {
   background: #6668;
   border-radius: 4px;
