@@ -141,7 +141,6 @@ body {
   background-repeat: repeat;
   color: var(--cc);
   margin: 0;
-  padding-top: 4px;
   text-align: center;
   cursor: var(--mdef);
   overflow: overlay;
@@ -153,7 +152,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 div {
-  padding-top: 12px;
+  padding-top: 16px;
   min-height: 100vh;
 }
 p {
