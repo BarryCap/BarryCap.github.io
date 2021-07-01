@@ -232,15 +232,15 @@ pre {
   overflow: auto;
 }
 /* Text colors */
-  red { color: #f88; }
-  cyan { color: #0ff; }
-  blue { color: #00f; }
+  red    { color: #f88; }
+  cyan   { color: #0ff; }
+  blue   { color: #00f; }
   yellow { color: #ff8; }
   orange { color: #fc8; }
-  green { color: #0f0; }
-  pink { color: #f8f; }
+  green  { color: #0f0; }
+  pink   { color: #f8f; }
   purple { color: #c8f; }
-  grey { color: #888; }
+  grey   { color: #888; }
 blockquote {
   background: #6666;
   box-shadow: -8px 0 #8888;
