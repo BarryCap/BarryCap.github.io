@@ -188,31 +188,47 @@ add link to Stack Overflow profile</pre>
         <p>&emsp;The rule is not always respected in French: <b>always add a <a target="_blank" href="https://unicode-table.com/en/00A0/">no-break space</a> before <a target="_blank" href="https://unicode-table.com/en/003A/">colons</a>, <a target="_blank" href="https://unicode-table.com/en/003B/">semicolons</a>, <a target="_blank" href="https://unicode-table.com/en/0021/">exclamation marks</a> and <a target="_blank" href="https://unicode-table.com/en/003F/">question marks</a></b>.</p>
         <hr>
         <h2 id="code">Code</h2>
-        <p>&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. I will just show an example page to help perceive the way I code HTML<!-- and CSS-->.</p>
+        <p>&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. I will just show an example page to help perceive the way I code HTML and CSS. Empty lines in the middle of files are to be avoided in all languages.</p>
         <hr>
         <h3 id="html">HTML</h3>
         <h4 id="example-12">Example</h4>
         <pre><grey>&lt;!DOCTYPE html&gt;</grey>
 &lt;<red>html</red> <green>lang</green>=<orange>"en"</orange>&gt;
   &lt;<red>head</red>&gt;
-    <grey>&lt;!--`meta`s, `link`s, `script`s, `title` and `style` if needed--&gt;</grey>
+    <grey><i>&lt;!--`meta`s, `link`s, `script`s, `title`, and `style` if needed--&gt;</i></grey>
   &lt;/<red>head</red>&gt;
-  &lt;<red>body</red>&gt;&lt;!--`&lt;body class="class-of-body"&gt;` for animated backgrounds mostly--&gt;
+  &lt;<red>body</red>&gt;<grey><i>&lt;!--Set `&lt;body class="class-of-body"&gt;` for animated backgrounds mostly--&gt;</i></grey>
     &lt;<red>div</red>&gt;
       &lt;<red>a</red> <green>href</green>=<orange>"/"</orange>&gt;
-        <grey>&lt;!--`svg.header-svg`--&gt;</grey>
+        <grey><i>&lt;!--`svg.header-svg`--&gt;</i></grey>
       &lt;/<red>a</red>&gt;
       &lt;<red>div</red> <green>class</green>=<orange>"txt"</orange>&gt;
-        <grey>&lt;!--`p.button-container`--&gt;</grey>
-        <grey>&lt;!--additional text goes here--&gt;</grey>
+        <grey><i>&lt;!--`p.button-container`--&gt;</i></grey>
+        <grey><i>&lt;!--`p.sub-txt`--&gt;</i></grey>
       &lt;/<red>div</red>&gt;
-      <grey>&lt;!--images, content etc.--&gt;</grey>
+      <grey><i>&lt;!--images, content etc.--&gt;</i></grey>
     &lt;/<red>div</red>&gt;
-    <grey>&lt;!--`div.button-help-container`--&gt;</grey>
-    <grey>&lt;!--`div.cookie-container`--&gt;</grey>
-    <grey>&lt;!--`div.footer`--&gt;</grey>
+    <grey><i>&lt;!--`div.button-help-container`--&gt;</i></grey>
+    <grey><i>&lt;!--`div.cookie-container`--&gt;</i></grey>
+    <grey><i>&lt;!--`div.footer`--&gt;</i></grey>
   &lt;/<red>body</red>&gt;
 &lt;/<red>html</red>&gt;</pre>
+        <hr>
+        <h3 id="css">CSS</h3>
+        <h4 id="example-13">Example</h4>
+        <pre>@keyframes home { 100% { background-position: -32px 32px; } }
+body {
+  background: var(--c0);
+  color: var(--cc);
+  margin: 0;
+  cursor: var(--mdef);
+  font-family: var(--ffmb);
+  transition: ease-in .2s;
+}
+div {
+  padding-top: 16px;
+  min-height: 100vh;
+}</pre>
         <hr>
         <h3 id="no-ugly-library">No ugly library</h3>
         <p>&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, <b>not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one</b>. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.</p>

@@ -198,7 +198,7 @@ add link to Stack Overflow profile
 
 ---
 ## Code
-&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. I will just show an example page to help perceive the way I code HTML and CSS.
+&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. I will just show an example page to help perceive the way I code HTML and CSS. Empty lines in the middle of files are to be avoided in all languages.
 
 ---
 ### HTML
@@ -207,16 +207,16 @@ add link to Stack Overflow profile
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--`meta`s, `link`s, `script`s, `title` and `style` if needed-->
+    <!--`meta`s, `link`s, `script`s, `title`, and `style` if needed-->
   </head>
-  <body><!--`<body class="class-of-body">` for animated backgrounds mostly-->
+  <body><!--Set `<body class="class-of-body">` for animated backgrounds mostly-->
     <div>
       <a href="/">
         <!--`svg.header-svg`-->
       </a>
       <div class="txt">
         <!--`p.button-container`-->
-        <!--additional text goes here-->
+        <!--`p.sub-txt`-->
       </div>
       <!--images, content etc.-->
     </div>
@@ -225,7 +225,24 @@ add link to Stack Overflow profile
     <!--`div.footer`-->
   </body>
 </html>
-
+```
+---
+### CSS
+#### Example
+```css
+@keyframes home { 100% { background-position: -32px 32px; } }
+body {
+  background: var(--c0);
+  color: var(--cc);
+  margin: 0;
+  cursor: var(--mdef);
+  font-family: var(--ffmb);
+  transition: ease-in .2s;
+}
+div {
+  padding-top: 16px;
+  min-height: 100vh;
+}
 ```
 ---
 ### No ugly library
