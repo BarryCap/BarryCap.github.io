@@ -197,8 +197,39 @@ add link to Stack Overflow profile
 &emsp;The rule is not always respected in French: **always add a [no-break space](https://unicode-table.com/en/00A0/) before [colons](https://unicode-table.com/en/003A/), [semicolons](https://unicode-table.com/en/003B/), [exclamation marks](https://unicode-table.com/en/0021/) and [question marks](https://unicode-table.com/en/003F/)**.
 
 ---
+## Code
+&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. I will just show an example page to help perceive the way I code HTML and CSS.
+
+---
+### HTML
+#### Example
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--`meta`s, `link`s, `script`s, `title` and `style` if needed-->
+  </head>
+  <body><!--`<body class="class-of-body">` for animated backgrounds mostly-->
+    <div>
+      <a href="/">
+        <!--`svg.header-svg`-->
+      </a>
+      <div class="txt">
+        <!--`p.button-container`-->
+        <!--additional text goes here-->
+      </div>
+      <!--images, content etc.-->
+    </div>
+    <!--`div.button-help-container`-->
+    <!--`div.cookie-container`-->
+    <!--`div.footer`-->
+  </body>
+</html>
+
+```
+---
 ### No ugly library
-&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages, the site must be cleanest as possible, **not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one**. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.
+&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, **not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one**. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.
 
 <br>
 
