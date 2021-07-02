@@ -173,7 +173,7 @@ add link to Stack Overflow profile</pre>
         <hr>
         <p>&emsp;Paragraph:</p>
         <br>
-        <p><i>&emsp;Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->–&nbsp;c'était le début de l'automne&nbsp;– <!--regular space-->et les feuilles virevoltaient en tous sens.</i></p>
+        <p>&emsp;<i>Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->–&nbsp;c'était le début de l'automne&nbsp;– <!--regular space-->et les feuilles virevoltaient en tous sens.</i></p>
         <br>
         <p>&emsp;HTML code (with comments):</p>
         <pre><purple>&amp;emsp;</purple>Le train s'apprêtait à partir <grey>&lt;!--regular space--&gt;</grey>– <grey>&lt;!--regular space--&gt;</grey>les voyageurs se bousculaient pour une place. Il faisait beau <grey>&lt;!--regular space--&gt;</grey>–<purple>&amp;nbsp;</purple>c'était le début de l'automne<purple>&amp;nbsp;</purple>– <grey>&lt;!--regular space--&gt;</grey>et les feuilles virevoltaient en tous sens.</pre>
@@ -188,7 +188,7 @@ add link to Stack Overflow profile</pre>
         <p>&emsp;The rule is not always respected in French: <b>always add a <a target="_blank" href="https://unicode-table.com/en/00A0/">no-break space</a> before <a target="_blank" href="https://unicode-table.com/en/003A/">colons</a>, <a target="_blank" href="https://unicode-table.com/en/003B/">semicolons</a>, <a target="_blank" href="https://unicode-table.com/en/0021/">exclamation marks</a> and <a target="_blank" href="https://unicode-table.com/en/003F/">question marks</a></b>.</p>
         <hr>
         <h2 id="code">Code</h2>
-        <p>&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. I will just show an example page to help perceive the way I code HTML and CSS. Empty lines in the middle of files are to be avoided in all languages.</p>
+        <p>&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. However, empty lines in the middle of files are to be avoided in all languages. I will just show some code examples to help perceive the way I code HTML and CSS.</p>
         <hr>
         <h3 id="html">HTML</h3>
         <h4 id="example-12">Example</h4>
@@ -216,19 +216,20 @@ add link to Stack Overflow profile</pre>
         <hr>
         <h3 id="css">CSS</h3>
         <h4 id="example-13">Example</h4>
-        <pre>@keyframes home { 100% { background-position: -32px 32px; } }
-body {
-  background: var(--c0);
-  color: var(--cc);
-  margin: 0;
-  cursor: var(--mdef);
-  font-family: var(--ffmb);
-  transition: ease-in .2s;
+        <pre><red>@keyframes</red> <i><orange>home</orange></i> { <pink>100%</pink> { <i><cyan>background-position</cyan></i>: <purple>-32</purple><red>px</red> <purple>32</purple><red>px</red>; } }
+<red>body</red> {
+  <i><cyan>background</cyan></i>: <blue>var</blue>(--c0);
+  <i><cyan>color</cyan></i>: <blue>var</blue>(--cc);
+  <i><cyan>margin</cyan></i>: <purple>0</purple>;
+  <i><cyan>cursor</cyan></i>: <blue>var</blue>(--mdef);
+  <i><cyan>font-family</cyan></i>: <blue>var</blue>(--ffmb);
+  <i><cyan>transition</cyan></i>: <blue>ease-in</blue> <purple>.2</purple><red>s</red>;
 }
-div {
-  padding-top: 16px;
-  min-height: 100vh;
+<red>div</red> {
+  <i><cyan>padding-top</cyan></i>: <purple>16</purple><red>px</red>;
+  <i><cyan>min-height</cyan></i>: <purple>100</purple><red>vh</red>;
 }</pre>
+        <p>&emsp;The CSS <code>@keyframes</code> at-rule, as well as all the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">CSS at-rules</a> need to be minified, at least in the main CSS file (<code>styles.css</code>).</p>
         <hr>
         <h3 id="no-ugly-library">No ugly library</h3>
         <p>&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, <b>not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one</b>. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.</p>

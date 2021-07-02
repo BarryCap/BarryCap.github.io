@@ -198,7 +198,7 @@ add link to Stack Overflow profile
 
 ---
 ## Code
-&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. I will just show an example page to help perceive the way I code HTML and CSS. Empty lines in the middle of files are to be avoided in all languages.
+&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. However, empty lines in the middle of files are to be avoided in all languages. I will just show some code examples to help perceive the way I code HTML and CSS.
 
 ---
 ### HTML
@@ -244,9 +244,11 @@ div {
   min-height: 100vh;
 }
 ```
+The CSS `@keyframes` rule, as well as all the [CSS at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) need to be minified, at least in the main CSS file (`styles.css`).
+
 ---
 ### No ugly library
-&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, **not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one**. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.
+&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, **not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one**. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway, if anyone wants to use an open-source library on this website, they have to demand permission.
 
 <br>
 
