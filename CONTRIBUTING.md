@@ -198,7 +198,7 @@ add link to Stack Overflow profile
 
 ---
 ## Code
-&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. However, empty lines in the middle of files are to be avoided in all languages. I will just show some code examples to help perceive the way I code HTML and CSS.
+&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. However, empty lines in the middle of files are to be avoided in all languages (that ignore empty lines e.g. not Markdown). I will just show some code examples to help perceive the way I code HTML and CSS.
 
 ---
 ### HTML
