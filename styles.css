@@ -230,29 +230,29 @@ pre {
   font-family: Consolas, monospace;
   overflow: auto;
 }
-pre::selection {
-  color: #eee;
-  background: #8888;
-}
+pre::selection                   { color: #fff; background: #8888; }
+pre::selection *                              { background: #8888; }
+pre *::selection                              { background: #8888; }
+pre i::selection, red::selection { color: #aaa; background: #8888; }
 /* Text colors */
-  red    { color: #f88; }
-  cyan   { color: #0ff; }
-  blue   { color: #0cf; }
-  yellow { color: #ff8; }
-  orange { color: #fc8; }
-  green  { color: #0f0; }
-  pink   { color: #f8f; }
-  purple { color: #c8f; }
-  grey   { color: #888; }
-  pre i::selection, red::selection    { color: #f88; background: #8888; }
-  pre i::selection, cyan::selection   { color: #0ff; background: #8888; }
-  pre i::selection, blue::selection   { color: #0cf; background: #8888; }
-  pre i::selection, yellow::selection { color: #ff8; background: #8888; }
-  pre i::selection, orange::selection { color: #fc8; background: #8888; }
-  pre i::selection, green::selection  { color: #0f0; background: #8888; }
-  pre i::selection, pink::selection   { color: #f8f; background: #8888; }
-  pre i::selection, purple::selection { color: #c8f; background: #8888; }
-  pre i::selection, grey::selection   { color: #888; background: #8888; }
+  red               { color: #f88; }
+  red::selection    { color: #faa; }
+  cyan              { color: #0ff; }
+  cyan::selection   { color: #8ff; }
+  blue              { color: #0cf; }
+  blue::selection   { color: #4ef; }
+  yellow            { color: #ff8; }
+  yellow::selection { color: #ffa; }
+  orange            { color: #fc8; }
+  orange::selection { color: #fda; }
+  green             { color: #0f0; }
+  green::selection  { color: #8f8; }
+  pink              { color: #f8f; }
+  pink::selection   { color: #fcf; }
+  purple            { color: #c8f; }
+  purple::selection { color: #ecf; }
+  grey              { color: #888; }
+  grey::selection   { color: #aaa; }
 blockquote {
   background: #6666;
   box-shadow: -8px 0 #8888;
