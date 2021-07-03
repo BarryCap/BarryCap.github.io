@@ -225,7 +225,10 @@ code {
 pre {
   background: #6668;
   border-radius: 4px;
-  padding: 8px;
+  padding: 16px;
+  max-height: 80vh;
+  position: relative;
+  transform: translateZ(0);
   cursor: var(--mtxt);
   font-family: Consolas, monospace;
   overflow: auto;
@@ -234,6 +237,20 @@ pre::selection                   { color: #fff; background: #8888; }
 pre::selection *                              { background: #8888; }
 pre *::selection                              { background: #8888; }
 pre i::selection, red::selection { color: #aaa; background: #8888; }
+/* Language indicator */
+  pre::after {
+    position: fixed;
+    top: 0;
+    right: 4px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .plain::after { color: #888; content: "plain text"; }
+  .html::after  { color: #f73; content: "HTML"; }
+  .css::after   { color: #69f; content: "CSS"; }
+  .js::after    { color: #fe1; content: "JavaScript"; }
+  .md::after    { color: #ccc; content: "Markdown"; }
+  .brks::after  { color: #c8f; content: "BRKS"; }
 /* Text colors */
   red               { color: #f88; }
   red::selection    { color: #faa; }
