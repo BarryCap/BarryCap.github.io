@@ -40,8 +40,8 @@ Set `color` of `body` to `#eee` in `styles.css`
 - If something is being improved, the commit name could begin with `Improve`;
 - If a file is being renamed, the commit name could begin with `Rename`;
 - If something is being changed for another, the commit name should begin with `Replace`;
+- If a file or a part of a file is made shorter, the commit name should begin with `Clean`;
 - If a file or a part of a file is shortened or minified, the commit name should begin with `Minify`.
-
 #### Examples
 ---
 &emsp;If the file `CONTRIBUTING.md` is being added, the commit name could begin with or could to be:
