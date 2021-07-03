@@ -222,6 +222,7 @@ code {
   padding: 2px;
   font-family: Consolas, monospace;
 }
+code::selection { color: #fff; background: #8888; }
 pre {
   background: #6668;
   border-radius: 4px;
@@ -237,6 +238,7 @@ pre::selection                   { color: #fff; background: #8888; }
 pre::selection *                              { background: #8888; }
 pre *::selection                              { background: #8888; }
 pre i::selection, red::selection { color: #aaa; background: #8888; }
+pre u::selection { color: #fff; }
 /* Language indicator */
   pre::after {
     position: fixed;
