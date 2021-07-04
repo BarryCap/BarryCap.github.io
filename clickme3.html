@@ -49,7 +49,7 @@
       }
       button:active {
         border-color: #222 #666 #666 #222;
-        transition-duration: 0;
+        transition: 0s;
       }
       #win:focus {
         opacity: 0;
@@ -90,6 +90,9 @@
       }
     </style>
     <script>
+      function music() {
+        document.getElementById('music').play()
+      }
       window.addEventListener('click', function(e) {
         if(e.target.name == 'nope') {
           e.target.innerHTML = 'Nope'
@@ -151,7 +154,8 @@
       }
     </script>
   </head>
-  <body>
+  <body onclick="music()">
+    <audio id="music" loop hidden src="sounds/YouWantMeToKill.mp3"></audio>
     <button name="nope" tabIndex="-1">Click Me</button>
     <button name="nope" tabIndex="-1">Click Me</button>
     <button name="nope" tabIndex="-1">Click Me</button>
