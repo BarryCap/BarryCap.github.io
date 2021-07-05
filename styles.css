@@ -106,6 +106,9 @@
     line-height: 28px;
   }
   .cookie-container { transform: scale(1.5); transform-origin: bottom right; }
+  .intro-button-container {
+    height: 80vh !important;
+  }
   .intro-button { font-size: 5vw !important; line-height: 5vw !important; }
   .intro-video {
     min-width: 100vh;
