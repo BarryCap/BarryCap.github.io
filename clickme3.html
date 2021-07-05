@@ -88,6 +88,23 @@
       .activeme:focus::before {
         content: "Thanks! ";
       }
+      .selectme {
+        overflow: visible;
+        cursor: text;
+        user-select: text;
+        z-index: 1;
+      }
+      .selectme::selection {
+        color: #000;
+        background-color: #fff;
+        text-shadow:
+          0 15px, 0 -15px 0, 0 30px, 0 -30px, 0 45px, 0 -45px, 0 60px, 0 -60px, 0 75px, 0 -75px, 0 90px, 0 -90px,
+          65px 0, 65px 15px, 65px -15px, 65px 30px, 65px -30px, 65px 45px, 65px -45px, 65px 60px, 65px -60px, 65px 75px, 65px -75px, 65px 90px, 65px -90px,
+          -65px 0, -65px 15px, -65px -15px, -65px 30px, -65px -30px, -65px 45px, -65px -45px, -65px 60px, -65px -60px, -65px 75px, -65px -75px, -65px 90px, -65px -90px,
+          130px 0, 130px 15px, 130px -15px, 130px 30px, 130px -30px, 130px 45px, 130px -45px, 130px 60px, 130px -60px, 130px 75px, 130px -75px, 130px 90px, 130px -90px,
+          -130px 0, -130px 15px, -130px -15px, -130px 30px, -130px -30px, -130px 45px, -130px -45px, -130px 60px, -130px -60px, -130px 75px, -130px -75px, -130px 90px, -130px -90px
+        ;
+      }
     </style>
     <script>
       function music() {
@@ -322,7 +339,7 @@
     <button name="nope" tabIndex="-1">Click Me</button>
     <button name="nope" tabIndex="-1">Click Me</button>
     <button name="nope" tabIndex="-1">Click Me</button>
-    <button name="nope" tabIndex="-1">Click Me</button>
+    <button name="nope" tabIndex="-1" class="selectme">Select Me</button>
     <button name="nope" tabIndex="-1">Click Me</button>
     <button name="nope" tabIndex="-1">Click Me</button>
     <button name="nope" tabIndex="-1">Click Me</button>
