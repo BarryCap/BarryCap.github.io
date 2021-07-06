@@ -889,7 +889,7 @@ textarea:focus {
     margin: auto;
     padding: 0;
     padding-top: 50px;
-    width: 100vw;
+    width: 100%;
     min-height: 0 !important;
     position: relative;
     text-align: center;
@@ -905,7 +905,7 @@ textarea:focus {
     background: #111;
     margin-top: 32px;
     padding: 8px 0 24px;
-    width: 100vw;
+    width: 100%;
     min-height: auto;
     box-shadow: 0 -4px #444;
     display: flex;
