@@ -287,9 +287,9 @@ blockquote {
 blockquote i { font-family: var(--fserif-i); }
 kbd {
   background: #6668;
-  border: solid 1px #888;
+  box-shadow: 0 0 0 1px #888, 0 -2px 0 1px #888;
   border-radius: 4px;
-  padding: 2px 8px;
+  padding: 0 6px;
   font-family: Consolas, monospace;
 }
 hr {
