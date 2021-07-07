@@ -62,6 +62,7 @@
 @keyframes help { 100% { background-position: 0px 32px; } }
 @keyframes contr { 12.5% { background-position: -11px 5px; } 25% { background-position: -16px 16px; } 37.5% { background-position: -11px 27px; } 50% { background-position: 0 32px; } 62.5% { background-position: 11px 27px; } 75% { background-position: 16px 16px; } 87.5% { background-position: 11px 5px; } 100% { background-position: 0 0; } }
 @keyframes license { 100% { background-position: 64px 32px; } }
+@keyframes cube { 25% { background-position: 12px 7px; } 50% { background-position: -12px 14px; } 75% { background-position: 28px 28px; } 100% { background-position: -28px 48px; } }
 @keyframes four-o-four { 100% { background-position: 0 -256px; } }
 @keyframes image { 0% { background-position: 0 0; } 25% { background-position: 32px 0; } 50% { background-position: 32px 32px; } 75% { background-position: 0 32px; } 100% { background-position: 0 0; } }
 @keyframes video { 100% { background-position: 64px -64px; } }
@@ -283,6 +284,7 @@ blockquote {
   padding: 8px;
   cursor: var(--mtxt);
   font-family: var(--fserif);
+  font-variant-numeric: oldstyle-nums;
 }
 blockquote i { font-family: var(--fserif-i); }
 kbd {
@@ -612,6 +614,12 @@ textarea:focus {
     animation: license 16s linear infinite;
     background-attachment: fixed;
   }
+  #cube-body {
+    cursor: var(--mdef);
+    background-image: url(assets/bg/cube.svg);
+    animation: cube 4s cubic-bezier(.25, .75, .5, 1) infinite;
+    background-attachment: fixed;
+  }
 .four-o-four {
   animation: four-o-four 4s linear infinite;
   background-image: url(assets/bg/404.svg);
@@ -787,6 +795,12 @@ textarea:focus {
   mix-blend-mode: difference;
   text-decoration-style: dashed;
 }
+.signature {
+  font-family: var(--fserif);
+  font-variant-numeric: oldstyle-nums;
+  text-align: right;
+}
+.signature i { font-family: var(--fserif-i); }
 /* Cookies pop-up */
   .cookie-container {
     background: #6668;
