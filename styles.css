@@ -288,6 +288,21 @@ blockquote {
   font-variant-numeric: oldstyle-nums;
 }
 blockquote i { font-family: var(--fserif-i); }
+figure {
+  box-shadow: 0 0 0 8px #6668;
+  border-radius: 8px;
+  margin-block: 0;
+  padding: 8px;
+  width: fit-content;
+  text-align: center;
+}
+figcaption {
+  background: #6668;
+  border-radius: 30px;
+  padding-inline: 8px;
+  font-family: var(--fserif-i);
+  font-variant-numeric: oldstyle-nums;
+}
 kbd {
   background: #6668;
   box-shadow: 0 0 0 1px #888, 0 -2px 0 1px #888;
