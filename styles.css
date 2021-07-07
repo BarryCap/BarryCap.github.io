@@ -257,6 +257,7 @@ pre u::selection { color: #fff; }
   .js::after    { color: #fe1; content: "JavaScript"; }
   .md::after    { color: #ccc; content: "Markdown"; }
   .brks::after  { color: #c8f; content: "BRKS"; }
+  .wavef::after  { color: #c8f; content: "Wavefront"; }
 /* Text colors */
   red               { color: #f88; }
   red::selection    { color: #faa; }
@@ -794,7 +795,6 @@ textarea:focus {
   color: #fff;
   mix-blend-mode: difference;
   text-decoration: underline dashed;
-  text-underline-position: under;
   cursor: url(assets/cursors/help.png) 0 10, help;
 }
 .signature {
