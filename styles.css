@@ -229,7 +229,7 @@ code {
 code::selection { color: #fff; background: #8888; }
 pre {
   background: #6668;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 16px;
   max-height: 80vh;
   position: relative;
