@@ -791,9 +791,11 @@ textarea:focus {
   width: 780px;
 }
 .span-help {
-  cursor: url(assets/cursors/help.png) 0 10, help;
+  color: #fff;
   mix-blend-mode: difference;
-  text-decoration-style: dashed;
+  text-decoration: underline dashed;
+  text-underline-position: under;
+  cursor: url(assets/cursors/help.png) 0 10, help;
 }
 .signature {
   font-family: var(--fserif);
