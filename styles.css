@@ -140,6 +140,7 @@
 @media screen and (min-width: 3000px) { .left-txt { width: calc(45vw - 780px); left: 13.8vw; } }
 @media screen and (min-width: 4000px) { .left-txt { width: calc(24vw - 780px); font-size: 21px; left: 32vw; } }
 @media screen and (min-width: 6000px) { .left-txt { width: calc(16.4vw - 780px); font-size: 21px; left: 38vw; } }
+html { scroll-behavior: smooth; }
 body {
   background: var(--c0);
   background-repeat: repeat;
