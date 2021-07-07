@@ -165,6 +165,7 @@ p {
   cursor: var(--mtxt);
   transition: ease-in .2s;
 }
+.em::before { content: " "; }
 h1 {
   margin: 0 0 32px 0;
   cursor: var(--mtxtbig);

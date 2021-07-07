@@ -26,16 +26,16 @@
       <p class="sub-txt img-sub-txt">
         <h1><a href="https://barrycap.com">Barry Cap</a> › Contributing</h1>
         <hr>
-        <p>&emsp;As a start, I would like to thank everyone who is contributing or who wants to contribute to this repository.</p>
-        <p>&emsp;This is a project I made mostly alone, but if anyone wants to collaborate to this site, doing some little typo, design fixes or even art that they want to share, I would be very glad and open for some help and content.</p>
+        <p class="em">As a start, I would like to thank everyone who is contributing or who wants to contribute to this repository.</p>
+        <p class="em">This is a project I made mostly alone, but if anyone wants to collaborate to this site, doing some little typo, design fixes or even art that they want to share, I would be very glad and open for some help and content.</p>
         <hr>
         <h2 id="commits">Commits</h2>
-        <p>&emsp;I am not very strict at naming commits, so I will just exlain some fundamentals.</p>
+        <p class="em">I am not very strict at naming commits, so I will just exlain some fundamentals.</p>
         <hr>
         <h3 id="format">Format</h3>
-        <p>&emsp;The default format for commit names on this repository is:</p>
+        <p class="em">The default format for commit names on this repository is:</p>
         <pre class="brks"><cyan>[verb] [edited]</cyan><purple>/<pink>[old]</pink></purple> <orange>(of <yellow>[nest]</yellow> to <yellow>[value]</yellow> in <yellow>[file]</yellow>)</orange><purple>/by <pink>[edited]</pink></purple></pre>
-        <p>&emsp;With</p>
+        <p class="em">With</p>
         <ul>
           <li><code><cyan>[verb]</cyan></code> indicating <i>the verb</i>;</li>
           <li><code><cyan>[edited]</cyan></code> standing for <i>the name of the file or part of a file edited or added</i>;</li>
@@ -45,14 +45,14 @@
           <li><code><pink>[old]</pink></code> meaning <i>the old file or part of file before it was edited</i>;</li>
           <li><code><purple>/</purple></code> indicating <i>another possibility than the group before</i> (if the words after are used, the preceding group is not used).</li>
         </ul>
-        <p>&emsp;Everything that is inside parenthesis (<code><orange>(…)</orange></code>) is not mandatory.</p>
+        <p class="em">Everything that is inside parenthesis (<code><orange>(…)</orange></code>) is not mandatory.</p>
         <h4 id="example-1">Example</h4>
         <hr>
-        <p>&emsp;If the <code><red>body</red></code> text color is set to <code><purple>#eee</purple></code> in <code><orange>styles.css</orange></code>, the commit name should be:</p>
+        <p class="em">If the <code><red>body</red></code> text color is set to <code><purple>#eee</purple></code> in <code><orange>styles.css</orange></code>, the commit name should be:</p>
         <pre class="md">Set <orange>`color`</orange> of <orange>`body`</orange> to <orange>`#eee`</orange> in <orange>`styles.css`</orange></pre>
         <hr>
         <h3 id="starting-with-a-verb">Starting with a verb</h3>
-        <p>&emsp;Every commit should begin with a verb at the present time, explaining the kind of action that is being executed in the commit.</p>
+        <p class="em">Every commit should begin with a verb at the present time, explaining the kind of action that is being executed in the commit.</p>
         <ul>
           <li>If a new file, class, script etc. is created, the commit name should begin with <code>Add</code> or <code>Create</code>;</li>
           <li>If a file is modified, the commit name should begin with <code>Edit</code> or <code>Change</code>;</li>
@@ -68,128 +68,128 @@
         </ul>
         <h4 id="example-2">Examples</h4>
         <hr>
-        <p>&emsp;If the file <code><orange>CONTRIBUTING.md</orange></code> is being added, the commit name could begin with or could to be:</p>
+        <p class="em">If the file <code><orange>CONTRIBUTING.md</orange></code> is being added, the commit name could begin with or could to be:</p>
         <pre class="md">Add <orange>`CONTRIBUTING.md`</orange></pre>
-        <p>&emsp;If a property that is linked with the white theme is edited, the commit name would look like:</p>
+        <p class="em">If a property that is linked with the white theme is edited, the commit name would look like:</p>
         <pre class="md">Change white theme</pre>
         <hr>
         <h3 id="followed-by-what-has-been-edited-or-added">Followed by what has been edited or added</h3>
-        <p>&emsp;The commit name should include, after the verb, the file name (surrounded by backticks if possible, to be formated <code>like this</code> on <a target="_blank" href="https://github.com">GitHub</a>) or something that has been changed.</p>
+        <p class="em">The commit name should include, after the verb, the file name (surrounded by backticks if possible, to be formated <code>like this</code> on <a target="_blank" href="https://github.com">GitHub</a>) or something that has been changed.</p>
         <h4 id="example-3">Example</h4>
         <hr>
-        <p>&emsp;If a script was added in <code><orange>script.js</orange></code> to change the random background animation in <a target="_blank" href="https://barrycap.com/random">Random page</a>, the commit name would look like:</p>
+        <p class="em">If a script was added in <code><orange>script.js</orange></code> to change the random background animation in <a target="_blank" href="https://barrycap.com/random">Random page</a>, the commit name would look like:</p>
         <pre class="md">Add script to change background animation in Random page</pre>
         <hr>
         <h3 id="splitted-if-too-long">Splitted if too long</h3>
-        <p>&emsp;To show in a good manner on all displays and viewing modes, the standard limit for the first line of commit names is at 50 (while it is at 72 for any other line).</p>
+        <p class="em">To show in a good manner on all displays and viewing modes, the standard limit for the first line of commit names is at 50 (while it is at 72 for any other line).</p>
         <h4 id="example-4">Example</h4>
         <hr>
-        <p>&emsp;The commit name example above is too long (6 characters above the 50 limit), so it has to be splitted in two lines:</p>
+        <p class="em">The commit name example above is too long (6 characters above the 50 limit), so it has to be splitted in two lines:</p>
         <pre class="md">Add script to change background animation
 in Random page</pre>
-        <p>&emsp;The commit name can be splitted before the anouncement of were the modifications are applying to, so generally before the word ‘in’.</p>
+        <p class="em">The commit name can be splitted before the anouncement of were the modifications are applying to, so generally before the word ‘in’.</p>
         <hr>
         <h3 id="including-the-number-of-files-modified">Including the number of files modified</h3>
-        <p>&emsp;If numerous files that are being edited (e.g. a <code><red>meta</red></code> tag is changed in all HTML files), the commit name should include the number of files modified.</p>
+        <p class="em">If numerous files that are being edited (e.g. a <code><red>meta</red></code> tag is changed in all HTML files), the commit name should include the number of files modified.</p>
         <h4 id="example-5">Example</h4>
         <hr>
-        <p>&emsp;If the favicon is changed in all 56 HTML pages, the commit name would be:</p>
+        <p class="em">If the favicon is changed in all 56 HTML pages, the commit name would be:</p>
         <pre class="md">Change favicon in all 56 pages</pre>
         <hr>
         <h3 id="pages-title-capitalized">Pages' title capitalized</h3>
-        <p>&emsp;The first letter of a mentioned page needs to be written in capital, generally followed by <code>page</code>.</p>
+        <p class="em">The first letter of a mentioned page needs to be written in capital, generally followed by <code>page</code>.</p>
         <h4 id="example-6">Example</h4>
         <hr>
-        <p>&emsp;If a white theme button is added in Random page, the commit name would be:</p>
+        <p class="em">If a white theme button is added in Random page, the commit name would be:</p>
         <pre class="md">Add white theme button in Random page</pre>
         <hr>
         <h3 id="fixing-issues">Fixing issues</h3>
-        <p>&emsp;If it is certain that an issue will be fixed when merging this commit to the master branch, the commit name can include the issue ID (beginning with <code>#</code>), preceded by <code>Fix</code>, with a white space between the two.</p>
+        <p class="em">If it is certain that an issue will be fixed when merging this commit to the master branch, the commit name can include the issue ID (beginning with <code>#</code>), preceded by <code>Fix</code>, with a white space between the two.</p>
         <h4 id="example-7">Example</h4>
         <hr>
-        <p>&emsp;If the header CSS animation in Intro page is fixed, and if it closed the issue number 78, the commit name could look like:</p>
+        <p class="em">If the header CSS animation in Intro page is fixed, and if it closed the issue number 78, the commit name could look like:</p>
         <pre class="md">Fix header animation in Intro page <u>Fix #78</u></pre>
         <hr>
         <h3 id="multiple-changes">Multiple changes</h3>
-        <p>&emsp;If multiple changes are done in the commit, they have to be separated in different lines.</p>
+        <p class="em">If multiple changes are done in the commit, they have to be separated in different lines.</p>
         <h4 id="example-8">Example</h4>
         <hr>
-        <p>&emsp;If <code><orange>CONTRIBUTING.md</orange></code> is added and a typo was fixed in <code><orange>README.md</orange></code>, the commit name would be:</p>
+        <p class="em">If <code><orange>CONTRIBUTING.md</orange></code> is added and a typo was fixed in <code><orange>README.md</orange></code>, the commit name would be:</p>
         <pre class="md">Add <orange>`CONTRIBUTING.md`</orange>
 Fix typo in <orange>`README.md`</orange></pre>
         <hr>
         <h3 id="adding-description">Adding description</h3>
-        <p>&emsp;Additional information about what is being done in the commit can be added after a line break, not beginning with a capital letter.</p>
+        <p class="em">Additional information about what is being done in the commit can be added after a line break, not beginning with a capital letter.</p>
         <h4 id="example-9">Example</h4>
         <hr>
-        <p>&emsp;If <code><orange>README.md</orange></code> is updated by adding link to Stack Overflow profile, the commit name could be:</p>
+        <p class="em">If <code><orange>README.md</orange></code> is updated by adding link to Stack Overflow profile, the commit name could be:</p>
         <pre class="md">Update <orange>`README.md`</orange>
 add link to Stack Overflow profile</pre>
         <hr>
         <h3 id="not-ending-with-a-period">Not ending with a period</h3>
-        <p>&emsp;No full stop or any other punctuation character has to be inserted at the end of the commit name.</p>
+        <p class="em">No full stop or any other punctuation character has to be inserted at the end of the commit name.</p>
         <hr>
         <h3 id="updating-version">Updating version</h3>
-        <p>&emsp;Every commit changes something to the site, and this can be seen with the version, that has to be updated with every commit (do not do it in changes that will be applied within a pull request, I will update it myself, in a commit where I have done something else, or in a ‘<code>Update version</code>’ commit). The version indicator can be found in the <code>code</code> block in the <a target="_blank" href="https://barrycap.com/about">About page</a> (<code><orange>/about.html</orange></code>).</p>
+        <p class="em">Every commit changes something to the site, and this can be seen with the version, that has to be updated with every commit (do not do it in changes that will be applied within a pull request, I will update it myself, in a commit where I have done something else, or in a ‘<code>Update version</code>’ commit). The version indicator can be found in the <code>code</code> block in the <a target="_blank" href="https://barrycap.com/about">About page</a> (<code><orange>/about.html</orange></code>).</p>
         <hr>
         <h2 id="versioning">Versioning</h2>
-        <p>&emsp;The version of the site is represented in the below format:</p>
+        <p class="em">The version of the site is represented in the below format:</p>
         <pre class="brks"><cyan>[major]</cyan>.<cyan>[minor]</cyan>+<cyan>[commitNumber]</cyan></pre>
-        <p>&emsp;The true commit number can be found in the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io/graphs/contributors">contributors table</a> of the repository, where all the commits count from every contributor have to be additionned. The commit number can also be found by calculating the number of commits found on the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io">repository home page</a> (e.g. 880 at the time this is written) plus 93.</p>
+        <p class="em">The true commit number can be found in the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io/graphs/contributors">contributors table</a> of the repository, where all the commits count from every contributor have to be additionned. The commit number can also be found by calculating the number of commits found on the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io">repository home page</a> (e.g. 880 at the time this is written) plus 93.</p>
         <h4 id="example-10">Example</h4>
         <hr>
-        <p>&emsp;The version of the site, with the commit introducing <code><orange>CONTRIBUTING.md</orange></code>, was:</p>
+        <p class="em">The version of the site, with the commit introducing <code><orange>CONTRIBUTING.md</orange></code>, was:</p>
         <pre class="plain">1.6+974</pre>
-        <p>&emsp;A new major version is introduced when the website completely changes its appearance. A new minor version is introduced when a big change was made to the website. Contributors will have to demand permission from <a target="_blank" href="https://barrycap.com/about#me">me</a> to update the website to a major or minor version, or their modifications might be refused.</p>
-        <p>&emsp;Information about the different versions of the website can be found at <a target="_blank" href="https://barrycap.com/versions">BarryCap.com/versions</a>.</p>
+        <p class="em">A new major version is introduced when the website completely changes its appearance. A new minor version is introduced when a big change was made to the website. Contributors will have to demand permission from <a target="_blank" href="https://barrycap.com/about#me">me</a> to update the website to a major or minor version, or their modifications might be refused.</p>
+        <p class="em">Information about the different versions of the website can be found at <a target="_blank" href="https://barrycap.com/versions">BarryCap.com/versions</a>.</p>
         <hr>
         <h2 id="languages">Languages</h2>
-        <p>&emsp;Most of the website is written in American English. I do not want to see things like ‘colour’, ‘licence’ or ‘realisations’ in the American English version of the website.</p>
+        <p class="em">Most of the website is written in American English. I do not want to see things like ‘colour’, ‘licence’ or ‘realisations’ in the American English version of the website.</p>
         <hr>
         <h3 id="english-punctuation-rules">English punctuation rules</h3>
-        <p>&emsp;I have the habit to be a bit hard with myself on the punctuation marks. There are four points that I would like to explain.</p>
+        <p class="em">I have the habit to be a bit hard with myself on the punctuation marks. There are four points that I would like to explain.</p>
         <h4 id="the-dash-en">The dash (<b>—</b>)</h4>
         <hr>
-        <p>&emsp;The usage of dashes is often confused in many languages, where some people uses only the <a target="_blank" href="https://unicode-table.com/2013/">en dash</a> (–), with or without spaces at its sides, while some are using both for different usage (e.g. en dash for lists, em dash as sentence separator), and there are even other kind of usage… So I will be clear. There is only <b>one type of dash used in English texts</b>, and that is the <a target="_blank" href="https://unicode-table.com/2014/">em dash</a> (—). It has to be used <b>without spaces</b> after nor before.</p>
+        <p class="em">The usage of dashes is often confused in many languages, where some people uses only the <a target="_blank" href="https://unicode-table.com/2013/">en dash</a> (–), with or without spaces at its sides, while some are using both for different usage (e.g. en dash for lists, em dash as sentence separator), and there are even other kind of usage… So I will be clear. There is only <b>one type of dash used in English texts</b>, and that is the <a target="_blank" href="https://unicode-table.com/2014/">em dash</a> (—). It has to be used <b>without spaces</b> after nor before.</p>
         <h4 id="example-11">Example</h4>
         <hr>
-        <p>&emsp;<i>The train was about to leave—travelers were jostling for a seat.</i></p>
+        <p class="em"><i>The train was about to leave—travelers were jostling for a seat.</i></p>
         <h4 id="horizontal-ellipsis-en">Horizontal ellipsis (<b>…</b>)</h4>
         <hr>
-        <p>&emsp;The usage of <a target="_blank" href="https://unicode-table.com/2026/">horizontal ellipsis</a> is also quite different depending on websites, people etc., some time used as ‘…’ (one character), ‘...’ (three periods) or ‘. . .’ (three periods spaced) The rule on <a target="_blank" href="https://barrycap.com">BarryCap.com</a> is simple: each time horizontal ellipsis have to be used, the Unicode character has to be preferred.</p>
+        <p class="em">The usage of <a target="_blank" href="https://unicode-table.com/2026/">horizontal ellipsis</a> is also quite different depending on websites, people etc., some time used as ‘…’ (one character), ‘...’ (three periods) or ‘. . .’ (three periods spaced) The rule on <a target="_blank" href="https://barrycap.com">BarryCap.com</a> is simple: each time horizontal ellipsis have to be used, the Unicode character has to be preferred.</p>
         <h4 id="quotation-marks----and">Quotation marks (<b>‘</b>, <b>’</b>, <b>“</b> and <b>”</b>)</h4>
         <hr>
-        <p>&emsp;Some are using those: ' ( <a target="_blank" href="https://unicode-table.com/0027/">apostrophe</a>, both the same at each end), while others: &quot; ( <a target="_blank" href="https://unicode-table.com/0022/">quotation mark</a>, both the same at each end), some more experimented: “ and ” ( <a target="_blank" href="https://unicode-table.com/201C/">left double quotation mark</a> and <a target="_blank" href="https://unicode-table.com/201D/">right double quotation mark</a>) or ‘ and ’ ( <a target="_blank" href="https://unicode-table.com/2018/">left single quotation mark</a> and <a target="_blank" href="https://unicode-table.com/2019/">right single quotation mark</a>). The rule on <a target="_blank" href="https://barrycap.com">BarryCap.com</a> is to use <b>single quotation marks</b>, different for each end (‘ and ’), and if there is a need for putting quotation marks inside of quotation marks, the characters used will be <b>double quotation marks</b> (“ and ”), also different at each end.</p>
+        <p class="em">Some are using those: ' ( <a target="_blank" href="https://unicode-table.com/0027/">apostrophe</a>, both the same at each end), while others: &quot; ( <a target="_blank" href="https://unicode-table.com/0022/">quotation mark</a>, both the same at each end), some more experimented: “ and ” ( <a target="_blank" href="https://unicode-table.com/201C/">left double quotation mark</a> and <a target="_blank" href="https://unicode-table.com/201D/">right double quotation mark</a>) or ‘ and ’ ( <a target="_blank" href="https://unicode-table.com/2018/">left single quotation mark</a> and <a target="_blank" href="https://unicode-table.com/2019/">right single quotation mark</a>). The rule on <a target="_blank" href="https://barrycap.com">BarryCap.com</a> is to use <b>single quotation marks</b>, different for each end (‘ and ’), and if there is a need for putting quotation marks inside of quotation marks, the characters used will be <b>double quotation marks</b> (“ and ”), also different at each end.</p>
         <h4 id="spaces-before-punctuation-marks-en">Spaces before punctuation marks (<b>:</b>, <b>;</b>, <b>?</b>, <b>!</b> and <b>…</b>)</h4>
         <hr>
-        <p>&emsp;This is generally respected: <b>no space before <a target="_blank" href="https://unicode-table.com/003A/">colons</a>, <a target="_blank" href="https://unicode-table.com/003B/">semicolons</a>, <a target="_blank" href="https://unicode-table.com/0021/">exclamation marks</a>, <a target="_blank" href="https://unicode-table.com/003F/">question marks</a> and <a target="_blank" href="https://unicode-table.com/2026/">horizontal ellipsis</a></b> in English, and most other languages.</p>
+        <p class="em">This is generally respected: <b>no space before <a target="_blank" href="https://unicode-table.com/003A/">colons</a>, <a target="_blank" href="https://unicode-table.com/003B/">semicolons</a>, <a target="_blank" href="https://unicode-table.com/0021/">exclamation marks</a>, <a target="_blank" href="https://unicode-table.com/003F/">question marks</a> and <a target="_blank" href="https://unicode-table.com/2026/">horizontal ellipsis</a></b> in English, and most other languages.</p>
         <hr>
         <h3 id="french-punctuation-rules">French punctuation rules</h3>
-        <p>&emsp;French is a language in which punction marks usage often differs from other languages. The thing that is important to French punctuation is the <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a>, that needs to be placed before or after punctuation marks.</p>
+        <p class="em">French is a language in which punction marks usage often differs from other languages. The thing that is important to French punctuation is the <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a>, that needs to be placed before or after punctuation marks.</p>
         <h4 id="the-dash-fr">The dash (<b>–</b> and <b>—</b>)</h4>
         <hr>
-        <p>&emsp;The dash used inside sentences will always be the <a target="_blank" href="https://unicode-table.com/2013/">en dash</a> (–), surrounded by regular spaces, unless it is used like parenthesis, framing a part of text in which case a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><purple>&amp;nbsp;</purple></code> in HTML) has to be inserted inside the part of the sentence surrounded by <a target="_blank" href="https://unicode-table.com/2013/">en dashs</a>.</p>
-        <p>&emsp;As for dialogues, the dash used will be an <a target="_blank" href="https://unicode-table.com/2014/">em dash</a>, followed by a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a>.</p>
+        <p class="em">The dash used inside sentences will always be the <a target="_blank" href="https://unicode-table.com/2013/">en dash</a> (–), surrounded by regular spaces, unless it is used like parenthesis, framing a part of text in which case a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><purple>&amp;nbsp;</purple></code> in HTML) has to be inserted inside the part of the sentence surrounded by <a target="_blank" href="https://unicode-table.com/2013/">en dashs</a>.</p>
+        <p class="em">As for dialogues, the dash used will be an <a target="_blank" href="https://unicode-table.com/2014/">em dash</a>, followed by a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a>.</p>
         <h4 id="example-12">Example</h4>
         <hr>
-        <p>&emsp;Paragraph:</p>
+        <p class="em">Paragraph:</p>
         <br>
-        <p>&emsp;<i>Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->–&nbsp;c'était le début de l'automne&nbsp;– <!--regular space-->et les feuilles virevoltaient en tous sens.</i></p>
+        <p class="em"><i>Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->–&nbsp;c'était le début de l'automne&nbsp;– <!--regular space-->et les feuilles virevoltaient en tous sens.</i></p>
         <br>
-        <p>&emsp;HTML code (with comments):</p>
+        <p class="em">HTML code (with comments):</p>
         <pre class="html"><purple>&amp;emsp;</purple>Le train s'apprêtait à partir <i><grey>&lt;!--regular space--&gt;</grey></i>– <i><grey>&lt;!--regular space--&gt;</grey></i>les voyageurs se bousculaient pour une place. Il faisait beau <i><grey>&lt;!--regular space--&gt;</grey></i>–<purple>&amp;nbsp;</purple>c'était le début de l'automne<purple>&amp;nbsp;</purple>– <i><grey>&lt;!--regular space--&gt;</grey></i>et les feuilles virevoltaient en tous sens.</pre>
         <h4 id="horizontal-ellipsis-fr">Horizontal ellipsis (<b>…</b>)</h4>
         <hr>
-        <p>&emsp;The usage for <a target="_blank" href="https://unicode-table.com/2026/">horizontal ellipsis</a> is the same for French as it is <a target="_blank" href="#horizontal-ellipsis-en">in English</a>: the Unicode character (…) has to be used instead of three periods, and a space must not be inserted before the punctuation mark.</p>
+        <p class="em">The usage for <a target="_blank" href="https://unicode-table.com/2026/">horizontal ellipsis</a> is the same for French as it is <a target="_blank" href="#horizontal-ellipsis-en">in English</a>: the Unicode character (…) has to be used instead of three periods, and a space must not be inserted before the punctuation mark.</p>
         <h4 id="quotation-marks-fr">Quotation marks (<b>«</b> and <b>»</b>)</h4>
         <hr>
-        <p>&emsp;For french texts, a <a target="_blank" href="https://unicode-table.com/00AB/">left guillemet</a> («, at the beginning) and a <a target="_blank" href="https://unicode-table.com/00BB/">right guillemet</a> (», at the end) need to be used with a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><purple>&amp;nbsp;</purple></code> in HTML) in the inside, instead of common <a target="_blank" href="https://unicode-table.com/0022/">quotation mark</a> (&quot;) or any other punctuation mark.</p>
+        <p class="em">For french texts, a <a target="_blank" href="https://unicode-table.com/00AB/">left guillemet</a> («, at the beginning) and a <a target="_blank" href="https://unicode-table.com/00BB/">right guillemet</a> (», at the end) need to be used with a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><purple>&amp;nbsp;</purple></code> in HTML) in the inside, instead of common <a target="_blank" href="https://unicode-table.com/0022/">quotation mark</a> (&quot;) or any other punctuation mark.</p>
         <h4 id="spaces-before-punctuation-marks-fr">Spaces before punctuation marks (<b>:</b>, <b>;</b>, <b>?</b> and <b>!</b>)</h4>
         <hr>
-        <p>&emsp;The rule is not always respected in French: <b>always add a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> before <a target="_blank" href="https://unicode-table.com/003A/">colons</a>, <a target="_blank" href="https://unicode-table.com/003B/">semicolons</a>, <a target="_blank" href="https://unicode-table.com/0021/">exclamation marks</a> and <a target="_blank" href="https://unicode-table.com/003F/">question marks</a></b>.</p>
+        <p class="em">The rule is not always respected in French: <b>always add a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> before <a target="_blank" href="https://unicode-table.com/003A/">colons</a>, <a target="_blank" href="https://unicode-table.com/003B/">semicolons</a>, <a target="_blank" href="https://unicode-table.com/0021/">exclamation marks</a> and <a target="_blank" href="https://unicode-table.com/003F/">question marks</a></b>.</p>
         <hr>
         <h2 id="code">Code</h2>
-        <p>&emsp;I have many rules in terms of coding, but I will be quite permissive for any page created by others. However, empty lines in the middle of files are to be avoided in all languages (that ignore empty lines e.g. not Markdown). I will just show some code examples to help perceive the way I code HTML and CSS.</p>
+        <p class="em">I have many rules in terms of coding, but I will be quite permissive for any page created by others. However, empty lines in the middle of files are to be avoided in all languages (that ignore empty lines e.g. not Markdown). I will just show some code examples to help perceive the way I code HTML and CSS.</p>
         <hr>
         <h3 id="html">HTML</h3>
         <h4 id="example-12">Example</h4>
@@ -230,10 +230,10 @@ add link to Stack Overflow profile</pre>
   <i><cyan>padding-top</cyan></i>: <purple>16</purple><red>px</red>;
   <i><cyan>min-height</cyan></i>: <purple>100</purple><red>vh</red>;
 }</pre>
-        <p>&emsp;The CSS <code><red>@keyframes</red></code> at-rule, as well as all the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">CSS at-rules</a> need to be minified, at least in the main CSS file (<code><orange>styles.css</orange></code>).</p>
+        <p class="em">The CSS <code><red>@keyframes</red></code> at-rule, as well as all the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">CSS at-rules</a> need to be minified, at least in the main CSS file (<code><orange>styles.css</orange></code>).</p>
         <hr>
         <h3 id="no-ugly-library">No ugly library</h3>
-        <p>&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, <b>not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one</b>. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.</p>
+        <p class="em">I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, <b>not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one</b>. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway,  if anyone wants to use an open-source library on this website, they have to demand permission.</p>
         <br>
       </p>
     </div>
