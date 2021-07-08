@@ -540,6 +540,9 @@ textarea:focus {
   box-shadow: 0 0 0 4px #fff;
   border-radius: 2px;
 }
+.permalink {
+  position: absolute;
+}
 /* Tables */
   .table {
     background: #6668;
