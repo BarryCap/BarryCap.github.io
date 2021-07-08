@@ -258,7 +258,7 @@ pre u::selection { color: #fff; }
   .css::after   { color: #69f; content: "CSS"; }
   .js::after    { color: #fe1; content: "JavaScript"; }
   .md::after    { color: #ccc; content: "Markdown"; }
-  .brks::after  { color: #c8f; content: "BRKS"; }
+  .brks::after  { color: #0ff; content: "BRKS"; }
   .wavef::after  { color: #c8f; content: "Wavefront"; }
 /* Text colors */
   red               { color: #f88; }
@@ -297,6 +297,7 @@ figure {
   padding: 8px;
   width: fit-content;
   text-align: center;
+  display: inline-block;
 }
 figcaption {
   background: #6668;
