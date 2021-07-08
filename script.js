@@ -50,12 +50,12 @@ function cookieButton() {
   document.getElementsByClassName('cookie-container')[0].style.bottom = '-25vh'
 }
 // Script for the email form
-let submitButton = document.getElementById("submit_form")
-let form = document.getElementById("email_form")
+let submitButton = document.getElementById('submit_form')
+let form = document.getElementById('email_form')
 if (form) {
-    form.addEventListener("submit", function() {
+  form.addEventListener('submit', function() {
     setTimeout(function() {
-      submitButton.value = "Sending…"
+      submitButton.value = 'Sending…'
       submitButton.disabled = true
     }, 1)
   })
@@ -75,4 +75,15 @@ function changeTheme() {
     document.body.style.setProperty('--clink', '#08e')
     document.body.style.setProperty('--clink0', '#08e8')
   }
+}
+// Permalinks
+const titles = document.querySelectorAll('H2,H3,H4')
+for (let i = 0; i < titles.length; i++) {
+  titles[i].insertAdjacentHTML('afterBegin', `
+    <a class="permalink" href="#${titles[i].id}">
+      <svg viewBox="24 24" width="32" height="24">
+        <path fill="#0000" d="m9 7a1 1 0 010 2h-2a1 1 0 000 6h2a1 1 0 010 2h-2a1 1 0 010-10zm-2 4h10a1 1 0 010 2h-10a1 1 0 010-2m10-4a1 1 0 010 10h-2a1 1 0 010-2h2a1 1 0 000-6h-2a1 1 0 010-2zm-5-7a1 1 0 000 24a1 1 0 000-24"/>
+      </svg>
+    </a>
+  `)
 }
