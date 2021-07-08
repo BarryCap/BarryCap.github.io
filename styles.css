@@ -577,6 +577,58 @@ textarea:focus {
   td:hover {
     background: #8888;
   }
+/* Footer */
+  footer {
+    mix-blend-mode: difference;
+    border-radius: 0;
+    margin: auto;
+    padding: 0;
+    padding-top: 50px;
+    width: 100%;
+    min-height: 0 !important;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-footer:hover {
+    background: none;
+    box-shadow: none;
+  }
+  .footer-wide {
+    background: #111;
+    margin-top: 32px;
+    padding: 8px 0 24px;
+    width: 100%;
+    min-height: auto;
+    box-shadow: 0 -4px #444;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-wide-doc { margin-top: 2px !important; }
+  .footer-table {
+    margin-top: 0;
+    padding: 0;
+    width: 780px;
+    min-height: 0 !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .footer-table-button {
+    width: auto !important;
+    flex-grow: 1;
+  }
+  .footer-table-button:hover {
+    animation: none !important;
+  }
+  .footer-table-copyright {
+    padding-bottom: 8px;
+    width: 780px;
+    font-size: 21px;
+  }
 .home {
   animation: home 4s linear infinite, home-intro 2s ease-out normal;
   transition-duration: .2s;
@@ -609,7 +661,6 @@ textarea:focus {
     text-align: left;
     margin: -128px 128px 64px 64px;
   }
-  .footer-wide-doc { margin-top: 2px !important; }
   #help-body {
     cursor: var(--mdef);
     background-image: url(assets/bg/help.svg);
@@ -917,57 +968,6 @@ textarea:focus {
   border-radius: 0;
   margin: 0;
 }
-/* Footer */
-  .footer {
-    mix-blend-mode: difference;
-    border-radius: 0;
-    margin: auto;
-    padding: 0;
-    padding-top: 50px;
-    width: 100%;
-    min-height: 0 !important;
-    position: relative;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .img-footer:hover {
-    background: none;
-    box-shadow: none;
-  }
-  .footer-wide {
-    background: #111;
-    margin-top: 32px;
-    padding: 8px 0 24px;
-    width: 100%;
-    min-height: auto;
-    box-shadow: 0 -4px #444;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .footer-table {
-    margin-top: 0;
-    padding: 0;
-    width: 780px;
-    min-height: 0 !important;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-  .footer-table-button {
-    width: auto !important;
-    flex-grow: 1;
-  }
-  .footer-table-button:hover {
-    animation: none !important;
-  }
-  .footer-table-copyright {
-    padding-bottom: 8px;
-    width: 780px;
-    font-size: 21px;
-  }
 .button-container {
   margin: 0;
   margin-left: calc(50% - 784px / 2);
