@@ -301,11 +301,13 @@ figure {
 }
 figcaption {
   background: #6668;
-  border-radius: 30px;
+  border-radius: 16px;
   padding-inline: 8px;
-  font-family: var(--fserif-i);
+  font-family: var(--fserif);
   font-variant-numeric: oldstyle-nums;
 }
+figcaption::first-line { font-family: var(--fserif-i); }
+figcaption i { font-family: var(--fserif-i); }
 kbd {
   background: #6668;
   box-shadow: 0 0 0 1px #888, 0 -2px 0 1px #888;
