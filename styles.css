@@ -547,6 +547,7 @@ textarea:focus {
   position: absolute;
   left: 32px;
 }
+.permalink:hover * { fill: #eee8; }
 .permalink:hover, .permalink:focus, .permalink:active * { background: none; fill: #eee; }
 /* Tables */
   .table {
