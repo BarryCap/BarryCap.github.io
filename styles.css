@@ -293,7 +293,6 @@ blockquote i { font-family: var(--fserif-i); }
 figure {
   box-shadow: 0 0 0 8px #6668;
   border-radius: 8px;
-  margin-block: 0;
   padding: 8px;
   width: fit-content;
   text-align: center;
