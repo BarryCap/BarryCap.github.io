@@ -224,7 +224,10 @@ button {
   line-height: 32px;
   cursor: var(--mpointer);
 }
-li { cursor: var(--mtxt); }
+li { margin-inline-start: 16px !important; list-style-type: "\2014"; }
+li, dt, dd { margin-inline-start: 0; cursor: var(--mtxt); }
+dd { margin-inline-start: 0; font-size: 16px; }
+dd::before { content: "\2003"; }
 code {
   background: #6668;
   border-radius: 8px;
