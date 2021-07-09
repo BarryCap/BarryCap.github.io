@@ -439,8 +439,13 @@ iframe:focus {
   box-shadow: 0 0 0 4px #fffa;
 }
 mark {
-  background: #8888;
+  color: #fff;
+  background: #ff04;
+  border-right: solid 2px #ff08;
+  border-left: solid 2px #ff08;
   border-radius: 4px;
+  margin: 0 2px;
+  padding: 0 4px;
 }
 svg {
   stroke-dasharray: none;
