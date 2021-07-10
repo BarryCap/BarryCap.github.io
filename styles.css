@@ -224,10 +224,32 @@ button {
   line-height: 32px;
   cursor: var(--mpointer);
 }
-li { margin-inline-start: 16px !important; list-style-type: "\2014"; }
+ul { margin-block-start: 4px; margin-inline-start: 16px !important; list-style-type: "\2014"; }
 li, dt, dd { margin-inline-start: 0; cursor: var(--mtxt); }
 dd { margin-inline-start: 0; font-size: 16px; }
 dd::before { content: "\2003"; }
+details {
+  background: #6668;
+  border-radius: 5px;
+  float: right;
+}
+details:hover {
+  box-shadow: 0 0 0 4px #6668, 0 0 0 4px #8888;
+}
+details[open] summary {
+  box-shadow: inset 0 -4px #8888;
+  padding-bottom: 8px;
+}
+details[open] ol {
+  margin: 0;
+  padding-block: 8px;
+  padding-inline: 32px 9px;
+}
+summary {
+  padding: 4px;
+  cursor: var(--mpointer);
+  user-select: none;
+}
 code {
   background: #6668;
   border-radius: 8px;
