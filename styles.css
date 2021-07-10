@@ -345,6 +345,7 @@ kbd {
 hr {
   background: #6668;
   border: none;
+  border-radius: 1px;
   height: 2px;
 }
 img {
