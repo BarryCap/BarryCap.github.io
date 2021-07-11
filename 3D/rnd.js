@@ -23,5 +23,6 @@ function randomObj() {
     OBJ += 'f ' + num1 + ' ' + num2 + ' ' + num3 + '\n'
   }
   const file = new File([OBJ], "rnd.obj", {type: "text/plain"})
+  console.log(OBJ)
   return window.URL.createObjectURL(file)
 }
