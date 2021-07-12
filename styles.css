@@ -232,6 +232,7 @@ details {
   background: #6668;
   border-radius: 5px;
   float: right;
+  transition: .2s;
 }
 details:hover {
   box-shadow: 0 0 0 4px #6668, 0 0 0 4px #8888;
