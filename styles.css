@@ -254,10 +254,12 @@ summary {
 }
 summary:hover {
   background: #6668;
+  box-shadow: 0 0 0 4px #6668;
   border-radius: 5px;
 }
 details:active, summary:active {
   background: #8888;
+  box-shadow: 0 0 0 4px #8888;
   border-radius: 2px;
 }
 code {
