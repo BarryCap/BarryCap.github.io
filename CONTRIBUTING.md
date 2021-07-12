@@ -247,8 +247,24 @@ div {
 The CSS `@keyframes` rule, as well as all the [CSS at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) need to be minified, at least in the main CSS file (`styles.css`).
 
 ---
-### No ugly library
-&emsp;I know the word ‘ugly’ is not very rational, but what I want to say is that about coding languages is that the site must be cleanest as possible, **not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one**. The following libraries must not take place on this project: Pug—Halm—Slim—Stylus—SASS—SCSS—Less—PostCSS—jQuery—Babel—CofeeScript—TypeScript—LiveScript. I must have forgotten some of it—but anyway, if anyone wants to use an open-source library on this website, they have to demand permission.
+### Avoid using libraries
+&emsp;The site must be ‘cleanest’ and ‘lightest’ as possible, <b>not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one</b>. The following libraries and preprocessors must not take place on this project:
+#### HTML
+- Pug;
+- Halm.
+#### CSS
+- Slim;
+- Stylus;
+- SASS;
+- SCSS;
+- Less;
+- PostCSS.
+#### JavaScript
+- **jQuery**;
+- Babel;
+- CofeeScript;
+- TypeScript;
+- LiveScript.
 
 <br>
 
