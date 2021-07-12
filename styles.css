@@ -235,7 +235,7 @@ details {
   transition: .2s;
 }
 details:hover {
-  box-shadow: 0 0 0 4px #6668, 0 0 0 4px #8888;
+  box-shadow: 0 0 0 4px #6668;
 }
 details[open] summary {
   box-shadow: inset 0 -4px #8888;
@@ -250,6 +250,15 @@ summary {
   padding: 4px;
   cursor: var(--mpointer);
   user-select: none;
+  transition: .2s;
+}
+summary:hover {
+  background: #6668;
+  border-radius: 5px;
+}
+details:active, summary:active {
+  background: #8888;
+  border-radius: 2px;
 }
 code {
   background: #6668;
