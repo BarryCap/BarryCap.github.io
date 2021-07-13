@@ -301,24 +301,24 @@ pre u::selection { color: #fff; }
   .brks::after  { color: #0ff; content: "BRKS"; }
   .wavef::after  { color: #c8f; content: "Wavefront"; }
 /* Text colors */
-  red               { color: #f88; }
-  red::selection    { color: #faa; }
-  cyan              { color: #0ff; }
-  cyan::selection   { color: #8ff; }
-  blue              { color: #0cf; }
-  blue::selection   { color: #4ef; }
-  yellow            { color: #ff8; }
-  yellow::selection { color: #ffa; }
-  orange            { color: #fc8; }
-  orange::selection { color: #fda; }
-  green             { color: #0f0; }
-  green::selection  { color: #8f8; }
-  pink              { color: #f8f; }
-  pink::selection   { color: #fcf; }
-  purple            { color: #c8f; }
-  purple::selection { color: #ecf; }
-  grey              { color: #888; }
-  grey::selection   { color: #aaa; }
+  c-[red]            { color: #f88; }
+  c-[red]::selection { color: #faa; }
+  c-[cya]            { color: #0ff; }
+  c-[cya]::selection { color: #8ff; }
+  c-[blu]            { color: #0cf; }
+  c-[blu]::selection { color: #4ef; }
+  c-[yel]            { color: #ff8; }
+  c-[yel]::selection { color: #ffa; }
+  c-[ora]            { color: #fc8; }
+  c-[ora]::selection { color: #fda; }
+  c-[gre]            { color: #0f0; }
+  c-[gre]::selection { color: #8f8; }
+  c-[pin]            { color: #f8f; }
+  c-[pin]::selection { color: #fcf; }
+  c-[pur]            { color: #c8f; }
+  c-[pur]::selection { color: #d9f; }
+  c-[gra]            { color: #888; }
+  c-[gra]::selection { color: #aaa; }
 blockquote {
   background: #6666;
   box-shadow: -8px 0 #8888;

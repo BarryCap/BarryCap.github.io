@@ -43,22 +43,22 @@
         <hr>
         <h3 id="format">Format</h3>
         <p class="em">The default format for commit names on this repository is:</p>
-        <pre class="brks"><cyan>[verb] [edited]</cyan><purple>/<pink>[old]</pink></purple> <orange>(of <yellow>[nest]</yellow> to <yellow>[value]</yellow> in <yellow>[file]</yellow>)</orange><purple>/by <pink>[edited]</pink></purple></pre>
+        <pre class="brks"><c- cya>[verb] [edited]</c-><c- pur>/<c- pin>[old]</c-></c-> <c- ora>(of <c- yel>[nest]</c-> to <c- yel>[value]</c-> in <c- yel>[file]</c->)</c-><c- pur>/by <c- pin>[edited]</c-></c-></pre>
         <p class="em">With</p>
         <ul>
-          <li><code><cyan>[verb]</cyan></code> indicating <i>the verb</i>;</li>
-          <li><code><cyan>[edited]</cyan></code> standing for <i>the name of the file or part of a file edited or added</i>;</li>
-          <li><code><yellow>[nest]</yellow></code> standing for <i>the element inside which the change is being applied to</i>;</li>
-          <li><code><yellow>[value]</yellow></code> being <i>the new value of the property that is changed</i>;</li>
-          <li><code><yellow>[file]</yellow></code> standing for <i>the page or file in which the change is being applied to</i>;</li>
-          <li><code><pink>[old]</pink></code> meaning <i>the old file or part of file before it was edited</i>;</li>
-          <li><code><purple>/</purple></code> indicating <i>another possibility than the group before</i> (if the words after are used, the preceding group is not used).</li>
+          <li><code><c- cya>[verb]</c-></code> indicating <i>the verb</i>;</li>
+          <li><code><c- cya>[edited]</c-></code> standing for <i>the name of the file or part of a file edited or added</i>;</li>
+          <li><code><c- yel>[nest]</c-></code> standing for <i>the element inside which the change is being applied to</i>;</li>
+          <li><code><c- yel>[value]</c-></code> being <i>the new value of the property that is changed</i>;</li>
+          <li><code><c- yel>[file]</c-></code> standing for <i>the page or file in which the change is being applied to</i>;</li>
+          <li><code><c- pin>[old]</c-></code> meaning <i>the old file or part of file before it was edited</i>;</li>
+          <li><code><c- pur>/</c-></code> indicating <i>another possibility than the group before</i> (if the words after are used, the preceding group is not used).</li>
         </ul>
-        <p class="em">Everything that is inside parenthesis (<code><orange>(…)</orange></code>) is not mandatory.</p>
+        <p class="em">Everything that is inside parenthesis (<code><c- ora>(…)</c-></code>) is not mandatory.</p>
         <h4 id="example-1">Example</h4>
         <hr>
-        <p class="em">If the <code><red>body</red></code> text color is set to <code><purple>#eee</purple></code> in <code><orange>styles.css</orange></code>, the commit name should be:</p>
-        <pre class="md">Set <orange>`color`</orange> of <orange>`body`</orange> to <orange>`#eee`</orange> in <orange>`styles.css`</orange></pre>
+        <p class="em">If the <code><c- red>body</c-></code> text color is set to <code><c- pur>#eee</c-></code> in <code><c- ora>styles.css</c-></code>, the commit name should be:</p>
+        <pre class="md">Set <c- ora>`color`</c-> of <c- ora>`body`</c-> to <c- ora>`#eee`</c-> in <c- ora>`styles.css`</c-></pre>
         <hr>
         <h3 id="starting-with-a-verb">Starting with a verb</h3>
         <p class="em">Every commit should begin with a verb at the present time, explaining the kind of action that is being executed in the commit.</p>
@@ -77,8 +77,8 @@
         </ul>
         <h4 id="example-2">Examples</h4>
         <hr>
-        <p class="em">If the file <code><orange>CONTRIBUTING.md</orange></code> is being added, the commit name could begin with or could to be:</p>
-        <pre class="md">Add <orange>`CONTRIBUTING.md`</orange></pre>
+        <p class="em">If the file <code><c- ora>CONTRIBUTING.md</c-></code> is being added, the commit name could begin with or could to be:</p>
+        <pre class="md">Add <c- ora>`CONTRIBUTING.md`</c-></pre>
         <p class="em">If a property that is linked with the white theme is edited, the commit name would look like:</p>
         <pre class="md">Change white theme</pre>
         <hr>
@@ -86,7 +86,7 @@
         <p class="em">The commit name should include, after the verb, the file name (surrounded by backticks if possible, to be formated <code>like this</code> on <a target="_blank" href="https://github.com">GitHub</a>) or something that has been changed.</p>
         <h4 id="example-3">Example</h4>
         <hr>
-        <p class="em">If a script was added in <code><orange>script.js</orange></code> to change the random background animation in <a target="_blank" href="https://barrycap.com/random">Random page</a>, the commit name would look like:</p>
+        <p class="em">If a script was added in <code><c- ora>script.js</c-></code> to change the random background animation in <a target="_blank" href="https://barrycap.com/random">Random page</a>, the commit name would look like:</p>
         <pre class="md">Add script to change background animation in Random page</pre>
         <hr>
         <h3 id="splitted-if-too-long">Splitted if too long</h3>
@@ -99,7 +99,7 @@ in Random page</pre>
         <p class="em">The commit name can be splitted before the anouncement of were the modifications are applying to, so generally before the word ‘in’.</p>
         <hr>
         <h3 id="including-the-number-of-files-modified">Including the number of files modified</h3>
-        <p class="em">If numerous files that are being edited (e.g. a <code><red>meta</red></code> tag is changed in all HTML files), the commit name should include the number of files modified.</p>
+        <p class="em">If numerous files that are being edited (e.g. a <code><c- red>meta</c-></code> tag is changed in all HTML files), the commit name should include the number of files modified.</p>
         <h4 id="example-5">Example</h4>
         <hr>
         <p class="em">If the favicon is changed in all 56 HTML pages, the commit name would be:</p>
@@ -123,31 +123,31 @@ in Random page</pre>
         <p class="em">If multiple changes are done in the commit, they have to be separated in different lines.</p>
         <h4 id="example-8">Example</h4>
         <hr>
-        <p class="em">If <code><orange>CONTRIBUTING.md</orange></code> is added and a typo was fixed in <code><orange>README.md</orange></code>, the commit name would be:</p>
-        <pre class="md">Add <orange>`CONTRIBUTING.md`</orange>
-Fix typo in <orange>`README.md`</orange></pre>
+        <p class="em">If <code><c- ora>CONTRIBUTING.md</c-></code> is added and a typo was fixed in <code><c- ora>README.md</c-></code>, the commit name would be:</p>
+        <pre class="md">Add <c- ora>`CONTRIBUTING.md`</c->
+Fix typo in <c- ora>`README.md`</c-></pre>
         <hr>
         <h3 id="adding-description">Adding description</h3>
         <p class="em">Additional information about what is being done in the commit can be added after a line break, not beginning with a capital letter.</p>
         <h4 id="example-9">Example</h4>
         <hr>
-        <p class="em">If <code><orange>README.md</orange></code> is updated by adding link to Stack Overflow profile, the commit name could be:</p>
-        <pre class="md">Update <orange>`README.md`</orange>
+        <p class="em">If <code><c- ora>README.md</c-></code> is updated by adding link to Stack Overflow profile, the commit name could be:</p>
+        <pre class="md">Update <c- ora>`README.md`</c->
 add link to Stack Overflow profile</pre>
         <hr>
         <h3 id="not-ending-with-a-period">Not ending with a period</h3>
         <p class="em">No full stop or any other punctuation character has to be inserted at the end of the commit name.</p>
         <hr>
         <h3 id="updating-version">Updating version</h3>
-        <p class="em">Every commit changes something to the site, and this can be seen with the version, that has to be updated with every commit (do not do it in changes that will be applied within a pull request, I will update it myself, in a commit where I have done something else, or in a ‘<code>Update version</code>’ commit). The version indicator can be found in the <code>code</code> block in the <a target="_blank" href="https://barrycap.com/about">About page</a> (<code><orange>/about.html</orange></code>).</p>
+        <p class="em">Every commit changes something to the site, and this can be seen with the version, that has to be updated with every commit (do not do it in changes that will be applied within a pull request, I will update it myself, in a commit where I have done something else, or in a ‘<code>Update version</code>’ commit). The version indicator can be found in the <code>code</code> block in the <a target="_blank" href="https://barrycap.com/about">About page</a> (<code><c- ora>/about.html</c-></code>).</p>
         <hr>
         <h2 id="versioning">Versioning</h2>
         <p class="em">The version of the site is represented in the below format:</p>
-        <pre class="brks"><cyan>[major]</cyan>.<cyan>[minor]</cyan>+<cyan>[commitNumber]</cyan></pre>
+        <pre class="brks"><c- cya>[major]</c->.<c- cya>[minor]</c->+<c- cya>[commitNumber]</c-></pre>
         <p class="em">The true commit number can be found in the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io/graphs/contributors">contributors table</a> of the repository, where all the commits count from every contributor have to be additionned. The commit number can also be found by calculating the number of commits found on the <a target="_blank" href="https://github.com/BarryCap/BarryCap.github.io">repository home page</a> (e.g. 880 at the time this is written) plus 93.</p>
         <h4 id="example-10">Example</h4>
         <hr>
-        <p class="em">The version of the site, with the commit introducing <code><orange>CONTRIBUTING.md</orange></code>, was:</p>
+        <p class="em">The version of the site, with the commit introducing <code><c- ora>CONTRIBUTING.md</c-></code>, was:</p>
         <pre class="plain">1.6+974</pre>
         <p class="em">A new major version is introduced when the website completely changes its appearance. A new minor version is introduced when a big change was made to the website. Contributors will have to demand permission from <a target="_blank" href="https://barrycap.com/about#me">me</a> to update the website to a major or minor version, or their modifications might be refused.</p>
         <p class="em">Information about the different versions of the website can be found at <a target="_blank" href="https://barrycap.com/versions">BarryCap.com/versions</a>.</p>
@@ -177,7 +177,7 @@ add link to Stack Overflow profile</pre>
         <p class="em">French is a language in which punction marks usage often differs from other languages. The thing that is important to French punctuation is the <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a>, that needs to be placed before or after punctuation marks.</p>
         <h4 id="the-dash-fr">The dash (<b>–</b> and <b>—</b>)</h4>
         <hr>
-        <p class="em">The dash used inside sentences will always be the <a target="_blank" href="https://unicode-table.com/2013/">en dash</a> (–), surrounded by regular spaces, unless it is used like parenthesis, framing a part of text in which case a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><purple>&amp;nbsp;</purple></code> in HTML) has to be inserted inside the part of the sentence surrounded by <a target="_blank" href="https://unicode-table.com/2013/">en dashs</a>.</p>
+        <p class="em">The dash used inside sentences will always be the <a target="_blank" href="https://unicode-table.com/2013/">en dash</a> (–), surrounded by regular spaces, unless it is used like parenthesis, framing a part of text in which case a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><c- pur>&amp;nbsp;</c-></code> in HTML) has to be inserted inside the part of the sentence surrounded by <a target="_blank" href="https://unicode-table.com/2013/">en dashs</a>.</p>
         <p class="em">As for dialogues, the dash used will be an <a target="_blank" href="https://unicode-table.com/2014/">em dash</a>, followed by a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a>.</p>
         <h4 id="example-12">Example</h4>
         <hr>
@@ -186,13 +186,13 @@ add link to Stack Overflow profile</pre>
         <p class="em"><i>Le train s'apprêtait à partir <!--regular space-->– <!--regular space-->les voyageurs se bousculaient pour une place. Il faisait beau <!--regular space-->–&nbsp;c'était le début de l'automne&nbsp;– <!--regular space-->et les feuilles virevoltaient en tous sens.</i></p>
         <br>
         <p class="em">HTML code (with comments):</p>
-        <pre class="html"><purple>&amp;emsp;</purple>Le train s'apprêtait à partir <i><grey>&lt;!--regular space--&gt;</grey></i>– <i><grey>&lt;!--regular space--&gt;</grey></i>les voyageurs se bousculaient pour une place. Il faisait beau <i><grey>&lt;!--regular space--&gt;</grey></i>–<purple>&amp;nbsp;</purple>c'était le début de l'automne<purple>&amp;nbsp;</purple>– <i><grey>&lt;!--regular space--&gt;</grey></i>et les feuilles virevoltaient en tous sens.</pre>
+        <pre class="html"><c- pur>&amp;emsp;</c->Le train s'apprêtait à partir <i><c- gra>&lt;!--regular space--&gt;</c-></i>– <i><c- gra>&lt;!--regular space--&gt;</c-></i>les voyageurs se bousculaient pour une place. Il faisait beau <i><c- gra>&lt;!--regular space--&gt;</c-></i>–<c- pur>&amp;nbsp;</c->c'était le début de l'automne<c- pur>&amp;nbsp;</c->– <i><c- gra>&lt;!--regular space--&gt;</c-></i>et les feuilles virevoltaient en tous sens.</pre>
         <h4 id="horizontal-ellipsis-fr">Horizontal ellipsis (<b>…</b>)</h4>
         <hr>
         <p class="em">The usage for <a target="_blank" href="https://unicode-table.com/2026/">horizontal ellipsis</a> is the same for French as it is <a target="_blank" href="#horizontal-ellipsis-en">in English</a>: the Unicode character (…) has to be used instead of three periods, and a space must not be inserted before the punctuation mark.</p>
         <h4 id="quotation-marks-fr">Quotation marks (<b>«</b> and <b>»</b>)</h4>
         <hr>
-        <p class="em">For french texts, a <a target="_blank" href="https://unicode-table.com/00AB/">left guillemet</a> («, at the beginning) and a <a target="_blank" href="https://unicode-table.com/00BB/">right guillemet</a> (», at the end) need to be used with a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><purple>&amp;nbsp;</purple></code> in HTML) in the inside, instead of common <a target="_blank" href="https://unicode-table.com/0022/">quotation mark</a> (&quot;) or any other punctuation mark.</p>
+        <p class="em">For french texts, a <a target="_blank" href="https://unicode-table.com/00AB/">left guillemet</a> («, at the beginning) and a <a target="_blank" href="https://unicode-table.com/00BB/">right guillemet</a> (», at the end) need to be used with a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> (<code><c- pur>&amp;nbsp;</c-></code> in HTML) in the inside, instead of common <a target="_blank" href="https://unicode-table.com/0022/">quotation mark</a> (&quot;) or any other punctuation mark.</p>
         <h4 id="spaces-before-punctuation-marks-fr">Spaces before punctuation marks (<b>:</b>, <b>;</b>, <b>?</b> and <b>!</b>)</h4>
         <hr>
         <p class="em">The rule is not always respected in French: <b>always add a <a target="_blank" href="https://unicode-table.com/00A0/">no-break space</a> before <a target="_blank" href="https://unicode-table.com/003A/">colons</a>, <a target="_blank" href="https://unicode-table.com/003B/">semicolons</a>, <a target="_blank" href="https://unicode-table.com/0021/">exclamation marks</a> and <a target="_blank" href="https://unicode-table.com/003F/">question marks</a></b>.</p>
@@ -202,44 +202,44 @@ add link to Stack Overflow profile</pre>
         <hr>
         <h3 id="html">HTML</h3>
         <h4 id="example-13">Example</h4>
-        <pre class="html"><grey>&lt;!DOCTYPE html&gt;</grey>
-&lt;<red>html</red> <green>lang</green>=<orange>"en"</orange>&gt;
-  &lt;<red>head</red>&gt;
-    <grey><i>&lt;!--`meta`s, `link`s, `script`s, `title`, and `style` if needed--&gt;</i></grey>
-  &lt;/<red>head</red>&gt;
-  &lt;<red>body</red>&gt;<grey><i>&lt;!--Set `&lt;body class="class-of-body"&gt;` for animated backgrounds mostly--&gt;</i></grey>
-    &lt;<red>div</red>&gt;
-      &lt;<red>a</red> <green>href</green>=<orange>"/"</orange>&gt;
-        <grey><i>&lt;!--`svg.header-svg`--&gt;</i></grey>
-      &lt;/<red>a</red>&gt;
-      &lt;<red>div</red> <green>class</green>=<orange>"txt"</orange>&gt;
-        <grey><i>&lt;!--`p.button-container`--&gt;</i></grey>
-        <grey><i>&lt;!--`p.sub-txt`--&gt;</i></grey>
-      &lt;/<red>div</red>&gt;
-      <grey><i>&lt;!--images, content etc.--&gt;</i></grey>
-    &lt;/<red>div</red>&gt;
-    <grey><i>&lt;!--`div.button-help-container`--&gt;</i></grey>
-    <grey><i>&lt;!--`div.cookie-container`--&gt;</i></grey>
-    <grey><i>&lt;!--`div.footer`--&gt;</i></grey>
-  &lt;/<red>body</red>&gt;
-&lt;/<red>html</red>&gt;</pre>
+        <pre class="html"><c- gra>&lt;!DOCTYPE html&gt;</c->
+&lt;<c- red>html</c-> <c- gre>lang</c->=<c- ora>"en"</c->&gt;
+  &lt;<c- red>head</c->&gt;
+    <c- gra><i>&lt;!--`meta`s, `link`s, `script`s, `title`, and `style` if needed--&gt;</i></c->
+  &lt;/<c- red>head</c->&gt;
+  &lt;<c- red>body</c->&gt;<c- gra><i>&lt;!--Set `&lt;body class="class-of-body"&gt;` for animated backgrounds mostly--&gt;</i></c->
+    &lt;<c- red>div</c->&gt;
+      &lt;<c- red>a</c-> <c- gre>href</c->=<c- ora>"/"</c->&gt;
+        <c- gra><i>&lt;!--`svg.header-svg`--&gt;</i></c->
+      &lt;/<c- red>a</c->&gt;
+      &lt;<c- red>div</c-> <c- gre>class</c->=<c- ora>"txt"</c->&gt;
+        <c- gra><i>&lt;!--`p.button-container`--&gt;</i></c->
+        <c- gra><i>&lt;!--`p.sub-txt`--&gt;</i></c->
+      &lt;/<c- red>div</c->&gt;
+      <c- gra><i>&lt;!--images, content etc.--&gt;</i></c->
+    &lt;/<c- red>div</c->&gt;
+    <c- gra><i>&lt;!--`div.button-help-container`--&gt;</i></c->
+    <c- gra><i>&lt;!--`div.cookie-container`--&gt;</i></c->
+    <c- gra><i>&lt;!--`div.footer`--&gt;</i></c->
+  &lt;/<c- red>body</c->&gt;
+&lt;/<c- red>html</c->&gt;</pre>
         <hr>
         <h3 id="css">CSS</h3>
         <h4 id="example-14">Example</h4>
-        <pre class="css"><red>@keyframes</red> <i><orange>home</orange></i> { <pink>100%</pink> { <i><cyan>background-position</cyan></i>: <purple>-32</purple><red>px</red> <purple>32</purple><red>px</red>; } }
-<red>body</red> {
-  <i><cyan>background</cyan></i>: <blue>var</blue>(--c0);
-  <i><cyan>color</cyan></i>: <blue>var</blue>(--cc);
-  <i><cyan>margin</cyan></i>: <purple>0</purple>;
-  <i><cyan>cursor</cyan></i>: <blue>var</blue>(--mdef);
-  <i><cyan>font-family</cyan></i>: <blue>var</blue>(--ffmb);
-  <i><cyan>transition</cyan></i>: <blue>ease-in</blue> <purple>.2</purple><red>s</red>;
+        <pre class="css"><c- red>@keyframes</c-> <i><c- ora>home</c-></i> { <c- pin>100%</c-> { <i><c- cya>background-position</c-></i>: <c- pur>-32</c-><c- red>px</c-> <c- pur>32</c-><c- red>px</c->; } }
+<c- red>body</c-> {
+  <i><c- cya>background</c-></i>: <c- blu>var</c->(--c0);
+  <i><c- cya>color</c-></i>: <c- blu>var</c->(--cc);
+  <i><c- cya>margin</c-></i>: <c- pur>0</c->;
+  <i><c- cya>cursor</c-></i>: <c- blu>var</c->(--mdef);
+  <i><c- cya>font-family</c-></i>: <c- blu>var</c->(--ffmb);
+  <i><c- cya>transition</c-></i>: <c- blu>ease-in</c-> <c- pur>.2</c-><c- red>s</c->;
 }
-<red>div</red> {
-  <i><cyan>padding-top</cyan></i>: <purple>16</purple><red>px</red>;
-  <i><cyan>min-height</cyan></i>: <purple>100</purple><red>vh</red>;
+<c- red>div</c-> {
+  <i><c- cya>padding-top</c-></i>: <c- pur>16</c-><c- red>px</c->;
+  <i><c- cya>min-height</c-></i>: <c- pur>100</c-><c- red>vh</c->;
 }</pre>
-        <p class="em">The CSS <code><red>@keyframes</red></code> at-rule, as well as all the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">CSS at-rules</a> need to be minified, at least in the main CSS file (<code><orange>styles.css</orange></code>).</p>
+        <p class="em">The CSS <code><c- red>@keyframes</c-></code> at-rule, as well as all the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">CSS at-rules</a> need to be minified, at least in the main CSS file (<code><c- ora>styles.css</c-></code>).</p>
         <hr>
         <h3 id="no-library">Avoid using libraries</h3>
         <p class="em">The site must be ‘cleanest’ and ‘lightest’ as possible, <b>not using any HTML, CSS, JavaScript library nor preprocessor for doing things that could be done without one</b>. The following libraries and preprocessors must not take place on this project:
@@ -266,7 +266,6 @@ add link to Stack Overflow profile</pre>
           <li>LiveScript.</li>
         </ul>
         <p class="em">And I must have forgotten some of it. If anyone wants to use an open-source library on this website, <a href="mailto:contact@barrycap.com">they can demand my agreement</a>.</p>
-        <br>
       </p>
     </div>
     <div class="button-return-container" title="Return">
