@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--__________                ___       _                        _                        ________                       _           _      _
-    \__   __  |__    ___     / _ \   __| | _   _   ___   _ __  _| |_  _   _  _  _   ___   \   ___ |  ___   _  _   ___  _| |_   ___  | |  __| |
-       | |  |  _ \  / _ \   | |_| | / _  |\ \ / / / _ \ | '_ \|_   _|| | | || |'_| / _ \   | |__ \| / _ \ | |'_| / _ \|_   _| / _ \ | | / _  |
-       | |  | | | ||  ___|  |  _  || |_| | \ ` / |  ___|| | | | | |__| |_| ||  /  |  ___|  |  __|  | |_| ||  /  |  ___| | |__| |_| || || |_| |
-      /___\ |_| |_| \___/  /___\|__\\__,_|  \_/   \___/ |_| |_|  \__/ \__,_||_|    \___/  /___\     \___/ |_|    \___/   \__/ \___/ |_| \__,_|
--->
-  <head>
+<!--__________                ___       _                        _                        ________                       _           _      _ -->
+<!--\__   __  |__    ___     / _ \   __| | _   _   ___   _ __  _| |_  _   _  _  _   ___   \   ___ |  ___   _  _   ___  _| |_   ___  | |  __| |-->
+<!--   | |  |  _ \  / _ \   | |_| | / _  |\ \ / / / _ \ | '_ \|_   _|| | | || |'_| / _ \   | |__ \| / _ \ | |'_| / _ \|_   _| / _ \ | | / _  |-->
+<!--   | |  | | | ||  ___|  |  _  || |_| | \ ` / |  ___|| | | | | |__| |_| ||  /  |  ___|  |  __|  | |_| ||  /  |  ___| | |__| |_| || || |_| |-->
+<!--  /___\ |_| |_| \___/  /___\|__\\__,_|  \_/   \___/ |_| |_|  \__/ \__,_||_|    \___/  /___\     \___/ |_|    \___/   \__/ \___/ |_| \__,_|-->
+<head>
     <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYUlEQVQ4y6WTUQ7AIAhD28aDc3P3tcToYCD90xTwlUgUNQ1zPfO4MDAq2MWMKZLQ1KiYV7z31QfCnsFfoGptwEDdFrsZVDeiKndrjV+DRsYYYel2chnBa+L+hWywjPgyTR5eqCYdJxsfDgAAAABJRU5ErkJggg==" />
     <title>The Adventure Foretold</title>
     <style>
       @font-face { font-family: Brown; src: url('assets/fonts/brown.ttf'); }
       body { background: #000; font-size: 0; margin: 0; min-width: 100vh; overflow-wrap: normal; text-align: center; user-select: none; -ms-overflow-style: none; }
       p { color: #fff; font-family: Brown, sans-serif; font-size: 2vh; line-height: 100vh; margin: 0; }
-      .fore, .told { cursor: crosshair; display: inline-block; margin: 0; padding: 0; transition-duration: 0.2s; height: 6.25vh; width: 6.25vh; }
-      .fore { background: transparent; }
-      .told { background: #f80; }
-      .fore:hover { background: #222; }
-      .told:hover { background: #fbb55a; }
-      .told:active { background: #f6db7d; }
-      .fore:active { background: #444; }
+      f-, t- { cursor: crosshair; display: inline-block; margin: 0; padding: 0; transition-duration: 0.2s; height: 6.25vh; width: 6.25vh; }
+      f- { background: transparent; }
+      t- { background: #f80; }
+      f-:hover { background: #222; }
+      t-:hover { background: #fbb55a; }
+      t-:active { background: #f6db7d; }
+      f-:active { background: #444; }
       ::-webkit-scrollbar { display: none; }
     </style>
   </head>
   <body>
     <noscript><p>The Adventure Foretold needs JavaScript to run. Please enable it to continue.</p></noscript>
-    <div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><br>
-    <div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="fore"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><br>
-    <div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="told"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div><div class="fore"></div>
+    <f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><br>
+    <t-></t-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><t-></t-><t-></t-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><t-></t-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><f-></f-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><f-></f-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><f-></f-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <f-></f-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><br>
+    <t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><t-></t-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f-><f-></f->
   </body>
 </html>
