@@ -1,1 +1,13 @@
+User-agent: *
+Disallow: *.git
+Disallow: *.gitignore
+Disallow: /404
+Disallow: /barrycap-old
+Disallow: /CNAME
+Disallow: /google49f73bc8b5a008f9.html
+Disallow: /googleanalytics.js
+Disallow: /about/email-not-sent
+Disallow: /about/email-sent
+Disallow: /foretold
+
 Sitemap: https://barrycap.com/sitemap.xml
