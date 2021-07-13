@@ -945,7 +945,9 @@ textarea:focus {
   .cookie-svg-cross {
     width: 16px;
     height: 16px;
-    margin: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
   }
   .cookie-svg {
     margin: -12px 4px 4px 4px;
@@ -958,9 +960,8 @@ textarea:focus {
   }
   .cookie-button {
     background: #6668;
-    min-width: 18px;
-    min-height: 18px;
-    padding: 2px;
+    width: 24px !important;
+    height: 24px;
     position: absolute;
     top: 2px;
     right: 2px;
