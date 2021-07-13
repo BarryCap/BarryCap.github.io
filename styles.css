@@ -286,20 +286,20 @@ pre *::selection                              { background: #8888; }
 pre i::selection, red::selection { color: #aaa; background: #8888; }
 pre u::selection { color: #fff; }
 /* Language indicator */
-  pre::after {
+  pre::before {
     position: fixed;
     top: 0;
     right: 4px;
     font-size: 16px;
     font-weight: bold;
   }
-  .plain::after { color: #888; content: "plain text"; }
-  .html::after  { color: #f73; content: "HTML"; }
-  .css::after   { color: #69f; content: "CSS"; }
-  .js::after    { color: #fe1; content: "JavaScript"; }
-  .md::after    { color: #ccc; content: "Markdown"; }
-  .brks::after  { color: #0ff; content: "BRKS"; }
-  .wavef::after  { color: #c8f; content: "Wavefront"; }
+  .plain::before { color: #888; content: "plain text"; }
+  .html::before  { color: #f73; content: "HTML"; }
+  .css::before   { color: #69f; content: "CSS"; }
+  .js::before    { color: #fe1; content: "JavaScript"; }
+  .md::before    { color: #ccc; content: "Markdown"; }
+  .brks::before  { color: #0ff; content: "BRKS"; }
+  .wavef::before  { color: #c8f; content: "Wavefront"; }
 /* Text colors */
   c-[red]            { color: #f88; }
   c-[red]::selection { color: #faa; }
