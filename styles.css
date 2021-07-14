@@ -486,7 +486,6 @@ svg {
   animation: draw 2s ease-out;
 }
 .long-path {
-  stroke-dasharray: none;
   animation: long-draw 6s ease-out;
 }
 form {

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=880, maximum-scale=1, minimum-scale=.4">
+    <meta name="author" content="Barry Cap">
+    <meta name="description" content="This is a random 3D object generator that works using Wavefront OBJ language. Vertices are placed randomly in a cube, they are then randomly linked to form faces.">
+    <link rel="icon" href="https://barrycap.com/assets/favicon.svg"/>
+    <link rel="stylesheet" href="3D/3D.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://barrycap.com/googleanalytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
+    <script async src="script.js"></script>
+    <title>Barry Cap › Random Path</title>
+    <style>
+      @keyframes very-long-draw {
+        0% { stroke-dasharray: var(--rnd-dash); stroke-dashoffset: 4096; }
+        100% { stroke-dasharray: var(--rnd-dash); stroke-dashoffset: 0; } }
+      body {
+        background: var(--rnd-bgcolor);
+      }
+      svg {
+        max-height: 100vh;
+        fill: var(--rnd-fill);
+        stroke-width: .1px;
+        stroke: var(--rnd-fill);
+        animation: very-long-draw linear infinite;
+        animation-duration: var(--rnd-anim);
+      }
+      button {
+        color: var(--rnd-bgcolor) !important;
+        background: var(--rnd-fill) !important;
+        box-shadow: 0 0 0 0 var(--rnd-fill);
+        mix-blend-mode: normal !important;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="location.reload()">Generate new path</button>
+    <svg viewBox="0 0 32 32">
+      <path id="path"/>
+    </svg>
+    <script src="rndSVG.js"></script>
+  </body>
+</html>
