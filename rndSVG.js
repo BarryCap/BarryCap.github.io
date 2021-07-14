@@ -7,11 +7,9 @@ const dash = Math.floor(Math.random()*8192)
 document.documentElement.style.setProperty('--rnd-dash', dash)
 const time = 'very-long-draw ' + Math.floor(Math.random()*16) + 's linear infinite'
 document.documentElement.style.setProperty('--rnd-time', time)
-
 // Random path generator
 let path = document.getElementById('path')
 path.setAttribute('d', randomSVG())
-
 function randomSVG() {
   const lNum = 8192
   let path = 'm16 16'

@@ -1,4 +1,4 @@
-// Random color using CSS filters
+// Random colors using CSS filters
 const sepia = (Math.floor(Math.random() * 2))
 document.documentElement.style.setProperty('--rnd-sepia', sepia)
 const invert = (Math.floor(Math.random() * 2))
