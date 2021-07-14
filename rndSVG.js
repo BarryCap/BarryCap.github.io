@@ -14,7 +14,7 @@ path.setAttribute('d', randomSVG())
 
 function randomSVG() {
   const lNum = 8192
-  let path = 'm 16 16 '
+  let path = 'm16 16'
   for (let i = 0; i <= lNum; i++) {
     const ax = Math.floor(Math.random() * 32 - 15.5) / 8
     const ay = Math.floor(Math.random() * 32 - 15.5) / 8
