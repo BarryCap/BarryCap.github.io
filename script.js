@@ -1,9 +1,3 @@
-// Chack if the browser supports CSS variables
-if (window.CSS && CSS.supports('color', 'var(--fake-var)')) {
-  // The browser supports CSS variables.
-} else {
-  alert('Your browser does not support CSS variables.\nPlease consider using an other browser to view BarryCap.com in all its potential. Some colors, fonts and cursors use variables to work.')
-}
 // ASCII art in console
 console.log('██████  ██████  ██████  ██████  ██  ██    ██████  ██████  ██████\n██  ██  ██  ██  ██  ██  ██  ██  ██  ██    ██      ██  ██  ██  ██\n████    ██████  ████    ████    ██████    ██      ██████  ██████\n██  ██  ██  ██  ██  ██  ██  ██    ██      ██      ██  ██  ██\n██████  ██  ██  ██  ██  ██  ██    ██      ██████  ██  ██  ██')
 // Shortcuts
