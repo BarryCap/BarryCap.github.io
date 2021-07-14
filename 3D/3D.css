@@ -22,7 +22,7 @@ div {
   font-size: 10vw;
 }
 a {
-  position: absolute;
+  position: fixed;
   bottom: 1vw;
   left: 1vw;
   font-size: 2vw;

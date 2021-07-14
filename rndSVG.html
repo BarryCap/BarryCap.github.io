@@ -17,6 +17,7 @@
         0% { stroke-dasharray: var(--rnd-dash); stroke-dashoffset: 4096; }
         100% { stroke-dasharray: var(--rnd-dash); stroke-dashoffset: 0; } }
       body {
+        color: var(--rnd-fill);
         background: var(--rnd-bgcolor);
       }
       svg {
@@ -32,9 +33,12 @@
         box-shadow: 0 0 var(--rnd-fill);
         mix-blend-mode: normal !important;
       }
+      div { padding-top: 8vw; }
+      noscript { position: absolute; max-height: 100%; overflow: hidden; }
     </style>
   </head>
   <body>
+    <noscript><div>This page needs JavaScript to run. :)</div><a href="https://barrycap.com/">BarryCap.com</a></noscript>
     <button onclick="location.reload()">Generate new path</button>
     <svg viewBox="0 0 32 32">
       <path id="path"/>
