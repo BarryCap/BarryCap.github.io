@@ -71,7 +71,7 @@ Add script to change background animation in Random page
 Add script to change background animation
 in Random page
 ```
-&emsp;The commit name can be splitted before the anouncement of were the modifications are applying to, so generally before the word ‘in’.
+&emsp;The commit name can be splitted before the announcement of were the modifications are applying to, so generally before the word ‘in’.
 
 ---
 ### Including the number of files modified
