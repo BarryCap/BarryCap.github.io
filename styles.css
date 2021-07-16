@@ -862,6 +862,11 @@ textarea:focus {
     transform: translateX(-50%) translateY(-50%);
     z-index: -4;
   }
+.header-svg {
+  position: sticky;
+  top: 16px;
+  z-index: 1;
+}
 .txt {
   font-size: 21px;
   margin: 0;
