@@ -21,9 +21,9 @@
   /* Tabulation outline */
     :focus-visible { outline: 2px dashed var(--cf); }
   /* Text selection */
-    ::selection { color: var(--c0); background: #fff8; }
-    ::-moz-selection { color: var(--c0); background: #fff8; }
-    textarea::selection { color: #fffc; background: #444c; }
+    ::selection { background: #fff4; }
+    textarea::selection { background: #4444; }
+    input::selection { background: #4444; }
   /* Scrollbar */
     ::-webkit-scrollbar { width: 16px; height: 16px; transition-duration: .2s; }
     ::-webkit-scrollbar-track { background: #0000; }
@@ -279,10 +279,10 @@ pre {
   font-family: Consolas, monospace;
   overflow: auto;
 }
-pre::selection                   { color: #fff; background: #8888; }
-pre::selection *                              { background: #8888; }
-pre *::selection                              { background: #8888; }
-pre i::selection, red::selection { color: #aaa; background: #8888; }
+pre::selection      { color: #fff; background: #8888; }
+pre::selection *                 { background: #8888; }
+pre *::selection                 { background: #8888; }
+pre i::selection, red::selection { background: #8888; }
 pre u::selection { color: #fff; }
 /* Language indicator */
   pre::before {
@@ -533,10 +533,6 @@ input:focus {
   background: #fff;
   box-shadow: 0 0 0 4px #fff;
   border-radius: 2px;
-}
-input::selection {
-  background: #444c;
-  color: #fffc;
 }
 .input-button {
   margin-top: 0;
