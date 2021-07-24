@@ -108,9 +108,17 @@
   }
   .cookie-container { display: none; }
   .intro-button-container {
-    height: 80vh !important;
+    width: 40vw;
+    flex-direction: column;
+    justify-content: flex-end !important;
+    gap: 1vh;
   }
-  .intro-button { font-size: 5vw !important; line-height: 5vw !important; }
+  .button.intro-button {
+    width: 100% !important;
+    height: 4%;
+    font-size: 5vw !important;
+    line-height: 5vw !important;
+  }
   .intro-video {
     min-width: 100vh;
     min-height: 100vw;
@@ -820,14 +828,14 @@ textarea:focus {
     align-items: flex-end;
     justify-content: center;
   }
-  .intro-button {
+  .button.intro-button {
     box-shadow: 0 0 0 0 #8888;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    width: 16vw !important;
-    min-height: 3vw !important;
-    font-size: 2vw !important;
-    line-height: 3vw !important;
+    width: 16vw;
+    min-height: 3vw;
+    font-size: 2vw;
+    line-height: 3vw;
   }
   .intro-button:hover {
     box-shadow: 0 0 0 4px #8888;
