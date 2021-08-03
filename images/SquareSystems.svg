@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="#fff" stroke="#fff" stroke-dasharray="1" style="background:#000">
+  <title>Square Systems</title>
+  <rect width="2" height="2" x="1" y="1">
+    <animateTransform attributeName="transform" begin="0s" dur="5s" type="rotate" from="0 2 2" to="360 2 2" repeatCount="indefinite" />
+    <animate attributeName="rx" values="0;1;0" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="stroke-width" values="0;.1;0" dur="2.5s" repeatCount="indefinite" />
+  </rect>
+  <rect width="1" height="1">
+    <animateTransform attributeName="transform" begin="0s" dur="5s" type="rotate" from="0 2 2" to="-360 2 2" repeatCount="indefinite" />
+    <animate attributeName="rx" values="0;1;0" dur="2.5s" repeatCount="indefinite" />
+    <animate attributeName="stroke-width" values="0;.1;0" dur="2.5s" repeatCount="indefinite" />
+  </rect>
+  <rect width="1" height="1" x="-1" y="-1">
+    <animateTransform attributeName="transform" begin="0s" dur="2.5s" type="rotate" from="0 2 2" to="360 2 2" repeatCount="indefinite" />
+    <animate attributeName="rx" values="0;1;0" dur="1.25s" repeatCount="indefinite" />
+    <animate attributeName="stroke-width" values="0;.1;0" dur="2.5s" repeatCount="indefinite" />
+  </rect>
+  <!--Barry Cap 04/08/2021 00:16-->
+</svg>
