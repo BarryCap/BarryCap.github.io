@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <title>Click Me 4</title>
+  <g id="button" transform="translate(150,150)" text-anchor="middle" style="font-family:Future Menu Brown,Brown,sans-serif;font-size:18;cursor:pointer;user-select:none">
+    <ellipse fill="#0ff" rx="1cm" ry="1cm" filter="drop-shadow(0 0 5px #8888)">
+      <animate dur=".2s" begin="button.mouseover" attributeName="fill" to="#ff0" />
+      <animate fill="freeze" dur="1s" begin="button.click" attributeName="rx" to="50cm" />
+      <animate fill="freeze" dur="10s" begin="button.click" attributeName="ry" to="50cm" />
+      <animate fill="freeze" dur="10s" begin="button.click" attributeName="fill" to="#f00" />
+    </ellipse>
+    <text alignment-baseline="middle">
+      Click Me
+      <animateTransform attributeName="transform" begin="0s" dur="5s" type="rotate" from="0 0 0" to="360 0 0" repeatCount="indefinite" />
+      <animate fill="freeze" dur="10s" begin="button.click" attributeName="fill" to="#fff" />
+      <animate fill="freeze" dur="10s" begin="button.click" attributeName="font-size" to="70" />
+    </text>
+  </g>
+  <!--Barry Cap 04/08/2021 14:40-->
+</svg>
