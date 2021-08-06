@@ -86,6 +86,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://barrycap.com/rndSVG</loc>
+    <lastmod>2021-07-17T20:27:32+02:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://barrycap.com/canvas-svg</loc>
+    <lastmod>2021-08-06T11:50:48+02:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://barrycap.com/images/13F09_2880pSubmarineUnderPinkWater</loc>
     <lastmod>2021-08-04T10:04:00+02:00</lastmod>
     <priority>0.4</priority>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Barry Cap">
+    <meta name="description" content="A comparison of multiple maners to show a path on an HTML page.">
+    <link rel="icon" type="image/png" href="assets/favicon16p.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicon24p.png" sizes="24x24">
+    <link rel="icon" type="image/png" href="assets/favicon48p.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="assets/favicon64p.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="assets/favicon96p.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/favicon128p.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="assets/favicon192p.png" sizes="182x182">
+    <link rel="icon" type="image/png" href="assets/favicon256p.png" sizes="256x256">
+    <link rel="icon" type="image/png" href="assets/favicon.svg" sizes="512x512">
+    <link rel="manifest" href="manifest.json">
+    <script src="googleanalytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
+    <title>Barry Cap › SVG—Canvas comparisons</title>
+    <style>
+      body {
+        color: #eee;
+        background: #333;
+        padding-block-start: 3.6em;
+        padding-inline: 20%;
+        font-family: sans-serif;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      figure {
+        width: fit-content;
+        margin: 0 1em 1em 1em;
+      }
+      figcaption { text-align: center; }
+      code, pre {
+        background: #444;
+        border: 1px solid #666;
+        border-radius: 4px;
+        padding-inline: 2px;
+        font-family: monospace;
+        font-size: 17px;
+      }
+      code::selection, pre::selection, code *::selection, pre *::selection { background: #8888; }
+      pre {
+        padding-block: 4px 8px;
+        padding-inline: 10px;
+      }
+      c-[red] { color: #f88; }
+      c-[cya] { color: #0ff; }
+      c-[blu] { color: #0cf; }
+      c-[yel] { color: #ff8; }
+      c-[ora] { color: #fc8; }
+      c-[gre] { color: #0f0; }
+      c-[pin] { color: #f8f; }
+      c-[pur] { color: #c8f; }
+      c-[gra] { color: #888; }
+      footer {
+        margin-block-start: 4em;
+        text-align: center;
+      }
+      hr { opacity: .5; }
+      a {
+        color: #0cf;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #0ff;
+        text-decoration: underline;
+      }
+      a:active {
+        color: #000;
+        background: #0ff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="svg-canvas-comparisons">SVG—Canvas comparisons</h1>
+    <main>
+      <figure>
+        <svg viewBox="0 0 100 100" width="100" height="100">
+          <path
+            fill="none"
+            stroke="red"
+            stroke-width="5"
+            d="
+              M0 0
+              L100 0
+              L50 100
+              z
+            "
+          />
+        </svg>
+        <figcaption>SVG (inline)</figcaption>
+      </figure>
+      <figure>
+        <canvas id="canvas" width="100" height="100"></canvas>
+        <figcaption>Canvas</figcaption>
+      </figure>
+      <figure>
+        <img width="100" height="100" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100' height='100'%3E%3Cpath fill='none' stroke='red' stroke-width='5' d='M0 0 100 0 50 100z'/%3E%3C/svg%3E">
+        <figcaption>SVG in <code>&lt;<c- red>img</c->&gt;</code></figcaption>
+      </figure>
+      <figure>
+        <img width="100" height="100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAA6pJREFUeF7t3Etym1AQheFDOYvIIFmmPfIwk0TLjAdeRFy4UKAKIx730d33NLQntksYXfj5uBKW1PVAj/ii2QNdBKFpcR/IMsg/AL+4hnj60bwC+DZt5ZqQWwe8nH43EGxgD/wB8DwfylqQQcnPDngnGPNph9AD3wH8neuYTllDgKfFlocS5UNhTQeAj0HIAxsAoUQxyJYOALchyEDnLZQoFliseksHgB/dsGwoMY2xOnfcdQAvU5BQYtTkQMf7PUgosamxO3eMTzXmQUKJcpcjHfeHvfMxxFyiVyRFx1qQUKLUJEXHQ5CYS3RqpOrYChJKhLuk6lgNsqPkY3ziEte4MoLl6NgLEkoydvreojk6NoOEEpkauTqOgoSSyi65OnaDhJK6GqUXbb88MVwOoXSldZtyjr8u0XEoJJSUHRw1B/KukDFIzCWZXUp1JAkJJXk1anTkBAkliV1qdCQHCSVpNWp15AYJJQddanVkBQkl+zUkdJQECSUbXSR0ZAcJJes1pHSUBgkliy5SOoqChJKvNSR11AQJJWMXSR3FQULJ/xrSOmqDXF6JtI6qIFdXoqFDIshllWjoqA5yVSVaOqSCXE6Jlg6RIFdToqlDMshllGjqEAtyFSXaOqSDnF5JD/zG43v4RV9ie/gih/3/Ajxc11l7R6/ogHPGI7mshQ5RIVqXEiR3as26LHSIBznrXGKlQyvI6eYS7UdWc7mic8i0YssNqDkNpfytpQ4VIWebS6wPLhUhZ5lLrHWoCTmLEmsdqkG8K2mhwyKI20dcLXSoB/GqpJUOqyDulLTSYRLEm5KWOiyDuFHSUodZEC9KWuuwDkKvpLUO0yDsShh0tAhCq4RBh3kQViUsOloFoVPCoqNJEDYlTDpaBqFRwqSjWRAWJWw6WgdproRNR9MgrZUw6mAI0kwJo47mQVopYdXBEsRcCasOiiDWSph1MAUxU8KsgyaIlRJ2HWxB1JWw66AKoq3Egw7GIGpKPOigC6KlxIsO1iDiSrzooAwircSTDuYgYko86aANIqXEmw72INVKvOmgDlKrxKMOD0GKlXjUQR+kVIlXHV6CZCvxqsNFkFwlnnV4CpKsxLMON0FSlXjX4S3IoRLvOlwFOVIy3A7gDcDT+PP07dY9fujYYhGeX9U+WkNjE/dOSeP9PS/u192Hp7kKcqBkuNm1DnenrDHI1lyyROlOh8sgO0qWQVzNHdPg3Z2yEpW41OFWSIISlzq8B9maS9zqGIJ8AqTSkhSfndNNAAAAAElFTkSuQmCC">
+        <figcaption>Base64 PNG</figcaption>
+      </figure>
+    </main>
+    <p>The <code>&lt;<c- red>canvas</c->&gt;</code> HTML element take longer to load than the other elements and its behavior is dependent to JavaScript—it alows the element to be handled with JavaScript in a simpler way, while the SVG describes instantly the shapes to load.</p>
+    <p>Another important thing about the <code>&lt;<c- red>canvas</c->&gt;</code> element is that it is displayed like a raster image, as opposed to SVG, which is displayed like HTML elements: vector.</p>
+    <h3 id="svg">SVG <c- gra>(inline)</c->:</h3>
+    <pre>&lt;<c- red>svg</c-> <c- gre>viewBox</c->=<c- ora>"0 0 100 100"</c-> <c- gre>width</c->=<c- ora>"100"</c-> <c- gre>height</c->=<c- ora>"100"</c->&gt;
+  &lt;<c- red>path</c->
+    <c- gre>fill</c->=<c- ora>"none"</c->
+    <c- gre>stroke</c->=<c- ora>"red"</c->
+    <c- gre>stroke-width</c->=<c- ora>"5"</c->
+    <c- gre>d</c->=<c- ora>"
+      <c- blu>M</c-> <c- pin>  0   0</c-> <c- gra><i>&lt;!--moveTo--&gt;</i></c->
+      <c- blu>L</c-> <c- pin>100   0</c-> <c- gra><i>&lt;!--lineTo--&gt;</i></c->
+      <c- blu>L</c-> <c- pin> 50 100</c-> <c- gra><i>&lt;!--lineTo--&gt;</i></c->
+      <c- blu>z</c->         <c- gra><i>&lt;!--closePath--&gt;</i></c->
+    "</c->
+  /&gt;
+&lt;/<c- red>svg</c->&gt;</pre>
+    <h3 id="js">JavaScript <c- gra>(for the </c-><code>&lt;<c- red>canvas</c->&gt;</code><c- gra> element)</c->:</h3>
+    <pre><c- blu>const</c-> <c- cya>canvas</c-> <c- red>=</c-> document.<c- gre>querySelector</c->(<c- ora>'canvas'</c->)
+<c- blu>const</c-> <c- yel>context</c-> <c- red>=</c-> <c- cya>canvas</c->.<c- gre>getContext</c->(<c- ora>'2d'</c->)
+<c- yel>context</c->.lineWidth <c- red>=</c-> <c- pur>5</c->
+<c- yel>context</c->.strokeStyle <c- red>=</c-> <c- ora>'red'</c->
+<c- yel>context</c->.<c- gre>beginPath</c->()
+<c- yel>context</c->.<c- gre>moveTo</c->(  <c- pur>0</c->,   <c- pur>0</c->)
+<c- yel>context</c->.<c- gre>lineTo</c->(<c- pur>100</c->,   <c- pur>0</c->)
+<c- yel>context</c->.<c- gre>lineTo</c->( <c- pur>50</c->, <c- pur>100</c->)
+<c- yel>context</c->.<c- gre>closePath</c->()
+<c- yel>context</c->.<c- gre>stroke</c->()</pre>
+    <footer>
+      <hr>
+      <p>This page is also available at <a href="https://cdpn.io/GRmYMEB" target="_blank">CodePen.io › GRmYMEB</a>.</p>
+    </footer>
+    <script>
+      const canvas = document.querySelector('canvas')
+      const ctx = canvas.getContext('2d')
+      ctx.lineWidth = 5
+      ctx.strokeStyle = 'red'
+      ctx.beginPath()
+      ctx.moveTo(  0,   0)
+      ctx.lineTo(100,   0)
+      ctx.lineTo( 50, 100)
+      ctx.closePath()
+      ctx.stroke()
+    </script>
+  </body>
+</html>
