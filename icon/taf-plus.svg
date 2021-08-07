@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <style>
+    @keyframes rotate {
+      to {
+        d: path("m16 7a1 1 0 010 4l-5 0 0 5a1 1 0 01-4 0l0-5-5 0a1 1 0 010-4l5 0 0-5a1 1 0 014 0l0 5z");
+      }
+    }
+    svg:hover #plus {
+      animation: rotate 0.3s forwards;
+    }
+  </style>
+  <path id="plus" fill="#0c8" filter="drop-shadow(0 0 2 #0c8)" d="m7 4a1 1 0 014 0l0 3 3 0a1 1 0 010 4l-3 0 0 3a1 1 0 01-4 0l0-3-3 0a1 1 0 010-4l3 0z" />
+</svg>
