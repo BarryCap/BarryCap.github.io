@@ -15,5 +15,5 @@
     <animate attributeName="rx" values="0;1;0" dur="1.25s" repeatCount="indefinite" />
     <animate attributeName="stroke-width" values="0;.1;0" dur="2.5s" repeatCount="indefinite" />
   </rect>
-  <!--Barry Cap 04/08/2021 00:16-->
+  <!--Barry Cap 00:16 4/8/2021 -->
 </svg>
