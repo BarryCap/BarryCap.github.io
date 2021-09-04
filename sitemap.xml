@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://barrycap.com/spotlight</loc>
-    <lastmod>2021-08-04T10:08:06+02:00</lastmod>
+    <lastmod>2021-09-04T10:17:30+02:00</lastmod>
     <priority>0.75</priority>
   </url>
   <url>
@@ -94,6 +94,11 @@
     <loc>https://barrycap.com/canvas-svg</loc>
     <lastmod>2021-08-06T11:50:48+02:00</lastmod>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://barrycap.com/images/SquareSystems</loc>
+    <lastmod>2021-08-04T10:04:00+02:00</lastmod>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://barrycap.com/images/13F09_2880pSubmarineUnderPinkWater</loc>
