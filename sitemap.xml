@@ -76,6 +76,11 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://barrycap.com/realizations/being/</loc>
+    <lastmod>2021-07-09T17:46:05+00:00</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://barrycap.com/versions</loc>
     <lastmod>2021-07-09T17:46:06+00:00</lastmod>
     <priority>0.4</priority>

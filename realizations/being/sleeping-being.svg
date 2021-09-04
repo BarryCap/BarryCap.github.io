@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="background-color:#000">
+  <title>Sleeping Being</title>
+  <style>
+    @keyframes body {
+      50% { d: path("m5 13l2 0 2 2 6 0m-9-2 2 0 6 0"); }
+    }
+    #body { animation: body 8s infinite; }
+  </style>
+  <g id="being" fill="none" stroke="#fff" stroke-width="2">
+    <circle id="head" r="2" cx="3" cy="13" />
+    <path id="body" d="m5 13l3 0 2 2 6 0m-8-2 2 0 6 0" />
+  </g>
+  <polygon points="-64-64 80-64 80 80-64 80-64-64 0 0 0 16 16 16 16 0 0 0" />
+  <!--BCAP 19:25 1/9/2021-->
+</svg>

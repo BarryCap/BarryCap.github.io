@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="background-color:#000">
+  <title>Walking Being</title>
+  <style>
+    @keyframes body {
+      50%  { d: path("m8 5l0 3 0 4-3 5m 3-9 3 3-1 4"); }
+      100% { d: path("m8 6l0 2 0 3-5 5m 5-8 4 4 0 4"); }
+    }
+    #body { animation: body 1s infinite; }
+    @keyframes head {
+      25% { cy: 3; }
+    }
+    #head { animation: head 1s infinite; }
+    @keyframes walk {
+      50% { transform: translateX(2px); }
+    }
+    #walk { animation: walk 1s infinite; }
+    @keyframes being {
+      0%   { transform: translateX(-14px); }
+      100% { transform: translateX( 14px); }
+    }
+    #being { animation: being 4s linear infinite; }
+  </style>
+  <g id="being" fill="none" stroke="#fff" stroke-width="2">
+    <g id="walk">
+      <circle id="head" r="2" cx="8" cy="4" />
+      <path id="body" d="m8 6l0 2 4 4 0 4m-4-8 0 3-5 5" />
+    </g>
+  </g>
+  <polygon points="-64-64 80-64 80 80-64 80-64-64 0 0 0 16 16 16 16 0 0 0" />
+  <!--BCAP 18:40 1/9/2021-->
+</svg>

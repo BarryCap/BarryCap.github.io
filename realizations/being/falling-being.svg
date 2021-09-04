@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="background-color:#000">
+  <title>Falling Being</title>
+  <style>
+    @keyframes body {
+      50%  { d: path("m12 6l-2 2-4 2-6-2m10 0 0 3-5 3"); }
+    }
+    #body { animation: body 1s infinite; }
+    @keyframes head {
+      50% { cy: 5; }
+    }
+    #head { animation: head 1s infinite; }
+    @keyframes being {
+      0%   { transform: translateY(-16px); }
+      100% { transform: translateY( 16px); }
+    }
+    #being { animation: being .5s linear infinite; }
+  </style>
+  <g id="being" fill="none" stroke="#fff" stroke-width="2">
+    <circle id="head" r="2" cx="13" cy="4" />
+    <path id="body" d="m12 6l-2 2 0 3-5 3m5-6-4 2-6-2" />
+  </g>
+  <polygon points="-64-64 80-64 80 80-64 80-64-64 0 0 0 16 16 16 16 0 0 0" />
+  <!--BCAP 22:56 1/9/2021-->
+</svg>

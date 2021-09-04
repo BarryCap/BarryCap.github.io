@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="background-color:#000">
+  <title>Keying Being</title>
+  <style>
+    @keyframes body {
+      20% { d: path("m8 6l0 2 2 2 0 6m-2-8-2 2 0 6"); }
+      40% { d: path("m5 8l6 0 4 0 0 4m-3-4 0 1 0 2"); }
+      50% { d: path("m5 8l6 0 4 0 0-4m-3 4 0-1 0-2"); }
+      60% { d: path("m5 8l6 0 4 0 0 4m-3-4 0 1 0 2"); }
+    }
+    #body { animation: body 2s infinite; }
+    @keyframes head {
+      20% { cx: 8; cy: 4; }
+      40% { ry: 2; cx: 3; cy: 8; }
+      48% { ry: 0; }
+      50% { ry: 2; }
+      52% { ry: 0; }
+      60% { ry: 2; cx: 3; cy: 8; }
+    }
+    #head { animation: head 2s infinite; }
+  </style>
+  <g id="being" fill="none" stroke="#fff" stroke-width="2">
+    <ellipse id="head" rx="2" ry="2" cx="8" cy="3" />
+    <path id="body" d="m8 5l0 3 2 2 0 6m-2-8-2 2-4-4" />
+  </g>
+  <polygon points="-64-64 80-64 80 80-64 80-64-64 0 0 0 16 16 16 16 0 0 0" />
+  <!--BCAP 22:40 1/9/2021-->
+</svg>
