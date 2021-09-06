@@ -22,43 +22,50 @@
       }
       div {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-evenly;
       }
       div div {
         display: flex;
         flex-direction: column;
       }
-      h1, h2 { background: #000; }
-      p {
-        margin: 0 0 8px 0;
-        min-width: 256px;
+      h1, h2, footer { background: #000; }
+      h1 {
+        position: sticky;
+        top: 0;
       }
+      p { margin: 0 0 8px 0; }
       section {
+        border-inline: solid 1vw #000;
         margin-inline: 20%;
+        padding-inline: 1%;
         text-align: justify;
       }
       section p::before { content: "\2003"; }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        padding-inline: 1em;
+        padding-block: .5em;
+        position: sticky;
+        bottom: 0;
+      }
     </style>
   </head>
   <body>
     <h1>Being Series</h1>
     <h2>Description</h2>
     <section>
-      <p>
-        A series by Barry Cap, created in the early 9th month of 2021.
-      </p>
-      <p>
-        This is about one being who is illustrated through moods and activities.
-        They have a head, a neck and two arms. The pictures are monochrome, the
-        being is white and the background is black.
-      </p>
-      <p>
-        The animtions are processed using CSS keyframes inside SVG. At the time
-        this is written, the SVG files and this HTML file need to be opened in a
-        browser (especially Chromium-based) to be well animated.
-      </p>
+      <p>A series by Barry Cap, created in the early 9<sup>th</sup> month of
+      2021.</p>
+      <p>This is about one being who is illustrated through moods and
+      activities. They have a head, a neck and two arms. The pictures are
+      monochrome, the being is white and the background is black.</p>
+      <p>The animtions are processed using CSS keyframes inside SVG. At the time
+      this is written, the SVG files and this HTML file need to be opened in a
+      browser (especially Chromium-based) to be well animated.</p>
     </section>
     <h2>Different being postures</h2>
     <div>
@@ -91,5 +98,10 @@
         <p>Thinking Being</p>
       </div>
     </div>
+    <footer>
+      <div>Barry Cap</div>
+      <div>&#11835;</div>
+      <div>2021/9/2</div>
+    </footer>
   </body>
 </html>
