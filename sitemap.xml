@@ -101,8 +101,13 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://barrycap.com/images/IP08_2880pDirty</loc>
+    <lastmod>2021-09-29T20:03:00+02:00</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://barrycap.com/images/SquareSystems</loc>
-    <lastmod>2021-08-04T10:04:00+02:00</lastmod>
+    <lastmod>2021-09-04T12:00:00+02:00</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
