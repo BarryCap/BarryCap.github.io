@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23888' d='m0 4a1 1 0 018 0 1 1 0 01-8 0m2 0a1 1.5 0 004 0 1 1.5 0 00-4 0m6 8a1 1 0 018 0 1 1 0 01-8 0m2 0a1 1.5 0 004 0 1 1.5 0 00-4 0m-10 4 14-16h2l-14 16'/%3E%3C/svg%3E">
+    <script src="googleanalytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5Q2KLJ19"></script>
+    <script async src="script.js"></script>
+    <title>CSS Keyframes Percentages Finder</title>
+    <style>
+      body {
+        background: #000;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: xx-large;
+        line-height: 1.5em;
+        margin: 1em;
+      }
+      input, button {
+        background: #444;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 #444;
+        color: #fff;
+        font-size: xx-large;
+        transition: .2s;
+      }
+      input:hover, button:hover {
+        background: #666;
+        border-radius: 4px;
+        box-shadow: 0 0 0 2px #666;
+      }
+      input:focus, button:focus {
+        background: #000;
+        border-radius: 0;
+        box-shadow: 4px 4px 0 4px #fff;
+        outline: solid 4px #fff;
+      }
+      input:invalid { background: #600; }
+      button { user-select: none; }
+      button:active {
+        background: #fff;
+        color: #000;
+      }
+      #target {
+        box-shadow: 0 0 0 4px #888;
+        font-family: monospace;
+        font-size: large;
+        line-height: 1em;
+        margin: 2em 4px;
+        outline: solid 4px #888;
+        padding: 1em;
+        transition: .2s;
+        width: fit-content;
+        white-space: pre-line;
+      }
+      #target:hover {
+        box-shadow: 4px 4px 0 4px #888;
+        outline: solid 4px #888;
+      }
+      #target:active {
+        background: #888;
+        color: #000;
+      }
+      #target:active::selection {
+        background: #000;
+        color: #fff;
+      }
+      ::selection {
+        background: #888;
+        color: #000;
+      }
+      ::-webkit-scrollbar { width: 16px; height: 16px; }
+      ::-webkit-scrollbar-track { background: #0000; }
+      ::-webkit-scrollbar-thumb { background: #6668; border-radius: 5px; }
+      ::-webkit-scrollbar-thumb:hover { background: #8888; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:active { background: #fffa; border-radius: 2px; }
+      ::-webkit-scrollbar-button { background: #6668; border-radius: 5px; }
+      ::-webkit-scrollbar-button:hover { background: #8888; border-radius: 4px; }
+      ::-webkit-scrollbar-button:active { background: #fffa; border-radius: 2px; }
+      ::-webkit-scrollbar-button:single-button { display: block; height: 16px; width: 16px; }
+      ::-webkit-scrollbar-button:single-button:vertical:decrement { background-image: url(assets/arrows/top.svg); }
+      ::-webkit-scrollbar-button:single-button:horizontal:increment { background-image: url(assets/arrows/right.svg); }
+      ::-webkit-scrollbar-button:single-button:vertical:increment { background-image: url(assets/arrows/bottom.svg); }
+      ::-webkit-scrollbar-button:single-button:horizontal:decrement { background-image: url(assets/arrows/left.svg); }
+      ::-webkit-scrollbar-corner { background: #0000; }
+      ::-webkit-inner-spin-button {
+        opacity: .25;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: .2s;
+        height: 102%;
+      }
+      ::-webkit-inner-spin-button:hover { opacity: .5; }
+      ::-webkit-inner-spin-button:active { opacity: 1; }
+    </style>
+  </head>
+  <body>
+    Number of splits: <input id="splits" type="number" min="0"><br>
+    Number of decimals: <input id="decimals" type="number"><br>
+    <button onclick="submit()">Find and copy splits</button>
+    <div id="target"></div>
+    <script>
+      function submit() {
+        const splits = document.getElementById('splits').value 
+        const decimals = document.getElementById('decimals').value 
+        let text = ''
+        let value = 0
+        for (let i = 0; i <= splits; i++) {
+          text+=`${Math.round(value*10**decimals)/(10**decimals)}%\n`
+          value+=100/splits
+        }
+        document.getElementById('target').innerHTML = text
+        navigator.clipboard.writeText(text)
+      }
+    </script>
+  </body>
+</html>
