@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="background:#000">
+  <style>
+    #keys rect {
+      width: 8px;
+      height: 8px;
+    }
+    #keys rect:hover { fill: #888; }
+    @keyframes key-pressed {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .pressed, #keys .pressed:hover {
+      animation: key-pressed 1.25s;
+      fill: #fff;
+    }
+  </style>
+  <script href="squares.js" />
+  <g id="keys">
+    <rect id="01" onmouseover="key('01')" onmousedown="key('01', true)" />
+    <rect id="02" onmouseover="key('02')" onmousedown="key('02', true)" x="8" />
+    <rect id="03" onmouseover="key('03')" onmousedown="key('03', true)" x="16" />
+    <rect id="04" onmouseover="key('04')" onmousedown="key('04', true)" x="24" />
+    <rect id="05" onmouseover="key('05')" onmousedown="key('05', true)" x="32" />
+    <rect id="06" onmouseover="key('06')" onmousedown="key('06', true)" y="8" />
+    <rect id="07" onmouseover="key('07')" onmousedown="key('07', true)" y="8" x="8" />
+    <rect id="08" onmouseover="key('08')" onmousedown="key('08', true)" y="8" x="16" />
+    <rect id="09" onmouseover="key('09')" onmousedown="key('09', true)" y="8" x="24" />
+    <rect id="10" onmouseover="key('10')" onmousedown="key('10', true)" y="8" x="32" />
+    <rect id="11" onmouseover="key('11')" onmousedown="key('11', true)" y="16" />
+    <rect id="12" onmouseover="key('12')" onmousedown="key('12', true)" y="16" x="8" />
+    <rect id="13" onmouseover="key('13')" onmousedown="key('13', true)" y="16" x="16" />
+    <rect id="14" onmouseover="key('14')" onmousedown="key('14', true)" y="16" x="24" />
+    <rect id="15" onmouseover="key('15')" onmousedown="key('15', true)" y="16" x="32" />
+    <rect id="16" onmouseover="key('16')" onmousedown="key('16', true)" y="24" />
+    <rect id="17" onmouseover="key('17')" onmousedown="key('17', true)" y="24" x="8" />
+    <rect id="18" onmouseover="key('18')" onmousedown="key('18', true)" y="24" x="16" />
+    <rect id="19" onmouseover="key('19')" onmousedown="key('19', true)" y="24" x="24" />
+    <rect id="20" onmouseover="key('20')" onmousedown="key('20', true)" y="24" x="32" />
+    <rect id="21" onmouseover="key('21')" onmousedown="key('21', true)" y="32" />
+    <rect id="22" onmouseover="key('22')" onmousedown="key('22', true)" y="32" x="8" />
+    <rect id="23" onmouseover="key('23')" onmousedown="key('23', true)" y="32" x="16" />
+    <rect id="24" onmouseover="key('24')" onmousedown="key('24', true)" y="32" x="24" />
+    <rect id="25" onmouseover="key('25')" onmousedown="key('25', true)" y="32" x="32" />
+  </g>
+  <!--BCAP 17:07 3/3/2022-->
+</svg>
