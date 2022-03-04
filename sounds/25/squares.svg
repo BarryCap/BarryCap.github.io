@@ -6,7 +6,6 @@
       fill: #0000;
       stroke: #fff;
       stroke-width: 0;
-      filter: drop-shadow(0 0 10px #fff);
       opacity: .5;
     }
     #keys rect:hover {
@@ -26,10 +25,7 @@
       fill: #000;
     }
     #button-lights * { transition: .2s; }
-    #guides circle.triggered {
-      fill: #fff;
-      filter: drop-shadow(0 0 1px #fff);
-    }
+    #guides circle.triggered { fill: #fff; }
     #buttons *:active {
       stroke-width: 1px;
       fill-opacity: 0;
