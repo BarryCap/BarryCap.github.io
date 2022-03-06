@@ -19,7 +19,7 @@
       }
       100% { opacity: 0; }
     }
-    .pressed, #keys .pressed:hover { animation: key-pressed 1.25s; }
+    .pressed { animation: key-pressed 1s; }
     #guides circle {
       r: .5px;
       fill: #000;
@@ -30,6 +30,18 @@
       stroke-width: 1px;
       fill-opacity: 0;
     }
+    #keys rect.color-1 { stroke: #f00; filter: drop-shadow(0 0 10px #f00); }
+    #keys rect.color-2 { stroke: #ff0; filter: drop-shadow(0 0 10px #ff0); }
+    #keys rect.color-3 { stroke: #0f0; filter: drop-shadow(0 0 10px #0f0); }
+    #keys rect.color-4 { stroke: #0ff; filter: drop-shadow(0 0 10px #0ff); }
+    #keys rect.color-5 { stroke: #00f; filter: drop-shadow(0 0 10px #00f); }
+    #keys rect.color-6 { stroke: #f0f; filter: drop-shadow(0 0 10px #f0f); }
+    #keys rect.color-1:hover { fill: #f00; }
+    #keys rect.color-2:hover { fill: #ff0; }
+    #keys rect.color-3:hover { fill: #0f0; }
+    #keys rect.color-4:hover { fill: #0ff; }
+    #keys rect.color-5:hover { fill: #00f; }
+    #keys rect.color-6:hover { fill: #f0f; }
   </style>
   <script href="squares.js" />
   <g id="guides">
@@ -100,5 +112,5 @@
       <rect id="b5" onmousedown="randomNotes('5')" y="32" x="44" />
     </g>
   </g>
-  <!--BCAP 22:13 3/3/2022-->
+  <!--BCAP 15:07 6/3/2022-->
 </svg>
