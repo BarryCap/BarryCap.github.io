@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="background:#111">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 0 64 40" style="background:#111">
   <style>
     #keys rect {
       width: 8px;
@@ -25,7 +25,9 @@
       fill: #000;
     }
     #button-lights * { transition: .2s; }
-    #guides circle.triggered { fill: #fff; }
+    #guides circle.triggered {
+      fill: #fff;
+    }
     #buttons *:active {
       stroke-width: 1px;
       fill-opacity: 0;
@@ -71,11 +73,16 @@
     <circle cy="36" cx="28" />
     <circle cy="36" cx="36" />
     <g id="button-lights">
-      <circle id="b1-light" cy="4" cx="48" />
-      <circle id="b2-light" cy="12" cx="48" />
-      <circle id="b3-light" cy="20" cx="48" />
-      <circle id="b4-light" cy="28" cx="48" />
-      <circle id="b5-light" cy="36" cx="48" />
+      <circle id="sine-light"     cx="-8" cy="4" />
+      <circle id="triangle-light" cx="-8" cy="12" />
+      <circle id="square-light"   cx="-8" cy="20" />
+      <circle id="sawtooth-light" cx="-8" cy="28" />
+      <circle id="beep-light"   cx="-8" cy="36" />
+      <circle id="r1-light" cx="48" cy="4" />
+      <circle id="r2-light" cx="48" cy="12" />
+      <circle id="r3-light" cx="48" cy="20" />
+      <circle id="r4-light" cx="48" cy="28" />
+      <circle id="r5-light" cx="48" cy="36" />
     </g>
   </g>
   <g id="keys">
@@ -105,12 +112,17 @@
     <rect id="24" onmouseover="key('24')" onmousedown="key('24', true)" y="32" x="24" />
     <rect id="25" onmouseover="key('25')" onmousedown="key('25', true)" y="32" x="32" />
     <g id="buttons">
-      <rect id="b1" onmousedown="randomNotes('1')" y="0" x="44" />
-      <rect id="b2" onmousedown="randomNotes('2')" y="8" x="44" />
-      <rect id="b3" onmousedown="randomNotes('3')" y="16" x="44" />
-      <rect id="b4" onmousedown="randomNotes('4')" y="24" x="44" />
-      <rect id="b5" onmousedown="randomNotes('5')" y="32" x="44" />
+      <rect id="sine"     onmousedown="changeSound('sine')"     x="-12" y="0" />
+      <rect id="triangle" onmousedown="changeSound('triangle')" x="-12" y="8" />
+      <rect id="square"   onmousedown="changeSound('square')"   x="-12" y="16" />
+      <rect id="sawtooth" onmousedown="changeSound('sawtooth')" x="-12" y="24" />
+      <rect id="beep"     onmousedown="changeSound('beep')"     x="-12" y="32" />
+      <rect id="r1" onmousedown="randomNotes('1')" x="44" y="0" />
+      <rect id="r2" onmousedown="randomNotes('2')" x="44" y="8" />
+      <rect id="r3" onmousedown="randomNotes('3')" x="44" y="16" />
+      <rect id="r4" onmousedown="randomNotes('4')" x="44" y="24" />
+      <rect id="r5" onmousedown="randomNotes('5')" x="44" y="32" />
     </g>
   </g>
-  <!--BCAP 15:13 6/3/2022-->
+  <!--BCAP 14:43 8/3/2022-->
 </svg>
