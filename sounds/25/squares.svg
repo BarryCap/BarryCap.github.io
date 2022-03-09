@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 0 64 40" style="background:#111">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 80 40" id="svg">
   <style>
+    svg { background: #222; }
+    .high-quality { filter: saturate(4); }
     #keys rect {
       width: 8px;
       height: 8px;
@@ -8,6 +10,7 @@
       stroke-width: 0;
       opacity: .5;
     }
+    .high-quality #keys rect { filter: drop-shadow(0 0 10px #fff); }
     #keys rect:hover {
       fill: #fff;
       transition: .1s;
@@ -20,24 +23,37 @@
       100% { opacity: 0; }
     }
     .pressed { animation: key-pressed 1s; }
+    #guides * { transition: .2s; }
     #guides circle {
       r: .5px;
       fill: #000;
     }
-    #button-lights * { transition: .2s; }
-    #guides circle.triggered {
-      fill: #fff;
+    #button-lights * {
+      fill: none;
+      stroke: #000;
+      stroke-width: .5px;
+      stroke-linecap: round;
+      r: 1px;
+      transition: .2s;
     }
+    #button-lights *.triggered { stroke: #fff; }
+    .high-quality #button-lights *.triggered { filter: drop-shadow(0 0 1px #fff); }
     #buttons *:active {
       stroke-width: 1px;
       fill-opacity: 0;
     }
     #keys rect.color-1 { stroke: #f00; }
+    .high-quality #keys rect.color-1 { filter: drop-shadow(0 0 10px #f00); }
     #keys rect.color-2 { stroke: #ff0; }
+    .high-quality #keys rect.color-2 { filter: drop-shadow(0 0 10px #ff0); }
     #keys rect.color-3 { stroke: #0f0; }
+    .high-quality #keys rect.color-3 { filter: drop-shadow(0 0 10px #0f0); }
     #keys rect.color-4 { stroke: #0ff; }
+    .high-quality #keys rect.color-4 { filter: drop-shadow(0 0 10px #0ff); }
     #keys rect.color-5 { stroke: #00f; }
+    .high-quality #keys rect.color-5 { filter: drop-shadow(0 0 10px #00f); }
     #keys rect.color-6 { stroke: #f0f; }
+    .high-quality #keys rect.color-6 { filter: drop-shadow(0 0 10px #f0f); }
     #keys rect.color-1:hover { fill: #f00; }
     #keys rect.color-2:hover { fill: #ff0; }
     #keys rect.color-3:hover { fill: #0f0; }
@@ -47,11 +63,11 @@
   </style>
   <script href="squares.js" />
   <g id="guides">
-    <circle cy="4" cx="4" />
-    <circle cy="4" cx="12" />
-    <circle cy="4" cx="20" />
-    <circle cy="4" cx="28" />
-    <circle cy="4" cx="36" />
+    <circle cy="4"  cx="4" />
+    <circle cy="4"  cx="12" />
+    <circle cy="4"  cx="20" />
+    <circle cy="4"  cx="28" />
+    <circle cy="4"  cx="36" />
     <circle cy="12" cx="4" />
     <circle cy="12" cx="12" />
     <circle cy="12" cx="20" />
@@ -72,18 +88,37 @@
     <circle cy="36" cx="20" />
     <circle cy="36" cx="28" />
     <circle cy="36" cx="36" />
-    <g id="button-lights">
-      <circle id="sine-light"     cx="-8" cy="4" />
-      <circle id="triangle-light" cx="-8" cy="12" />
-      <circle id="square-light"   cx="-8" cy="20" />
-      <circle id="sawtooth-light" cx="-8" cy="28" />
-      <circle id="beep-light"   cx="-8" cy="36" />
-      <circle id="r1-light" cx="48" cy="4" />
-      <circle id="r2-light" cx="48" cy="12" />
-      <circle id="r3-light" cx="48" cy="20" />
-      <circle id="r4-light" cx="48" cy="28" />
-      <circle id="r5-light" cx="48" cy="36" />
+ </g>
+  <g id="button-lights">
+    <path id="sine-light"     d="m-9 4c0-1 1-1 1 0s1 1 1 0" />
+    <path id="triangle-light" d="m-9 12 .5-1 1 2 .5-1" />
+    <path id="square-light"   d="m-9 20v-1h1v2h1v-1" />
+    <path id="sawtooth-light" d="m-9 28 1-1v2l1-1" />
+    <path id="beep-light"     d="m-9.5 37c.4 0 .4-.5.4-1.3s.7-.8.7 0 .8.8.8 0 .7-.8.7 0 0 1.3.4 1.3" />
+    <path id="drums-light"    d="m-17 3.5a1 .5 0 012 0 1 .5 0 01-2 0zm0 0v1a1 .5 0 002 0v-1" />
+    <path id="piano-light"    d="m-16.8 13.5-.2-2 .5 0c1-.8 1 .8 0 0m1.5-1v3" />
+    <circle id="r1-light" cx="48" cy="4" />
+    <circle id="r2-light" cx="48" cy="12" />
+    <circle id="r3-light" cx="48" cy="20" />
+    <circle id="r4-light" cx="48" cy="28" />
+    <circle id="r5-light" cx="48" cy="36" />
+    <g id="pitch-lights">
+      <path id="pitch-plus-light" d="m55 4h2m-1-1v2" />
+      <path id="pitch-slider-part6"  d="m57  9.5v0" />
+      <path id="pitch-slider-part5"  d="m57 10.5v0" />
+      <path id="pitch-slider-part4"  d="m57 11.5v0" />
+      <path id="pitch-slider-part3"  d="m56  9.5v0" />
+      <path id="pitch-slider-part2"  d="m56 10.5v0" />
+      <path id="pitch-slider-part1"  d="m56 11.5v0" />
+      <path id="pitch-slider-part-1" d="m56 12.5v0" />
+      <path id="pitch-slider-part-2" d="m56 13.5v0" />
+      <path id="pitch-slider-part-3" d="m56 14.5v0" />
+      <path id="pitch-slider-part-4" d="m55 12.5v0" />
+      <path id="pitch-slider-part-5" d="m55 13.5v0" />
+      <path id="pitch-slider-part-6" d="m55 14.5v0" />
+      <path id="pitch-minus-light" d="m55 20h2" />
     </g>
+    <path id="high-quality-light" d="m-17 36h2m-2-1 2 2m-1-2v2m1-2-2 2" />
   </g>
   <g id="keys">
     <rect id="01" onmouseover="key('01')" onmousedown="key('01', true)" />
@@ -112,17 +147,23 @@
     <rect id="24" onmouseover="key('24')" onmousedown="key('24', true)" y="32" x="24" />
     <rect id="25" onmouseover="key('25')" onmousedown="key('25', true)" y="32" x="32" />
     <g id="buttons">
-      <rect id="sine"     onmousedown="changeSound('sine')"     x="-12" y="0" />
+      <rect id="sine"     onmousedown="changeSound('sine')"     x="-12" />
       <rect id="triangle" onmousedown="changeSound('triangle')" x="-12" y="8" />
       <rect id="square"   onmousedown="changeSound('square')"   x="-12" y="16" />
       <rect id="sawtooth" onmousedown="changeSound('sawtooth')" x="-12" y="24" />
       <rect id="beep"     onmousedown="changeSound('beep')"     x="-12" y="32" />
-      <rect id="r1" onmousedown="randomNotes('1')" x="44" y="0" />
+      <rect id="drums"    onmousedown="changeSound('drums')"    x="-20" />
+      <rect id="piano"    onmousedown="changeSound('piano')"    x="-20" y="8" />
+      <rect id="r1" onmousedown="randomNotes('1')" x="44" />
       <rect id="r2" onmousedown="randomNotes('2')" x="44" y="8" />
       <rect id="r3" onmousedown="randomNotes('3')" x="44" y="16" />
       <rect id="r4" onmousedown="randomNotes('4')" x="44" y="24" />
       <rect id="r5" onmousedown="randomNotes('5')" x="44" y="32" />
+      <rect id="pitch-plus"   onmousedown="changePitchPlus()" x="52" />
+      <rect id="pitch-slider" onmousedown="changePitchReset()" x="52" y="8" />
+      <rect id="pitch-minus"  onmousedown="changePitchMinus()" x="52" y="16" />
+      <rect id="high-quality" onmousedown="changeQuality()" x="-20" y="32" />
     </g>
   </g>
-  <!--BCAP 14:43 8/3/2022-->
+  <!--BCAP 17:32 9/3/2022-->
 </svg>
