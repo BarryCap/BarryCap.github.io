@@ -61,7 +61,19 @@ function changeSound(sType) {
 }
 
 function changePitch() {
+  if (playbackRate === 154) {
+    document.getElementById('pitch-slider-part9')?.classList.add('triggered')
+  }
+  if (playbackRate === 148) {
+    document.getElementById('pitch-slider-part9')?.classList.remove('triggered')
+    document.getElementById('pitch-slider-part8')?.classList.add('triggered')
+  }
+  if (playbackRate === 142) {
+    document.getElementById('pitch-slider-part8')?.classList.remove('triggered')
+    document.getElementById('pitch-slider-part7')?.classList.add('triggered')
+  }
   if (playbackRate === 136) {
+    document.getElementById('pitch-slider-part7')?.classList.remove('triggered')
     document.getElementById('pitch-slider-part6')?.classList.add('triggered')
   }
   if (playbackRate === 130) {
@@ -85,6 +97,9 @@ function changePitch() {
     document.getElementById('pitch-slider-part1')?.classList.add('triggered')
   }
   if (playbackRate === 100) {
+    document.getElementById('pitch-slider-part9')?.classList.remove('triggered')
+    document.getElementById('pitch-slider-part8')?.classList.remove('triggered')
+    document.getElementById('pitch-slider-part7')?.classList.remove('triggered')
     document.getElementById('pitch-slider-part6')?.classList.remove('triggered')
     document.getElementById('pitch-slider-part5')?.classList.remove('triggered')
     document.getElementById('pitch-slider-part4')?.classList.remove('triggered')
@@ -97,6 +112,9 @@ function changePitch() {
     document.getElementById('pitch-slider-part-4')?.classList.remove('triggered')
     document.getElementById('pitch-slider-part-5')?.classList.remove('triggered')
     document.getElementById('pitch-slider-part-6')?.classList.remove('triggered')
+    document.getElementById('pitch-slider-part-7')?.classList.remove('triggered')
+    document.getElementById('pitch-slider-part-8')?.classList.remove('triggered')
+    document.getElementById('pitch-slider-part-9')?.classList.remove('triggered')
   }
   if (playbackRate === 94) {
     document.getElementById('pitch-slider-part-1')?.classList.add('triggered')
@@ -120,10 +138,22 @@ function changePitch() {
   }
   if (playbackRate === 64) {
     document.getElementById('pitch-slider-part-6')?.classList.add('triggered')
+    document.getElementById('pitch-slider-part-7')?.classList.remove('triggered')
+  }
+  if (playbackRate === 58) {
+    document.getElementById('pitch-slider-part-7')?.classList.add('triggered')
+    document.getElementById('pitch-slider-part-8')?.classList.remove('triggered')
+  }
+  if (playbackRate === 52) {
+    document.getElementById('pitch-slider-part-8')?.classList.add('triggered')
+    document.getElementById('pitch-slider-part-9')?.classList.remove('triggered')
+  }
+  if (playbackRate === 46) {
+    document.getElementById('pitch-slider-part-9')?.classList.add('triggered')
   }
 }
 function changePitchPlus() {
-  if (playbackRate < 136) {
+  if (playbackRate < 154) {
     playbackRate += 6
     changePitch()
   }
@@ -135,7 +165,7 @@ function changePitchReset() {
 }
 
 function changePitchMinus() {
-  if (playbackRate > 64) {
+  if (playbackRate > 46) {
     playbackRate += -6
     changePitch()
   }

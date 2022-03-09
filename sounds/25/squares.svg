@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 80 40" id="svg">
+  <title>25 Squares</title>
   <style>
     svg { background: #222; }
     .high-quality { filter: saturate(4); }
@@ -104,18 +105,24 @@
     <circle id="r5-light" cx="48" cy="36" />
     <g id="pitch-lights">
       <path id="pitch-plus-light" d="m55 4h2m-1-1v2" />
-      <path id="pitch-slider-part6"  d="m57  9.5v0" />
-      <path id="pitch-slider-part5"  d="m57 10.5v0" />
-      <path id="pitch-slider-part4"  d="m57 11.5v0" />
-      <path id="pitch-slider-part3"  d="m56  9.5v0" />
-      <path id="pitch-slider-part2"  d="m56 10.5v0" />
-      <path id="pitch-slider-part1"  d="m56 11.5v0" />
-      <path id="pitch-slider-part-1" d="m56 12.5v0" />
-      <path id="pitch-slider-part-2" d="m56 13.5v0" />
-      <path id="pitch-slider-part-3" d="m56 14.5v0" />
-      <path id="pitch-slider-part-4" d="m55 12.5v0" />
-      <path id="pitch-slider-part-5" d="m55 13.5v0" />
-      <path id="pitch-slider-part-6" d="m55 14.5v0" />
+      <path id="pitch-slider-part9"  d="m58  9.5h0" />
+      <path id="pitch-slider-part8"  d="m58 10.5h0" />
+      <path id="pitch-slider-part7"  d="m58 11.5h0" />
+      <path id="pitch-slider-part6"  d="m57  9.5h0" />
+      <path id="pitch-slider-part5"  d="m57 10.5h0" />
+      <path id="pitch-slider-part4"  d="m57 11.5h0" />
+      <path id="pitch-slider-part3"  d="m56  9.5h0" />
+      <path id="pitch-slider-part2"  d="m56 10.5h0" />
+      <path id="pitch-slider-part1"  d="m56 11.5h0" />
+      <path id="pitch-slider-part-1" d="m56 12.5h0" />
+      <path id="pitch-slider-part-2" d="m56 13.5h0" />
+      <path id="pitch-slider-part-3" d="m56 14.5h0" />
+      <path id="pitch-slider-part-4" d="m55 12.5h0" />
+      <path id="pitch-slider-part-5" d="m55 13.5h0" />
+      <path id="pitch-slider-part-6" d="m55 14.5h0" />
+      <path id="pitch-slider-part-7" d="m54 12.5h0" />
+      <path id="pitch-slider-part-8" d="m54 13.5h0" />
+      <path id="pitch-slider-part-9" d="m54 14.5h0" />
       <path id="pitch-minus-light" d="m55 20h2" />
     </g>
     <path id="high-quality-light" d="m-17 36h2m-2-1 2 2m-1-2v2m1-2-2 2" />
@@ -165,5 +172,5 @@
       <rect id="high-quality" onmousedown="changeQuality()" x="-20" y="32" />
     </g>
   </g>
-  <!--BCAP 17:32 9/3/2022-->
+  <!--BCAP 19:05 9/3/2022-->
 </svg>
