@@ -1,24 +1,31 @@
 let mouseDown = false
-let randomButton = [false, false]
-let randomPlay = {}
-let soundType = []
-let playbackRate = 100
+const randomButton = [false, false]
+const randomPlay = {}
+const soundType = []
+let playbackRate = 1
+let pitchLevel = 0
+const maxPitchLevel = 9
+const pitchSize = 2**(1/12)
+
+function classList(id) {
+  return document.getElementById(id)?.classList || {add: () => {}, remove: () => {}, contains: () => {}}
+}
 
 async function key(url, press) {
   if (mouseDown || press) {
     /* random colors */
     const cNum = Math.ceil(Math.random() * 6)
-    document.getElementById(url)?.classList.add(`color-${cNum}`)
+    classList(url).add(`color-${cNum}`)
     /* end of random colors */
     for (sound of soundType) {
       let audio = new Audio(`${sound}/${url}.wav`)
       audio.preservesPitch = false
-      audio.playbackRate = playbackRate / 100
-      document.getElementById(url)?.classList.add('pressed')
+      audio.playbackRate = playbackRate
+      classList(url).add('pressed')
       await audio.play()
       audio.onended = () => {
-        document.getElementById(url)?.classList.remove('pressed')
-        document.getElementById(url)?.classList.remove(`color-${cNum}`)
+        classList(url).remove('pressed')
+        classList(url).remove(`color-${cNum}`)
       }
     }
   }
@@ -42,141 +49,55 @@ function randomNotes(bNum) {
     randomButton[bNum] = true
     randomValue()
     randomPlay[bNum] = setInterval(randomValue, 1000)
-    document.getElementById(`r${bNum}-light`)?.classList.add('triggered')
+    classList(`r${bNum}-light`).add('triggered')
   } else {
     randomButton[bNum] = false
     clearInterval(randomPlay[bNum])
-    document.getElementById(`r${bNum}-light`)?.classList.remove('triggered')
+    classList(`r${bNum}-light`).remove('triggered')
   }
 }
 
 function changeSound(sType) {
   if (!soundType.includes(sType)) {
     soundType.push(sType)
-    document.getElementById(`${sType}-light`)?.classList.add('triggered')
+    classList(`${sType}-light`).add('triggered')
   } else {
     soundType.splice(soundType.indexOf(sType), 1)
-    document.getElementById(`${sType}-light`)?.classList.remove('triggered')
+    classList(`${sType}-light`).remove('triggered')
   }
 }
 
 function changePitch() {
-  if (playbackRate === 154) {
-    document.getElementById('pitch-slider-part9')?.classList.add('triggered')
-  }
-  if (playbackRate === 148) {
-    document.getElementById('pitch-slider-part9')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part8')?.classList.add('triggered')
-  }
-  if (playbackRate === 142) {
-    document.getElementById('pitch-slider-part8')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part7')?.classList.add('triggered')
-  }
-  if (playbackRate === 136) {
-    document.getElementById('pitch-slider-part7')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part6')?.classList.add('triggered')
-  }
-  if (playbackRate === 130) {
-    document.getElementById('pitch-slider-part6')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part5')?.classList.add('triggered')
-  }
-  if (playbackRate === 124) {
-    document.getElementById('pitch-slider-part5')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part4')?.classList.add('triggered')
-  }
-  if (playbackRate === 118) {
-    document.getElementById('pitch-slider-part4')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part3')?.classList.add('triggered')
-  }
-  if (playbackRate === 112) {
-    document.getElementById('pitch-slider-part3')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part2')?.classList.add('triggered')
-  }
-  if (playbackRate === 106) {
-    document.getElementById('pitch-slider-part2')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part1')?.classList.add('triggered')
-  }
-  if (playbackRate === 100) {
-    document.getElementById('pitch-slider-part9')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part8')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part7')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part6')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part5')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part4')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part3')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part2')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part1')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-1')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-2')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-3')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-4')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-5')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-6')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-7')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-8')?.classList.remove('triggered')
-    document.getElementById('pitch-slider-part-9')?.classList.remove('triggered')
-  }
-  if (playbackRate === 94) {
-    document.getElementById('pitch-slider-part-1')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-2')?.classList.remove('triggered')
-  }
-  if (playbackRate === 88) {
-    document.getElementById('pitch-slider-part-2')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-3')?.classList.remove('triggered')
-  }
-  if (playbackRate === 82) {
-    document.getElementById('pitch-slider-part-3')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-4')?.classList.remove('triggered')
-  }
-  if (playbackRate === 76) {
-    document.getElementById('pitch-slider-part-4')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-5')?.classList.remove('triggered')
-  }
-  if (playbackRate === 70) {
-    document.getElementById('pitch-slider-part-5')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-6')?.classList.remove('triggered')
-  }
-  if (playbackRate === 64) {
-    document.getElementById('pitch-slider-part-6')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-7')?.classList.remove('triggered')
-  }
-  if (playbackRate === 58) {
-    document.getElementById('pitch-slider-part-7')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-8')?.classList.remove('triggered')
-  }
-  if (playbackRate === 52) {
-    document.getElementById('pitch-slider-part-8')?.classList.add('triggered')
-    document.getElementById('pitch-slider-part-9')?.classList.remove('triggered')
-  }
-  if (playbackRate === 46) {
-    document.getElementById('pitch-slider-part-9')?.classList.add('triggered')
+  for (let i = -maxPitchLevel; i <= maxPitchLevel; i++) {
+    const func = Math.abs(i) <= Math.abs(pitchLevel) && pitchLevel*i > 0 ? 'add' : 'remove'
+    classList(`pitch-slider-part${i}`)[func]('triggered')
   }
 }
+
 function changePitchPlus() {
-  if (playbackRate < 154) {
-    playbackRate += 6
+  if (pitchLevel < maxPitchLevel) {
+    playbackRate *= pitchSize
+    pitchLevel += 1
     changePitch()
   }
 }
 
 function changePitchReset() {
-  playbackRate = 100
+  playbackRate = 1
+  pitchLevel = 0
   changePitch()
 }
 
 function changePitchMinus() {
-  if (playbackRate > 46) {
-    playbackRate += -6
+  if (pitchLevel > -maxPitchLevel) {
+    playbackRate *= 1/pitchSize
+    pitchLevel -= 1
     changePitch()
   }
 }
 
 function changeQuality() {
-  if (document.getElementById('svg')?.classList.contains('high-quality')) {
-    document.getElementById('svg')?.classList.remove('high-quality')
-    document.getElementById('high-quality-light')?.classList.remove('triggered')
-  } else {
-    document.getElementById('svg')?.classList.add('high-quality')
-    document.getElementById('high-quality-light')?.classList.add('triggered')
-  }
+  const func = classList('svg').contains('high-quality') ? 'remove' : 'add'
+  classList('svg')[func]('high-quality')
+  classList('high-quality-light')[func]('triggered')
 }
