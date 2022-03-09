@@ -1,0 +1,60 @@
+svg { background: #222; }
+.high-quality { filter: saturate(4); }
+#keys rect {
+  opacity: .5;
+  fill: #0000;
+  stroke: #fff;
+  stroke-width: 0;
+  width: 8px;
+  height: 8px;
+}
+.high-quality #keys rect { filter: drop-shadow(0 0 10px #fff); }
+#keys rect:hover {
+  fill: #fff;
+  transition: .1s;
+}
+@keyframes key-pressed {
+  0% {
+    opacity: 1;
+    stroke-width: 10px;
+  }
+  100% { opacity: 0; }
+}
+.pressed { animation: key-pressed 1s; }
+#guides * { transition: .2s; }
+#guides circle {
+  fill: #000;
+  r: .5px;
+}
+#button-lights * {
+  fill: none;
+  r: 1px;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-width: .5px;
+  transition: .2s;
+}
+#button-lights *.triggered { stroke: #fff; }
+.high-quality #button-lights *.triggered { filter: drop-shadow(0 0 1px #fff); }
+#buttons *:active {
+  fill-opacity: 0;
+  stroke-width: 1px;
+}
+#keys rect.color-1 { stroke: #f00; }
+.high-quality #keys rect.color-1 { filter: drop-shadow(0 0 10px #f00); }
+#keys rect.color-2 { stroke: #ff0; }
+.high-quality #keys rect.color-2 { filter: drop-shadow(0 0 10px #ff0); }
+#keys rect.color-3 { stroke: #0f0; }
+.high-quality #keys rect.color-3 { filter: drop-shadow(0 0 10px #0f0); }
+#keys rect.color-4 { stroke: #0ff; }
+.high-quality #keys rect.color-4 { filter: drop-shadow(0 0 10px #0ff); }
+#keys rect.color-5 { stroke: #00f; }
+.high-quality #keys rect.color-5 { filter: drop-shadow(0 0 10px #00f); }
+#keys rect.color-6 { stroke: #f0f; }
+.high-quality #keys rect.color-6 { filter: drop-shadow(0 0 10px #f0f); }
+#keys rect.color-1:hover { fill: #f00; }
+#keys rect.color-2:hover { fill: #ff0; }
+#keys rect.color-3:hover { fill: #0f0; }
+#keys rect.color-4:hover { fill: #0ff; }
+#keys rect.color-5:hover { fill: #00f; }
+#keys rect.color-6:hover { fill: #f0f; }

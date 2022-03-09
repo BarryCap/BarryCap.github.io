@@ -1,67 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 80 40" id="svg">
   <title>25 Squares</title>
-  <style>
-    svg { background: #222; }
-    .high-quality { filter: saturate(4); }
-    #keys rect {
-      width: 8px;
-      height: 8px;
-      fill: #0000;
-      stroke: #fff;
-      stroke-width: 0;
-      opacity: .5;
-    }
-    .high-quality #keys rect { filter: drop-shadow(0 0 10px #fff); }
-    #keys rect:hover {
-      fill: #fff;
-      transition: .1s;
-    }
-    @keyframes key-pressed {
-      0% {
-        opacity: 1;
-        stroke-width: 10px;
-      }
-      100% { opacity: 0; }
-    }
-    .pressed { animation: key-pressed 1s; }
-    #guides * { transition: .2s; }
-    #guides circle {
-      r: .5px;
-      fill: #000;
-    }
-    #button-lights * {
-      fill: none;
-      stroke: #000;
-      stroke-width: .5px;
-      stroke-linecap: round;
-      r: 1px;
-      transition: .2s;
-    }
-    #button-lights *.triggered { stroke: #fff; }
-    .high-quality #button-lights *.triggered { filter: drop-shadow(0 0 1px #fff); }
-    #buttons *:active {
-      stroke-width: 1px;
-      fill-opacity: 0;
-    }
-    #keys rect.color-1 { stroke: #f00; }
-    .high-quality #keys rect.color-1 { filter: drop-shadow(0 0 10px #f00); }
-    #keys rect.color-2 { stroke: #ff0; }
-    .high-quality #keys rect.color-2 { filter: drop-shadow(0 0 10px #ff0); }
-    #keys rect.color-3 { stroke: #0f0; }
-    .high-quality #keys rect.color-3 { filter: drop-shadow(0 0 10px #0f0); }
-    #keys rect.color-4 { stroke: #0ff; }
-    .high-quality #keys rect.color-4 { filter: drop-shadow(0 0 10px #0ff); }
-    #keys rect.color-5 { stroke: #00f; }
-    .high-quality #keys rect.color-5 { filter: drop-shadow(0 0 10px #00f); }
-    #keys rect.color-6 { stroke: #f0f; }
-    .high-quality #keys rect.color-6 { filter: drop-shadow(0 0 10px #f0f); }
-    #keys rect.color-1:hover { fill: #f00; }
-    #keys rect.color-2:hover { fill: #ff0; }
-    #keys rect.color-3:hover { fill: #0f0; }
-    #keys rect.color-4:hover { fill: #0ff; }
-    #keys rect.color-5:hover { fill: #00f; }
-    #keys rect.color-6:hover { fill: #f0f; }
-  </style>
+  <style>@import url(squares.css);</style>
   <script href="squares.js" />
   <g id="guides">
     <circle cy="4"  cx="4" />
