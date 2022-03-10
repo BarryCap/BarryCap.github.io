@@ -13,10 +13,8 @@ function classList(id) {
 
 async function key(url, press) {
   if (mouseDown || press) {
-    /* random colors */
     const cNum = Math.ceil(Math.random() * 6)
     classList(url).add(`color-${cNum}`)
-    /* end of random colors */
     for (sound of soundType) {
       let audio = new Audio(`${sound}/${url}.wav`)
       audio.preservesPitch = false

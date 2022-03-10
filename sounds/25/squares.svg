@@ -64,7 +64,7 @@
       <path id="pitch-slider-part-9" d="m54 14.5h0" />
       <path id="pitch-minus-light" d="m55 20h2" />
     </g>
-    <path id="high-quality-light" d="m-17 36h2m-2-1 2 2m-1-2v2m1-2-2 2" />
+    <path id="high-quality-light" d="m-19 38h2m-2-1 2 2m-1-2v2m1-2-2 2" />
   </g>
   <g id="keys">
     <rect id="01" onmouseover="key('01')" onmousedown="key('01', true)" />
@@ -108,8 +108,10 @@
       <rect id="pitch-plus"   onmousedown="changePitchPlus()"  x="52" />
       <rect id="pitch-slider" onmousedown="changePitchReset()" x="52" y="8" />
       <rect id="pitch-minus"  onmousedown="changePitchMinus()" x="52" y="16" />
-      <rect id="high-quality" onmousedown="changeQuality()" x="-20" y="32" />
+      <g id="small-keys">
+        <rect id="high-quality" onmousedown="changeQuality()" x="-20" y="36" />
+      </g>
     </g>
   </g>
-  <!--BCAP 22:22 9/3/2022-->
+  <!--BCAP 8:37 10/3/2022-->
 </svg>

@@ -58,3 +58,7 @@ svg { background: #222; }
 #keys rect.color-4:hover { fill: #0ff; }
 #keys rect.color-5:hover { fill: #00f; }
 #keys rect.color-6:hover { fill: #f0f; }
+#small-keys rect {
+  width: 4px;
+  height: 4px;
+}
