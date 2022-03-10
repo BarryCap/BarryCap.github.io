@@ -28,43 +28,51 @@
     <circle cy="36" cx="20" />
     <circle cy="36" cx="28" />
     <circle cy="36" cx="36" />
- </g>
+  </g>
   <g id="button-lights">
-    <path id="sine-light"     d="m-9 4c0-1 1-1 1 0s1 1 1 0" />
-    <path id="triangle-light" d="m-9 12 .5-1 1 2 .5-1" />
-    <path id="square-light"   d="m-9 20v-1h1v2h1v-1" />
-    <path id="sawtooth-light" d="m-9 28 1-1v2l1-1" />
-    <path id="beep-light"     d="m-17.5 5c.4 0 .4-.5.4-1.3s.7-.8.7 0 .8.8.8 0 .7-.8.7 0 0 1.3.4 1.3" />
-    <path id="piano-light"    d="m-16.8 13.5-.2-2 .5 0c1-.8 1 .8 0 0m1.5-1v3" />
-    <path id="drums-light"    d="m-17 19.5a1 .5 0 012 0 1 .5 0 01-2 0zm0 0v1a1 .5 0 002 0v-1" />
-    <circle id="r1-light" cx="48" cy="4" />
-    <circle id="r2-light" cx="48" cy="12" />
-    <circle id="r3-light" cx="48" cy="20" />
-    <circle id="r4-light" cx="48" cy="28" />
-    <circle id="r5-light" cx="48" cy="36" />
-    <g id="pitch-lights">
-      <path id="pitch-plus-light" d="m55 4h2m-1-1v2" />
-      <path id="pitch-slider-part9"  d="m58  9.5h0" />
-      <path id="pitch-slider-part8"  d="m58 10.5h0" />
-      <path id="pitch-slider-part7"  d="m58 11.5h0" />
-      <path id="pitch-slider-part6"  d="m57  9.5h0" />
-      <path id="pitch-slider-part5"  d="m57 10.5h0" />
-      <path id="pitch-slider-part4"  d="m57 11.5h0" />
-      <path id="pitch-slider-part3"  d="m56  9.5h0" />
-      <path id="pitch-slider-part2"  d="m56 10.5h0" />
-      <path id="pitch-slider-part1"  d="m56 11.5h0" />
-      <path id="pitch-slider-part-1" d="m56 12.5h0" />
-      <path id="pitch-slider-part-2" d="m56 13.5h0" />
-      <path id="pitch-slider-part-3" d="m56 14.5h0" />
-      <path id="pitch-slider-part-4" d="m55 12.5h0" />
-      <path id="pitch-slider-part-5" d="m55 13.5h0" />
-      <path id="pitch-slider-part-6" d="m55 14.5h0" />
-      <path id="pitch-slider-part-7" d="m54 12.5h0" />
-      <path id="pitch-slider-part-8" d="m54 13.5h0" />
-      <path id="pitch-slider-part-9" d="m54 14.5h0" />
-      <path id="pitch-minus-light" d="m55 20h2" />
+    <g id="no-fill">
+      <path id="sine-light"     d="m-9 4c0-1 1-1 1 0s1 1 1 0" />
+      <path id="triangle-light" d="m-9 12 .5-1 1 2 .5-1" />
+      <path id="square-light"   d="m-9 20v-1h1v2h1v-1" />
+      <path id="sawtooth-light" d="m-9 28 1-1v2l1-1" />
+      <path id="beep-light"     d="m-17.5 5c.4 0 .4-.5.4-1.3s.7-.8.7 0 .8.8.8 0 .7-.8.7 0 0 1.3.4 1.3" />
+      <path id="piano-light"    d="m-16.8 13.5-.2-2 .5 0c1-.8 1 .8 0 0m1.5-1v3" />
+      <path id="drums-light"    d="m-17 19.5a1 .5 0 012 0 1 .5 0 01-2 0zm0 0v1a1 .5 0 002 0v-1" />
+      <g id="random-lights">
+        <circle id="r1-light" cx="48" cy="4" />
+        <circle id="r2-light" cx="48" cy="12" />
+        <circle id="r3-light" cx="48" cy="20" />
+        <circle id="r4-light" cx="48" cy="28" />
+        <circle id="r5-light" cx="48" cy="36" />
+      </g>
+      <g id="pitch-lights">
+        <path id="pitch-plus-light"    d="m55 4h2m-1-1v2" />
+        <path id="pitch-slider-part9"  d="m58  9.5h0" />
+        <path id="pitch-slider-part8"  d="m58 10.5h0" />
+        <path id="pitch-slider-part7"  d="m58 11.5h0" />
+        <path id="pitch-slider-part6"  d="m57  9.5h0" />
+        <path id="pitch-slider-part5"  d="m57 10.5h0" />
+        <path id="pitch-slider-part4"  d="m57 11.5h0" />
+        <path id="pitch-slider-part3"  d="m56  9.5h0" />
+        <path id="pitch-slider-part2"  d="m56 10.5h0" />
+        <path id="pitch-slider-part1"  d="m56 11.5h0" />
+        <path id="pitch-slider-part-1" d="m56 12.5h0" />
+        <path id="pitch-slider-part-2" d="m56 13.5h0" />
+        <path id="pitch-slider-part-3" d="m56 14.5h0" />
+        <path id="pitch-slider-part-4" d="m55 12.5h0" />
+        <path id="pitch-slider-part-5" d="m55 13.5h0" />
+        <path id="pitch-slider-part-6" d="m55 14.5h0" />
+        <path id="pitch-slider-part-7" d="m54 12.5h0" />
+        <path id="pitch-slider-part-8" d="m54 13.5h0" />
+        <path id="pitch-slider-part-9" d="m54 14.5h0" />
+        <path id="pitch-minus-light"   d="m55 20h2" />
+      </g>
     </g>
-    <path id="high-quality-light" d="m-19 38h2m-2-1 2 2m-1-2v2m1-2-2 2" />
+    <g id="record-lights">
+      <path id="record-light"      d="m55 28c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1z" />
+      <path id="record-play-light" d="m55.2 37v-2l1.7 1v0z" />
+    </g>
+    <path id="high-quality-light" d="m-15 38h2m-2-1 2 2m-1-2v2m1-2-2 2" />
   </g>
   <g id="keys">
     <rect id="01" onmouseover="key('01')" onmousedown="key('01', true)" />
@@ -108,10 +116,12 @@
       <rect id="pitch-plus"   onmousedown="changePitchPlus()"  x="52" />
       <rect id="pitch-slider" onmousedown="changePitchReset()" x="52" y="8" />
       <rect id="pitch-minus"  onmousedown="changePitchMinus()" x="52" y="16" />
+      <rect id="record"       onmousedown="startRecording()" x="52" y="24" />
+      <rect id="record-play"  onmousedown="playRecording()"  x="52" y="32" />
       <g id="small-keys">
-        <rect id="high-quality" onmousedown="changeQuality()" x="-20" y="36" />
+        <rect id="high-quality" onmousedown="changeQuality()" x="-16" y="36" />
       </g>
     </g>
   </g>
-  <!--BCAP 8:37 10/3/2022-->
+  <!--BCAP 20:03 10/3/2022-->
 </svg>

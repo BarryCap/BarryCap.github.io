@@ -6,6 +6,13 @@ let playbackRate = 1
 let pitchLevel = 0
 const maxPitchLevel = 9
 const pitchSize = 2**(1/12)
+let recordingInProgress = false
+let playingInProgress = false
+let recordingBuffer = []
+let recording = []
+let currentRecordedNote = 0
+let startTime = new Date
+let playingTimeout = null
 
 function classList(id) {
   return document.getElementById(id)?.classList || {add: () => {}, remove: () => {}, contains: () => {}}
@@ -13,6 +20,11 @@ function classList(id) {
 
 async function key(url, press) {
   if (mouseDown || press) {
+    if (recordingInProgress) {
+      const newTime = new Date
+      recordingBuffer.push({key: url, delay: newTime - startTime})
+      startTime = newTime
+    }
     const cNum = Math.ceil(Math.random() * 6)
     classList(url).add(`color-${cNum}`)
     for (sound of soundType) {
@@ -98,4 +110,43 @@ function changeQuality() {
   const func = classList('svg').contains('high-quality') ? 'remove' : 'add'
   classList('svg')[func]('high-quality')
   classList('high-quality-light')[func]('triggered')
+}
+
+function startRecording() {
+  if (recordingInProgress) {
+    recordingInProgress = false
+    recording = recordingBuffer
+    recording[0].delay = new Date - startTime
+    if (playingInProgress) {
+      playRecording()
+    }
+    classList('record-light').remove('triggered')
+  } else {
+    recordingInProgress = true
+    startTime = new Date
+    recordingBuffer = []
+    classList('record-light').add('triggered')
+  }
+}
+
+function playRecordedNote () {
+  key(recording[currentRecordedNote].key, true)
+  currentRecordedNote += 1
+  if (currentRecordedNote >= recording.length) {
+    currentRecordedNote = 0
+  }
+  playingTimeout = setTimeout(playRecordedNote, recording[currentRecordedNote].delay -10)
+}
+
+function playRecording() {
+  if (playingInProgress) {
+    playingInProgress = false
+    currentRecordedNote = 0
+    clearTimeout(playingTimeout)
+    classList('record-play-light').remove('triggered')
+  } else {
+    playingInProgress = true
+    playRecordedNote()
+    classList('record-play-light').add('triggered')
+  }
 }
