@@ -1,6 +1,12 @@
+:root {
+  --key-animation: key-pressed 1s;
+}
 svg {
   background: #222;
   filter: saturate(4);
+}
+.invert {
+  filter: invert(1);
 }
 .high-quality #keys rect { filter: drop-shadow(0 0 10px #fff); }
 .high-quality #button-lights *.triggered { filter: drop-shadow(0 0 1px #fff); }
@@ -11,6 +17,31 @@ svg {
 .high-quality #keys rect.color-5 { filter: drop-shadow(0 0 10px #00f); }
 .high-quality #keys rect.color-6 { filter: drop-shadow(0 0 10px #f0f); }
 .high-quality #record-light.triggered { filter: drop-shadow(0 0 1px #f00); }
+.high-quality #keys #k01.colored { filter: drop-shadow(0 0 10px #f002); }
+.high-quality #keys #k02.colored { filter: drop-shadow(0 0 10px #ff02); }
+.high-quality #keys #k03.colored { filter: drop-shadow(0 0 10px #0f02); }
+.high-quality #keys #k04.colored { filter: drop-shadow(0 0 10px #0ff2); }
+.high-quality #keys #k05.colored { filter: drop-shadow(0 0 10px #f0f2); }
+.high-quality #keys #k06.colored { filter: drop-shadow(0 0 10px #f004); }
+.high-quality #keys #k07.colored { filter: drop-shadow(0 0 10px #ff04); }
+.high-quality #keys #k08.colored { filter: drop-shadow(0 0 10px #0f04); }
+.high-quality #keys #k09.colored { filter: drop-shadow(0 0 10px #0ff4); }
+.high-quality #keys #k10.colored { filter: drop-shadow(0 0 10px #f0f4); }
+.high-quality #keys #k11.colored { filter: drop-shadow(0 0 10px #f008); }
+.high-quality #keys #k12.colored { filter: drop-shadow(0 0 10px #ff08); }
+.high-quality #keys #k13.colored { filter: drop-shadow(0 0 10px #0f08); }
+.high-quality #keys #k14.colored { filter: drop-shadow(0 0 10px #0ff8); }
+.high-quality #keys #k15.colored { filter: drop-shadow(0 0 10px #f0f8); }
+.high-quality #keys #k16.colored { filter: drop-shadow(0 0 10px #f00c); }
+.high-quality #keys #k17.colored { filter: drop-shadow(0 0 10px #ff0c); }
+.high-quality #keys #k18.colored { filter: drop-shadow(0 0 10px #0f0c); }
+.high-quality #keys #k19.colored { filter: drop-shadow(0 0 10px #0ffc); }
+.high-quality #keys #k20.colored { filter: drop-shadow(0 0 10px #f0fc); }
+.high-quality #keys #k21.colored { filter: drop-shadow(0 0 10px #f00); }
+.high-quality #keys #k22.colored { filter: drop-shadow(0 0 10px #ff0); }
+.high-quality #keys #k23.colored { filter: drop-shadow(0 0 10px #0f0); }
+.high-quality #keys #k24.colored { filter: drop-shadow(0 0 10px #0ff); }
+.high-quality #keys #k25.colored { filter: drop-shadow(0 0 10px #f0f); }
 #keys rect {
   opacity: .5;
   fill: #0000;
@@ -33,7 +64,7 @@ svg {
   }
 }
 .pressed {
-  animation: key-pressed 1s;
+  animation: var(--key-animation);
 }
 #guides * {
   transition: .2s;
@@ -92,3 +123,33 @@ svg {
   fill: #fff;
   d: path('m55 37v-2l2 0v2z');
 }
+#record-play-light.triggered-2 {
+  fill: #ff0;
+  d: path('m55 37v-2l2 0v2z');
+}
+#keys #k01.colored { stroke: #f002; }
+#keys #k02.colored { stroke: #ff02; }
+#keys #k03.colored { stroke: #0f02; }
+#keys #k04.colored { stroke: #0ff2; }
+#keys #k05.colored { stroke: #f0f2; }
+#keys #k06.colored { stroke: #f004; }
+#keys #k07.colored { stroke: #ff04; }
+#keys #k08.colored { stroke: #0f04; }
+#keys #k09.colored { stroke: #0ff4; }
+#keys #k10.colored { stroke: #f0f4; }
+#keys #k11.colored { stroke: #f008; }
+#keys #k12.colored { stroke: #ff08; }
+#keys #k13.colored { stroke: #0f08; }
+#keys #k14.colored { stroke: #0ff8; }
+#keys #k15.colored { stroke: #f0f8; }
+#keys #k16.colored { stroke: #f00c; }
+#keys #k17.colored { stroke: #ff0c; }
+#keys #k18.colored { stroke: #0f0c; }
+#keys #k19.colored { stroke: #0ffc; }
+#keys #k20.colored { stroke: #f0fc; }
+#keys #k21.colored { stroke: #f00; }
+#keys #k22.colored { stroke: #ff0; }
+#keys #k23.colored { stroke: #0f0; }
+#keys #k24.colored { stroke: #0ff; }
+#keys #k25.colored { stroke: #f0f; }
+#keys .colored:hover { fill: none; }

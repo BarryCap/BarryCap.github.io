@@ -1,6 +1,7 @@
 let mouseDown = false
 const randomButton = [false, false]
 const randomPlay = {}
+let randomInterval = 1000
 const soundType = []
 let playbackRate = 1
 let pitchLevel = 0
@@ -13,29 +14,37 @@ let recording = []
 let currentRecordedNote = 0
 let startTime = new Date
 let playingTimeout = null
+let randomColor = true
 
 function classList(id) {
   return document.getElementById(id)?.classList || {add: () => {}, remove: () => {}, contains: () => {}}
 }
 
 async function key(url, press) {
-  if (mouseDown || press) {
+  if ((mouseDown || press) && soundType.length) {
     if (recordingInProgress) {
       const newTime = new Date
       recordingBuffer.push({key: url, delay: newTime - startTime})
       startTime = newTime
     }
     const cNum = Math.ceil(Math.random() * 6)
-    classList(url).add(`color-${cNum}`)
+    if (randomColor) {
+      classList(`k${url}`).add(`color-${cNum}`)
+    } else {
+      classList(`k${url}`).add('colored')
+    }
     for (sound of soundType) {
       let audio = new Audio(`${sound}/${url}.wav`)
       audio.preservesPitch = false
       audio.playbackRate = playbackRate
-      classList(url).add('pressed')
+      classList(`k${url}`).add('pressed')
       await audio.play()
       audio.onended = () => {
-        classList(url).remove('pressed')
-        classList(url).remove(`color-${cNum}`)
+        classList(`k${url}`).remove('pressed')
+        classList(`k${url}`).remove('colored')
+        if (cNum) {
+          classList(`k${url}`).remove(`color-${cNum}`)
+        }
       }
     }
   }
@@ -58,7 +67,7 @@ function randomNotes(bNum) {
   if (!randomButton[bNum]) {
     randomButton[bNum] = true
     randomValue()
-    randomPlay[bNum] = setInterval(randomValue, 1000)
+    randomPlay[bNum] = setInterval(randomValue, randomInterval)
     classList(`r${bNum}-light`).add('triggered')
   } else {
     randomButton[bNum] = false
@@ -106,19 +115,15 @@ function changePitchMinus() {
   }
 }
 
-function changeQuality() {
-  const func = classList('svg').contains('high-quality') ? 'remove' : 'add'
-  classList('svg')[func]('high-quality')
-  classList('high-quality-light')[func]('triggered')
-}
-
 function startRecording() {
   if (recordingInProgress) {
     recordingInProgress = false
-    recording = recordingBuffer
-    recording[0].delay = new Date - startTime
-    if (playingInProgress) {
-      playRecording()
+    if (recordingBuffer.length) {
+      recording = recordingBuffer
+      recording[0].delay = new Date - startTime
+      if (playingInProgress) {
+        playRecording()
+      }
     }
     classList('record-light').remove('triggered')
   } else {
@@ -149,4 +154,22 @@ function playRecording() {
     playRecordedNote()
     classList('record-play-light').add('triggered')
   }
+}
+
+function changeQuality() {
+  const func = classList('svg').contains('high-quality') ? 'remove' : 'add'
+  classList('svg')[func]('high-quality')
+  classList('high-quality-light')[func]('triggered')
+}
+
+function colorInvert() {
+  const func = classList('svg').contains('invert') ? 'remove' : 'add'
+  classList('svg')[func]('invert')
+  classList('color-invert-light')[func]('triggered')
+}
+
+function colorBehavior() {
+  randomColor = !randomColor
+  const func = classList('color-behavior-light').contains('triggered') ? 'remove' : 'add'
+  classList('color-behavior-light')[func]('triggered')
 }

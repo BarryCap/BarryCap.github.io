@@ -68,39 +68,43 @@
         <path id="pitch-slider-part-9" d="m54 14.5h0" />
         <path id="pitch-minus-light"   d="m55 20h2" />
       </g>
+      <g id="appearance-lights">
+        <path id="high-quality-light"   d="m-19 38h2m-2-1 2 2m-1-2v2m1-2-2 2" />
+        <path id="color-invert-light"   d="m-15 37h2v2h-2zm1.8.2-1.6 1.6 1.2-1.6-1.2 1.2.8-1.2-.8.8.4-.8-.4.4v-.4" />
+        <path id="color-behavior-light" d="m-10 39a1 1 0 111-1c0 .5-.4.2-.6.4s.1.6-.4.6zm-.3-1.3h0m.6 0h0m-.6.6h0" />
+      </g>
     </g>
     <g id="record-lights">
       <path id="record-light"      d="m55 28c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1z" />
       <path id="record-play-light" d="m55.2 37v-2l1.7 1v0z" />
     </g>
-    <path id="high-quality-light" d="m-15 38h2m-2-1 2 2m-1-2v2m1-2-2 2" />
   </g>
   <g id="keys">
-    <rect id="01" onmouseover="key('01')" onmousedown="key('01', true)" />
-    <rect id="02" onmouseover="key('02')" onmousedown="key('02', true)" x="8" />
-    <rect id="03" onmouseover="key('03')" onmousedown="key('03', true)" x="16" />
-    <rect id="04" onmouseover="key('04')" onmousedown="key('04', true)" x="24" />
-    <rect id="05" onmouseover="key('05')" onmousedown="key('05', true)" x="32" />
-    <rect id="06" onmouseover="key('06')" onmousedown="key('06', true)" y="8" />
-    <rect id="07" onmouseover="key('07')" onmousedown="key('07', true)" y="8" x="8" />
-    <rect id="08" onmouseover="key('08')" onmousedown="key('08', true)" y="8" x="16" />
-    <rect id="09" onmouseover="key('09')" onmousedown="key('09', true)" y="8" x="24" />
-    <rect id="10" onmouseover="key('10')" onmousedown="key('10', true)" y="8" x="32" />
-    <rect id="11" onmouseover="key('11')" onmousedown="key('11', true)" y="16" />
-    <rect id="12" onmouseover="key('12')" onmousedown="key('12', true)" y="16" x="8" />
-    <rect id="13" onmouseover="key('13')" onmousedown="key('13', true)" y="16" x="16" />
-    <rect id="14" onmouseover="key('14')" onmousedown="key('14', true)" y="16" x="24" />
-    <rect id="15" onmouseover="key('15')" onmousedown="key('15', true)" y="16" x="32" />
-    <rect id="16" onmouseover="key('16')" onmousedown="key('16', true)" y="24" />
-    <rect id="17" onmouseover="key('17')" onmousedown="key('17', true)" y="24" x="8" />
-    <rect id="18" onmouseover="key('18')" onmousedown="key('18', true)" y="24" x="16" />
-    <rect id="19" onmouseover="key('19')" onmousedown="key('19', true)" y="24" x="24" />
-    <rect id="20" onmouseover="key('20')" onmousedown="key('20', true)" y="24" x="32" />
-    <rect id="21" onmouseover="key('21')" onmousedown="key('21', true)" y="32" />
-    <rect id="22" onmouseover="key('22')" onmousedown="key('22', true)" y="32" x="8" />
-    <rect id="23" onmouseover="key('23')" onmousedown="key('23', true)" y="32" x="16" />
-    <rect id="24" onmouseover="key('24')" onmousedown="key('24', true)" y="32" x="24" />
-    <rect id="25" onmouseover="key('25')" onmousedown="key('25', true)" y="32" x="32" />
+    <rect id="k01" onmouseover="key('01')" onmousedown="key('01', true)" />
+    <rect id="k02" onmouseover="key('02')" onmousedown="key('02', true)" x="8" />
+    <rect id="k03" onmouseover="key('03')" onmousedown="key('03', true)" x="16" />
+    <rect id="k04" onmouseover="key('04')" onmousedown="key('04', true)" x="24" />
+    <rect id="k05" onmouseover="key('05')" onmousedown="key('05', true)" x="32" />
+    <rect id="k06" onmouseover="key('06')" onmousedown="key('06', true)" y="8" />
+    <rect id="k07" onmouseover="key('07')" onmousedown="key('07', true)" y="8" x="8" />
+    <rect id="k08" onmouseover="key('08')" onmousedown="key('08', true)" y="8" x="16" />
+    <rect id="k09" onmouseover="key('09')" onmousedown="key('09', true)" y="8" x="24" />
+    <rect id="k10" onmouseover="key('10')" onmousedown="key('10', true)" y="8" x="32" />
+    <rect id="k11" onmouseover="key('11')" onmousedown="key('11', true)" y="16" />
+    <rect id="k12" onmouseover="key('12')" onmousedown="key('12', true)" y="16" x="8" />
+    <rect id="k13" onmouseover="key('13')" onmousedown="key('13', true)" y="16" x="16" />
+    <rect id="k14" onmouseover="key('14')" onmousedown="key('14', true)" y="16" x="24" />
+    <rect id="k15" onmouseover="key('15')" onmousedown="key('15', true)" y="16" x="32" />
+    <rect id="k16" onmouseover="key('16')" onmousedown="key('16', true)" y="24" />
+    <rect id="k17" onmouseover="key('17')" onmousedown="key('17', true)" y="24" x="8" />
+    <rect id="k18" onmouseover="key('18')" onmousedown="key('18', true)" y="24" x="16" />
+    <rect id="k19" onmouseover="key('19')" onmousedown="key('19', true)" y="24" x="24" />
+    <rect id="k20" onmouseover="key('20')" onmousedown="key('20', true)" y="24" x="32" />
+    <rect id="k21" onmouseover="key('21')" onmousedown="key('21', true)" y="32" />
+    <rect id="k22" onmouseover="key('22')" onmousedown="key('22', true)" y="32" x="8" />
+    <rect id="k23" onmouseover="key('23')" onmousedown="key('23', true)" y="32" x="16" />
+    <rect id="k24" onmouseover="key('24')" onmousedown="key('24', true)" y="32" x="24" />
+    <rect id="k25" onmouseover="key('25')" onmousedown="key('25', true)" y="32" x="32" />
     <g id="buttons">
       <rect id="sine"     onmousedown="changeSound('sine')"     x="-12" />
       <rect id="triangle" onmousedown="changeSound('triangle')" x="-12" y="8" />
@@ -118,12 +122,14 @@
       <rect id="pitch-plus"   onmousedown="changePitchPlus()"  x="52" />
       <rect id="pitch-slider" onmousedown="changePitchReset()" x="52" y="8" />
       <rect id="pitch-minus"  onmousedown="changePitchMinus()" x="52" y="16" />
-      <rect id="record"       onmousedown="startRecording()" x="52" y="24" />
-      <rect id="record-play"  onmousedown="playRecording()"  x="52" y="32" />
+      <rect id="record"      onmousedown="startRecording()" x="52" y="24" />
+      <rect id="record-play" onmousedown="playRecording()"  x="52" y="32" />
       <g id="small-keys">
-        <rect id="high-quality" onmousedown="changeQuality()" x="-16" y="36" />
+        <rect id="high-quality"   onmousedown="changeQuality()" x="-20" y="36" />
+        <rect id="color-invert"   onmousedown="colorInvert()"   x="-16" y="36" />
+        <rect id="color-behavior" onmousedown="colorBehavior()" x="-12" y="36" />
       </g>
     </g>
   </g>
-  <!--BCAP 23:14 11/3/2022-->
+  <!--BCAP 21:33 14/3/2022-->
 </svg>
