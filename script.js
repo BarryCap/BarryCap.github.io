@@ -1,5 +1,6 @@
 // ASCII art in console
 console.log('██████  ██████  ██████  ██████  ██  ██    ██████  ██████  ██████\n██  ██  ██  ██  ██  ██  ██  ██  ██  ██    ██      ██  ██  ██  ██\n████    ██████  ████    ████    ██████    ██      ██████  ██████\n██  ██  ██  ██  ██  ██  ██  ██    ██      ██      ██  ██  ██\n██████  ██  ██  ██  ██  ██  ██    ██      ██████  ██  ██  ██')
+/*
 // Shortcuts
 window.addEventListener('keyup', function(event) {
   if(event.path && !event.path.filter((node) => {return node.nodeName == 'FORM'}).length) {
@@ -25,6 +26,7 @@ window.addEventListener('keyup', function(event) {
     shortcuts[event.code] ? window.location = shortcuts[event.code] : ''
   }
 })
+*/
 // Randomly moving background
 if (window.location.href.indexOf('random') > -1) {
   const randomizer = function() {
