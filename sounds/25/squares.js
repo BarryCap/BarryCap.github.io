@@ -36,6 +36,7 @@ async function key(url, press) {
     for (sound of soundType) {
       let audio = new Audio(`${sound}/${url}.wav`)
       audio.preservesPitch = false
+      audio.mozPreservesPitch = false
       audio.playbackRate = playbackRate
       classList(`k${url}`).add('pressed')
       await audio.play()
