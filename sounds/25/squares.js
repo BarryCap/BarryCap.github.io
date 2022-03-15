@@ -15,9 +15,14 @@ let currentRecordedNote = 0
 let startTime = new Date
 let playingTimeout = null
 let randomColor = true
+let animationTime = 1
 
 function classList(id) {
   return document.getElementById(id)?.classList || {add: () => {}, remove: () => {}, contains: () => {}}
+}
+
+function changeVar(varName, varValue) {
+  return document.querySelector(':root').style.setProperty(varName, varValue)
 }
 
 async function key(url, press) {
@@ -99,6 +104,8 @@ function changePitchPlus() {
     playbackRate *= pitchSize
     pitchLevel += 1
     changePitch()
+    animationTime /= pitchSize
+    changeVar('--key-animation', `key-pressed ${animationTime}s`)
   }
 }
 
@@ -106,6 +113,8 @@ function changePitchReset() {
   playbackRate = 1
   pitchLevel = 0
   changePitch()
+  animationTime = pitchSize
+  changeVar('--key-animation', `key-pressed ${animationTime}s`)
 }
 
 function changePitchMinus() {
@@ -113,6 +122,8 @@ function changePitchMinus() {
     playbackRate *= 1/pitchSize
     pitchLevel -= 1
     changePitch()
+    animationTime *= pitchSize
+    changeVar('--key-animation', `key-pressed ${animationTime}s`)
   }
 }
 
