@@ -11,19 +11,19 @@ ___
 &emsp;The presentation page where you can found some of the images I made, with the current [spotlight](#spotlight) image.
 
 ---
-### [Realizations](https://barrycap.com/realizations)
-&emsp;I want to be called an artist, so I have to make realizations.
+### [Works](https://barrycap.com/works)
+&emsp;I want to be called an artist, so I have to make works.
 
-### &emsp;[Image](https://barrycap.com/realizations/images)
+### &emsp;[Image](https://barrycap.com/works/images)
 &emsp;&emsp;Where the rest of the images are.
 
-### &emsp;[Video](https://barrycap.com/realizations/videos)
+### &emsp;[Video](https://barrycap.com/works/videos)
 &emsp;&emsp;My animated picture attempts.
 
-### &emsp;[Sound](https://barrycap.com/realizations/sounds)
+### &emsp;[Sound](https://barrycap.com/works/sounds)
 &emsp;&emsp;Some sounds I experimented and music I composed.
 
-### &emsp;[Game](https://barrycap.com/realizations/games)
+### &emsp;[Game](https://barrycap.com/works/games)
 &emsp;&emsp;I always wanted to make games&mdash;here are some of it.
 
 ---

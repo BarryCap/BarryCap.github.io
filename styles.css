@@ -690,9 +690,9 @@ textarea:focus {
   background-image: url(assets/bg/home.svg);
   background-attachment: fixed;
 }
-.realization {
+.work {
   animation: real 4s linear infinite;
-  background-image: url(assets/bg/realization.svg);
+  background-image: url(assets/bg/work.svg);
   background-attachment: fixed;
 }
 .about {

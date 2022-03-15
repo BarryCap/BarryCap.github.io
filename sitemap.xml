@@ -11,7 +11,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/</loc>
+    <loc>https://barrycap.com/works/</loc>
     <lastmod>2021-07-09T17:46:05+00:00</lastmod>
     <priority>0.8</priority>
   </url>
@@ -46,37 +46,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/images</loc>
+    <loc>https://barrycap.com/works/images</loc>
     <lastmod>2021-07-09T17:46:05+00:00</lastmod>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/videos</loc>
+    <loc>https://barrycap.com/works/videos</loc>
     <lastmod>2022-01-20T16:39:24+01:00</lastmod>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/sounds</loc>
+    <loc>https://barrycap.com/works/sounds</loc>
     <lastmod>2022-02-09T19:30:36+01:00</lastmod>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/games</loc>
+    <loc>https://barrycap.com/works/games</loc>
     <lastmod>2021-07-09T17:46:05+00:00</lastmod>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/drawings</loc>
+    <loc>https://barrycap.com/works/drawings</loc>
     <lastmod>2021-07-09T17:46:05+00:00</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/Imaract%C3%A8res</loc>
+    <loc>https://barrycap.com/works/Imaract%C3%A8res</loc>
     <lastmod>2021-07-09T17:46:05+00:00</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://barrycap.com/realizations/being/</loc>
+    <loc>https://barrycap.com/works/being/</loc>
     <lastmod>2021-09-06T12:30:50+02:00</lastmod>
     <priority>0.4</priority>
   </url>
