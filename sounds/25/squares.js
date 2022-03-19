@@ -174,14 +174,20 @@ function changeQuality() {
   classList('high-quality-light')[func]('triggered')
 }
 
+function colorBehavior() {
+  randomColor = !randomColor
+  const func = classList('color-behavior-light').contains('triggered') ? 'remove' : 'add'
+  classList('color-behavior-light')[func]('triggered')
+}
+
 function colorInvert() {
   const func = classList('svg').contains('invert') ? 'remove' : 'add'
   classList('svg')[func]('invert')
   classList('color-invert-light')[func]('triggered')
 }
 
-function colorBehavior() {
-  randomColor = !randomColor
-  const func = classList('color-behavior-light').contains('triggered') ? 'remove' : 'add'
-  classList('color-behavior-light')[func]('triggered')
+function colorHue() {
+  const func = classList('keys').contains('hue') ? 'remove' : 'add'
+  classList('keys')[func]('hue')
+  classList('color-hue-light')[func]('triggered')
 }

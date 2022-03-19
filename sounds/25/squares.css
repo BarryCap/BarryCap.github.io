@@ -4,9 +4,14 @@
 svg {
   background: #222;
   filter: saturate(4);
+  transition: .1s;
 }
 .invert {
   filter: invert(1);
+  background: #ddd;
+}
+.hue {
+  filter: hue-rotate(180deg);
 }
 .high-quality #keys rect { filter: drop-shadow(0 0 10px #fff); }
 .high-quality #button-lights *.triggered { filter: drop-shadow(0 0 1px #fff); }
@@ -126,6 +131,18 @@ svg {
 #record-play-light.triggered-2 {
   fill: #ff0;
   d: path('m55 37v-2l2 0v2z');
+}
+#high-quality-light.triggered {
+  d: path('m-19 38h2m-2-1 2 2m-1-2v2m1-2-2 2');
+}
+#color-invert-light.triggered {
+  d: path('m-11 37h2v2h-2zm1.8.2-1.6 1.6 1.6-1.2-1.2 1.2 1.2-.8-.8.8.8-.4-.4.4.4 0');
+}
+#color-behavior-light.triggered {
+  d: path('m-14 38a.1.1 0 110 0c0 0 0 0 0 0s0 0 0 0zm0 1h0m1 0h0m-2-2h0m1 0h0m1 0h0m0 1h0m-2 0h0m0 1h0');
+}
+#color-hue-light.triggered {
+  d: path('m-6 37a1 1 0 010 2 1 1 0 010-2zm0 1 0 1');
 }
 #keys #k01.colored { stroke: #f002; }
 #keys #k02.colored { stroke: #ff02; }
