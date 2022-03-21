@@ -59,6 +59,10 @@ svg {
   fill: #fff;
   transition: .1s;
 }
+#keys rect:active {
+  fill-opacity: 0;
+  stroke-width: 1px;
+}
 @keyframes key-pressed {
   0% {
     opacity: 1;
@@ -95,10 +99,6 @@ svg {
 }
 #button-lights *.triggered {
   stroke: #fff;
-}
-#buttons *:active {
-  fill-opacity: 0;
-  stroke-width: 1px;
 }
 #keys rect.color-1 { stroke: #f00; }
 #keys rect.color-2 { stroke: #ff0; }
