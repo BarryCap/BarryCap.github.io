@@ -59,10 +59,6 @@ svg {
   fill: #fff;
   transition: .1s;
 }
-#keys rect:active {
-  fill-opacity: 0;
-  stroke-width: 1px;
-}
 @keyframes key-pressed {
   0% {
     opacity: 1;
@@ -81,6 +77,10 @@ svg {
 #guides circle {
   fill: #000;
   r: .5px;
+}
+#buttons rect:active {
+  fill-opacity: 0;
+  stroke-width: 1px;
 }
 #button-lights path {
   stroke: #000;
