@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="dot.css">
+    <link rel="icon" href="icon.svg">
+    <link rel="icon" href="icon256p.ico">
+    <script src="constants.js"></script>
+    <script src="framework.js"></script>
+    <script src="htmlFormatter.js"></script>
+    <script src="qualitySettings.js"></script>
+    <script src="dot.js"></script>
+    <title>DotFight</title>
+  </head>
+  <body id="body">
+    <svg id="menu" viewBox="0 0 1280 1024">
+      <filter id="dot-disp">
+        <feTurbulence
+          id="dot-turb"
+          type="fractalNoise"
+          baseFrequency=".01"
+          numOctaves="16"
+          result="fractal"
+        >
+          <animate
+            attributeName="seed"
+            values="1;1800"
+            dur="60"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementMap
+          id="dot-disp-map"
+          in="SourceGraphic"
+          in2="fractal"
+          yChannelSelector="G"
+          scale="8"
+        />
+      </filter>
+      <rect width="100%" height="100%" fill="#0008" />
+      <g id="menu-top-page" filter="url(#dot-disp)">
+        <g
+          id="menu-top-page-white"
+          filter="drop-shadow(0 0 20 #8ffc)"
+          font-size="40"
+        >
+          <path
+            transform="scale(8) translate(22 19)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="4"
+            d="m2 2h4a4 4 90 014 4v8a4 4 0 01-4 4h-4zm16 4a4 4 0 018 0v8a4 4 0 01-8 0zm14-4h12m-6 0v18m12 0v-18h10m-10 8h6m10-10v20m12-10h4v4a4 4 0 01-8 0v-8a4 4 0 018 0m8-6v20m0-10h8m0-10v20m6-18h12m-6 0v18"
+          />
+          <text
+            id="left-menu-title"
+            x="520"
+            y="463"
+            text-anchor="end"
+          >
+            Last score
+          </text>
+          <text
+            id="last-score"
+            x="528"
+            y="603"
+            font-size="160"
+            text-anchor="end"
+          >
+            --
+          </text>
+          <text
+            id="right-menu-title"
+            x="760"
+            y="463"
+          >
+            High score
+          </text>
+          <text
+            id="high-score"
+            x="752"
+            y="603"
+            font-size="160"
+          >
+            --
+          </text>
+          <rect
+            id="hyphen"
+            width="160"
+            height="20"
+            x="560"
+            y="542"
+            opacity="0"
+          />
+          <text
+            x="528"
+            y="843"
+            font-size="160"
+            text-anchor="end"
+          >
+            1P
+          </text>
+          <text
+            x="752"
+            y="843"
+            font-size="160"
+          >
+            2P
+          </text>
+          <g fill="none" stroke="#fff" stroke-width="2">
+            <g id="credits-icon" transform="translate(120 872) scale(10)">
+              <path d="m1 4h3v3h-3 6m-3-5v-2" />
+            </g>
+            <g id="options-icon" transform="translate(1080 872) scale(10)">
+              <circle r="2.5" cx="4" cy="4" />
+              <path
+                d="m1.5 4a1 1 0 015 0 1 1 0 01-5 0m1-1.5-1.3-1.3m2.8.8v-2m1.5 2.5 1.3-1.3m-.8 2.8h2m-2.5 1.5 1.3 1.3m-2.8-.8v2m-1.5-2.5-1.3 1.3m.8-2.8h-2"
+              />
+            </g>
+          </g>
+          <rect
+            id="menu-selection"
+            width="240"
+            height="160"
+            x="320"
+            y="712"
+            rx="20"
+            fill="none"
+            stroke="#fff"
+            stroke-width="16"
+          />
+        </g>
+        <g id="menu-top-page-yellow" filter="drop-shadow(0 0 20 #ff0)">
+          <circle r="320" cx="50%" cy="50%" fill="#f0f0" />
+          <text
+            id="p1-score"
+            x="528"
+            y="603"
+            fill="#ff0"
+            font-size="160"
+            text-anchor="end"
+            opacity="0"
+          >
+            --
+          </text>
+        </g>
+        <g id="menu-top-page-cyan" filter="drop-shadow(0 0 20 #0ff)">
+          <circle r="320" cx="50%" cy="50%" fill="#f0f0" />
+          <text
+            id="p2-score"
+            x="752"
+            y="603"
+            fill="#0ff"
+            font-size="160"
+            opacity="0"
+          >
+            --
+          </text>
+        </g>
+      </g>
+      <g id="menu-pages" filter="drop-shadow(0 0 20 #8ffc) url(#dot-disp)">
+        <g id="credits-page" opacity="0">
+          <path
+            transform="scale(8) translate(30 9)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="4"
+            d="m12 18h-4a6 6 0 01-6-6v-4a6 6 0 016-6h4m6 18v-18h4a1 1 0 010 8h-4m4 0a4 4 0 014 4v6m18-2h-10v-16h10m-10 8h6m10-8h4a4 4 0 014 4v8a4 4 0 01-4 4h-4zm16-2v20m6-18h12m-6 0v18m10-2h6a1 1 0 000-8 1 1 0 010-8h6"
+          />
+          <g font-size="40" text-anchor="middle">
+            <text x="200" y="443" text-anchor="start">
+              Game concept and creation
+            </text>
+            <text
+              id="credits-page-yellow"
+              x="1080"
+              y="443"
+              text-anchor="end"
+              fill="#ff0"
+              filter="drop-shadow(0 0 20 #ff08)"
+            >
+              Barry Cap
+            </text>
+            <text x="200" y="523" text-anchor="start">
+              Help with programming
+            </text>
+            <text
+              id="credits-page-cyan"
+              x="1080"
+              y="523"
+              text-anchor="end"
+              fill="#0ff"
+              filter="drop-shadow(0 0 20 #0ff8)"
+            >
+              Archibald Perez
+            </text>
+            <text x="50%" y="683">
+              Game developed since 27 April 2022
+            </text>
+            <text x="50%" y="763">
+              Version 1.0
+            </text>
+            <text x="50%" y="923">
+              More information at BarryCap.com
+            </text>
+          </g>
+        </g>
+        <g id="options-page" opacity="0" font-size="60" text-anchor="start">
+          <clipPath id="clip">
+            <rect width="100" height="20" />
+          </clipPath>
+          <path
+            transform="scale(8) translate(30 9)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="4"
+            clip-path="url(#clip)"
+            d="m2 6a1 1 0 018 0v8a1 1 0 01-8 0zm16 14v-18h4a1 1 0 010 8h-4m14-8h12m-6 0v18m12-20v20m8-14a1 1 0 018 0v8a1 1 0 01-8 0zm16 14v-20l8 20v-20m6 18h6a1 1 0 000-8 1 1 0 010-8h6"
+          />
+          <g id="option-glow">
+            <rect
+              id="checkbox"
+              width="80"
+              height="80"
+              x="280"
+              y="390"
+              rx="10"
+              fill="none"
+              stroke="#fff"
+              stroke-width="16"
+            />
+            <rect
+              class="tick"
+              id="tick-glow"
+              y="420"
+            />
+            <text x="400" y="449">
+              Glow effects
+            </text>
+          </g>
+          <g id="option-dist">
+            <use
+              href="#checkbox"
+              y="160"
+            />
+            <rect
+              class="tick"
+              id="tick-dist"
+              y="580"
+            />
+            <text x="400" y="609">
+              Distortion effects
+            </text>
+          </g>
+          <g id="option-sounds">
+            <use
+              href="#checkbox"
+              y="320"
+            />
+            <rect
+              class="tick"
+              id="tick-sounds"
+              y="740"
+            />
+            <text x="400" y="769">
+              Sounds
+            </text>
+          </g>
+          <rect
+            id="options-selection"
+            width="800"
+            height="160"
+            x="240"
+            y="350"
+            rx="20"
+            fill="none"
+            stroke="#fff"
+            stroke-width="16"
+          />
+        </g>
+      </g>
+      <rect id="menu-intro-rect" width="100%" height="100%" opacity="0" />
+    </svg>
+    <svg id="board" viewBox="0 0 1280 1024">
+      <g id="evil-dots-filters"></g>
+      <g id="evil-dots"></g>
+      <g filter="url(#dot-disp)">
+        <circle r="320" cx="50%" cy="50%" fill="#f0f0" />
+        <circle
+          id="dot"
+          filter="drop-shadow(0 0 20 #8ff)"
+          r="40"
+          cx="50%"
+          cy="50%"
+        />
+        <circle
+          id="dot1"
+          fill="#ff0"
+          filter="drop-shadow(0 0 20 #ff0)"
+          r="40"
+          cx="50%"
+          cy="50%"
+        />
+        <circle
+          id="dot2"
+          fill="#0ff"
+          filter="drop-shadow(0 0 20 #0ff)"
+          r="40"
+          cx="50%"
+          cy="50%"
+        />
+        <text
+          id="count-down"
+          filter="drop-shadow(0 0 20 #8ff) drop-shadow(0 0 20 #8ff8)"
+          x="1222"
+          y="937"
+          text-anchor="end"
+          font-size="80"
+        />
+      </g>
+    </svg>
+    <div id="splash-screen-overlay"></div>
+    <svg
+      id="splash-screen"
+      viewBox="0 0 1280 1024"
+      font-size="40"
+    >
+      <filter id="splash-disp">
+        <feTurbulence
+          id="dot-turb"
+          type="fractalNoise"
+          baseFrequency=".05"
+          numOctaves="16"
+          result="fractal"
+        >
+          <animate
+            attributeName="seed"
+            values="1;1800"
+            dur="60"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementMap
+          id="dot-disp-map"
+          in="SourceGraphic"
+          in2="fractal"
+          yChannelSelector="G"
+          scale="64"
+        />
+      </filter>
+      <rect width="100%" height="100%" fill="#000">
+        <animate
+          attributeName="opacity"
+          values="1;0"
+          dur="8"
+          begin="4"
+          fill="freeze"
+        />
+      </rect>
+      <g filter="drop-shadow(0 0 20 #fff) url(#dot-disp)" opacity="0">
+        <text x="130" y="350">
+          The Adventure
+        </text>
+        <text x="50%" y="620" text-anchor="middle">
+          presents
+        </text>
+        <animate
+          attributeName="opacity"
+          values="0;1;1;0"
+          dur="4"
+          begin=".5"
+        />
+      </g>
+      <g filter="drop-shadow(0 0 20 #fff) url(#dot-disp)" opacity="0">
+        <text x="130" y="350">
+          A
+        </text>
+        <text x="50%" y="620" text-anchor="middle">
+          game
+        </text>
+        <animate
+          attributeName="opacity"
+          values="0;1;1;0"
+          dur="4"
+          begin="4.5"
+        />
+      </g>
+      <g filter="drop-shadow(0 0 20 #fff) url(#dot-disp)" opacity="0">
+        <circle r="50%" fill="#f0f0" />
+        <text x="50%" y="765" text-anchor="middle">
+          Press a key to enter
+        </text>
+        <animate
+          attributeName="opacity"
+          values="0;1;1;0;0;0;0"
+          dur="4"
+          begin="12.5"
+          repeatCount="indefinite"
+        />
+      </g>
+    </g>
+      <g filter="drop-shadow(0 0 40 #0ff) url(#splash-disp)">
+        <circle r="50%" fill="#f0f0" />
+        <use href="#foretold" stroke="#0ff" />
+      </g>
+      <g stroke="#fff" filter="url(#dot-disp)">
+        <path
+          id="foretold"
+          transform="translate(130 392) scale(16)"
+          opacity="0"
+          fill="none"
+          stroke-width="2"
+          d="m1 10v-9h5m-5 4h3m5-2a1 1 0 014 0v4a1 1 0 01-4 0zm8 7v-9h2a1 1 0 010 4h-2 2a2 2 0 012 2v3m9-1h-5v-8h5m-5 4h3m4-4h6m-3 0v9m6-7a1 1 0 014 0v4a1 1 0 01-4 0zm8-3v9h5m3-8h2a2 2 0 012 2v4a2 2 0 01-2 2h-2z"
+        >
+          <animate
+            attributeName="opacity"
+            values="0;1;1;0"
+            dur="4"
+            begin=".5"
+          />
+        </path>
+      </g>
+      <g filter="drop-shadow(0 0 40 #ff0) url(#splash-disp)">
+        <circle r="50%" fill="#f0f0" />
+        <use href="#barrycap" stroke="#ff0" />
+      </g>
+      <g stroke="#fff" filter="url(#dot-disp)">
+        <path
+          id="barrycap"
+          transform="translate(130 392) scale(16)"
+          opacity="0"
+          fill="none"
+          stroke-width="2"
+          d="m1 1h2a1 1 90 110 4h-2 2a1 1 90 110 4h-2zm8 4v5-7a1 1 90 114 0v7-5zm8 5v-9h2a1 1 90 110 4h-2 2a2 2 90 012 2v3m4 0v-9h2a1 1 90 110 4h-2 2a2 2 90 012 2v3m4-10v4a1 1 90 001 1h1v5-5h1a1 1 90 001-1v-4m11 1h-2a3 3 90 00-3 3v2a3 3 90 003 3h2m3-4v5-7a1 1 90 114 0v7-5zm8 5v-9h2a1 1 90 110 4h-2"
+        >
+          <animate
+            attributeName="opacity"
+            values="0;1;1;0"
+            dur="4"
+            begin="4.5"
+          />
+        </path>
+      </g>
+      <g
+        id="dot-fight-yellow"
+        filter="drop-shadow(0 0 80 #ff0) url(#splash-disp)"
+      >
+        <circle r="100%" fill="#f0f0" />
+        <use href="#dot-fight" stroke="#ff0" x="-5" />
+      </g>
+      <g
+        id="dot-fight-cyan"
+        filter="drop-shadow(0 0 80 #0ff) url(#splash-disp)"
+      >
+        <circle r="100%" fill="#f0f0" />
+        <use href="#dot-fight" stroke="#0ff" x="5" />
+      </g>
+      <g filter="drop-shadow(0 0 80 #fff) url(#dot-disp)">
+        <circle r="100%" fill="#f0f0" />
+        <g stroke="#fff">
+          <path
+            id="dot-fight"
+            transform="translate(175 392) scale(8)"
+            opacity="0"
+            fill="none"
+            stroke-width="4"
+            d="m2 2h4a4 4 90 014 4v8a4 4 0 01-4 4h-4zm16 4a4 4 0 018 0v8a4 4 0 01-8 0zm14-4h12m-6 0v18m12 0v-18h10m-10 8h6m10-10v20m12-10h4v4a4 4 0 01-8 0v-8a4 4 0 018 0m8-6v20m0-10h8m0-10v20m6-18h12m-6 0v18"
+          >
+            <animate
+              attributeName="opacity"
+              values="0;1"
+              dur="2"
+              begin="8.5"
+              fill="freeze"
+            />
+          </path>
+        </g>
+      </g>
+    </svg>
+  </body>
+</html>

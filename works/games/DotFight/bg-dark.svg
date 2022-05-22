@@ -1,0 +1,31 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 2 2"
+  width="160"
+  height="160"
+  fill="#333"
+>
+  <filter id="disp">
+    <feTurbulence
+      type="fractalNoise"
+      baseFrequency=".001"
+      numOctaves="8"
+      result="fractal"
+    >
+      <animate
+        attributeName="seed"
+        values="1;3600"
+        dur="120"
+        repeatCount="indefinite"
+      />
+    </feTurbulence>
+    <feDisplacementMap
+      in="SourceGraphic"
+      in2="fractal"
+      yChannelSelector="G"
+      scale="4"
+    />
+  </filter>
+  <rect id="square" filter="url(#disp)" width="1" height="1" />
+  <use href="#square" x="1" y="1" />
+</svg>

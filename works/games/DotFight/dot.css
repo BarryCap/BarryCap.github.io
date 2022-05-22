@@ -1,0 +1,133 @@
+:root {
+  color-scheme: dark;
+}
+body {
+  background: #000 calc(50% - 40px) calc(50% + 40px) url("bg-dark.svg");
+  cursor: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  user-select: none;
+  height: 100vh;
+}
+svg {
+  background: #000 40px 20px url("bg.svg");
+  background-position: calc(50% - 40px) calc(50% + 40px);
+  border-radius: 8px;
+  font-family: consolas, monospace;
+  font-weight: bold;
+  fill: #fff;
+  width: 1280px;
+  height: 1024px;
+}
+
+body.bg-no-dist { background-image: url("bg-dark-no-dist.svg"); }
+svg.bg-no-glow { background-image: url("bg-no-glow.svg"); }
+svg.bg-no-dist { background-image: url("bg-no-dist.svg"); }
+svg.bg-no-glow.bg-no-dist { background-image: url("bg-no-glow-no-dist.svg"); }
+
+@keyframes drawing {
+  0% { stroke-dashoffset: 32; }
+  50% { stroke-dashoffset: 32; }
+  100% { stroke-dashoffset: 0; }
+}
+#credits-icon, #options-icon {
+  animation: drawing 4s ease-in;
+  stroke-dasharray: 32;
+}
+@keyframes drawing-long {
+  0% { stroke-dashoffset: 800; }
+  50% { stroke-dashoffset: 800; }
+  100% { stroke-dashoffset: 0; }
+}
+#menu-selection {
+  animation: drawing-long 2s;
+  stroke-dasharray: 800;
+}
+
+#menu {
+  outline: solid 4px #333;
+  position: absolute;
+  transition: .2s;
+}
+
+@keyframes menu-intro {
+  0% { opacity: 1; }
+}
+.menu-intro {
+  animation: menu-intro 2s;
+}
+
+#splash-screen {
+  position: absolute;
+  transition: .2s;
+}
+#splash-screen-overlay {
+  background: #000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#dot, #dot1, #dot2 {
+  transition: .1s;
+}
+#dot2, #dot-fight-yellow, #dot-fight-cyan {
+  mix-blend-mode: difference;
+}
+#evil-dots *,
+#menu-selection,
+#options-selection,
+#hyphen,
+#left-menu-title,
+#right-menu-title,
+#last-score,
+#high-score,
+#p1-score,
+#p2-score,
+#menu-top-page,
+#credits-page,
+#options-page,
+#splash-screen,
+#splash-screen-overlay {
+  transition: .2s;
+}
+
+@keyframes death {
+  50% {
+    opacity: 0;
+    filter: drop-shadow(0 0 20px #888);
+    stroke-opacity: 1;
+    stroke-width: 80;
+  }
+}
+.dead {
+  animation: death 1s ease-out;
+  stroke: #888;
+  stroke-opacity: 0;
+}
+
+.ghost {
+  fill: #fff2;
+  filter: none;
+}
+
+@keyframes count-down-fill {
+  0% { transform: translateX(0); }
+  95% { transform: translateX(0); }
+  100% { transform: translateX(21px); }
+}
+.count-down {
+  animation: count-down-fill 10s;
+  transform: translateX(21px);
+}
+
+.tick {
+  rx: .25;
+  stroke: #fff;
+  stroke-width: 16;
+  x: 310;
+  width: 20px;
+  height: 20px;
+}
