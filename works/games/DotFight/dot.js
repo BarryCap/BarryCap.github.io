@@ -35,12 +35,15 @@ let optionSelected = initOptionSelection
 
 /** Splash screen */
 document.onkeydown = endSplashScreen
-function endSplashScreen () {
-  splashScreenToMenu()
-  mainThemeAudio = createAudio(AUDIO_MAIN_THEME, 1, true)
-  mainThemeAudio.play()
-  createAudio(AUDIO_CLICK).play()
-  document.onkeydown = menuSelection
+
+function endSplashScreen ({ key }) {
+  if (menuSelectKeys.includes(key)) {
+    splashScreenToMenu()
+    mainThemeAudio = createAudio(AUDIO_MAIN_THEME, 1, true)
+    mainThemeAudio.play()
+    createAudio(AUDIO_CLICK).play()
+    document.onkeydown = menuSelection
+  }
 }
 
 /** Choose menu options */

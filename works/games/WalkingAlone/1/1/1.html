@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Walking Alone</title>
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body>
+    <svg class="bg" viewBox="0 0 64 36">
+      <defs>
+        <linearGradient id="g">
+          <stop offset="0"  stop-color="#f000" />
+          <stop offset="100%" stop-color="#f008" />
+        </linearGradient>
+      </defs>
+      <path class="city-lines" id="city-lines" />
+      <use href="#city-lines" x="64" />
+      <path class="red-light-glow" fill="url(#g)" />
+    </svg>
+    <main>
+      <p>
+        The red light is showing up again.
+      </p>
+      <p><a href="../0.html">Walk to the light</a> <a href="../1.html">Flee the light</a></p>
+      <a class="return" onclick="window.history.go(-1)">
+        <svg viewBox="0 0 12 8">
+          <path class="return-arrow" />
+        </svg>
+      </a>
+    </main>
+  </body>
+</html>

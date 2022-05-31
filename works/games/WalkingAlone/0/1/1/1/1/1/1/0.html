@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Walking Alone</title>
+    <link rel="stylesheet" href="../../../../../../../styles.css">
+  </head>
+  <body class="no-transition">
+    <svg class="bg" viewBox="0 0 64 36">
+      <path class="city-lines" id="city-lines" />
+      <use href="#city-lines" x="64" />
+      <g class="phone-call intro">
+        <path class="phone-body call" />
+        <path class="phone-screen call" />
+        <g class="phone-contact" clip-path="url(#phone-contact-circle)">
+          <clipPath id="phone-contact-circle">
+            <circle r="2" cx="52" cy="26" />
+          </clipPath>
+          <rect class="phone-contact-bg" />
+          <path class="phone-contact-red-light-man-coat" />
+          <path class="phone-contact-red-light-man-head" />
+        </g>
+        <path class="red-phone-icon call intro" />
+      </g>
+    </svg>
+    <main class="fade-in">
+      <p>
+        An extremely deep voice talks you:<br>
+        —Hello. I have to talk to you.
+      </p>
+      <p><a href="0/0.html">What for?</a> <a href="1.html">Hang up</a></p>
+      <a class="return" onclick="window.history.go(-1)">
+        <svg viewBox="0 0 12 8">
+          <path class="return-arrow" />
+        </svg>
+      </a>
+    </main>
+  </body>
+</html>
